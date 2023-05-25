@@ -1,0 +1,157 @@
+<html {$html_attrs}>
+<head>
+<title>Interf Vono</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+{BEGIN mastertable_block}
+<div id="mastertable_block">
+{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<h1>Interf Vono</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_interf_vono_fieldheadercolumn}
+	<td>
+{BEGIN id_interf_vono_fieldheader}
+	<b>Id Interf Vono</b>
+{END id_interf_vono_fieldheader}
+	</td>
+{END id_interf_vono_fieldheadercolumn}
+{BEGIN id_contrato_fieldheadercolumn}
+	<td>
+{BEGIN id_contrato_fieldheader}
+	<b>Id Contrato</b>
+{END id_contrato_fieldheader}
+	</td>
+{END id_contrato_fieldheadercolumn}
+{BEGIN codec_fieldheadercolumn}
+	<td>
+{BEGIN codec_fieldheader}
+	<b>Codec</b>
+{END codec_fieldheader}
+	</td>
+{END codec_fieldheadercolumn}
+{BEGIN usuario_fieldheadercolumn}
+	<td>
+{BEGIN usuario_fieldheader}
+	<b>Usuario</b>
+{END usuario_fieldheader}
+	</td>
+{END usuario_fieldheadercolumn}
+{BEGIN senha_fieldheadercolumn}
+	<td>
+{BEGIN senha_fieldheader}
+	<b>Senha</b>
+{END senha_fieldheader}
+	</td>
+{END senha_fieldheadercolumn}
+{BEGIN ip_host_fieldheadercolumn}
+	<td>
+{BEGIN ip_host_fieldheader}
+	<b>Ip Host</b>
+{END ip_host_fieldheader}
+	</td>
+{END ip_host_fieldheadercolumn}
+{BEGIN id_central_fieldheadercolumn}
+	<td>
+{BEGIN id_central_fieldheader}
+	<b>Id Central</b>
+{END id_central_fieldheader}
+	</td>
+{END id_central_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_interf_vono_fieldcolumn}
+<td {$id_interf_vono_style}>
+{$id_interf_vono_value}
+</td>
+{END id_interf_vono_fieldcolumn}
+{BEGIN id_contrato_fieldcolumn}
+<td {$id_contrato_style}>
+{$id_contrato_value}
+</td>
+{END id_contrato_fieldcolumn}
+{BEGIN codec_fieldcolumn}
+<td {$codec_style}>
+{$codec_value}
+</td>
+{END codec_fieldcolumn}
+{BEGIN usuario_fieldcolumn}
+<td {$usuario_style}>
+{$usuario_value}
+</td>
+{END usuario_fieldcolumn}
+{BEGIN senha_fieldcolumn}
+<td {$senha_style}>
+{$senha_value}
+</td>
+{END senha_fieldcolumn}
+{BEGIN ip_host_fieldcolumn}
+<td {$ip_host_style}>
+{$ip_host_value}
+</td>
+{END ip_host_fieldcolumn}
+{BEGIN id_central_fieldcolumn}
+<td {$id_central_style}>
+{$id_central_value}
+</td>
+{END id_central_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

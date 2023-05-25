@@ -1,0 +1,157 @@
+<html {$html_attrs}>
+<head>
+<title>Ipbx Interf E1</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+{BEGIN mastertable_block}
+<div id="mastertable_block">
+{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<h1>Ipbx Interf E1</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_interf_fieldheadercolumn}
+	<td>
+{BEGIN id_interf_fieldheader}
+	<b>Id Interf</b>
+{END id_interf_fieldheader}
+	</td>
+{END id_interf_fieldheadercolumn}
+{BEGIN dsc_interf_fieldheadercolumn}
+	<td>
+{BEGIN dsc_interf_fieldheader}
+	<b>Dsc Interf</b>
+{END dsc_interf_fieldheader}
+	</td>
+{END dsc_interf_fieldheadercolumn}
+{BEGIN id_contrato_fieldheadercolumn}
+	<td>
+{BEGIN id_contrato_fieldheader}
+	<b>Id Contrato</b>
+{END id_contrato_fieldheader}
+	</td>
+{END id_contrato_fieldheadercolumn}
+{BEGIN id_central_fieldheadercolumn}
+	<td>
+{BEGIN id_central_fieldheader}
+	<b>Id Central</b>
+{END id_central_fieldheader}
+	</td>
+{END id_central_fieldheadercolumn}
+{BEGIN board_fieldheadercolumn}
+	<td>
+{BEGIN board_fieldheader}
+	<b>Board</b>
+{END board_fieldheader}
+	</td>
+{END board_fieldheadercolumn}
+{BEGIN link_fieldheadercolumn}
+	<td>
+{BEGIN link_fieldheader}
+	<b>Link</b>
+{END link_fieldheader}
+	</td>
+{END link_fieldheadercolumn}
+{BEGIN id_tp_interf_fieldheadercolumn}
+	<td>
+{BEGIN id_tp_interf_fieldheader}
+	<b>Id Tp Interf</b>
+{END id_tp_interf_fieldheader}
+	</td>
+{END id_tp_interf_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_interf_fieldcolumn}
+<td {$id_interf_style}>
+{$id_interf_value}
+</td>
+{END id_interf_fieldcolumn}
+{BEGIN dsc_interf_fieldcolumn}
+<td {$dsc_interf_style}>
+{$dsc_interf_value}
+</td>
+{END dsc_interf_fieldcolumn}
+{BEGIN id_contrato_fieldcolumn}
+<td {$id_contrato_style}>
+{$id_contrato_value}
+</td>
+{END id_contrato_fieldcolumn}
+{BEGIN id_central_fieldcolumn}
+<td {$id_central_style}>
+{$id_central_value}
+</td>
+{END id_central_fieldcolumn}
+{BEGIN board_fieldcolumn}
+<td {$board_style}>
+{$board_value}
+</td>
+{END board_fieldcolumn}
+{BEGIN link_fieldcolumn}
+<td {$link_style}>
+{$link_value}
+</td>
+{END link_fieldcolumn}
+{BEGIN id_tp_interf_fieldcolumn}
+<td {$id_tp_interf_style}>
+{$id_tp_interf_value}
+</td>
+{END id_tp_interf_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

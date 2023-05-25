@@ -1,0 +1,159 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Filas</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px;text-align:center}
+#span{$id} {margin:0 20px 0 20px;}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY>{BEGIN body}{$header} 
+{BEGIN editForm}<TABLE style="WIDTH: 80%" id="center_block{$id}" align=center>
+  <TBODY>
+  <TR>
+    <TD id="contents_block{$id}"><B class=xtop><B class=xb1b></B><B 
+      class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+      <DIV id="header_block{$id}" class=upeditmenu>Filas, Editar registro [ 
+      Identificação: {$show_key1} ] </DIV>
+      {BEGIN message_block}<DIV id="message_block{$id}" class=downedit>{$message}</DIV>{END message_block}
+      <TABLE border=0 cellSpacing=0 cellPadding=4 width="100%">
+        <TBODY>
+        {BEGIN nm_fila_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshadeleft_b2>{BEGIN nm_fila_label}Nome da fila{END nm_fila_label}</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshaderight_lb2 
+            width=250>{$nm_fila_editcontrol}&nbsp; <FONT 
+            color=#336699>Grupo de filas</FONT>&nbsp; {$nm_grupo_editcontrol}</TD></TR>{END nm_fila_fieldblock}
+        {BEGIN nm_grupo_fieldblock}<TR>
+          <TD 
+          style="BACKGROUND-COLOR: #e6e6fa; PADDING-LEFT: 15px; WHITE-SPACE: normal" 
+          class=editshade_b width=150 colSpan=2>
+            <P align=center><FONT color=#336699 size=3>Configurações da 
+            Fila</FONT>&nbsp;</P></TD></TR>{END nm_grupo_fieldblock}
+        {BEGIN tp_toques_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" 
+            class=editshade_b>Estratégia de Distribuição de chamadas (DAC)<FONT 
+            size=3></FONT></TD>
+          <TD>&nbsp;{$estrategia_editcontrol} <FONT 
+            color=#336699><STRONG>Tempo máx. para chamar um agente</STRONG> 
+            {$tp_toques_editcontrol}&nbsp;<STRONG>segundos</STRONG></FONT></TD></TR>{END tp_toques_fieldblock}
+        {BEGIN estrategia_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" 
+            class=editshade_b>Definição do horário de atendimento da fila</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb><FONT color=#336699>{$id_desvio_editcontrol}</FONT></TD></TR>{END estrategia_fieldblock}
+        {BEGIN tp_excedido_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Tempo 
+            máximo do usuário em fila (segundos)</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$tp_excedido_editcontrol} </TD></TR>{END tp_excedido_fieldblock}
+        <TR>
+          <TD 
+          style="BACKGROUND-COLOR: #e6e6fa; WIDTH: 470px; WHITE-SPACE: normal" 
+          colSpan=2>&nbsp;&nbsp;&nbsp;&nbsp;<STRONG><FONT 
+            color=#336699>Desvios dentro do horário:</FONT></STRONG>&nbsp;</TD></TR>
+        {BEGIN acao_tp_excedido_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>
+            <BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+              <P><FONT color=#336699>Desvio se exceder o tempo máximo em 
+              fila</FONT></P></BLOCKQUOTE></TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$acao_tp_excedido_editcontrol} </TD></TR>{END acao_tp_excedido_fieldblock}
+        {BEGIN acao_falta_agente_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>
+            <BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+              <P><FONT color=#336699>Desvia se nenhum agente estiver 
+              conectado</FONT></P></BLOCKQUOTE></TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$acao_falta_agente_editcontrol} 
+</TD></TR>{END acao_falta_agente_fieldblock}
+        {BEGIN acao_fr_horario_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Fora 
+            do horário de atendimento desvia para a fila</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$acao_fr_horario_editcontrol} </TD></TR>{END acao_fr_horario_fieldblock}
+        {BEGIN gravacao_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" 
+            class=editshade_b>Gravar as chamadas recebidas na fila de 
+          atendimento</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$gravacao_editcontrol} </TD></TR>{END gravacao_fieldblock}
+        {BEGIN arq_audio_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Audio 
+            contendo a mensagem fora do horário de atendimento. (WAV)</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$arq_audio_editcontrol} </TD></TR>{END arq_audio_fieldblock}
+        {BEGIN arq_mesg_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Audio 
+            contendo a mensagem antes do atendimento&nbsp;(WAV)</TD>
+          <TD style="PADDING-LEFT: 10px; WIDTH: 257px" 
+            class=editshade_lb>{$arq_mesg_editcontrol} </TD></TR>{END arq_mesg_fieldblock}
+        {BEGIN id_logout_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" 
+            class=editshade_b>Estratégia para desligar (logoff) agentes da fila 
+            automaticamente</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$id_logout_editcontrol} </TD></TR>{END id_logout_fieldblock}
+        {BEGIN maxlen_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" 
+            class=editshade_b>Número máximo de usuários em fila aguardando para 
+            ser atendido</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$maxlen_editcontrol}&nbsp; <FONT 
+            color=#336699>Zero indica sem limites</FONT></TD></TR>{END maxlen_fieldblock}
+        {BEGIN wrapuptime_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Tempo 
+            para o agente completar o trabalho após a conversação (Wrap-Up 
+          Time)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$wrapuptime_editcontrol}&nbsp;<FONT 
+            color=#336699>Zero indica que não haverá tempo após a ligação</FONT> 
+          </TD></TR>{END wrapuptime_fieldblock}
+        <TR>
+          <TD style="BACKGROUND-COLOR: #e5e5e5; WHITE-SPACE: normal" 
+            colSpan=2><P align=center>&nbsp;<STRONG><FONT color=#336699 
+            size=3>Service Level Agreement - SLA</FONT></STRONG></P></TD></TR>
+        {BEGIN seg_tmo_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Tempo 
+            máximo da operação </TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$seg_tmo_editcontrol} <FONT 
+            color=#336699>segundos, maior ou igual {$perc_tmo_editcontrol}&nbsp;%</FONT></TD></TR>{END seg_tmo_fieldblock}
+        {BEGIN seg_tma_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Tempo 
+            máximo do atendimento </TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$seg_tma_editcontrol} <FONT 
+            color=#336699>segundos, maior ou igual {$perc_tma_editcontrol}&nbsp;%</FONT></TD></TR>{END seg_tma_fieldblock}
+        {BEGIN seg_tme_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Tempo 
+            máximo de espera</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$seg_tme_editcontrol} <FONT 
+            color=#336699>segundos, maior ou igual {$perc_tme_editcontrol}&nbsp;%</FONT></TD></TR>{END seg_tme_fieldblock}
+        {BEGIN tx_abandono_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>Taxa 
+            de Abandono (Percentual)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$tx_abandono_editcontrol} <FONT 
+            color=#336699>%</FONT></TD></TR>{END tx_abandono_fieldblock}
+        {BEGIN id_name_gestor_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px; WIDTH: 470px" class=editshade_b>
+            <P>&nbsp;</P>
+            <P><FONT color=#336699>Gestor da fila</FONT></P>
+            <P>&nbsp;</P>
+            <P>&nbsp;</P></TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><FONT 
+            color=#336699>
+            <P><FONT color=#336699>Estimativa do dia </FONT>{$flg_estim_do_dia_editcontrol}&nbsp;<FONT 
+            color=#336699>ou informe o tempo</FONT> </FONT>{$tp_estimativa_editcontrol}</P>
+            <P>{$id_name_gestor_editcontrol} 
+        </P></TD></TR>{END id_name_gestor_fieldblock}</TBODY></TABLE>
+      <DIV id="buttons_block{$id}" class=downedit2>
+      {BEGIN legend}<DIV id="required_block{$id}"><IMG alt=bullet 
+      src="images/icon_required.gif"> - Required field</DIV>{END legend}{$legendBreak} {BEGIN save_button}<SPAN class=buttonborder><INPUT id="savebutton{$id}" class=button value=Salvar type=submit {$savebutton_attrs}></SPAN>{END save_button} 
+      {BEGIN reset_button}<SPAN class=buttonborder><INPUT class=button value=Limpar type=reset {$resetbutton_attrs}></SPAN>{END reset_button} 
+      <SPAN id="span{$id}">&nbsp;</SPAN> {BEGIN prev_button}<SPAN class=buttonborder><INPUT id="prev{$id}" class=button value=" <<< " type=reset {$prevbutton_attrs}></SPAN>{END prev_button} 
+      {BEGIN back_button}<SPAN class=buttonborder><INPUT class=button value="Voltar à Lista" type=button {$backbutton_attrs}></SPAN>{END back_button} 
+      {BEGIN next_button}<SPAN class=buttonborder><INPUT id="next{$id}" class=button value=" >>> " type=reset {$nextbutton_attrs}></SPAN>{END next_button} 
+      </DIV><B class=xbottom><B class=xb4a></B><B class=xb3a></B><B 
+      class=xb2a></B><B class=xb1a></B></B></TD></TR></TBODY></TABLE>{END editForm}{BEGIN detail_tables}{END detail_tables}<BR><BR>{$footer} {END body}</BODY></HTML>

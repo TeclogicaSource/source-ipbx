@@ -1,0 +1,386 @@
+<html {$html_attrs}>
+<head>
+<title>Desvios Troncos</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;}
+#mastertable_block{$id} {margin-left:50px;margin-top:10px}
+#toplinks_block{$id} {width:100%; text-align:right;padding:3px}
+#toplinks_block{$id} * {padding:0px 10px;}
+#left_block{$id} { position:absolute;width:200px;{BEGIN RTL_block} right:10px;{END RTL_block}{BEGIN LTR_block} left:10px;{END LTR_block} overflow:visible;}
+#search_records_block{$id} {width:100%;}
+#search_records_block{$id} > * {vertical-align:middle;}
+#search_records_block{$id} select {margin:0px 0px;}
+#login_block{$id},#languages_block{$id} {padding:10px; margin-bottom:3px}
+#login_block{$id} div {margin-left:0px; padding:5px 0px;}
+#menu_block{$id} {margin-bottom:3px;width:auto;}
+{BEGIN shiftstyle_block}
+#records_block{$id} {padding-left:203px;{BEGIN RTL_block}padding:0px;padding-right:203px;{END RTL_block}}
+{END shiftstyle_block}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+#recordcontrols_block{$id} {padding:10px;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px;vertical-align:middle;}
+#grid_block{$id} {margin-top:2px;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader a {margin:0px 5px;}
+form#frmAdmin{$id} {display:inline;}
+body{margin:0px;padding:0px;}
+#searchOptions{$id}{margin-bottom: 3px;}
+#searchform{$id}{/*float: left;*/padding-left: 5px;}
+#searchPanelContainer{$id}{width: 200px}
+
+/*report styles*/
+#export_links{$id} * {padding:0}
+
+</style>
+{END style_block}
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+
+{BEGIN body}
+<div id="height100{$id}">
+{$header}
+
+{BEGIN toplinks_block}
+<div id="toplinks_block{$id}">
+
+
+
+
+
+
+</div>
+{END toplinks_block}
+
+{BEGIN search_records_block} 
+	<div id="search_records_block{$id}" class="linedownbody main_table2 toplist">
+		<table width=100% style="border: none;">
+			<tr>
+				<td nowrap="nowrap" width=22>
+					<img src="include/img/arrow_topmenu.gif" align="absmiddle" alt=" ">
+				</td>
+				<td nowrap="nowrap" align=left>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td nowrap="nowrap" align=right>
+					{BEGIN details_block}
+					<span id="detFound{$id}">Ítens Encontrados: <b>{$records_found}</b>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					{END details_block}
+					{BEGIN pages_block}
+					<span id="pageOf{$id}">Página <b>{$page}</b> de <b>{$maxpages}</b></span>
+					{END pages_block}
+					
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					
+										{BEGIN recordspp_block}
+					<span id="recordspp_block{$id}">
+						Registros por Página:
+						<select {$recordspp_attrs}>
+							<option value="10" {$rpp10_selected}>10</option>
+							<option value="20" {$rpp20_selected}>20</option>
+							<option value="30" {$rpp30_selected}>30</option>
+							<option value="50" {$rpp50_selected}>50</option>
+							<option value="100" {$rpp100_selected}>100</option>
+							<option value="500" {$rpp500_selected}>500</option>
+						</select>
+					</span>
+					{END recordspp_block}
+				</td>
+			</tr>
+		</table>
+	</div>
+{END search_records_block} 
+
+{BEGIN left_block}
+<div id="left_block{$id}">
+
+{BEGIN security_block}
+<div id="login_block{$id}" class="blackshade toplist">
+	<div style="font-weight:normal;">Logado Como&nbsp;<b>{$username}</b></div>
+	<br><a class="tablelinks" href="login.php?a=logout" {$logoutlink_attrs}>Log Out</a>
+<!-- Permissions -->
+   {BEGIN adminarea_link}
+	<br><a class="tablelinks" href="admin_rights_list.php" {$adminarealink_attrs}>Área  Admin</a>
+  {END adminarea_link}
+{BEGIN changepwd_link}
+	<br><a class="tablelinks" href="changepwd.php" {$changepwdlink_attrs}>Mudar senha</a>
+{END changepwd_link}
+</div>
+{END security_block}
+
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel}
+</div>
+ 
+<!-- MenuBegin -->
+{BEGIN menu_block}
+<div id="menu_block{$id}" class="blackshade toplist">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->
+</div>
+{END menu_block}
+
+<!-- MenuEnd -->
+</div>
+{END left_block}
+
+<div id="records_block{$id}" moveForSearch="move{$id}" {$marginStyle}>
+{BEGIN recordcontrols_block}
+<div id="recordcontrols_block{$id}" class="main_table2" >
+
+{BEGIN newrecord_controls}
+<span id="newrecord_controls{$id}">
+{BEGIN add_link}
+<span class=buttonborder><input type=button class="button" value="Adicionar Novo" {$addlink_attrs}></span>
+{END add_link}
+
+</span>
+{END newrecord_controls}
+
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+
+{BEGIN deleteselected_link}
+<span class=buttonborder {$deleteselectedlink_span}><input type=button class="button" value="Elimina Selecionados" {$deleteselectedlink_attrs}></span>
+{END deleteselected_link}
+
+
+</span>
+{END record_controls}
+</div>
+{END recordcontrols_block}
+<div class="message" id="usermessage{$id}">{$user_message}</div>
+
+
+
+{BEGIN grid_block}
+<div id="grid_block{$id}" >
+<table name="maintable" class="data" cellspacing="0" cellpadding="5" border="0">
+{BEGIN grid_header}
+<thead>
+<tr class="blackshade" valign="top" {$gridHeader_attrs}>
+{BEGIN record_header}
+
+{BEGIN listIcons_column}
+	<th align="center" class="headerlist listIcons" {$widthListIcons} nowrap="nowrap">&nbsp;</th>
+{END listIcons_column}	
+
+{BEGIN checkbox_column}
+<th width="20" align="center" class="headerlist">
+<input type="checkbox" {$checkboxheader_attrs}>
+</th>
+{END checkbox_column}
+
+
+{BEGIN ramal_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN ramal_fieldheader}
+<a class="tablelinks" {$ramal_orderlinkattrs}>
+Ramal</a>
+{END ramal_fieldheader}
+</th>
+{END ramal_fieldheadercolumn}
+{BEGIN hr_inicio_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN hr_inicio_fieldheader}
+<a class="tablelinks" {$hr_inicio_orderlinkattrs}>
+Hora Inicio</a>
+{END hr_inicio_fieldheader}
+</th>
+{END hr_inicio_fieldheadercolumn}
+{BEGIN hr_fim_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN hr_fim_fieldheader}
+<a class="tablelinks" {$hr_fim_orderlinkattrs}>
+Hora Fim</a>
+{END hr_fim_fieldheader}
+</th>
+{END hr_fim_fieldheadercolumn}
+{BEGIN destino_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN destino_fieldheader}
+<a class="tablelinks" {$destino_orderlinkattrs}>
+Destino</a>
+{END destino_fieldheader}
+</th>
+{END destino_fieldheadercolumn}
+{BEGIN seg_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN seg_fieldheader}
+<a class="tablelinks" {$seg_orderlinkattrs}>
+Segunda Feira</a>
+{END seg_fieldheader}
+</th>
+{END seg_fieldheadercolumn}
+{BEGIN ter_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN ter_fieldheader}
+<a class="tablelinks" {$ter_orderlinkattrs}>
+Terça Feira</a>
+{END ter_fieldheader}
+</th>
+{END ter_fieldheadercolumn}
+{BEGIN qua_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN qua_fieldheader}
+<a class="tablelinks" {$qua_orderlinkattrs}>
+Quarta Feira</a>
+{END qua_fieldheader}
+</th>
+{END qua_fieldheadercolumn}
+{BEGIN qui_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN qui_fieldheader}
+<a class="tablelinks" {$qui_orderlinkattrs}>
+Quinta Feira</a>
+{END qui_fieldheader}
+</th>
+{END qui_fieldheadercolumn}
+{BEGIN sex_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN sex_fieldheader}
+<a class="tablelinks" {$sex_orderlinkattrs}>
+Sexta Feira</a>
+{END sex_fieldheader}
+</th>
+{END sex_fieldheadercolumn}
+{BEGIN sab_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN sab_fieldheader}
+<a class="tablelinks" {$sab_orderlinkattrs}>
+Sabado</a>
+{END sab_fieldheader}
+</th>
+{END sab_fieldheadercolumn}
+{BEGIN dom_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN dom_fieldheader}
+<a class="tablelinks" {$dom_orderlinkattrs}>
+Domingo</a>
+{END dom_fieldheader}
+</th>
+{END dom_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+<th class="body2"></th>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+</thead>
+{END grid_header}
+
+<tbody>
+{BEGIN grid_row}
+<tr valign="top" {$rowstyle} {$rowattrs}> 
+{BEGIN grid_record}
+
+{BEGIN listIcons_column}
+	<td align="center" valign="middle" class="borderbody listIcons" nowrap="nowrap">
+		{BEGIN edit_column}
+	{BEGIN edit_link}
+	<a class="tablelinks" {$editlink_attrs} title="Editar"><img class="listIcon" src="images/icon_edit_new.gif" align="middle" alt="Editar" border="0"></a>
+	{END edit_link}
+	{END edit_column}
+
+	
+	
+		</td>	
+{END listIcons_column}	
+
+{BEGIN checkbox_column}
+<td align="center" valign="middle" class="borderbody" width="20">
+{BEGIN checkbox}
+<input type="checkbox" {$checkbox_attrs}>
+{END checkbox}
+</td>
+{END checkbox_column}
+
+
+{BEGIN ramal_fieldcolumn}
+<td valign="middle" class="borderbody" {$ramal_style}>
+{$ramal_value}
+</td>
+{END ramal_fieldcolumn}
+{BEGIN hr_inicio_fieldcolumn}
+<td valign="middle" class="borderbody" {$hr_inicio_style}>
+{$hr_inicio_value}
+</td>
+{END hr_inicio_fieldcolumn}
+{BEGIN hr_fim_fieldcolumn}
+<td valign="middle" class="borderbody" {$hr_fim_style}>
+{$hr_fim_value}
+</td>
+{END hr_fim_fieldcolumn}
+{BEGIN destino_fieldcolumn}
+<td valign="middle" class="borderbody" {$destino_style}>
+{$destino_value}
+</td>
+{END destino_fieldcolumn}
+{BEGIN seg_fieldcolumn}
+<td valign="middle" class="borderbody" {$seg_style}>
+{$seg_value}
+</td>
+{END seg_fieldcolumn}
+{BEGIN ter_fieldcolumn}
+<td valign="middle" class="borderbody" {$ter_style}>
+{$ter_value}
+</td>
+{END ter_fieldcolumn}
+{BEGIN qua_fieldcolumn}
+<td valign="middle" class="borderbody" {$qua_style}>
+{$qua_value}
+</td>
+{END qua_fieldcolumn}
+{BEGIN qui_fieldcolumn}
+<td valign="middle" class="borderbody" {$qui_style}>
+{$qui_value}
+</td>
+{END qui_fieldcolumn}
+{BEGIN sex_fieldcolumn}
+<td valign="middle" class="borderbody" {$sex_style}>
+{$sex_value}
+</td>
+{END sex_fieldcolumn}
+{BEGIN sab_fieldcolumn}
+<td valign="middle" class="borderbody" {$sab_style}>
+{$sab_value}
+</td>
+{END sab_fieldcolumn}
+{BEGIN dom_fieldcolumn}
+<td valign="middle" class="borderbody" {$dom_style}>
+{$dom_value}
+</td>
+{END dom_fieldcolumn}
+
+{BEGIN endrecord_block}
+<td class="body2" {$endrecordblock_attrs}></td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+</tbody>
+
+</table>
+</div>
+{END grid_block}
+{BEGIN pagination_block}
+<div id="pagination_block{$id}" align="center" class="toplist" >{$pagination}</div>
+{END pagination_block}
+
+{BEGIN message_block}
+<div align=center valign=middle class=toplist><b>{$message}</b></div>
+{END message_block}
+</div>
+{$footer}
+</div>
+{END body}
+</body>
+</html>

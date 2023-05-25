@@ -1,0 +1,123 @@
+<html {$html_attrs}>
+<head><title>Ramais</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:31px;padding-top:5px;text-align:center}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#span{$id} {margin:0 20px 0 20px;}
+</style>
+</head>
+
+<body>
+{BEGIN body}
+{$header}
+{BEGIN editForm}
+<table align=center id="center_block{$id}" cellpadding=0 cellspacing=0><tr><td id="contents_block{$id}">
+<div class="upeditmenu" id="header_block{$id}">
+Ramais, Editar registro [
+Id: {$show_key1}
+]
+</div>
+{BEGIN message_block}
+<DIV id="message_block{$id}" class="downedit">
+{$message}
+</div>
+{END message_block}
+
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+{BEGIN callerid_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN callerid_label}Nome Usuario{END callerid_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$callerid_editcontrol}
+  </td></tr>
+{END callerid_fieldblock}
+{BEGIN accountcode_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN accountcode_label}Centro de custo{END accountcode_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$accountcode_editcontrol}
+  </td></tr>
+{END accountcode_fieldblock}
+{BEGIN context_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN context_label}Privilégio{END context_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$context_editcontrol}
+  </td></tr>
+{END context_fieldblock}
+{BEGIN mailbox_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN mailbox_label}E-Mail{END mailbox_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$mailbox_editcontrol}
+  </td></tr>
+{END mailbox_fieldblock}
+{BEGIN allow_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN allow_label}Tipo de usuário{END allow_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$allow_editcontrol}
+  </td></tr>
+{END allow_fieldblock}
+{BEGIN id_horario_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN id_horario_label}Id Horario{END id_horario_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$id_horario_editcontrol}
+  </td></tr>
+{END id_horario_fieldblock}
+{BEGIN secret_fieldblock}
+  <tr><td class="editshade_b" width=150 style="padding-left:3px 20px;">
+{BEGIN secret_label}Secret{END secret_label}
+</td>
+  <td width=250 class="editshade_lb" style="padding:3px 10px;">
+    {$secret_editcontrol}
+  </td></tr>
+{END secret_fieldblock}
+</table>
+<div class="main_table2" id="buttons_block{$id}">
+{BEGIN legend}
+<div id="required_block{$id}" class="toplist" ><img src="images/icon_required.gif" alt="bullet"> - Preenchimento Obrigatório</div>
+{END legend}
+{$legendBreak}
+{BEGIN save_button}
+ <span class="buttonborder"><input id="savebutton{$id}" class="button" type="submit" value="Salvar" {$savebutton_attrs}></span>
+{END save_button}
+{BEGIN reset_button}
+ <span class="buttonborder"><input class="button" type="reset" value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+<span id="span{$id}">&nbsp;</span>
+{BEGIN prev_button}
+ <span class="buttonborder"><input id="prev{$id}" class="button" type="reset" value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class="buttonborder"><input class="button" type="reset" value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class="buttonborder"><input id="next{$id}" class="button" type="reset" value=" >>> " {$nextbutton_attrs}></span>
+{END next_button}
+</div>
+</td></tr></table>
+{END editForm}
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

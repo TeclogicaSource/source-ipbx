@@ -1,0 +1,27 @@
+<b>Item de menu: [{$showKeys}]</b><br>
+
+<TABLE CELLPADDING=4 CELLSPACING=1 BORDER=0 style="width:20%;margin:5px 0;border: solid; border-width: 1px; border-color: #C0C0C0;" class="data">
+
+<!-- header -->
+<tr class="blackshade" valign="top">
+<td>Digito</td>
+<td>Prefixo</td>
+<td>Opção do menu</td>
+</tr>
+<!-- data -->
+<tr class="shade">
+<td>
+{$opc_dig_mastervalue}
+</td>
+<td>
+{$prefixo_mastervalue}
+</td>
+<td>
+{$opc_menu_mastervalue}
+</td>
+</tr>
+</table>
+
+
+
+

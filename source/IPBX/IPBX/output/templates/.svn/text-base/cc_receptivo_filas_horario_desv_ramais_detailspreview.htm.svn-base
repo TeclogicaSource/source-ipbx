@@ -1,0 +1,34 @@
+Cc Receptivo Filas Horario Desv Ramais<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong> Dia da semana</strong></td>
+<td><strong> Hora Início 01</strong></td>
+<td><strong> Hora Fim 01</strong></td>
+<td><strong> Hora Início 02</strong></td>
+<td><strong> Hora Fim 02</strong></td>
+<td><strong> Hora Início 03</strong></td>
+<td><strong> Hora Fim 03</strong></td>
+<td><strong> Hora Início 04</strong></td>
+<td><strong> Hora Fim 04</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$txt_referencia_value}</td>
+<td>{$hr_inicio_01_value}</td>
+<td>{$hr_fim_01_value}</td>
+<td>{$hr_inicio_02_value}</td>
+<td>{$hr_fim_02_value}</td>
+<td>{$hr_inicio_03_value}</td>
+<td>{$hr_fim_03_value}</td>
+<td>{$hr_inicio_04_value}</td>
+<td>{$hr_fim_04_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

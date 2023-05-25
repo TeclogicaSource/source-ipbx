@@ -1,0 +1,189 @@
+<html {$html_attrs}>
+<head>
+<title>Calculos</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;}
+#mastertable_block{$id} {margin-left:50px;margin-top:10px}
+#toplinks_block{$id} {width:100%; text-align:right;padding:3px}
+#toplinks_block{$id} * {padding:0px 10px;}
+#left_block{$id} { position:absolute;width:200px;{BEGIN RTL_block} right:10px;{END RTL_block}{BEGIN LTR_block} left:10px;{END LTR_block} overflow:visible;}
+#search_records_block{$id} {width:100%;}
+#search_records_block{$id} > * {vertical-align:middle;}
+#search_records_block{$id} select {margin:0px 0px;}
+#login_block{$id},#languages_block{$id} {padding:10px; margin-bottom:3px}
+#login_block{$id} div {margin-left:0px; padding:5px 0px;}
+#menu_block{$id} {margin-bottom:3px;width:auto;}
+{BEGIN shiftstyle_block}
+#records_block{$id} {padding-left:203px;{BEGIN RTL_block}padding:0px;padding-right:203px;{END RTL_block}}
+{END shiftstyle_block}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+#recordcontrols_block{$id} {padding:10px;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px;vertical-align:middle;}
+#grid_block{$id} {margin-top:2px;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader a {margin:0px 5px;}
+form#frmAdmin{$id} {display:inline;}
+body{margin:0px;padding:0px;}
+#searchOptions{$id}{margin-bottom: 3px;}
+#searchform{$id}{/*float: left;*/padding-left: 5px;}
+#searchPanelContainer{$id}{width: 200px}
+
+/*report styles*/
+#export_links{$id} * {padding:0}
+
+</style>
+{END style_block}
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+
+{BEGIN body}
+<div id="height100{$id}">
+{$header}
+
+{BEGIN toplinks_block}
+<div id="toplinks_block{$id}">
+
+{BEGIN asearch_link}
+<a href="Calculos_search.php" class="tablelinks3" {$advsearchlink_attrs}>Busca Avancada</a>
+{END asearch_link}
+
+
+
+
+
+</div>
+{END toplinks_block}
+
+{BEGIN search_records_block} 
+	<div id="search_records_block{$id}" class="linedownbody main_table2 toplist">
+		<table width=100% style="border: none;">
+			<tr>
+				<td nowrap="nowrap" width=22>
+					<img src="include/img/arrow_topmenu.gif" align="absmiddle" alt=" ">
+				</td>
+				<td nowrap="nowrap" align=left>
+										{BEGIN searchform}
+						<!-- Search panel header for horizontal layouts -->
+						<span id="searchform{$id}" align="absmiddle">
+	<span id="searchPanelHeader{$id}">				
+		{$simpleSearchFieldCombo}
+		{$simpleSearchTypeCombo}		
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<span class="buttonborder"><input class="button" type="button" style="width: 18px; background-image: url(images/search/search.gif);" {$searchbutton_attrs} ></span>
+		{END searchform_search}
+		&nbsp;
+		{BEGIN searchform_showall}	
+		<span id="showall{$id}" class="buttonborder"><input type="button" class="button" value="Mostrar Todos" {$showallbutton_attrs}></span>
+		{END searchform_showall}
+	</span>
+	{BEGIN searchPanelTopButtons}
+	<span>
+		&nbsp;
+		<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+		&nbsp;		
+		<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+	</span>
+	{END searchPanelTopButtons}
+</span> 
+					{END searchform}
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td nowrap="nowrap" align=right>
+					{BEGIN details_block}
+					<span id="detFound{$id}">Ítens Encontrados: <b>{$records_found}</b>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					{END details_block}
+					{BEGIN pages_block}
+					<span id="pageOf{$id}">Página <b>{$page}</b> de <b>{$maxpages}</b></span>
+					{END pages_block}
+					
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					
+										{BEGIN recordspp_block}
+					<span id="recordspp_block{$id}">
+						Registros por Página:
+						<select {$recordspp_attrs}>
+							<option value="10" {$rpp10_selected}>10</option>
+							<option value="20" {$rpp20_selected}>20</option>
+							<option value="30" {$rpp30_selected}>30</option>
+							<option value="50" {$rpp50_selected}>50</option>
+							<option value="100" {$rpp100_selected}>100</option>
+							<option value="500" {$rpp500_selected}>500</option>
+						</select>
+					</span>
+					{END recordspp_block}
+				</td>
+			</tr>
+		</table>
+	</div>
+{END search_records_block} 
+
+{BEGIN left_block}
+<div id="left_block{$id}">
+
+{BEGIN security_block}
+<div id="login_block{$id}" class="blackshade toplist">
+	<div style="font-weight:normal;">Logado Como&nbsp;<b>{$username}</b></div>
+	<br><a class="tablelinks" href="login.php?a=logout" {$logoutlink_attrs}>Log Out</a>
+<!-- Permissions -->
+</div>
+{END security_block}
+
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel}
+</div>
+ 
+<!-- MenuBegin -->
+{BEGIN menu_block}
+<div id="menu_block{$id}" class="blackshade toplist">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->
+</div>
+{END menu_block}
+
+<!-- MenuEnd -->
+</div>
+{END left_block}
+
+<div id="records_block{$id}" moveForSearch="move{$id}" {$marginStyle}>
+{BEGIN recordcontrols_block}
+<div id="recordcontrols_block{$id}" class="main_table2" >
+
+
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+
+
+
+</span>
+{END record_controls}
+</div>
+{END recordcontrols_block}
+<div class="message" id="usermessage{$id}">{$user_message}</div>
+
+
+
+
+<table id="records_block{$id}" class="linedownbody"><tr><td>
+{BEGIN chart_block}
+<div id="chart_block{$id}" class="main_table2">
+{$Calculos_chart 700 530}
+{END chart_block}
+</td></tr></table>
+{$footer}
+{END body}
+</body>
+</html>

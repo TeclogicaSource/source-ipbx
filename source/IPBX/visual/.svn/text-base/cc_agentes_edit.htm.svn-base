@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel cc_agentes edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN nm_agente_fieldblock}<TR class={$fielddispclass_nm_agente} data-fieldname="nm_agente">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN nm_agente_label}
+      {$label cc_agentes nm_agente}{END nm_agente_label}</TD>
+    <TD class="rnr-control style3">
+      {$nm_agente_editcontrol}&nbsp; </TD></TR>
+  {END nm_agente_fieldblock}{BEGIN tp_atendimento_fieldblock}<TR class={$fielddispclass_tp_atendimento} data-fieldname="tp_atendimento">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tp_atendimento_label}{$label cc_agentes tp_atendimento}{END tp_atendimento_label}</TD>
+    <TD class="rnr-control style3">
+      {$tp_atendimento_editcontrol}&nbsp; </TD></TR>
+  {END tp_atendimento_fieldblock}{BEGIN name_fieldblock}<TR class={$fielddispclass_name} data-fieldname="name">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN name_label}{$label cc_agentes name}{END name_label}</TD>
+    <TD class="rnr-control style3">
+      {$name_editcontrol}&nbsp; </TD></TR>
+  {END name_fieldblock}{BEGIN flg_ativo_fieldblock}<TR class={$fielddispclass_flg_ativo} data-fieldname="flg_ativo">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_ativo_label}{$label cc_agentes flg_ativo}{END flg_ativo_label}</TD>
+    <TD class="rnr-control style3">
+      {$flg_ativo_editcontrol}&nbsp; 
+  </TD></TR>{END flg_ativo_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV>
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+{BEGIN container_details}
+<DIV class="rnr-c rnr-cv rnr-c-details">{BEGIN detail_tables}
+{BEGIN details_cc_agentes_fila}<DIV class="rnr-cw-detailscc_agentes_fila rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailscc_agentes_fila rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailscc_agentes_fila rnr-b-editdetails">
+<DIV class=rnr-dcaption>Agentes Fila </DIV>
+{$displayDetailTable_cc_agentes_fila}</DIV></DIV></DIV>{END details_cc_agentes_fila}{END detail_tables}</DIV>{END container_details}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Produtividade Agente Dia</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<DIV>
+<H1>Relatório de&nbsp;Produtividade do Agente</H1>
+<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN dt_entrada_fieldheader}<B>Data Entrada</B> 
+    {END dt_entrada_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Agente_fieldheader}<B>Agente</B> {END Agente_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_logado_fieldheader}<B>Total Logado</B> 
+    {END tot_logado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_atend_fieldheader}<B>Atendimentos</B> 
+    {END qtd_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_atend_fieldheader}<B>Tempo 
+      Atendimento</B> {END tot_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN med_atend_fieldheader}<B>Média de 
+      Atendimento</B> {END med_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_pausa_n_produtiva_fieldheader}<B>Total 
+      pausa não produtiva</B> {END tot_pausa_n_produtiva_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_pausa_produtiva_fieldheader}<B>Total 
+      pausa produtiva</B> {END tot_pausa_produtiva_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_pausa_fieldheader}<B>Total Pausa</B> 
+    {END tot_pausa_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_parado_fieldheader}<B>Total Livre</B> 
+    {END tot_parado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_nao_atend_fieldheader}<B>Rejeitadas/N 
+      Atendimento</B> {END qtd_nao_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_recebida_fieldheader}<B>Tot 
+      Recebida</B> {END tot_recebida_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN cntrb_indiv_fieldheader}<B>Contribuição 
+      Individual</B> {END cntrb_indiv_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>{$dt_entrada_value}</TD>
+    <TD class=data>{$Agente_value}</TD>
+    <TD class=data>{$tot_logado_value}</TD>
+    <TD class=data>{$qtd_atend_value}</TD>
+    <TD class=data>{$tot_atend_value}</TD>
+    <TD class=data>{$med_atend_value}</TD>
+    <TD class=data>{$tot_pausa_n_produtiva_value}</TD>
+    <TD class=data>{$tot_pausa_produtiva_value}</TD>
+    <TD class=data>{$tot_pausa_value}</TD>
+    <TD class=data>{$tot_parado_value}</TD>
+    <TD class=data>{$qtd_nao_atend_value}</TD>
+    <TD class=data>{$tot_recebida_value}</TD>
+    <TD class=data>{$cntrb_indiv_value}</TD></TR>{END row_data}{END grid_row}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

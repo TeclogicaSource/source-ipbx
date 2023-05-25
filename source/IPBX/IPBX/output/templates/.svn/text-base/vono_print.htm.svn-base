@@ -1,0 +1,140 @@
+<html {$html_attrs}>
+<head>
+<title>Vono</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Vono</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_vono_fieldheadercolumn}
+	<td>
+{BEGIN id_vono_fieldheader}
+	<b>Id Vono</b>
+{END id_vono_fieldheader}
+	</td>
+{END id_vono_fieldheadercolumn}
+{BEGIN CODLOCALIDADE_fieldheadercolumn}
+	<td>
+{BEGIN CODLOCALIDADE_fieldheader}
+	<b>CODLOCALIDADE</b>
+{END CODLOCALIDADE_fieldheader}
+	</td>
+{END CODLOCALIDADE_fieldheadercolumn}
+{BEGIN LOCALIDADE_fieldheadercolumn}
+	<td>
+{BEGIN LOCALIDADE_fieldheader}
+	<b>LOCALIDADE</b>
+{END LOCALIDADE_fieldheader}
+	</td>
+{END LOCALIDADE_fieldheadercolumn}
+{BEGIN MUNICIPIO_fieldheadercolumn}
+	<td>
+{BEGIN MUNICIPIO_fieldheader}
+	<b>MUNICIPIO</b>
+{END MUNICIPIO_fieldheader}
+	</td>
+{END MUNICIPIO_fieldheadercolumn}
+{BEGIN ESTADO_fieldheadercolumn}
+	<td>
+{BEGIN ESTADO_fieldheader}
+	<b>ESTADO</b>
+{END ESTADO_fieldheader}
+	</td>
+{END ESTADO_fieldheadercolumn}
+{BEGIN PREFIXO_fieldheadercolumn}
+	<td>
+{BEGIN PREFIXO_fieldheader}
+	<b>PREFIXO</b>
+{END PREFIXO_fieldheader}
+	</td>
+{END PREFIXO_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_vono_fieldcolumn}
+<td {$id_vono_style}>
+{$id_vono_value}
+</td>
+{END id_vono_fieldcolumn}
+{BEGIN CODLOCALIDADE_fieldcolumn}
+<td {$CODLOCALIDADE_style}>
+{$CODLOCALIDADE_value}
+</td>
+{END CODLOCALIDADE_fieldcolumn}
+{BEGIN LOCALIDADE_fieldcolumn}
+<td {$LOCALIDADE_style}>
+{$LOCALIDADE_value}
+</td>
+{END LOCALIDADE_fieldcolumn}
+{BEGIN MUNICIPIO_fieldcolumn}
+<td {$MUNICIPIO_style}>
+{$MUNICIPIO_value}
+</td>
+{END MUNICIPIO_fieldcolumn}
+{BEGIN ESTADO_fieldcolumn}
+<td {$ESTADO_style}>
+{$ESTADO_value}
+</td>
+{END ESTADO_fieldcolumn}
+{BEGIN PREFIXO_fieldcolumn}
+<td {$PREFIXO_style}>
+{$PREFIXO_value}
+</td>
+{END PREFIXO_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

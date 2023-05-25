@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/plugins/html2ps/html2ps/classes/org/active-link/net
+END
+HTTPClient.php
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/plugins/html2ps/html2ps/classes/org/active-link/net/HTTPClient.php
+END
+HTTPServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/plugins/html2ps/html2ps/classes/org/active-link/net/HTTPServer.php
+END
+Socket.php
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/plugins/html2ps/html2ps/classes/org/active-link/net/Socket.php
+END

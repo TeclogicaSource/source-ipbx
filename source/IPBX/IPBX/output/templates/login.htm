@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Login</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block {width:38%;margin:0 auto;}
+#contents_block {text-align:center;}
+#header_block {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#main_block {padding:10px 0 5px 0;text-align:center;}
+#inmain_block {margin:0 10px}
+#fields_block {width:100%;margin:0;padding:10px;}
+#header_block > span {margin:0 5px}
+#buttons_block {padding:10px 10px 5px;border-top:1px #D1BA84 solid;}
+#buttons_block div {padding:3px}
+#delimiter {margin:2px}
+</STYLE>
+<!--[if IE]>
+<STYLE>
+#main_block {padding:10px 10px 5px 10px;}
+#inmain_block {margin:0 0px;width:100%}
+#fields_block td {padding:3px 14px}
+#username_block td {padding-top:13px}
+#remember_block td {padding-bottom:13px}
+</STYLE>
+<![endif]-->
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY>{BEGIN body}{$header} 
+<TABLE id=center_block align=center>
+  <TBODY>
+  <TR>
+    <TD id=contents_block><B class=xtop><B class=xb1b></B><B class=xb2b></B><B 
+      class=xb3b></B><B class=xb4b></B></B>
+      <DIV id=header_block class=upeditmenu><B><FONT size=+1>Login</FONT></B> 
+      </DIV>
+      <DIV id=main_block class=main_table>
+      <DIV id=inmain_block class=main_table><B class=xtop><B class=xb1></B><B 
+      class=xb2></B><B class=xb3></B><B class=xb4></B></B>
+      <TABLE id=fields_block class=loginshade border=0 cellSpacing=0 
+      cellPadding=4>
+        <TBODY>
+        <TR id=username_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left>{BEGIN username_label}Nome do Usuário:{END username_label}</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT name=username 
+            {$username_attrs}> </TD></TR>
+        <TR id=password_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left>{BEGIN password_label}Senha:{END password_label}</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT type=password name=password 
+            {$password_attrs}> </TD></TR>
+        <TR>
+          <TD><FONT color=#336699>Domínio (opcional):</FONT></TD>
+          <TD>{$event ipbx_ramais_Snippet11}&nbsp;</TD></TR>
+        <TR id=remember_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left>{BEGIN remember_password_label}Lembrar 
+            Senha:{END remember_password_label}</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT type=checkbox 
+            {$rememberbox_attrs}> </TD></TR></TBODY></TABLE>
+      <DIV id=buttons_block class=downedit2>
+      <DIV id=submit_block><SPAN class=buttonborder><INPUT class=button value=Entrar type=submit {$loginlink_attrs}></SPAN> 
+      </DIV>
+      {BEGIN message_block}<DIV><FONT color=red>{$message}</FONT> </DIV>{END message_block}
+      <DIV id=delimiter></DIV>
+      {BEGIN guestlink_block}<DIV><A {$guestlink_attrs}>Logar como 
+      Convidado</A> </DIV>{END guestlink_block}</DIV><B class=xbottom><B class=xb4a></B><B 
+      class=xb3a></B><B class=xb2a></B><B class=xb1a></B></B></DIV></DIV><B 
+      class=xbottom><B class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+      class=xb1b3></B></B></TD></TR></TBODY></TABLE>{$footer} {END body}</BODY></HTML>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Desvios Chamadas</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<H1>Relatório de desvios de chamadas</H1>{END page}
+{BEGIN page}<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>{END page}
+{BEGIN page}<DIV>{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>{BEGIN grid_header}<TR><TD class=blackshade>{BEGIN calldate_fieldheader}<P align=center><B>Período</B> </P>{END calldate_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN src_fieldheader}<P align=center><B>Origem</B> </P>{END src_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN dst_fieldheader}<P align=center><B>Destino</B> </P>{END dst_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN billsec_fieldheader}<P align=center><B>Tempo Custo</B> </P>{END billsec_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN duration_fieldheader}<P align=center><B>Duração</B> </P>{END duration_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN accountcode_fieldheader}<P align=center><B>Centro de Custo</B> </P>{END accountcode_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR><TD class=data><P align=center>{$calldate_value}</P></TD>
+    <TD class=data><P align=center>{$src_value}</P></TD>
+    <TD class=data><P align=center>{$dst_value}</P></TD>
+    <TD class=data><P align=center>{$billsec_value}</P></TD>
+    <TD class=data><P align=center>{$duration_value}</P></TD>
+    <TD class=data><P align=center>{$accountcode_value}</P></TD></TR>{END row_data}{END grid_row}</TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

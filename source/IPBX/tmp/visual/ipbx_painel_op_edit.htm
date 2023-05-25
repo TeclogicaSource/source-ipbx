@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel ipbx_painel_op edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN dsc_painel_fieldblock}<TR class={$fielddispclass_dsc_painel} data-fieldname="dsc_painel">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsc_painel_label}
+      {$label ipbx_painel_op dsc_painel}{END dsc_painel_label}</TD>
+    <TD class="rnr-control style3">
+      {$dsc_painel_editcontrol}&nbsp; 
+</TD></TR>
+  {END dsc_painel_fieldblock}{BEGIN privilegios_fieldblock}<TR class={$fielddispclass_privilegios} data-fieldname="privilegios">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN privilegios_label}{$label ipbx_painel_op privilegios}{END privilegios_label}</TD>
+    <TD class="rnr-control style3">
+      {$privilegios_editcontrol}&nbsp; 
+  </TD></TR>
+  {END privilegios_fieldblock}{BEGIN fila_fieldblock}<TR class={$fielddispclass_fila} data-fieldname="fila">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN fila_label}{$label ipbx_painel_op fila}{END fila_label}</TD>
+    <TD class="rnr-control style3">
+      {$fila_editcontrol}&nbsp; </TD></TR>
+  {END fila_fieldblock}{BEGIN usuarios_fieldblock}<TR class={$fielddispclass_usuarios} data-fieldname="usuarios">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN usuarios_label}{$label ipbx_painel_op usuarios}{END usuarios_label}</TD>
+    <TD class="rnr-control style3">
+      {$usuarios_editcontrol}&nbsp; 
+  </TD></TR>{END usuarios_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

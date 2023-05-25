@@ -1,0 +1,97 @@
+<html {$html_attrs}>
+<head><title>Ramais</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#height100{$id} {padding:10px;} 
+#center_block{$id} {width:55%;margin:0 auto;min-width: 500px;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding:5px;white-space:nowrap;text-align:center;}
+#required_block{$id} {text-align:left;padding:5px}
+a.pdf{float:left;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+<div id="height100{$id}" align="center">
+
+<table cellpadding=0 cellspacing=0 class="main_table2" border=0 align=center width=400><tr><td id="contents_block">
+
+<div id="header_block{$id}" class="upeditmenu">
+Ramais, Exibir Registro [
+Id: {$show_key1}
+]
+</div>
+
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+{BEGIN callerid_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Nome Usuario</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$callerid_value}&nbsp;
+  </td></tr>
+{END callerid_fieldblock}
+{BEGIN name_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Numero</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$name_value}&nbsp;
+  </td></tr>
+{END name_fieldblock}
+{BEGIN accountcode_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Centro de custo</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$accountcode_value}&nbsp;
+  </td></tr>
+{END accountcode_fieldblock}
+{BEGIN context_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Plano de Discagem</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$context_value}&nbsp;
+  </td></tr>
+{END context_fieldblock}
+{BEGIN mailbox_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>E-Mail</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$mailbox_value}&nbsp;
+  </td></tr>
+{END mailbox_fieldblock}
+{BEGIN secret_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Secret</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$secret_value}&nbsp;
+  </td></tr>
+{END secret_fieldblock}
+{BEGIN allow_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Tipo de usuário</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$allow_value}&nbsp;
+  </td></tr>
+{END allow_fieldblock}
+</table>
+
+<div class="toplist" id="buttons_block{$id}">
+{BEGIN prev_button}
+ <span class=buttonborder><input class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=reset value="Voltar à Lista" onclick="window.location.href='sip_buddies_list.php?a=return'" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input class=button type=reset value=" >>> " {$nextbutton_attrs} ></span>
+{END next_button}
+</div>
+
+</td></tr></table>
+</div>
+
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

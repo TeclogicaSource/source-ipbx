@@ -1,0 +1,242 @@
+<html {$html_attrs}>
+<head>
+<title>Tarifa: Busca Avancada</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;}
+#main_block{$id} {padding:10px 0;width:100%}
+#inmain_block{$id} {margin:0 10px}
+#buttons_block{$id} {width:100%;padding:10px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+#conditions_block{$id} {padding:5px;}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+	
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">Tarifa - Busca Avancada</div>
+
+<div class="main_table_border2">
+<div class="main_table_border">
+
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}" class="loginshade">
+<span class=fieldname>Buscar:</span>
+<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label}
+</div>
+{END conditions_block}
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+<tr valign=center>
+<td align=center valign=middle class="headerlist">&nbsp;</td>
+<td width=30 align=center valign=middle class=headerlist>NOT</td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist" style="border-right:0px;">&nbsp;</td></tr>
+
+{BEGIN hr_inicio_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN hr_inicio_label}Hora Inicio{END hr_inicio_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$hr_inicio_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_hr_inicio}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$hr_inicio_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$hr_inicio_editcontrol1}&nbsp;</td>
+</tr>
+{END hr_inicio_fieldblock}
+{BEGIN hr_fim_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN hr_fim_label}Hora Fim{END hr_fim_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$hr_fim_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_hr_fim}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$hr_fim_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$hr_fim_editcontrol1}&nbsp;</td>
+</tr>
+{END hr_fim_fieldblock}
+{BEGIN vlr_unid_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN vlr_unid_label}Valor Unitário{END vlr_unid_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$vlr_unid_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_vlr_unid}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$vlr_unid_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$vlr_unid_editcontrol1}&nbsp;</td>
+</tr>
+{END vlr_unid_fieldblock}
+{BEGIN cad_inicial_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN cad_inicial_label}Cadencia Inicial{END cad_inicial_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$cad_inicial_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_cad_inicial}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$cad_inicial_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$cad_inicial_editcontrol1}&nbsp;</td>
+</tr>
+{END cad_inicial_fieldblock}
+{BEGIN cad_frac_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN cad_frac_label}Cadencia Fracionaria{END cad_frac_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$cad_frac_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_cad_frac}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$cad_frac_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$cad_frac_editcontrol1}&nbsp;</td>
+</tr>
+{END cad_frac_fieldblock}
+{BEGIN seg_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN seg_label}Segunda Feira{END seg_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$seg_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_seg}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$seg_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$seg_editcontrol1}&nbsp;</td>
+</tr>
+{END seg_fieldblock}
+{BEGIN ter_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN ter_label}Terça Feira{END ter_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$ter_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_ter}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$ter_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$ter_editcontrol1}&nbsp;</td>
+</tr>
+{END ter_fieldblock}
+{BEGIN qua_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN qua_label}Quarta Feira{END qua_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$qua_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_qua}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$qua_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$qua_editcontrol1}&nbsp;</td>
+</tr>
+{END qua_fieldblock}
+{BEGIN qui_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN qui_label}Quinta Feira{END qui_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$qui_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_qui}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$qui_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$qui_editcontrol1}&nbsp;</td>
+</tr>
+{END qui_fieldblock}
+{BEGIN sex_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN sex_label}Sexta Feira{END sex_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$sex_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_sex}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$sex_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$sex_editcontrol1}&nbsp;</td>
+</tr>
+{END sex_fieldblock}
+{BEGIN sab_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN sab_label}Sabado{END sab_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$sab_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_sab}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$sab_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$sab_editcontrol1}&nbsp;</td>
+</tr>
+{END sab_fieldblock}
+{BEGIN dom_fieldblock}	
+<tr>
+	<td style="padding-left:15px;" class="editshade_b"><b>{BEGIN dom_label}Domingo{END dom_label}</b>
+	<td align=center style="padding-left:10px;" class="editshade_lb"><input type=checkbox {$dom_notbox}></td>
+	
+	<td style="padding-left:10px;" class="editshade_lb">
+	{$searchtype_dom}
+	</td>
+	
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$dom_editcontrol}&nbsp;</td>
+
+	<td width=270 style="padding-left:10px;" class="editshade_lb">{$dom_editcontrol1}&nbsp;</td>
+</tr>
+{END dom_fieldblock}
+</table>
+
+<div class="downedit" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Buscar" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+</div>
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>

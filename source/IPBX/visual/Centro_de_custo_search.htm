@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Bilhetagem: Busca Avancada</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;border-bottom:1px solid white;}
+#main_block{$id} {padding:10px 10px;}
+#buttons_block{$id} {padding:10px 0 5px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</STYLE>
+<!--[if IE]>
+<STYLE>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</STYLE>
+<![endif]-->
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY bgColor=white>{BEGIN body}{$header} 
+{BEGIN contents_block}<TABLE id="center_block{$id}" align=center><TR><TD id="contents_block{$id}"><B class=xtop><B class=xb1b></B><B 
+      class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+      <DIV id="header_block{$id}" class=tableheader>Relatório de Bilhetagem 
+      - Busca Avancada</DIV>
+      <DIV id="main_block{$id}" class=xboxcontentb>{BEGIN conditions_block}<DIV id="conditions_block{$id}"><B 
+      class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+      class=xb4></B></B>
+      <DIV style="WIDTH: 100%" class=xboxcontent><SPAN 
+      class=fieldname>Buscar:</SPAN> <INPUT type=radio name=srchType ? 
+      {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label} &nbsp;&nbsp;&nbsp; <INPUT 
+      type=radio name=srchType 
+      {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label} </DIV><B class=xbottom><B 
+      class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+      class=xb1></B></B><BR></DIV>{END conditions_block}
+      <TABLE id=fields_block cellSpacing=0 cellPadding=4><TR vAlign=middle><TD class=headerlist_left vAlign=middle align=middle>&nbsp;</TD>
+          <TD class=headerlist2 vAlign=middle width=30 align=middle>NOT</TD>
+          <TD class=headerlist vAlign=middle align=middle>&nbsp; </TD>
+          <TD class=headerlist vAlign=middle align=middle>&nbsp; </TD>
+          <TD class=headerlist_right vAlign=middle align=middle>&nbsp;</TD></TR>
+        {BEGIN origem_fieldblock}<TR><TD style="PADDING-LEFT: 15px; PADDING-RIGHT: 10px" 
+            class=editshade_b>Origem 
+          <TD class=editshade_lb align=middle><INPUT type=checkbox 
+            {$origem_notbox}></TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb>{$searchtype_origem}</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=270>{$origem_editcontrol}&nbsp;</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=270>{$origem_editcontrol1}&nbsp;</TD></TR>{END origem_fieldblock}
+        {BEGIN Centro_de_custos_fieldblock}<TR><TD style="PADDING-LEFT: 15px; PADDING-RIGHT: 10px" 
+            class=editshade_b>Centro de custos 
+          <TD class=editshade_lb align=middle><INPUT type=checkbox 
+            {$Centro_de_custos_notbox}></TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb>{$searchtype_Centro_de_custos}</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=270>{$Centro_de_custos_editcontrol}&nbsp;</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=270>{$Centro_de_custos_editcontrol1}&nbsp;</TD></TR>{END Centro_de_custos_fieldblock}	
+{BEGIN mes_referencia_fieldblock}<tr><td class=editshade_b style="padding-left:15px;padding-right:10px;">Mês Referência
+	<td align=center class=editshade_lb><input type=CheckBox {$mes_referencia_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_mes_referencia}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mes_referencia_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mes_referencia_editcontrol1}&nbsp;</td>
+</tr>
+{END mes_referencia_fieldblock}	
+{BEGIN ano_referencia_fieldblock}<tr><td class=editshade_b style="padding-left:15px;padding-right:10px;">Ano Referência
+	<td align=center class=editshade_lb><input type=CheckBox {$ano_referencia_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ano_referencia}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ano_referencia_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ano_referencia_editcontrol1}&nbsp;</td>
+</tr>
+{END ano_referencia_fieldblock}</TABLE>
+      <DIV id="buttons_block{$id}" class=downedit>{BEGIN search_button}<SPAN class=buttonborder><INPUT class=button value=Buscar type=button {$searchbutton_attrs}></SPAN>{END search_button} 
+      {BEGIN reset_button}<SPAN class=buttonborder><INPUT class=button value=Limpar type=button {$resetbutton_attrs}></SPAN>{END reset_button} 
+      {BEGIN back_button}<SPAN class=buttonborder><INPUT class=button value="Voltar à Lista" type=button {$backbutton_attrs}></SPAN>{END back_button} 
+      </DIV><B class=xbottom><B class=xb4a></B><B class=xb3a></B><B 
+      class=xb2a></B><B class=xb1a></B></B></DIV><B class=xbottom><B 
+      class=xb4b4></B><B class=xb3b4></B><B class=xb2b4></B><B 
+      class=xb1b4></B></B></TD></TR></TABLE>{END contents_block}{$footer} {END body}</BODY></HTML>

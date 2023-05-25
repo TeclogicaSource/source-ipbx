@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates
+END
+cannot_parse.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/cannot_parse.html
+END
+missing_exec.html
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/missing_exec.html
+END
+error._missing_afm.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._missing_afm.tpl
+END
+error._footer.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._footer.tpl
+END
+error._connection.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._connection.tpl
+END
+error._http.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._http.tpl
+END
+error._no_fetchers.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._no_fetchers.tpl
+END
+missing_gs.html
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/missing_gs.html
+END
+missing_url_fopen.html
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/missing_url_fopen.html
+END
+error._redirects.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._redirects.tpl
+END
+error_exec.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error_exec.tpl
+END
+missing_pdflib.html
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/missing_pdflib.html
+END
+error._header.tpl
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/plugins/html2ps/html2ps/templates/error._header.tpl
+END

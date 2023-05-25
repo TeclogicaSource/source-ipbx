@@ -1,0 +1,114 @@
+<html {$html_attrs}>
+<head>
+<title>Abandonos</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Abandonos</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN Fila_fieldheader}
+<b>Fila</b>
+{END Fila_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Telefone_fieldheader}
+<b>Telefone</b>
+{END Telefone_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Entrada_Saida_fieldheader}
+<b>Entrada/Saida</b>
+{END Entrada_Saida_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_entrada_fieldheader}
+<b>Data Entrada</b>
+{END dt_entrada_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN hr_entrada_fieldheader}
+<b>Hora Entrada</b>
+{END hr_entrada_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN hr_abandono_fieldheader}
+<b>Hora Abandono</b>
+{END hr_abandono_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN tp_espera_fieldheader}
+<b>Tempo Espera</b>
+{END tp_espera_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$Fila_value}</td>
+	<td class=data>{$Telefone_value}</td>
+	<td class=data>{$Entrada_Saida_value}</td>
+	<td class=data>{$dt_entrada_value}</td>
+	<td class=data>{$hr_entrada_value}</td>
+	<td class=data>{$hr_abandono_value}</td>
+	<td class=data>{$tp_espera_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html {$html_attrs}>
+<head><title>Tarifa</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;text-align:center;}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding-bottom:5px;white-space:nowrap;text-align:center;}
+#required_block{$id} {text-align:left;padding:5px}
+</style>
+{END style_block}
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN addForm}
+<TABLE class="main_table2" align="center" id="center_block{$id}" cellpadding=0 cellspacing=0><tr><td id="contents_block{$id}">
+{BEGIN flybody}
+<div>
+<div id="header_block{$id}" class="upeditmenu" >
+Tarifa, Novo Registro
+</div>
+
+{BEGIN message_block}
+<div id="message_block{$id}" class="downedit">{$message}</div>
+{END message_block}
+
+
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+{BEGIN hr_inicio_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN hr_inicio_label}Hora Inicio{END hr_inicio_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_inicio_editcontrol}
+  </td></tr>
+{END hr_inicio_fieldblock}
+{BEGIN hr_fim_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN hr_fim_label}Hora Fim{END hr_fim_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_fim_editcontrol}
+  </td></tr>
+{END hr_fim_fieldblock}
+{BEGIN vlr_unid_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN vlr_unid_label}Valor Unitário{END vlr_unid_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$vlr_unid_editcontrol}
+  </td></tr>
+{END vlr_unid_fieldblock}
+{BEGIN cad_inicial_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN cad_inicial_label}Cadencia Inicial{END cad_inicial_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$cad_inicial_editcontrol}
+  </td></tr>
+{END cad_inicial_fieldblock}
+{BEGIN cad_frac_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN cad_frac_label}Cadencia Fracionaria{END cad_frac_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$cad_frac_editcontrol}
+  </td></tr>
+{END cad_frac_fieldblock}
+{BEGIN seg_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN seg_label}Segunda Feira{END seg_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$seg_editcontrol}
+  </td></tr>
+{END seg_fieldblock}
+{BEGIN ter_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN ter_label}Terça Feira{END ter_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$ter_editcontrol}
+  </td></tr>
+{END ter_fieldblock}
+{BEGIN qua_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN qua_label}Quarta Feira{END qua_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$qua_editcontrol}
+  </td></tr>
+{END qua_fieldblock}
+{BEGIN qui_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN qui_label}Quinta Feira{END qui_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$qui_editcontrol}
+  </td></tr>
+{END qui_fieldblock}
+{BEGIN sex_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN sex_label}Sexta Feira{END sex_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$sex_editcontrol}
+  </td></tr>
+{END sex_fieldblock}
+{BEGIN sab_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN sab_label}Sabado{END sab_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$sab_editcontrol}
+  </td></tr>
+{END sab_fieldblock}
+{BEGIN dom_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:15px;">
+	{BEGIN dom_label}Domingo{END dom_label}
+  </td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$dom_editcontrol}
+  </td></tr>
+{END dom_fieldblock}
+</table>
+
+<div class="toplist" id="buttons_block{$id}">
+	{BEGIN legend}
+	<div id="required_block{$id}" ><img src="images/icon_required.gif" alt="bullet"> - Preenchimento Obrigatório</div>
+	{END legend}
+	{$legendBreak}
+	{BEGIN save_button}
+	<span class=buttonborder><input class=button type=submit value="Salvar" name=submit1 {$savebutton_attrs}></span>
+	{END save_button}
+	{BEGIN cancel_button}
+	<span class=buttonborder><input class=button type=button value="Cancela" {$cancelbutton_attrs}></span>
+	{END cancel_button}
+	{BEGIN back_button}
+	<span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+	{END back_button}
+</div>
+</div>
+{END flybody}
+</td></tr>
+</table>
+{END addForm}
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>
+

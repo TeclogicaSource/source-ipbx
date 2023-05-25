@@ -1,0 +1,260 @@
+<html {$html_attrs}>
+<head>
+<title>Cdr</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Cdr</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN calldate_fieldheadercolumn}
+	<td>
+{BEGIN calldate_fieldheader}
+	<b>Calldate</b>
+{END calldate_fieldheader}
+	</td>
+{END calldate_fieldheadercolumn}
+{BEGIN clid_fieldheadercolumn}
+	<td>
+{BEGIN clid_fieldheader}
+	<b>Clid</b>
+{END clid_fieldheader}
+	</td>
+{END clid_fieldheadercolumn}
+{BEGIN src_fieldheadercolumn}
+	<td>
+{BEGIN src_fieldheader}
+	<b>Src</b>
+{END src_fieldheader}
+	</td>
+{END src_fieldheadercolumn}
+{BEGIN dst_fieldheadercolumn}
+	<td>
+{BEGIN dst_fieldheader}
+	<b>Dst</b>
+{END dst_fieldheader}
+	</td>
+{END dst_fieldheadercolumn}
+{BEGIN dcontext_fieldheadercolumn}
+	<td>
+{BEGIN dcontext_fieldheader}
+	<b>Dcontext</b>
+{END dcontext_fieldheader}
+	</td>
+{END dcontext_fieldheadercolumn}
+{BEGIN channel_fieldheadercolumn}
+	<td>
+{BEGIN channel_fieldheader}
+	<b>Channel</b>
+{END channel_fieldheader}
+	</td>
+{END channel_fieldheadercolumn}
+{BEGIN dstchannel_fieldheadercolumn}
+	<td>
+{BEGIN dstchannel_fieldheader}
+	<b>Dstchannel</b>
+{END dstchannel_fieldheader}
+	</td>
+{END dstchannel_fieldheadercolumn}
+{BEGIN lastapp_fieldheadercolumn}
+	<td>
+{BEGIN lastapp_fieldheader}
+	<b>Lastapp</b>
+{END lastapp_fieldheader}
+	</td>
+{END lastapp_fieldheadercolumn}
+{BEGIN lastdata_fieldheadercolumn}
+	<td>
+{BEGIN lastdata_fieldheader}
+	<b>Lastdata</b>
+{END lastdata_fieldheader}
+	</td>
+{END lastdata_fieldheadercolumn}
+{BEGIN duration_fieldheadercolumn}
+	<td>
+{BEGIN duration_fieldheader}
+	<b>Duration</b>
+{END duration_fieldheader}
+	</td>
+{END duration_fieldheadercolumn}
+{BEGIN billsec_fieldheadercolumn}
+	<td>
+{BEGIN billsec_fieldheader}
+	<b>Billsec</b>
+{END billsec_fieldheader}
+	</td>
+{END billsec_fieldheadercolumn}
+{BEGIN disposition_fieldheadercolumn}
+	<td>
+{BEGIN disposition_fieldheader}
+	<b>Disposition</b>
+{END disposition_fieldheader}
+	</td>
+{END disposition_fieldheadercolumn}
+{BEGIN amaflags_fieldheadercolumn}
+	<td>
+{BEGIN amaflags_fieldheader}
+	<b>Amaflags</b>
+{END amaflags_fieldheader}
+	</td>
+{END amaflags_fieldheadercolumn}
+{BEGIN accountcode_fieldheadercolumn}
+	<td>
+{BEGIN accountcode_fieldheader}
+	<b>Accountcode</b>
+{END accountcode_fieldheader}
+	</td>
+{END accountcode_fieldheadercolumn}
+{BEGIN uniqueid_fieldheadercolumn}
+	<td>
+{BEGIN uniqueid_fieldheader}
+	<b>Uniqueid</b>
+{END uniqueid_fieldheader}
+	</td>
+{END uniqueid_fieldheadercolumn}
+{BEGIN userfield_fieldheadercolumn}
+	<td>
+{BEGIN userfield_fieldheader}
+	<b>Userfield</b>
+{END userfield_fieldheader}
+	</td>
+{END userfield_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN calldate_fieldcolumn}
+<td {$calldate_style}>
+{$calldate_value}
+</td>
+{END calldate_fieldcolumn}
+{BEGIN clid_fieldcolumn}
+<td {$clid_style}>
+{$clid_value}
+</td>
+{END clid_fieldcolumn}
+{BEGIN src_fieldcolumn}
+<td {$src_style}>
+{$src_value}
+</td>
+{END src_fieldcolumn}
+{BEGIN dst_fieldcolumn}
+<td {$dst_style}>
+{$dst_value}
+</td>
+{END dst_fieldcolumn}
+{BEGIN dcontext_fieldcolumn}
+<td {$dcontext_style}>
+{$dcontext_value}
+</td>
+{END dcontext_fieldcolumn}
+{BEGIN channel_fieldcolumn}
+<td {$channel_style}>
+{$channel_value}
+</td>
+{END channel_fieldcolumn}
+{BEGIN dstchannel_fieldcolumn}
+<td {$dstchannel_style}>
+{$dstchannel_value}
+</td>
+{END dstchannel_fieldcolumn}
+{BEGIN lastapp_fieldcolumn}
+<td {$lastapp_style}>
+{$lastapp_value}
+</td>
+{END lastapp_fieldcolumn}
+{BEGIN lastdata_fieldcolumn}
+<td {$lastdata_style}>
+{$lastdata_value}
+</td>
+{END lastdata_fieldcolumn}
+{BEGIN duration_fieldcolumn}
+<td {$duration_style}>
+{$duration_value}
+</td>
+{END duration_fieldcolumn}
+{BEGIN billsec_fieldcolumn}
+<td {$billsec_style}>
+{$billsec_value}
+</td>
+{END billsec_fieldcolumn}
+{BEGIN disposition_fieldcolumn}
+<td {$disposition_style}>
+{$disposition_value}
+</td>
+{END disposition_fieldcolumn}
+{BEGIN amaflags_fieldcolumn}
+<td {$amaflags_style}>
+{$amaflags_value}
+</td>
+{END amaflags_fieldcolumn}
+{BEGIN accountcode_fieldcolumn}
+<td {$accountcode_style}>
+{$accountcode_value}
+</td>
+{END accountcode_fieldcolumn}
+{BEGIN uniqueid_fieldcolumn}
+<td {$uniqueid_style}>
+{$uniqueid_value}
+</td>
+{END uniqueid_fieldcolumn}
+{BEGIN userfield_fieldcolumn}
+<td {$userfield_style}>
+{$userfield_value}
+</td>
+{END userfield_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

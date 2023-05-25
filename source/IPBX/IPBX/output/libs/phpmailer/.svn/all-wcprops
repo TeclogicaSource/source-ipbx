@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/libs/phpmailer
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/libs/phpmailer/LICENSE
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/libs/phpmailer/class.phpmailer.php
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/IPBX/output/libs/phpmailer/class.smtp.php
+END

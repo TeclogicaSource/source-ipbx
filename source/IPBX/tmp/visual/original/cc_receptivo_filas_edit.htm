@@ -1,0 +1,350 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel cc_receptivo_filas edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN nm_fila_fieldblock}
+<tr class="{$fielddispclass_nm_fila}" data-fieldname="nm_fila">
+	<td class="rnr-label">
+		{BEGIN nm_fila_label}{$label cc_receptivo_filas nm_fila}{END nm_fila_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_fila_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_fila_fieldblock}
+	{BEGIN nm_grupo_fieldblock}
+<tr class="{$fielddispclass_nm_grupo}" data-fieldname="nm_grupo">
+	<td class="rnr-label">
+		{BEGIN nm_grupo_label}{$label cc_receptivo_filas nm_grupo}{END nm_grupo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_grupo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_grupo_fieldblock}
+	{BEGIN estrategia_fieldblock}
+<tr class="{$fielddispclass_estrategia}" data-fieldname="estrategia">
+	<td class="rnr-label">
+		{BEGIN estrategia_label}{$label cc_receptivo_filas estrategia}{END estrategia_label}
+	</td>
+	<td class="rnr-control style3">
+		{$estrategia_editcontrol}&nbsp;
+	</td>
+</tr>
+{END estrategia_fieldblock}
+	{BEGIN tp_toques_fieldblock}
+<tr class="{$fielddispclass_tp_toques}" data-fieldname="tp_toques">
+	<td class="rnr-label">
+		{BEGIN tp_toques_label}{$label cc_receptivo_filas tp_toques}{END tp_toques_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_toques_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_toques_fieldblock}
+	{BEGIN id_desvio_fieldblock}
+<tr class="{$fielddispclass_id_desvio}" data-fieldname="id_desvio">
+	<td class="rnr-label">
+		{BEGIN id_desvio_label}{$label cc_receptivo_filas id_desvio}{END id_desvio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_desvio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_desvio_fieldblock}
+	{BEGIN tp_excedido_fieldblock}
+<tr class="{$fielddispclass_tp_excedido}" data-fieldname="tp_excedido">
+	<td class="rnr-label">
+		{BEGIN tp_excedido_label}{$label cc_receptivo_filas tp_excedido}{END tp_excedido_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_excedido_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_excedido_fieldblock}
+	{BEGIN acao_tp_excedido_fieldblock}
+<tr class="{$fielddispclass_acao_tp_excedido}" data-fieldname="acao_tp_excedido">
+	<td class="rnr-label">
+		{BEGIN acao_tp_excedido_label}{$label cc_receptivo_filas acao_tp_excedido}{END acao_tp_excedido_label}
+	</td>
+	<td class="rnr-control style3">
+		{$acao_tp_excedido_editcontrol}&nbsp;
+	</td>
+</tr>
+{END acao_tp_excedido_fieldblock}
+	{BEGIN acao_falta_agente_fieldblock}
+<tr class="{$fielddispclass_acao_falta_agente}" data-fieldname="acao_falta_agente">
+	<td class="rnr-label">
+		{BEGIN acao_falta_agente_label}{$label cc_receptivo_filas acao_falta_agente}{END acao_falta_agente_label}
+	</td>
+	<td class="rnr-control style3">
+		{$acao_falta_agente_editcontrol}&nbsp;
+	</td>
+</tr>
+{END acao_falta_agente_fieldblock}
+	{BEGIN acao_fr_horario_fieldblock}
+<tr class="{$fielddispclass_acao_fr_horario}" data-fieldname="acao_fr_horario">
+	<td class="rnr-label">
+		{BEGIN acao_fr_horario_label}{$label cc_receptivo_filas acao_fr_horario}{END acao_fr_horario_label}
+	</td>
+	<td class="rnr-control style3">
+		{$acao_fr_horario_editcontrol}&nbsp;
+	</td>
+</tr>
+{END acao_fr_horario_fieldblock}
+	{BEGIN gravacao_fieldblock}
+<tr class="{$fielddispclass_gravacao}" data-fieldname="gravacao">
+	<td class="rnr-label">
+		{BEGIN gravacao_label}{$label cc_receptivo_filas gravacao}{END gravacao_label}
+	</td>
+	<td class="rnr-control style3">
+		{$gravacao_editcontrol}&nbsp;
+	</td>
+</tr>
+{END gravacao_fieldblock}
+	{BEGIN arq_audio_fieldblock}
+<tr class="{$fielddispclass_arq_audio}" data-fieldname="arq_audio">
+	<td class="rnr-label">
+		{BEGIN arq_audio_label}{$label cc_receptivo_filas arq_audio}{END arq_audio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$arq_audio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END arq_audio_fieldblock}
+	{BEGIN arq_mesg_fieldblock}
+<tr class="{$fielddispclass_arq_mesg}" data-fieldname="arq_mesg">
+	<td class="rnr-label">
+		{BEGIN arq_mesg_label}{$label cc_receptivo_filas arq_mesg}{END arq_mesg_label}
+	</td>
+	<td class="rnr-control style3">
+		{$arq_mesg_editcontrol}&nbsp;
+	</td>
+</tr>
+{END arq_mesg_fieldblock}
+	{BEGIN id_logout_fieldblock}
+<tr class="{$fielddispclass_id_logout}" data-fieldname="id_logout">
+	<td class="rnr-label">
+		{BEGIN id_logout_label}{$label cc_receptivo_filas id_logout}{END id_logout_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_logout_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_logout_fieldblock}
+	{BEGIN maxlen_fieldblock}
+<tr class="{$fielddispclass_maxlen}" data-fieldname="maxlen">
+	<td class="rnr-label">
+		{BEGIN maxlen_label}{$label cc_receptivo_filas maxlen}{END maxlen_label}
+	</td>
+	<td class="rnr-control style3">
+		{$maxlen_editcontrol}&nbsp;
+	</td>
+</tr>
+{END maxlen_fieldblock}
+	{BEGIN wrapuptime_fieldblock}
+<tr class="{$fielddispclass_wrapuptime}" data-fieldname="wrapuptime">
+	<td class="rnr-label">
+		{BEGIN wrapuptime_label}{$label cc_receptivo_filas wrapuptime}{END wrapuptime_label}
+	</td>
+	<td class="rnr-control style3">
+		{$wrapuptime_editcontrol}&nbsp;
+	</td>
+</tr>
+{END wrapuptime_fieldblock}
+	{BEGIN seg_tmo_fieldblock}
+<tr class="{$fielddispclass_seg_tmo}" data-fieldname="seg_tmo">
+	<td class="rnr-label">
+		{BEGIN seg_tmo_label}{$label cc_receptivo_filas seg_tmo}{END seg_tmo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$seg_tmo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END seg_tmo_fieldblock}
+	{BEGIN perc_tmo_fieldblock}
+<tr class="{$fielddispclass_perc_tmo}" data-fieldname="perc_tmo">
+	<td class="rnr-label">
+		{BEGIN perc_tmo_label}{$label cc_receptivo_filas perc_tmo}{END perc_tmo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$perc_tmo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END perc_tmo_fieldblock}
+	{BEGIN seg_tma_fieldblock}
+<tr class="{$fielddispclass_seg_tma}" data-fieldname="seg_tma">
+	<td class="rnr-label">
+		{BEGIN seg_tma_label}{$label cc_receptivo_filas seg_tma}{END seg_tma_label}
+	</td>
+	<td class="rnr-control style3">
+		{$seg_tma_editcontrol}&nbsp;
+	</td>
+</tr>
+{END seg_tma_fieldblock}
+	{BEGIN perc_tma_fieldblock}
+<tr class="{$fielddispclass_perc_tma}" data-fieldname="perc_tma">
+	<td class="rnr-label">
+		{BEGIN perc_tma_label}{$label cc_receptivo_filas perc_tma}{END perc_tma_label}
+	</td>
+	<td class="rnr-control style3">
+		{$perc_tma_editcontrol}&nbsp;
+	</td>
+</tr>
+{END perc_tma_fieldblock}
+	{BEGIN seg_tme_fieldblock}
+<tr class="{$fielddispclass_seg_tme}" data-fieldname="seg_tme">
+	<td class="rnr-label">
+		{BEGIN seg_tme_label}{$label cc_receptivo_filas seg_tme}{END seg_tme_label}
+	</td>
+	<td class="rnr-control style3">
+		{$seg_tme_editcontrol}&nbsp;
+	</td>
+</tr>
+{END seg_tme_fieldblock}
+	{BEGIN perc_tme_fieldblock}
+<tr class="{$fielddispclass_perc_tme}" data-fieldname="perc_tme">
+	<td class="rnr-label">
+		{BEGIN perc_tme_label}{$label cc_receptivo_filas perc_tme}{END perc_tme_label}
+	</td>
+	<td class="rnr-control style3">
+		{$perc_tme_editcontrol}&nbsp;
+	</td>
+</tr>
+{END perc_tme_fieldblock}
+	{BEGIN tx_abandono_fieldblock}
+<tr class="{$fielddispclass_tx_abandono}" data-fieldname="tx_abandono">
+	<td class="rnr-label">
+		{BEGIN tx_abandono_label}{$label cc_receptivo_filas tx_abandono}{END tx_abandono_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tx_abandono_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tx_abandono_fieldblock}
+	{BEGIN id_name_gestor_fieldblock}
+<tr class="{$fielddispclass_id_name_gestor}" data-fieldname="id_name_gestor">
+	<td class="rnr-label">
+		{BEGIN id_name_gestor_label}{$label cc_receptivo_filas id_name_gestor}{END id_name_gestor_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_name_gestor_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_name_gestor_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

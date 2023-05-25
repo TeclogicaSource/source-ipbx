@@ -1,0 +1,3293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include
+END
+displaymenu.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/156/trunk/fontes/IPBX/output/include/displaymenu.php
+END
+locale.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/locale.php
+END
+Atendimento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Atendimento_variables.php
+END
+ipbx_interf_gsm_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_gsm_events.php
+END
+ipbx_desv_prefix_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_masterlist.php
+END
+VONO_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/VONO_variables.php
+END
+stylesheets.css
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/stylesheets.css
+END
+Rel__Perf__Tempo_Espera_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Perf__Tempo_Espera_settings.php
+END
+cc_receptivo_horario_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_horario_variables.php
+END
+Abandonos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Abandonos_settings.php
+END
+ipbx_interf_callman_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_callman_variables.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/header.php
+END
+Atendimento__Mensal__variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Atendimento__Mensal__variables.php
+END
+ipbx_ugmembers_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ugmembers_variables.php
+END
+ipbx_interf_vono_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_vono_variables.php
+END
+Rel__Detalhamento_Agente_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_settings.php
+END
+Telefone_Recebido_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Telefone_Recebido_settings.php
+END
+timeout_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/timeout_variables.php
+END
+sip_users_horario_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_horario_settings.php
+END
+troncos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/troncos_variables.php
+END
+ipbx_plano_disc_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_plano_disc_events.php
+END
+Graf__Custo_GSM_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_GSM_settings.php
+END
+commonfunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/commonfunctions.php
+END
+sigame_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sigame_settings.php
+END
+cdr_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/cdr_settings.php
+END
+ui.timepickr.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.timepickr.js
+END
+jsfunctions.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/jsfunctions.js
+END
+sip_buddies_horario_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_horario_settings.php
+END
+ipbx_conf_fax_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_conf_fax_variables.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/footer.php
+END
+Liga__es_n_o_atendidas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Liga__es_n_o_atendidas_variables.php
+END
+menunodes_main.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/menunodes_main.php
+END
+interf_khomp_e1_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_khomp_e1_variables.php
+END
+ipbx_canais_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_canais_events.php
+END
+sip_users_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_masterprint.php
+END
+diag_ipbx_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/diag_ipbx_settings.php
+END
+ipbx_canais_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_canais_variables.php
+END
+Rel__Simplificado___Centro_Custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Rel__Simplificado___Centro_Custo_settings.php
+END
+ajaxsuggest.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ajaxsuggest.js
+END
+cc_receptivo_filas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/cc_receptivo_filas_variables.php
+END
+personal_info_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/personal_info_settings.php
+END
+ipbx_interf_mslync_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_mslync_settings.php
+END
+ipbx_interf_e1_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_e1_settings.php
+END
+contrato_voip_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/contrato_voip_variables.php
+END
+Lig__Externas_Transferidas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Lig__Externas_Transferidas_variables.php
+END
+Rel__Consolidado_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Consolidado_Fila_variables.php
+END
+cc_menu_atend_item_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_menu_atend_item_settings.php
+END
+ipbx_grupo_captura_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_grupo_captura_variables.php
+END
+errors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/errors.xml
+END
+Rel__Periodo_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Periodo_Fila_variables.php
+END
+Liga__es_discadas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Liga__es_discadas_variables.php
+END
+Rel__Disponibilidade_Agente_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/156/trunk/fontes/IPBX/output/include/Rel__Disponibilidade_Agente_settings.php
+END
+ipbx_desv_prefix_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_variables.php
+END
+ipbx_interf_vono_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_vono_settings.php
+END
+horario_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/horario_masterprint.php
+END
+Calculos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Calculos_variables.php
+END
+conf_sala_convidado_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/conf_sala_convidado_events.php
+END
+ipbx_interf_fxs_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxs_masterlist.php
+END
+ipbx_interf_vono_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_vono_masterprint.php
+END
+import_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/import_functions.php
+END
+Hist_rico_da_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Hist_rico_da_Fila_settings.php
+END
+cc_receptivo_filas_horario_desv_ramais_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_ramais_settings.php
+END
+ipbx_tx_fax_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_tx_fax_variables.php
+END
+Rel__produt_agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__produt_agentes_settings.php
+END
+sip_buddies_horario_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_horario_variables.php
+END
+inlineedit.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/inlineedit.js
+END
+sms_noticias_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/sms_noticias_settings.php
+END
+ipbx_dt_especifica_feriado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_dt_especifica_feriado_settings.php
+END
+central_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/central_masterprint.php
+END
+v_contrato_trad_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/v_contrato_trad_variables.php
+END
+menuitem.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/menuitem.php
+END
+Rel__Produt_filas_grupo_por_mes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Produt_filas_grupo_por_mes_variables.php
+END
+ipbx_ldap_conf_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ldap_conf_settings.php
+END
+sms_celulares_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_celulares_variables.php
+END
+interf_khomp_e1_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_khomp_e1_settings.php
+END
+ipbx_tx_fax_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_tx_fax_settings.php
+END
+ajaxreboottable.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ajaxreboottable.js
+END
+plano_discagem_regiao_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/plano_discagem_regiao_masterlist.php
+END
+ui.js
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.js
+END
+dimensions.mobile.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dimensions.mobile.js
+END
+conf_sala_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/conf_sala_events.php
+END
+ipbx_ramais_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ramais_events.php
+END
+Graf__Historico_fila_hora_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Graf__Historico_fila_hora_settings.php
+END
+Rel__Desvios_Chamadas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Desvios_Chamadas_variables.php
+END
+Atendimento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Atendimento_settings.php
+END
+ipbx_ugmembers_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ugmembers_settings.php
+END
+Liga__es_n_o_atendidas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Liga__es_n_o_atendidas_settings.php
+END
+Gr_fico___Centro_de_custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Gr_fico___Centro_de_custo_variables.php
+END
+ipbx_horario_desv_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_horario_desv_masterprint.php
+END
+Telefone_discado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Telefone_discado_settings.php
+END
+ipbx_interf_sip_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_sip_events.php
+END
+Graf__Custo_Voip_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_Voip_settings.php
+END
+ipbx_interf_fxo_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxo_events.php
+END
+desvios_troncos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_troncos_variables.php
+END
+cc_agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_agentes_settings.php
+END
+cc_receptivo_filas_horario_desv_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_masterprint.php
+END
+help_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/help_variables.php
+END
+central_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/central_variables.php
+END
+sip_users_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_masterlist.php
+END
+ipbx_interf_voxip_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_voxip_variables.php
+END
+jquery.timepickr.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/jquery.timepickr.js
+END
+Simplificado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Simplificado_variables.php
+END
+cdr_Report_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cdr_Report_variables.php
+END
+ipbx_send_fax_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_send_fax_variables.php
+END
+timepickr_jquery.timepickr.js
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/timepickr_jquery.timepickr.js
+END
+interf_ms_lync_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_ms_lync_variables.php
+END
+ipbx_painel_op_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_painel_op_settings.php
+END
+troncos_vono_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/troncos_vono_settings.php
+END
+testing.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/testing.php
+END
+cc_agentes_fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_agentes_fila_variables.php
+END
+Acompanhamento_URA_Reversa_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Acompanhamento_URA_Reversa_variables.php
+END
+Chamadas_sem_atendimento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Chamadas_sem_atendimento_variables.php
+END
+Rel__Ura_Reversa___Enfileiramento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Ura_Reversa___Enfileiramento_variables.php
+END
+interf_ms_lync_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_ms_lync_settings.php
+END
+tooltip.css
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/tooltip.css
+END
+ipbx_interf_fxo_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxo_masterlist.php
+END
+Rel_Produtividade_da_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel_Produtividade_da_Fila_variables.php
+END
+dbconnection.my.mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbconnection.my.mysql.php
+END
+sms_grupo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/sms_grupo_settings.php
+END
+cadencias_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cadencias_variables.php
+END
+ipbx_pesquisa_ura_rev_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_pesquisa_ura_rev_masterlist.php
+END
+queue_table_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/queue_table_settings.php
+END
+interf_khomp_gsm_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_khomp_gsm_settings.php
+END
+ipbx_usuarios_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_usuarios_settings.php
+END
+cc_menu_atend_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_menu_atend_variables.php
+END
+ipbx_grava_ramal_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_grava_ramal_settings.php
+END
+planos_discagem_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/planos_discagem_masterprint.php
+END
+ui.resizable.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.resizable.js
+END
+pabx_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/pabx_variables.php
+END
+ipbx_tarifa_vc2_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_tarifa_vc2_variables.php
+END
+sip_users_additional_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_additional_masterprint.php
+END
+v_contatos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/v_contatos_settings.php
+END
+sip_users_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_events.php
+END
+cadeado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cadeado_settings.php
+END
+dbconnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbconnection.php
+END
+detailspreview.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/detailspreview.js
+END
+cc_receptivo_horario_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_horario_events.php
+END
+ramal_autorizado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ramal_autorizado_settings.php
+END
+cc_receptivo_filas_atend_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/cc_receptivo_filas_atend_settings.php
+END
+validate.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/validate.js
+END
+resizebleGrid.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/resizebleGrid.js
+END
+ipbx_interf_vono_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_vono_masterlist.php
+END
+Rel_Historico_fila_data_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel_Historico_fila_data_variables.php
+END
+Rel__Pesquisa_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Pesquisa_variables.php
+END
+Atendimento__Mensal__settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Atendimento__Mensal__settings.php
+END
+ipbx_plano_disc_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_plano_disc_variables.php
+END
+ipbx_conf_fax_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_conf_fax_settings.php
+END
+ipbx_send_fax_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_send_fax_settings.php
+END
+ipbx_horario_desv_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_horario_desv_events.php
+END
+cadencias_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/cadencias_settings.php
+END
+ipbx_ura_rev_inbound_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_inbound_variables.php
+END
+xml.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/xml.php
+END
+Recebidas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/164/trunk/fontes/IPBX/output/include/Recebidas_settings.php
+END
+ipbx_interf_iax_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_iax_variables.php
+END
+ipbx_interf_sip_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_sip_settings.php
+END
+sms_grupo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_grupo_variables.php
+END
+ipbx_interf_gsm_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_gsm_masterprint.php
+END
+Informa__es_de_Fila_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Informa__es_de_Fila_events.php
+END
+Hist_rico_da_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Hist_rico_da_Fila_variables.php
+END
+ipbx_backup_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_backup_events.php
+END
+pabx_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/pabx_events.php
+END
+cc_receptivo_filas_horario_desv_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_variables.php
+END
+planos_discagem_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/planos_discagem_variables.php
+END
+ipbx_audit_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_audit_variables.php
+END
+Calculos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Calculos_settings.php
+END
+ipbx_interf_gsm_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_gsm_masterlist.php
+END
+pdf.js
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/pdf.js
+END
+Discadas___Centro_de_custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Discadas___Centro_de_custo_variables.php
+END
+admin_users_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/admin_users_variables.php
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/style.css
+END
+ui.dropslide.css
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.dropslide.css
+END
+ipbx_ramais_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ramais_masterlist.php
+END
+conf_sala_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/conf_sala_settings.php
+END
+cc_receptivo_filas_horario_desv_ramais_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_ramais_variables.php
+END
+Rel__Historico_Fila_Data_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_Data_variables.php
+END
+personal_info_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/personal_info_events.php
+END
+ipbx_interf_mslync_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_mslync_events.php
+END
+ipbx_interf_e1_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_e1_events.php
+END
+import_functions_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/import_functions_excel.php
+END
+Graf__Custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_variables.php
+END
+Relat_rio_Agente_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Relat_rio_Agente_Fila_variables.php
+END
+ipbx_pesquisa_ura_rev_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_pesquisa_ura_rev_variables.php
+END
+Rel_Produtividade_da_Fila_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel_Produtividade_da_Fila_events.php
+END
+ipbx_interf_iax_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_iax_settings.php
+END
+Rel_Chamada_Detalhada_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel_Chamada_Detalhada_events.php
+END
+centrocusto_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/centrocusto_events.php
+END
+Graf_per__temp_espera_por_dia_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf_per__temp_espera_por_dia_variables.php
+END
+ipbx_horario_desv_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_horario_desv_variables.php
+END
+quadro_aviso_versao_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/quadro_aviso_versao_events.php
+END
+markerclusterer.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/markerclusterer.js
+END
+cc_receptivo_agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_agentes_variables.php
+END
+sip_buddies_horario_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_horario_masterprint.php
+END
+ipbx_interf_fxo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_interf_fxo_settings.php
+END
+Minutagem_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Minutagem_settings.php
+END
+v_contatos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/v_contatos_variables.php
+END
+Rel__produt_agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__produt_agentes_variables.php
+END
+Graf__Perfil_Tempo_de_espera_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Perfil_Tempo_de_espera_variables.php
+END
+plano_discagem_regiao_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/plano_discagem_regiao_variables.php
+END
+Gr_fico___Centro_de_custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Gr_fico___Centro_de_custo_settings.php
+END
+contrato_gsm_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/contrato_gsm_variables.php
+END
+Hor_rio_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Hor_rio_variables.php
+END
+cc_receptivo_agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_agentes_settings.php
+END
+jquery.inputhintbox.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/jquery.inputhintbox.js
+END
+agenda_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/agenda_settings.php
+END
+reportfunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/reportfunctions.php
+END
+Rel__Produt__Agentes_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Produt__Agentes_events.php
+END
+cadeado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cadeado_variables.php
+END
+sip_buddies_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_settings.php
+END
+ipbx_ura_rev_msg_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ura_rev_msg_settings.php
+END
+ipbx_gravacoes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_gravacoes_settings.php
+END
+onthefly.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/onthefly.js
+END
+ipbx_interf_fxo_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxo_masterprint.php
+END
+diag_ipbx_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/diag_ipbx_variables.php
+END
+ipbx_interf_callman_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_interf_callman_settings.php
+END
+ipbx_interf_fxs_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxs_variables.php
+END
+ipbx_interf_fxs_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxs_masterprint.php
+END
+Rel__Produt_Agentes_Dia_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Produt_Agentes_Dia_variables.php
+END
+admin_users_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/admin_users_settings.php
+END
+Graf__perfil_atendimento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__perfil_atendimento_variables.php
+END
+Rel__Detalh__Chamadas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Detalh__Chamadas_settings.php
+END
+cc_agentes_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_agentes_masterlist.php
+END
+Informa__es_de_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Informa__es_de_Fila_settings.php
+END
+ipbx_conf_grav_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_conf_grav_settings.php
+END
+desvios_pabx_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_pabx_settings.php
+END
+Acesso_de_agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Acesso_de_agentes_settings.php
+END
+help_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/help_events.php
+END
+Lig_Custo_por_tronco_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Lig_Custo_por_tronco_settings.php
+END
+central_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/central_events.php
+END
+sip_buddies_horario_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_horario_masterlist.php
+END
+crosstable.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/crosstable.js
+END
+relat_centrocusto_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/relat_centrocusto_variables.php
+END
+LocaleFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/LocaleFunctions.php
+END
+Discadas___Centro_de_custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Discadas___Centro_de_custo_settings.php
+END
+menunodes.php
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/menunodes.php
+END
+ipbx_desv_prefix_item_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_item_settings.php
+END
+cc_tipos_pausa_atend_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_tipos_pausa_atend_variables.php
+END
+dbcommon_preview.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbcommon_preview.php
+END
+Rel__Atendimento_por_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Atendimento_por_Fila_settings.php
+END
+Rel__Produt__Agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Rel__Produt__Agentes_settings.php
+END
+v_contatos_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/v_contatos_events.php
+END
+Graf__Historico_fila_data_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Graf__Historico_fila_data_settings.php
+END
+ipbx_sincronismo_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/ipbx_sincronismo_events.php
+END
+Recebidas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/164/trunk/fontes/IPBX/output/include/Recebidas_variables.php
+END
+ipbx_horario_desv_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_horario_desv_masterlist.php
+END
+ipbx_desv_prefix_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_settings.php
+END
+Rel__Detalhamento_Agente_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_variables.php
+END
+sms_celulares_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/sms_celulares_settings.php
+END
+Simplificado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Simplificado_settings.php
+END
+cdr_Report_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cdr_Report_settings.php
+END
+Rel_Produtividade_da_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel_Produtividade_da_Fila_settings.php
+END
+ipbx_ramais_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_ramais_variables.php
+END
+export_functions_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/export_functions_excel.php
+END
+horario_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/horario_variables.php
+END
+ipbx_ura_rev_outbound_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_outbound_variables.php
+END
+Rel__Centro_de_custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Centro_de_custo_settings.php
+END
+pdfinitlink.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/pdfinitlink.js
+END
+Restore_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Restore_events.php
+END
+agenda_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/agenda_variables.php
+END
+ipbx_ura_rev_conf_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ura_rev_conf_settings.php
+END
+horario_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/horario_masterlist.php
+END
+timeout_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/timeout_events.php
+END
+cc_tipos_pausa_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/cc_tipos_pausa_settings.php
+END
+Rel__Simplificado___Centro_Custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Rel__Simplificado___Centro_Custo_variables.php
+END
+ipbx_grava_ramal_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_grava_ramal_events.php
+END
+plano_discagem_regiao_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/plano_discagem_regiao_masterprint.php
+END
+ipbx_ura_rev_inbound_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_inbound_events.php
+END
+Rel__Historico_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_variables.php
+END
+Graf__Minutos_GSM_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Minutos_GSM_variables.php
+END
+contrato_trad_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/contrato_trad_variables.php
+END
+ciphererdes.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ciphererdes.php
+END
+ipbx_provisionamento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_provisionamento_settings.php
+END
+Rel_Chamada_Detalhada_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel_Chamada_Detalhada_variables.php
+END
+ldap_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/ldap_settings.php
+END
+ipbx_desv_prefix_item_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_item_variables.php
+END
+Telefone_discado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Telefone_discado_variables.php
+END
+ipbx_interf_callman_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_callman_events.php
+END
+locking.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/locking.php
+END
+ipbx_horario_desv_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_horario_desv_settings.php
+END
+ipbx_desv_prefix_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_desv_prefix_masterprint.php
+END
+parametros_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/parametros_settings.php
+END
+ipbx_disp_mobile_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_disp_mobile_variables.php
+END
+Rel__Historico_Fila_Hora_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_Hora_variables.php
+END
+Graf__Minutagem_Voip_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Minutagem_Voip_settings.php
+END
+Rel__Prod__Filas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Prod__Filas_settings.php
+END
+Restore_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/Restore_settings.php
+END
+Graf__Agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Agentes_settings.php
+END
+sms_clientes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_clientes_settings.php
+END
+Graf__Relatorio_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Relatorio_Fila_settings.php
+END
+Contatos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Contatos_settings.php
+END
+loadfirst.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/loadfirst.js
+END
+ipbx_interf_sip_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_sip_variables.php
+END
+ipbx_interf_fxs_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxs_events.php
+END
+ipbx_grupo_captura_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_grupo_captura_settings.php
+END
+Rel__Periodo_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Periodo_Fila_settings.php
+END
+Liga__es_discadas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Liga__es_discadas_settings.php
+END
+sms_noticias_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_noticias_events.php
+END
+styleIE.css
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/styleIE.css
+END
+ui.theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.theme.css
+END
+Graf__Custo_Voip_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_Voip_variables.php
+END
+ipbx_tarifa_vc2_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_tarifa_vc2_settings.php
+END
+customlabels.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/customlabels.js
+END
+ipbx_ura_rev_inbound_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ura_rev_inbound_settings.php
+END
+Graf_per__temp_espera_por_dia_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Graf_per__temp_espera_por_dia_settings.php
+END
+interface_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interface_variables.php
+END
+codecs_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/codecs_variables.php
+END
+Graf_Centro_de_custos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf_Centro_de_custos_variables.php
+END
+admin_members_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/admin_members_variables.php
+END
+sip_users_additional_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_additional_variables.php
+END
+ipbx_fila_pesquisa_ura_rev_resp_Report_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/ipbx_fila_pesquisa_ura_rev_resp_Report_settings.php
+END
+dbinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbinfo.php
+END
+Rel__Produt_filas_grupo_por_data_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Produt_filas_grupo_por_data_settings.php
+END
+Aplicar_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Aplicar_variables.php
+END
+agenda_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/agenda_events.php
+END
+parametros_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/parametros_variables.php
+END
+ipbx_provisionamento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_provisionamento_variables.php
+END
+Relat_rio_FilaxAgente_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Relat_rio_FilaxAgente_settings.php
+END
+interf_vono_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_vono_settings.php
+END
+emptypage.html
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/emptypage.html
+END
+Rel__Desvios_Chamadas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Desvios_Chamadas_settings.php
+END
+ipbx_painel_op_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_painel_op_variables.php
+END
+troncos_vono_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/troncos_vono_variables.php
+END
+sms_noticias_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_noticias_variables.php
+END
+Telefone_Recebido_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Telefone_Recebido_variables.php
+END
+Graf__perfil_atendimento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__perfil_atendimento_settings.php
+END
+cc_tipos_pausa_atend_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_tipos_pausa_atend_settings.php
+END
+ipbx_ura_rev_outbound_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_outbound_events.php
+END
+cc_receptivo_filas_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_masterlist.php
+END
+Aplicar_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Aplicar_settings.php
+END
+ipbx_interf_vono_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_vono_events.php
+END
+centrocusto_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/centrocusto_variables.php
+END
+ipbx_backup_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_backup_settings.php
+END
+Rel__Centro_de_custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Centro_de_custo_variables.php
+END
+lookuplinks.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/lookuplinks.php
+END
+Rel__Detalh__Chamadas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Detalh__Chamadas_variables.php
+END
+sip_users_additional_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_additional_masterlist.php
+END
+Rel__Produt_filas_grupo_por_mes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Produt_filas_grupo_por_mes_settings.php
+END
+Rel__Detalhamento_Agente_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_events.php
+END
+conf_sala_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/conf_sala_variables.php
+END
+ipbx_interf_voxip_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_voxip_settings.php
+END
+cc_agentes_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_agentes_events.php
+END
+Rel__Perf__Tempo_Espera_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Perf__Tempo_Espera_variables.php
+END
+Por_Ramal_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Por_Ramal_settings.php
+END
+calendar.js
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/calendar.js
+END
+dal.php
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/dal.php
+END
+conf_sala_convidado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/conf_sala_convidado_variables.php
+END
+ldap_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/ldap_events.php
+END
+jquery.js
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/jquery.js
+END
+Por_Ramal_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Por_Ramal_variables.php
+END
+ipbx_sincronismo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_sincronismo_settings.php
+END
+ipbx_fila_pesquisa_ura_rev_resp_Report_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_fila_pesquisa_ura_rev_resp_Report_variables.php
+END
+ldap_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ldap_variables.php
+END
+cc_receptivo_horario_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_horario_settings.php
+END
+Rel__Consolidado_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Consolidado_Fila_settings.php
+END
+cc_receptivo_filas_horario_desv_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_events.php
+END
+jquery.dropshadow.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/jquery.dropshadow.js
+END
+ipbx_interf_fxo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_fxo_variables.php
+END
+Rel__Simplificado___Centro_Custo_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Rel__Simplificado___Centro_Custo_events.php
+END
+Rel__Ura_Reversa___Enfileiramento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Ura_Reversa___Enfileiramento_settings.php
+END
+cc_agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_agentes_variables.php
+END
+ipbx_dt_especifica_feriado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_dt_especifica_feriado_variables.php
+END
+personal_info_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/personal_info_variables.php
+END
+ipbx_interf_mslync_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_mslync_variables.php
+END
+ipbx_interf_e1_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_e1_variables.php
+END
+sip_users_horario_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_horario_variables.php
+END
+Rel_Chamada_Detalhada_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel_Chamada_Detalhada_settings.php
+END
+ipbx_disp_mobile_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_disp_mobile_settings.php
+END
+Rel__Historico_Fila_Hora_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_Hora_settings.php
+END
+ipbx_horario_desv_ramais_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_horario_desv_ramais_variables.php
+END
+conf_sala_convidado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/conf_sala_convidado_settings.php
+END
+ramal_pabx_autorizado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ramal_pabx_autorizado_variables.php
+END
+admin_rights_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/admin_rights_variables.php
+END
+cdr_tarifado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cdr_tarifado_settings.php
+END
+queue_member_table_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/queue_member_table_settings.php
+END
+queue_member_table_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/queue_member_table_events.php
+END
+Graf__Tempo_Espera_Filas_Atendimento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Tempo_Espera_Filas_Atendimento_settings.php
+END
+Rel__Atendimento_por_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Atendimento_por_Fila_variables.php
+END
+Rel__Produt__Agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Produt__Agentes_variables.php
+END
+Informa__es_de_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Informa__es_de_Fila_variables.php
+END
+dbfunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbfunctions.php
+END
+Minutagem_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Minutagem_variables.php
+END
+mupload.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/mupload.js
+END
+horario_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/horario_events.php
+END
+Centro_de_custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Centro_de_custo_settings.php
+END
+blacklist_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/blacklist_variables.php
+END
+events.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/events.php
+END
+ui.timepickr.css
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.timepickr.css
+END
+troncos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/troncos_settings.php
+END
+Lig__Externas_Transferidas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Lig__Externas_Transferidas_settings.php
+END
+Graf__Minutagem_Voip_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Minutagem_Voip_variables.php
+END
+cc_receptivo_filas_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_masterprint.php
+END
+Chamadas_sem_atendimento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Chamadas_sem_atendimento_settings.php
+END
+Hor_rio_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Hor_rio_settings.php
+END
+queue_table_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/queue_table_variables.php
+END
+interf_khomp_gsm_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_khomp_gsm_variables.php
+END
+ipbx_ura_rev_outbound_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_ura_rev_outbound_settings.php
+END
+ipbx_pesquisa_ura_rev_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_pesquisa_ura_rev_masterprint.php
+END
+centrocusto_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/centrocusto_settings.php
+END
+Graf__Custo_GSM_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_GSM_variables.php
+END
+dbcommon.php
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbcommon.php
+END
+Rel__Produtividade_Agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Produtividade_Agentes_variables.php
+END
+timeout_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/timeout_settings.php
+END
+v_contrato_trad_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/v_contrato_trad_settings.php
+END
+Rel__Produt_filas_grupo_por_data_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Produt_filas_grupo_por_data_variables.php
+END
+Rel__Prod__Filas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Prod__Filas_variables.php
+END
+ipbx_plano_disc_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_plano_disc_settings.php
+END
+Graf__Historico_fila_data_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/149/trunk/fontes/IPBX/output/include/Graf__Historico_fila_data_variables.php
+END
+ipbx_conf_grav_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_conf_grav_variables.php
+END
+desvios_pabx_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_pabx_variables.php
+END
+ipbx_pesquisa_ura_rev_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_pesquisa_ura_rev_settings.php
+END
+phpfunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/phpfunctions.php
+END
+Rel__Produt_Agentes_Dia_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/156/trunk/fontes/IPBX/output/include/Rel__Produt_Agentes_Dia_settings.php
+END
+horario_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/horario_settings.php
+END
+ipbx_usuarios_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_usuarios_variables.php
+END
+ui.dropslide.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.dropslide.js
+END
+ipbx_call_back_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_call_back_settings.php
+END
+menunodes_adminarea.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/menunodes_adminarea.php
+END
+tarifa_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/tarifa_variables.php
+END
+ipbx_interf_sip_generica_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_interf_sip_generica_settings.php
+END
+ipbx_provisionamento_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_provisionamento_events.php
+END
+jquery.utils.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/jquery.utils.js
+END
+contrato_voip_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/contrato_voip_settings.php
+END
+Restore_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Restore_variables.php
+END
+Relat_rio_Agente_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Relat_rio_Agente_Fila_settings.php
+END
+contrato_gsm_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/contrato_gsm_settings.php
+END
+cc_agentes_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_agentes_masterprint.php
+END
+contrato_trad_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/contrato_trad_settings.php
+END
+ipbx_ramais_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ramais_masterprint.php
+END
+admin_rights_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/admin_rights_settings.php
+END
+Rel__Produtividade_Agentes_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Produtividade_Agentes_settings.php
+END
+cc_menu_atend_item_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_menu_atend_item_variables.php
+END
+Rel__Disponibilidade_Agente_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Disponibilidade_Agente_events.php
+END
+cc_menu_atend_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_menu_atend_masterlist.php
+END
+Abandonos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Abandonos_variables.php
+END
+dimensions.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dimensions.js
+END
+Lig__Discadas_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Lig__Discadas_variables.php
+END
+Graf__Atendimento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Atendimento_variables.php
+END
+ipbx_rcv_fax_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_rcv_fax_variables.php
+END
+ipbx_call_back_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_call_back_variables.php
+END
+Centro_de_custo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Centro_de_custo_variables.php
+END
+cc_receptivo_filas_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_events.php
+END
+help_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/help_settings.php
+END
+central_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/central_settings.php
+END
+pabx_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/pabx_settings.php
+END
+Rel__Pesquisa_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Pesquisa_settings.php
+END
+Graf__Agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Agentes_variables.php
+END
+Graf__Minutos_GSM_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Graf__Minutos_GSM_settings.php
+END
+sip_users_additional_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_additional_settings.php
+END
+ramal_autorizado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ramal_autorizado_variables.php
+END
+Rel__Produt_Agentes_Dia_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Produt_Agentes_Dia_events.php
+END
+ipbx_grava_ramal_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_grava_ramal_variables.php
+END
+ramal_pabx_autorizado_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ramal_pabx_autorizado_settings.php
+END
+blacklist_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/blacklist_settings.php
+END
+desvios_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_settings.php
+END
+ipbx_interf_gsm_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_gsm_settings.php
+END
+cc_receptivo_agentes_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_agentes_events.php
+END
+appsettings.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/appsettings.php
+END
+desvios_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_variables.php
+END
+ipbx_interf_sip_generica_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_sip_generica_events.php
+END
+Acompanhamento_URA_Reversa_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Acompanhamento_URA_Reversa_settings.php
+END
+cdr_tarifado_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cdr_tarifado_variables.php
+END
+diag_ipbx_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/diag_ipbx_events.php
+END
+ipbx_painel_op_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_painel_op_events.php
+END
+relat_centrocusto_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/relat_centrocusto_settings.php
+END
+ipbx_ura_rev_msg_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_msg_events.php
+END
+sip_buddies_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_variables.php
+END
+cc_receptivo_filas_atend_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_atend_variables.php
+END
+ipbx_rcv_fax_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_rcv_fax_settings.php
+END
+Atendimento_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Atendimento_events.php
+END
+dbconnection.mssql.sqlsrv.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbconnection.mssql.sqlsrv.php
+END
+sigame_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sigame_variables.php
+END
+ipbx_send_fax_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_send_fax_events.php
+END
+central_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/central_masterlist.php
+END
+parametros_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/parametros_events.php
+END
+VONO_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/VONO_settings.php
+END
+cc_receptivo_filas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/cc_receptivo_filas_settings.php
+END
+cc_menu_atend_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_menu_atend_events.php
+END
+Rel_Historico_fila_data_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel_Historico_fila_data_settings.php
+END
+xtempl.php
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/xtempl.php
+END
+queue_member_table_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/queue_member_table_variables.php
+END
+Graf__Custo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Custo_settings.php
+END
+ipbx_grupo_captura_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_grupo_captura_events.php
+END
+ipbx_interf_voxip_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_voxip_events.php
+END
+admin_members_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/admin_members_settings.php
+END
+ipbx_ura_rev_msg_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_msg_variables.php
+END
+sip_users_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_settings.php
+END
+Rel__Pesquisa_Historico_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Pesquisa_Historico_settings.php
+END
+Rel_Produt_filas_grupo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel_Produt_filas_grupo_variables.php
+END
+quadro_aviso_versao_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/quadro_aviso_versao_variables.php
+END
+sip_users_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_users_variables.php
+END
+dbconnection.my.mysqli.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbconnection.my.mysqli.php
+END
+cc_agentes_fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/cc_agentes_fila_settings.php
+END
+plano_discagem_regiao_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/plano_discagem_regiao_settings.php
+END
+sip_buddies_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sip_buddies_events.php
+END
+ipbx_ramais_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_ramais_settings.php
+END
+dbconninfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/dbconninfo.php
+END
+Rel__Historico_Fila_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_settings.php
+END
+Graf_Centro_de_custos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf_Centro_de_custos_settings.php
+END
+Acesso_de_agentes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Acesso_de_agentes_variables.php
+END
+ipbx_gravacoes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_gravacoes_variables.php
+END
+quadro_aviso_versao_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/quadro_aviso_versao_settings.php
+END
+json.js
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/json.js
+END
+VONO_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/VONO_events.php
+END
+Rel__Detalhamento_Agente_settings.php.r129
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_settings.php.r129
+END
+ipbx_interf_gsm_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_gsm_variables.php
+END
+ipbx_audit_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/169/trunk/fontes/IPBX/output/include/ipbx_audit_settings.php
+END
+planos_discagem_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/planos_discagem_settings.php
+END
+variables_preview.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/variables_preview.php
+END
+export_functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/include/export_functions.php
+END
+ipbx_interf_sip_generica_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_interf_sip_generica_variables.php
+END
+Graf__Perfil_Tempo_de_espera_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Perfil_Tempo_de_espera_settings.php
+END
+cc_menu_atend_masterprint.php
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_menu_atend_masterprint.php
+END
+ipbx_sincronismo_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_sincronismo_variables.php
+END
+Relat_rio_FilaxAgente_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Relat_rio_FilaxAgente_variables.php
+END
+interface_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interface_settings.php
+END
+codecs_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/codecs_settings.php
+END
+sms_clientes_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/sms_clientes_variables.php
+END
+cookies.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cookies.js
+END
+ipbx_ura_rev_conf_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ura_rev_conf_variables.php
+END
+ipbx_pesquisa_ura_rev_events.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_pesquisa_ura_rev_events.php
+END
+Lig_Custo_por_tronco_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/150/trunk/fontes/IPBX/output/include/Lig_Custo_por_tronco_variables.php
+END
+tarifa_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/tarifa_settings.php
+END
+Graf__Historico_fila_hora_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Historico_fila_hora_variables.php
+END
+cc_receptivo_filas_horario_desv_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_masterlist.php
+END
+Rel__Disponibilidade_Agente_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/145/trunk/fontes/IPBX/output/include/Rel__Disponibilidade_Agente_variables.php
+END
+ipbx_canais_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_canais_settings.php
+END
+cdr_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cdr_variables.php
+END
+Rel__Detalhamento_Agente_settings.php.r135
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_settings.php.r135
+END
+desvios_troncos_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/desvios_troncos_settings.php
+END
+Rel__Pesquisa_Historico_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel__Pesquisa_Historico_variables.php
+END
+audit.php
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/audit.php
+END
+cc_receptivo_filas_horario_desv_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/cc_receptivo_filas_horario_desv_settings.php
+END
+Rel__Historico_Fila_Data_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Rel__Historico_Fila_Data_settings.php
+END
+ipbx_backup_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_backup_variables.php
+END
+interf_vono_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/interf_vono_variables.php
+END
+Graf__Relatorio_Fila_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Relatorio_Fila_variables.php
+END
+ipbx_horario_desv_ramais_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/154/trunk/fontes/IPBX/output/include/ipbx_horario_desv_ramais_settings.php
+END
+Rel_Produt_filas_grupo_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Rel_Produt_filas_grupo_settings.php
+END
+ui.core.js
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ui.core.js
+END
+planos_discagem_masterlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/planos_discagem_masterlist.php
+END
+ipbx_ldap_conf_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/ipbx_ldap_conf_variables.php
+END
+Rel__Detalhamento_Agente_settings.php.mine
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/output/include/Rel__Detalhamento_Agente_settings.php.mine
+END
+cc_menu_atend_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/cc_menu_atend_settings.php
+END
+ipbx_interf_fxs_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/include/ipbx_interf_fxs_settings.php
+END
+Graf__Tempo_Espera_Filas_Atendimento_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Graf__Tempo_Espera_Filas_Atendimento_variables.php
+END
+Contatos_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/Contatos_variables.php
+END
+cc_tipos_pausa_variables.php
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/139/trunk/fontes/IPBX/output/include/cc_tipos_pausa_variables.php
+END
+Lig__Discadas_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Lig__Discadas_settings.php
+END
+Graf__Atendimento_settings.php
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/152/trunk/fontes/IPBX/output/include/Graf__Atendimento_settings.php
+END

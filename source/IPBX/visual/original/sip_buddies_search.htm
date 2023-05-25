@@ -1,0 +1,135 @@
+<html {$html_attrs}>
+<head>
+<title>Ramais: Busca Avancada</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;}
+#main_block{$id} {padding:10px 0;}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {width:100%;padding:10px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block {padding:10px 10;}
+#inmain_block {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}	
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<div  class=tableheader id="header_block{$id}">
+Ramais - Busca Avancada
+</div>
+
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}" class=header2>
+<span class=fieldname>Criteria:&nbsp;</span>	
+	<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label}
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label}
+</div>
+{END conditions_block}
+
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+<tr valign=center class=blackshade>
+<td align=center valign=middle>&nbsp;</td>
+<td width=30 align=center valign=middle class=fieldname>NOT</td>
+<td colspan=3 align=center valign=middle>&nbsp; </td></tr>
+
+{BEGIN callerid_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>Nome Usuario
+	<td align=center><input type=checkbox {$callerid_notbox}></td>
+	<td>{$searchtype_callerid}</td>
+	
+	<td width=270>{$callerid_editcontrol}&nbsp;</td>
+
+	<td width=270>{$callerid_editcontrol1}&nbsp;</td>
+</tr>
+{END callerid_fieldblock}
+{BEGIN name_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>Numero
+	<td align=center><input type=checkbox {$name_notbox}></td>
+	<td>{$searchtype_name}</td>
+	
+	<td width=270>{$name_editcontrol}&nbsp;</td>
+
+	<td width=270>{$name_editcontrol1}&nbsp;</td>
+</tr>
+{END name_fieldblock}
+{BEGIN accountcode_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>Centro de custo
+	<td align=center><input type=checkbox {$accountcode_notbox}></td>
+	<td>{$searchtype_accountcode}</td>
+	
+	<td width=270>{$accountcode_editcontrol}&nbsp;</td>
+
+	<td width=270>{$accountcode_editcontrol1}&nbsp;</td>
+</tr>
+{END accountcode_fieldblock}
+{BEGIN context_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>Plano de Discagem
+	<td align=center><input type=checkbox {$context_notbox}></td>
+	<td>{$searchtype_context}</td>
+	
+	<td width=270>{$context_editcontrol}&nbsp;</td>
+
+	<td width=270>{$context_editcontrol1}&nbsp;</td>
+</tr>
+{END context_fieldblock}
+{BEGIN mailbox_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>E-Mail
+	<td align=center><input type=checkbox {$mailbox_notbox}></td>
+	<td>{$searchtype_mailbox}</td>
+	
+	<td width=270>{$mailbox_editcontrol}&nbsp;</td>
+
+	<td width=270>{$mailbox_editcontrol1}&nbsp;</td>
+</tr>
+{END mailbox_fieldblock}
+{BEGIN allow_fieldblock}		
+<tr class=shade>
+	<td class=fieldname>Tipo de usuário
+	<td align=center><input type=checkbox {$allow_notbox}></td>
+	<td>{$searchtype_allow}</td>
+	
+	<td width=270>{$allow_editcontrol}&nbsp;</td>
+
+	<td width=270>{$allow_editcontrol1}&nbsp;</td>
+</tr>
+{END allow_fieldblock}
+</table>
+
+<div class="blackshade" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Buscar" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>
+	
+

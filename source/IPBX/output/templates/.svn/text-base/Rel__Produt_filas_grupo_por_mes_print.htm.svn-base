@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Produt filas grupo por mes</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<H1>Rel. Produt filas grupo por mes</H1>{END page}
+{BEGIN page}<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>{END page}
+{BEGIN page}<DIV>{BEGIN grid_block}
+<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN Mes_fieldheader}
+      <P align=center><B>Mes</B> </P>{END Mes_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Ano_fieldheader}
+      <P align=center><B>Ano</B> </P>{END Ano_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN nm_grupo_fieldheader}
+      <P align=center><B>Grupo</B> </P>{END nm_grupo_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Receb__fieldheader}
+      <P align=center><B>Recebidas</B> </P>{END Receb__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Atend__fieldheader}
+      <P align=center><B>Atendidas</B> </P>{END Atend__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband__fieldheader}
+      <P align=center><B>Abandonadas</B> </P>{END Aband__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN TME_fieldheader}
+      <P align=center><B>TME</B> </P>{END TME_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN TMA_fieldheader}
+      <P align=center><B>TMA</B> </P>{END TMA_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband_Contr__fieldheader}
+      <P align=center><B>Abd.Contr.</B> </P>{END Aband_Contr__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband_Real__fieldheader}
+      <P align=center><B>Abd.Real(%)</B> </P>{END Aband_Real__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaContratado_fieldheader}
+      <P align=center><B>Esp.Cont.</B> </P>{END NivelServicoEsperaContratado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaRealizado_fieldheader}
+      <P align=center><B>Nív.Serv.Esp.(%)</B> </P>{END NivelServicoEsperaRealizado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaQuantidade_fieldheader}
+      <P align=center><B>Esp.Quant.</B> </P>{END NivelServicoEsperaQuantidade_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoContratado_fieldheader}
+      <P align=center><B>Atd.Cont.</B> </P>{END NivelServicoAtendimentoContratado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoRealizado_fieldheader}
+      <P align=center><B>Nív.Serv.Atend.(%)</B> </P>{END NivelServicoAtendimentoRealizado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoQuantidade_fieldheader}
+      <P align=center><B>Atd.Quant.</B> </P>{END NivelServicoAtendimentoQuantidade_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>
+      <P align=center>{$Mes_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Ano_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$nm_grupo_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Receb__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Atend__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$TME_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$TMA_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband_Contr__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband_Real__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaContratado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaRealizado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaQuantidade_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoContratado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoRealizado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoQuantidade_value}</P></TD></TR>{END row_data}{END grid_row}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

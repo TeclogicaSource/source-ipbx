@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+#center_block {width:35%;margin:0 auto;min-width:300px}
+#contents_block {text-align:center;}
+#header_block {padding:2px 5px 6px;text-align:center;line-height: 1.8}
+#tables_block {width:auto;margin:0;text-align:left;}
+#header_block > span {margin:2 5px}
+.captions {padding:6px 10px;text-align:left;}
+#header_block span {padding-right:10px}
+</STYLE>
+
+<META content="MSHTML 6.00.2900.3698" name=GENERATOR></HEAD>
+<BODY>{BEGIN body}{$header} 
+<TABLE id=center_block cellSpacing=0 cellPadding=0 align=center>
+  <TBODY>
+  <TR>
+    <TD id=contents_block>
+      <DIV class=upeditmenu id=header_block>{BEGIN loggedas_block}<SPAN>Logado Como&nbsp;<B>{$username}</B></SPAN>{END loggedas_block} 
+      {BEGIN logout_link}<A class=tablelinks href="login.php?a=logout" {$logoutlink_attrs}>Log Out</A>{END logout_link} {BEGIN changepwd_link}<A class=tablelinks href="changepwd.php" {$changepwdlink_attrs}>Mudar senha</A>{END changepwd_link} </DIV>
+      <DIV class="shade captions" id=tables_block><!-- MenuBegin --><!-- MenuEnd -->{$mainmenu}</DIV>
+      {BEGIN adminarea_link}<DIV class="shade captions">
+      <HR>
+      <img alt="*" src="include/img/arrow_menuL6_2.gif" border=0 valign="middle" align="left">&nbsp;&nbsp;<A class=tablelinks 
+      href="admin_rights_list.php" {$adminarealink_attrs}>Área Admin</A> 
+    </DIV>{END adminarea_link}</TD></TR></TBODY></TABLE>{$footer} {END body}</BODY></HTML>

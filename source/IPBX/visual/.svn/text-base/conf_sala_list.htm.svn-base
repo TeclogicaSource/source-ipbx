@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}>
+  <HEAD>
+    <TITLE>
+      {$pagetitle}
+    </TITLE>
+    <META content=IE=Edge http-equiv=X-UA-Compatible>
+    <META content="text/html; charset=Windows-1252" http-equiv=Content-Type>
+    <LINK rel=stylesheet type=text/css href="styles/default.css">
+    {BEGIN rtlCSS}
+      <LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">
+    {END rtlCSS}
+    {BEGIN styleCSSFiles}
+      <LINK rel=stylesheet type=text/css href="{$stylepath}">
+    {END styleCSSFiles}
+    {BEGIN pageCSSFiles}
+      <LINK rel=stylesheet type=text/css href="{$pagestylepath}">
+    {END pageCSSFiles}
+    <META name=GENERATOR content="MSHTML 8.00.6001.19222">
+  </HEAD>
+  <BODY class="{$stylename} function-list" {$bodyattrs}>
+    {BEGIN body}
+      <SPAN class=runner-btnframe>
+        <SPAN class=runner-btnleft>
+        </SPAN>
+        <SPAN class=runner-btnright>
+        </SPAN>
+      </SPAN>
+      {$event conf_sala_Snippet13}
+      {$event conf_sala_Snippet1}
+      {$event conf_sala_Snippet11}
+
+      {$header}
+      <DIV class=rnr-page>
+        <DIV class="rnr-top {$blockclass_top}">
+          {BEGIN container_toplinks}
+            <DIV class="rnr-c rnr-ch rnr-c-toplinks">
+              <DIV class=rnr-hfiller>
+              </DIV>
+              {BEGIN security_block}
+                <DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+                  <DIV id=login_block{$id}>
+                    {BEGIN loggedas_message}
+                      <SPAN>
+                        Logado Como&nbsp;
+                        <B>
+                          {$username}
+                        </B>
+                        &nbsp;
+                      </SPAN>
+                    {END loggedas_message}
+                    {BEGIN guestloginbutton}
+                      <SPAN>
+                        <A class=rnr-button href="#" {$guestloginlink_attrs}>
+                          Login
+                        </A>
+                      </SPAN>
+                    {END guestloginbutton}
+                    {BEGIN logoutbutton}
+                      <A class=rnr-button href="#" {$logoutlink_attrs}>
+                        Log Out
+                      </A>
+                    {END logoutbutton}
+                    {BEGIN adminarea_link}
+                      <A class=rnr-button href="admin_rights_list.php" {$adminarealink_attrs}>
+                        Área Admin
+                      </A>
+                    {END adminarea_link}
+                  </DIV>
+                </DIV>
+              {END security_block}
+            </DIV>
+          {END container_toplinks}
+          {BEGIN container_hmenu}
+            <DIV class="rnr-c rnr-ch rnr-c-hmenu">
+              <DIV class=rnr-hfiller>
+              </DIV>
+              <DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}">
+              </DIV>
+            </DIV>
+          {END container_hmenu}
+        </DIV>
+        <DIV class=rnr-middle>
+          <DIV class="rnr-left {$blockclass_left}">
+            {BEGIN container_left}
+              <DIV class="rnr-c rnr-cv rnr-c-left">
+                {BEGIN menu_block}
+                  {$menu main}
+                {END menu_block}
+              </DIV>
+            {END container_left}
+          </DIV>
+          <DIV class="rnr-center {$blockclass_center}">
+            {BEGIN container_recordcontrols}
+              <DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+                {BEGIN newrecord_controls_block}
+                  <DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">
+                    {BEGIN add_link}
+                      <A class=rnr-button href="conf_sala_add.php{$addlink_getparams}" {$addlink_attrs}>
+                        Adicionar Novo
+                      </A>
+                    {END add_link}
+                  </DIV>
+                {END newrecord_controls_block}
+                {BEGIN record_controls_block}
+                  <DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">
+                    {BEGIN widhtSelected}
+                      <SPAN class=rnr-buttons-group>
+                        <A id=selectButtonsToggler{$id} class="rnr-button {$withSelectedClass}" href="#">
+                          Com os selecionados
+                        </A>
+                        <A id=Enviar_Convites class="rnr-button button" href="#" typeid="ib">
+                          Enviar&nbsp;Convites
+                        </A>
+
+												{$event conf_sala_Snippet131}
+
+                        <UL id=selectButtonsGroup{$id} class=rnr-list>
+                          {BEGIN deleteselected_link}
+                            <LI>
+                              <A class="rnr-button link" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>
+                                Eliminar
+                              </A>
+                            </LI>
+                          {END deleteselected_link}
+                        </UL>
+                      </SPAN>
+                    {END widhtSelected}
+                  </DIV>
+                {END record_controls_block}
+                {BEGIN more_list}
+                  <DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}">
+                    <SPAN class=rnr-buttons-group>
+                    </SPAN>
+                  </DIV>
+                {END more_list}
+                <DIV class=rnr-hfiller>
+                </DIV>
+              </DIV>
+            {END container_recordcontrols}
+            {BEGIN container_message}
+              <DIV class="rnr-c rnr-ch rnr-c-message">
+                {BEGIN message_block}
+                  <DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+                    <DIV class=rnr-message>
+                      {$message}
+                    </DIV>
+                  </DIV>
+                {END message_block}
+              </DIV>
+            {END container_message}
+            {BEGIN container_pagination}
+              <DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+                {BEGIN pagination_block}
+                  <DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+                    {$pagination}
+                  </DIV>
+                {END pagination_block}
+                <DIV class=rnr-leftbricks>
+                  {BEGIN details_block}
+                    <DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">
+                      <SPAN {$details_attrs}>
+                        Ítens Encontrados:
+                        <B>
+                          <SPAN class=rnr-details_found_count>
+                            {$records_found}
+                          </SPAN>
+                        </B>
+                      </SPAN>
+                    </DIV>
+                  {END details_block}
+                </DIV>
+                <DIV class=rnr-rightbricks>
+                  {BEGIN pages_block}
+                    <DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">
+                      <SPAN {$pages_attrs}>
+                        Página
+                        <B>
+                          {$page}
+                        </B>
+                        de
+                        <B>
+                          {$maxpages}
+                        </B>
+                      </SPAN>
+                    </DIV>
+                  {END pages_block}
+                  {BEGIN recordspp_block}
+                    <DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">
+                      <SPAN id=recordspp_block{$id} name="recordspp_block{$id}">
+                        Registros por Página:&nbsp;{$recsPerPage}
+                      </SPAN>
+                    </DIV>
+                  {END recordspp_block}
+                </DIV>
+              </DIV>
+            {END container_pagination}
+            {BEGIN container_grid}
+              {BEGIN grid_block}
+                <TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" cellPadding=0>
+                  <THEAD>
+                    {BEGIN grid_header}
+                      <TR class="rnr-toprow style1 {$gridHeader_class}">
+                        {BEGIN record_header}
+                          {BEGIN listIcons_column}
+                            <TH iEditCont="all">
+                              &nbsp;
+                            </TH>
+                          {END listIcons_column}
+                          {BEGIN checkbox_column}
+                            <TH class=rnr-bc>
+                              <INPUT type=checkbox {$checkboxheader_attrs}>
+                            </TH>
+                          {END checkbox_column}
+                          {BEGIN conf_sala_dtable_column}
+                            <TH>
+                              &nbsp;
+                            </TH>
+                          {END conf_sala_dtable_column}
+                          {BEGIN id_conf_fieldheadercolumn}
+                            <TH class="rnr-gridfieldlabel {$id_conf_class}">
+                              {BEGIN id_conf_fieldheader}
+                                <SPAN {$id_conf_orderlinkattrs}>
+                                  {$label conf_sala id_conf}
+                                </SPAN>
+                              {END id_conf_fieldheader}
+                            </TH>
+                          {END id_conf_fieldheadercolumn}
+                          {BEGIN nm_sala_fieldheadercolumn}
+                            <TH class="rnr-gridfieldlabel {$nm_sala_class}">
+                              {BEGIN nm_sala_fieldheader}
+                                <SPAN {$nm_sala_orderlinkattrs}>
+                                  {$label conf_sala nm_sala}
+                                </SPAN>
+                              {END nm_sala_fieldheader}
+                            </TH>
+                          {END nm_sala_fieldheadercolumn}
+                          {BEGIN dt_conferencia_fieldheadercolumn}
+                            <TH class="rnr-gridfieldlabel {$dt_conferencia_class}">
+                              {BEGIN dt_conferencia_fieldheader}
+                                <SPAN {$dt_conferencia_orderlinkattrs}>
+                                  {$label conf_sala dt_conferencia}
+                                </SPAN>
+                              {END dt_conferencia_fieldheader}
+                            </TH>
+                          {END dt_conferencia_fieldheadercolumn}
+                          {BEGIN senha_fieldheadercolumn}
+                            <TH class="rnr-gridfieldlabel {$senha_class}">
+                              {BEGIN senha_fieldheader}
+                                <SPAN {$senha_orderlinkattrs}>
+                                  {$label conf_sala senha}
+                                </SPAN>
+                              {END senha_fieldheader}
+                            </TH>
+                          {END senha_fieldheadercolumn}
+                          {BEGIN Status_fieldheadercolumn}
+                            <TH class="rnr-gridfieldlabel {$Status_class}">
+                              {BEGIN Status_fieldheader}
+                                <SPAN {$Status_orderlinkattrs}>
+                                  {$label conf_sala Status}
+                                </SPAN>
+                              {END Status_fieldheader}
+                            </TH>
+                          {END Status_fieldheadercolumn}
+                          <TH class=rnr-edge>
+                            &nbsp;
+                          </TH>
+                          {BEGIN endrecordheader_block}
+                            <TH class=rnr-cs>
+                              &nbsp;
+                            </TH>
+                          {END endrecordheader_block}
+                        {END record_header}
+                      </TR>
+                    {END grid_header}
+                  </THEAD>
+                  <TBODY>
+                    {BEGIN grid_row}
+                      <TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+                        {BEGIN grid_record}
+                          {BEGIN listIcons_column}
+                            <TD class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+                              {BEGIN edit_column}
+                                {BEGIN edit_link}
+                                  <A class=rnr-button-img title=Editar data-icon="edit" {$editlink_attrs}>
+                                  </A>
+                                {END edit_link}
+                              {END edit_column}
+                            </TD>
+                          {END listIcons_column}
+                          {BEGIN checkbox_column}
+                            <TD class=rnr-bc iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+                              {BEGIN checkbox}
+                                <INPUT type=checkbox {$checkbox_attrs}>
+                              {END checkbox}
+                            </TD>
+                          {END checkbox_column}
+                          {BEGIN conf_sala_dtable_column}
+                            <TD class=rnr-nowrap {$rowstyle} {$recordattrs}>
+                              {BEGIN conf_sala_convidado_dtable_link}
+                                <SPAN>
+                                  <A {$conf_sala_convidado_dtablelink_attrs}>
+                                    Convite da Conferência
+                                  </A>
+                                  &nbsp;
+                                </SPAN>
+                              {END conf_sala_convidado_dtable_link}
+                            </TD>
+                          {END conf_sala_dtable_column}
+                          {BEGIN id_conf_fieldcolumn}
+                            <TD class={$id_conf_class} {$id_conf_style} {$recordattrs}>
+                              {$id_conf_value}
+                            </TD>
+                          {END id_conf_fieldcolumn}
+                          {BEGIN nm_sala_fieldcolumn}
+                            <TD class={$nm_sala_class} {$nm_sala_style} {$recordattrs}>
+                              {$nm_sala_value}
+                            </TD>
+                          {END nm_sala_fieldcolumn}
+                          {BEGIN dt_conferencia_fieldcolumn}
+                            <TD class={$dt_conferencia_class} {$dt_conferencia_style} {$recordattrs}>
+                              {$dt_conferencia_value}
+                            </TD>
+                          {END dt_conferencia_fieldcolumn}
+                          {BEGIN senha_fieldcolumn}
+                            <TD class={$senha_class} {$senha_style} {$recordattrs}>
+                              {$senha_value}
+                            </TD>
+                          {END senha_fieldcolumn}
+                          {BEGIN Status_fieldcolumn}
+                            <TD class={$Status_class} {$Status_style} {$recordattrs}>
+                              {$Status_value}
+                            </TD>
+                          {END Status_fieldcolumn}
+                          <TD class=rnr-edge {$recordattrs}>
+                            &nbsp;
+                          </TD>
+                          {BEGIN endrecord_block}
+                            <TD class=rnr-cs {$endrecordblock_attrs}>
+                              &nbsp;
+                            </TD>
+                          {END endrecord_block}
+                        {END grid_record}
+                      </TR>
+                    {END grid_row}
+                  </TBODY>
+                </TABLE>
+              {END grid_block}
+            {END container_grid}
+            {BEGIN container_pagination_bottom}
+              <DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+                {BEGIN pagination_block}
+                  <DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+                    {$pagination}
+                  </DIV>
+                {END pagination_block}
+                <DIV class=rnr-leftbricks>
+                  {BEGIN details_block}
+                    <DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">
+                      <SPAN {$details_attrs}>
+                        Ítens Encontrados:
+                        <B>
+                          <SPAN class=rnr-details_found_count>
+                            {$records_found}
+                          </SPAN>
+                        </B>
+                      </SPAN>
+                    </DIV>
+                  {END details_block}
+                </DIV>
+                <DIV class=rnr-rightbricks>
+                  {BEGIN pages_block}
+                    <DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">
+                      <SPAN {$pages_attrs}>
+                        Página
+                        <B>
+                          {$page}
+                        </B>
+                        de
+                        <B>
+                          {$maxpages}
+                        </B>
+                      </SPAN>
+                    </DIV>
+                  {END pages_block}
+                  {BEGIN recordspp_block}
+                    <DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">
+                      <SPAN id=recordspp_block{$id} name="recordspp_block{$id}">
+                        Registros por Página:&nbsp;{$recsPerPage}
+                      </SPAN>
+                    </DIV>
+                  {END recordspp_block}
+                </DIV>
+              </DIV>
+            {END container_pagination_bottom}
+          </DIV>
+          <DIV class="rnr-right {$blockclass_right}">
+          </DIV>
+        </DIV>
+        <DIV class="rnr-bottom {$blockclass_bottom}">
+        </DIV>
+      </DIV>
+      {$footer}
+    {END body}
+  </BODY>
+</HTML>

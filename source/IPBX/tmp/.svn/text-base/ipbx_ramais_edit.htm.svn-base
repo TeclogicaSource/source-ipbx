@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Ipbx Ramais</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><LINK 
+id=replace_0 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]-->
+<STYLE>
+#center_block___pageid___ {width:500px;margin:0 auto;}
+#contents_block___pageid___ {text-align:center;width:100%}
+#header_block___pageid___ {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block___pageid___ {width:100%}
+#fields_block___pageid___ td {padding-left:10px}
+#buttons_block___pageid___ {width:100%;padding-bottom:5px;text-align:center}
+#required_block___pageid___ {text-align:left;padding:5px}
+#buttons_block___pageid___ > * {margin:0 2px;text-align:center}
+#span___pageid___ {margin:0 20px 0 20px;}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY innertag="body"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> 
+<TABLE style="WIDTH: 1215px; HEIGHT: 921px" id=center_block___pageid___ 
+align=center outertag="editForm">
+  <TBODY>
+  <TR>
+    <TD style="WIDTH: 1006px" id=contents_block___pageid___><B class=xtop><B 
+      class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+      <DIV id=header_block___pageid___ class=upeditmenu>Ipbx Ramais, Editar 
+      registro [ Identificação: <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+      id=replace_3 contentEditable=false>show_key1</SPAN> ] </DIV>
+      <DIV id=message_block___pageid___ class=downedit 
+      outertag="message_block"><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+      id=replace_4 contentEditable=false>message</SPAN></DIV>
+      <TABLE border=0 cellSpacing=0 borderColor=#ff6820 cellPadding=4 
+      width="100%">
+        <TBODY>
+        <TR outertag="name_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshadeleft_b2 
+          innertag="name_label">Ramal</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshaderight_lb2 
+            width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_readonly.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_5 contentEditable=false 
+            typeid="edit_name">&nbsp;name</SPAN> </TD></TR>
+        <TR outertag="secret_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+          class=editshade_b>Senha</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_6 contentEditable=false 
+            typeid="edit_secret">&nbsp;secret</SPAN> </TD></TR>
+        <TR outertag="callerid_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+          class=editshade_b>Nome</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_7 contentEditable=false 
+            typeid="edit_callerid">&nbsp;callerid</SPAN> </TD></TR>
+        <TR outertag="mail_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>E-Mail (secretária eletrônica)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_8 contentEditable=false 
+            typeid="edit_mail">&nbsp;mail</SPAN> </TD></TR>
+        <TR outertag="id_lang_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Linguagem</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_9 contentEditable=false 
+            typeid="edit_id_lang">&nbsp;id_lang</SPAN> </TD></TR>
+        <TR height=21>
+          <TD style="BACKGROUND-COLOR: #e8e8e8; WHITE-SPACE: normal" 
+            colSpan=2><P><STRONG><FONT color=#336699><FONT 
+            color=#336699>&nbsp;&nbsp; 
+            </FONT><U>Desvios</U></FONT></STRONG>&nbsp;</P></TD></TR>
+        <TR outertag="desvio_ddr_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>1º - 
+            Entrada no DDR desvia para:</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_10 contentEditable=false 
+            typeid="edit_desvio_ddr">&nbsp;desvio_ddr</SPAN> </TD></TR>
+        <TR outertag="desvio_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>2º - 
+            Qualquer ligação desvia para:</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_11 contentEditable=false 
+            typeid="edit_desvio">&nbsp;desvio</SPAN> </TD></TR>
+        <TR outertag="id_desvio_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>3º - 
+            Em horários e dias específicos desvia para:</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_12 contentEditable=false 
+            typeid="edit_id_desvio">&nbsp;id_desvio</SPAN> </TD></TR>
+        <TR outertag="accountcode_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Centro de custo</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_13 contentEditable=false 
+            typeid="edit_accountcode">&nbsp;accountcode</SPAN> </TD></TR>
+        <TR outertag="id_painel_op_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Painel de Operações</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_14 contentEditable=false 
+            typeid="edit_id_painel_op">&nbsp;id_painel_op</SPAN> </TD></TR>
+        <TR outertag="flg_info_centrocusto_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Informar centro de custo?</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_checkbox.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_15 contentEditable=false 
+            typeid="edit_flg_info_centrocusto">&nbsp;flg_info_centrocusto</SPAN> 
+          </TD></TR>
+        <TR outertag="flg_cadeado_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>Trava 
+            de ramal (cadeado)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_checkbox.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_16 contentEditable=false 
+            typeid="edit_flg_cadeado">&nbsp;flg_cadeado</SPAN> </TD></TR>
+        <TR outertag="grava_chamada_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Gravar Chamadas</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_checkbox.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_17 contentEditable=false 
+            typeid="edit_grava_chamada">&nbsp;grava_chamada</SPAN> </TD></TR>
+        <TR outertag="flg_show_mobile_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Adicionar a lista de contatos (iPBX Mobile)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_checkbox.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_18 contentEditable=false 
+            typeid="edit_flg_show_mobile">&nbsp;flg_show_mobile</SPAN> </TD></TR>
+        <TR outertag="tp_ramal_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>Tipo 
+            de ramal</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_radio.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_19 contentEditable=false 
+            typeid="edit_tp_ramal">&nbsp;tp_ramal</SPAN> </TD></TR>
+        <TR outertag="id_pesquisa_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Pesquisa</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_20 contentEditable=false 
+            typeid="edit_id_pesquisa">&nbsp;id_pesquisa</SPAN> </TD></TR>
+        <TR outertag="call_limit_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Ligações simultâneas</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_21 contentEditable=false 
+            typeid="edit_call_limit">&nbsp;call-limit</SPAN> </TD></TR>
+        <TR outertag="pickupgroup_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>Grupo 
+            de captura</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_22 contentEditable=false 
+            typeid="edit_pickupgroup">&nbsp;pickupgroup</SPAN> </TD></TR>
+        <TR outertag="context_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Privilégio</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_23 contentEditable=false 
+            typeid="edit_context">&nbsp;context</SPAN> </TD></TR>
+        <TR outertag="allow_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+          class=editshade_b>Codec</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_24 contentEditable=false 
+            typeid="edit_allow">&nbsp;allow</SPAN> </TD></TR>
+        <TR outertag="Transbordo_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" class=editshade_b>Ramal 
+            de Transbordo</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><FONT 
+            color=#336699>Toca</FONT> <SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_25 contentEditable=false 
+            typeid="edit_tp_chamada">&nbsp;tp_chamada</SPAN>&nbsp;<FONT 
+            color=#336699>segundos, desvia para</FONT> <SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_26 contentEditable=false 
+            typeid="edit_Transbordo">&nbsp;Transbordo</SPAN> </TD></TR>
+        <TR outertag="id_horario_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Horário Saída de Chamadas</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_27 contentEditable=false 
+            typeid="edit_id_horario">&nbsp;id_horario</SPAN> </TD></TR>
+        <TR outertag="id_saida_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Identificação Chamada (callerid)</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_28 contentEditable=false 
+            typeid="edit_id_saida">&nbsp;id_saida</SPAN> </TD></TR>
+        <TR outertag="id_interf_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Interface</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_29 contentEditable=false 
+            typeid="edit_id_interf">&nbsp;id_interf</SPAN> <FONT 
+            color=#336699>porta:</FONT> <SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_30 contentEditable=false 
+            typeid="edit_ident_interf">&nbsp;ident_interf</SPAN></TD></TR>
+        <TR>
+          <TD style="BACKGROUND-COLOR: #e8e8e8; WHITE-SPACE: normal" 
+            colSpan=2><FONT color=#336699><STRONG>&nbsp;&nbsp; 
+            <U>Provisionamento - Configuração automática dos 
+            telefones</U></STRONG></FONT></TD></TR>
+        <TR outertag="id_provis_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+            class=editshade_b>Template Provisionamento</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_lookup_wizard.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_31 contentEditable=false 
+            typeid="edit_id_provis">&nbsp;id_provis</SPAN> </TD></TR>
+        <TR outertag="mc_addr_fieldblock">
+          <TD style="PADDING-LEFT: 15px; WIDTH: 302px" 
+class=editshade_b>MAC</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 18px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_text_field.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_32 contentEditable=false 
+            typeid="edit_mc_addr">&nbsp;mc_addr</SPAN> </TD></TR></TBODY></TABLE>
+      <DIV id=buttons_block___pageid___ class=downedit2>
+      <DIV id=required_block___pageid___ outertag="legend"><IMG alt=bullet 
+      src="images/icon_required.gif"> - Required field</DIV><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+      id=replace_33 contentEditable=false>legendBreak</SPAN> <SPAN 
+      class=buttonborder outertag="save_button"><INPUT id=savebutton___pageid___ class=button value=Salvar type=submit {$savebutton_attrs}></SPAN> 
+      <SPAN class=buttonborder outertag="reset_button"><INPUT class=button value=Limpar type=reset {$resetbutton_attrs}></SPAN> 
+      <SPAN id=span___pageid___>&nbsp;</SPAN> <SPAN class=buttonborder 
+      outertag="prev_button"><INPUT id=prev___pageid___ class=button value=" <<< " type=reset {$prevbutton_attrs}></SPAN> 
+      <SPAN class=buttonborder outertag="back_button"><INPUT class=button value="Voltar à Lista" type=button {$backbutton_attrs}></SPAN> 
+      <SPAN class=buttonborder outertag="next_button"><INPUT id=next___pageid___ class=button value=" >>> " type=reset {$nextbutton_attrs}></SPAN> 
+      </DIV></TD><B class=xbottom><B class=xb3a></B><B class=xb2a></B><B 
+    class=xb1a></B></B></TD></TR></TBODY></TABLE><!--{BEGIN detail_tables}--><!--{END detail_tables}--><B 
+class=xb4a></B><BR><BR><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> </BODY></HTML>

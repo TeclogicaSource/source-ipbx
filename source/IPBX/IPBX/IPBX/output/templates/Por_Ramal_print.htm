@@ -1,0 +1,108 @@
+<html {$html_attrs}>
+<head>
+<title>Ramais</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Ramais</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN id_conta_fieldheader}
+<b>Id Conta</b>
+{END id_conta_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN idt_custo_fieldheader}
+<b>Idt Custo</b>
+{END idt_custo_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN origem_fieldheader}
+<b>Origem</b>
+{END origem_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN destino_fieldheader}
+<b>Destino</b>
+{END destino_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN duracao_fieldheader}
+<b>Duracao</b>
+{END duracao_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN custo_fieldheader}
+<b>Custo</b>
+{END custo_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$id_conta_value}</td>
+	<td class=data>{$idt_custo_value}</td>
+	<td class=data>{$origem_value}</td>
+	<td class=data>{$destino_value}</td>
+	<td class=data>{$duracao_value}</td>
+	<td class=data>{$custo_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

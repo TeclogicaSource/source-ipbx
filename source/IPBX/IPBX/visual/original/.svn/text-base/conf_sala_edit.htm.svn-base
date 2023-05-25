@@ -1,0 +1,128 @@
+<html {$html_attrs}>
+<head><title>Sala de Conferência</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px;text-align:center}
+#span{$id} {margin:0 20px 0 20px;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN editForm}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Sala de Conferência, Editar registro [
+Identificação: {$show_key1}
+]
+</div>
+
+{BEGIN message_block}
+<div class="downedit" id="message_block{$id}">{$message}</div>
+{END message_block}
+
+<table cellpadding=4 cellspacing=0 border=0 width=100%>
+{BEGIN nm_sala_fieldblock}
+<tr>
+    <td class=editshadeleft_b2 width=150 style="padding-left:15px;">
+{BEGIN nm_sala_label}Sala{END nm_sala_label}
+</td>
+    <td width=250 class=editshaderight_lb2 style="padding-left:10px;">
+    {$nm_sala_editcontrol}
+  </td></tr>
+{END nm_sala_fieldblock}
+{BEGIN dsc_sala_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Descrição</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$dsc_sala_editcontrol}
+  </td></tr>
+{END dsc_sala_fieldblock}
+{BEGIN dt_conferencia_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Data da conferência</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$dt_conferencia_editcontrol}
+  </td></tr>
+{END dt_conferencia_fieldblock}
+{BEGIN dt_expiracao_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Data Expiração</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$dt_expiracao_editcontrol}
+  </td></tr>
+{END dt_expiracao_fieldblock}
+{BEGIN hr_inicio_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Hora Início</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_inicio_editcontrol}
+  </td></tr>
+{END hr_inicio_fieldblock}
+{BEGIN hr_fim_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Hora Fim</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_fim_editcontrol}
+  </td></tr>
+{END hr_fim_fieldblock}
+{BEGIN flg_rec_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Gravação</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$flg_rec_editcontrol}
+  </td></tr>
+{END flg_rec_fieldblock}
+{BEGIN flg_pass_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Requer Senha</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$flg_pass_editcontrol}
+  </td></tr>
+{END flg_pass_fieldblock}
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN legend}
+ <div id="required_block{$id}" ><img alt="bullet" src="images/icon_required.gif"> - Required field</div>
+ {END legend}
+ {$legendBreak}
+{BEGIN save_button}
+ <span class=buttonborder><input id="savebutton{$id}" class=button type=submit value="Salvar" {$savebutton_attrs}></span>
+{END save_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=reset value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+<span id="span{$id}">&nbsp;</span>
+{BEGIN prev_button}
+ <span class=buttonborder><input id="prev{$id}" class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input id="next{$id}" class=button type=reset value=" >>> " {$nextbutton_attrs}></span>
+{END next_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+ </td></tr></table>
+{END editForm}
+ {BEGIN detail_tables}
+{$displayDetailTable_conf_sala_convidado}
+{END detail_tables}
+ <br><br>
+{$footer}
+{END body}
+</body>
+</html>

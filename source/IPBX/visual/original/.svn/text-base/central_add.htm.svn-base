@@ -1,0 +1,245 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_menu}
+<div class="rnr-c rnr-cv rnr-c-menu">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+</div>
+{END container_menu}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel central add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+
+
+{BEGIN container_details}
+<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}
+		{BEGIN details_ipbx_interf_vono}
+<div class="rnr-cw-detailsipbx_interf_vono rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_vono rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_vono rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces Vono
+	</div>
+	{$displayDetailTable_ipbx_interf_vono}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_vono}
+		{BEGIN details_ipbx_interf_fxs}
+<div class="rnr-cw-detailsipbx_interf_fxs rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_fxs rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_fxs rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces FXS
+	</div>
+	{$displayDetailTable_ipbx_interf_fxs}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_fxs}
+		{BEGIN details_ipbx_interf_e1}
+<div class="rnr-cw-detailsipbx_interf_e1 rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_e1 rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_e1 rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces E1
+	</div>
+	{$displayDetailTable_ipbx_interf_e1}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_e1}
+		{BEGIN details_ipbx_interf_gsm}
+<div class="rnr-cw-detailsipbx_interf_gsm rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_gsm rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_gsm rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces GSM
+	</div>
+	{$displayDetailTable_ipbx_interf_gsm}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_gsm}
+		{BEGIN details_ipbx_interf_sip}
+<div class="rnr-cw-detailsipbx_interf_sip rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_sip rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_sip rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces SIP
+	</div>
+	{$displayDetailTable_ipbx_interf_sip}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_sip}
+		{BEGIN details_ipbx_interf_voxip}
+<div class="rnr-cw-detailsipbx_interf_voxip rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_voxip rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_voxip rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces VOXIP
+	</div>
+	{$displayDetailTable_ipbx_interf_voxip}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_voxip}
+		{BEGIN details_ipbx_interf_mslync}
+<div class="rnr-cw-detailsipbx_interf_mslync rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_mslync rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_mslync rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces MS-LYNC
+	</div>
+	{$displayDetailTable_ipbx_interf_mslync}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_mslync}
+		{BEGIN details_ipbx_interf_callman}
+<div class="rnr-cw-detailsipbx_interf_callman rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_callman rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_callman rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interfaces CallManager (Cisco)
+	</div>
+	{$displayDetailTable_ipbx_interf_callman}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_callman}
+		{BEGIN details_ipbx_interf_fxo}
+<div class="rnr-cw-detailsipbx_interf_fxo rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_fxo rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_fxo rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interface FXO
+	</div>
+	{$displayDetailTable_ipbx_interf_fxo}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_fxo}
+		{BEGIN details_ipbx_interf_sip_generica}
+<div class="rnr-cw-detailsipbx_interf_sip_generica rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsipbx_interf_sip_generica rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsipbx_interf_sip_generica rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Interface SIP Genérica
+	</div>
+	{$displayDetailTable_ipbx_interf_sip_generica}
+</div>
+</div>
+</div>
+	{END details_ipbx_interf_sip_generica}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

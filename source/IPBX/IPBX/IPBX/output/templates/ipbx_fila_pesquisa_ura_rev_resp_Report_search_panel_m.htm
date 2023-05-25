@@ -1,0 +1,65 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Critério:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}Todos{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}Qualquer{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Adicionar campo</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_dsc_pesquisa}
+			<a href="#" id="addSearchControl_dsc_pesquisa" class="addSearchControl" {$addSearchControl_dsc_pesquisa_attrs}>Nome Pesquisa</a><br>
+		{END addSearch_dsc_pesquisa}
+		{BEGIN addSearch_dsc_mensagem}
+			<a href="#" id="addSearchControl_dsc_mensagem" class="addSearchControl" {$addSearchControl_dsc_mensagem_attrs}>Pergunta</a><br>
+		{END addSearch_dsc_mensagem}
+		{BEGIN addSearch_nm_telefone}
+			<a href="#" id="addSearchControl_nm_telefone" class="addSearchControl" {$addSearchControl_nm_telefone_attrs}>Telefone</a><br>
+		{END addSearch_nm_telefone}
+		{BEGIN addSearch_id_cliente}
+			<a href="#" id="addSearchControl_id_cliente" class="addSearchControl" {$addSearchControl_id_cliente_attrs}>Ticket do Cliente</a><br>
+		{END addSearch_id_cliente}
+		{BEGIN addSearch_resp_usuario}
+			<a href="#" id="addSearchControl_resp_usuario" class="addSearchControl" {$addSearchControl_resp_usuario_attrs}>Resposta Numérica</a><br>
+		{END addSearch_resp_usuario}
+		{BEGIN addSearch_dt_resp}
+			<a href="#" id="addSearchControl_dt_resp" class="addSearchControl" {$addSearchControl_dt_resp_attrs}>Data da Resposta</a><br>
+		{END addSearch_dt_resp}
+		{BEGIN addSearch_txt_resp}
+			<a href="#" id="addSearchControl_txt_resp" class="addSearchControl" {$addSearchControl_txt_resp_attrs}>Texto da Resposta </a><br>
+		{END addSearch_txt_resp}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Buscar</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,341 @@
+<html {$html_attrs}>
+<head><meta http-equiv="Content-Type" content="text/html;charset=Windows-1252" />
+<title>Rel. Desvios Chamadas</title>
+<LINK REL="stylesheet" href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css" type="text/css" id="replace_1">
+<!--[if IE]>
+<LINK REL="stylesheet" href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css" type="text/css" id="replace_2">
+<![endif]-->
+<!--{BEGIN style_block}-->
+<style>
+#height100___pageid___ {height:auto;width:100%;padding:10px;}
+#left_block___pageid___ {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block___pageid___{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block___pageid___{left:20px;right:0px;}
+{END LTR_block}
+#right_block___pageid___ {padding:10px 10px 0px 0px;}
+#menu_block___pageid___ {padding:5px 0px; width:auto;}
+#search_block___pageid___, #search_block_option___pageid___, #search_block_text___pageid___ {padding:3px 5px;}
+#toplinks_block___pageid___ {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block___pageid___ > * {margin:4px 6px;vertical-align:middle;}
+#global_block___pageid___ {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block___pageid___ {padding:0px 10px 10px 0px;}
+#global_block_table___pageid___, #right_block___pageid___{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table___pageid___ {width:auto;}
+#searchform_block___pageid___ {margin-top:1px;padding:3px}
+#searchform_block___pageid___ div {padding:3px 5px;}
+#details_block___pageid___,#pages_block___pageid___ {white-space:nowrap;text-align:center;padding:3px}
+#details_block___pageid___, #recordspp_block___pageid___ {margin-top:1px}
+#recordcontrols_block___pageid___ {padding:3px 6px;text-align:left;width:auto;}
+#record_controls___pageid___ > *,#newrecord_controls___pageid___ > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block___pageid___ {text-align:center;}
+#caption_block___pageid___ {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line___pageid___ {text-align:center;padding:4px;}
+#grid_block___pageid___ {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer___pageid___{	width: 200px}
+#searchOptions___pageid___{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+table.report {border-collapse: collapse} 
+table.report td {padding: 2px;border-width: 1px; border-style: solid; border-color: #cccccc;}
+td.pagesummary{background-color:#ffffbb;}
+td.globalsummary{background-color:#ffe0b0;}
+#export_links___pageid___ * {padding:0}
+</style>
+<!--{END style_block}-->
+<!--{BEGIN iestyle_block}-->
+<!--[if IE]>
+<style>
+#toplinks_block___pageid___ * {margin:1px 3px;vertical-align:middle;}
+#record_controls___pageid___ *,#newrecord_controls___pageid___ * {margin:1x 1px;vertical-align:middle}
+#global_block___pageid___ {height:95%}
+#recordcontrols_block___pageid___ {width:100%;}
+</style>
+<![endif]-->
+<!--{END iestyle_block}-->
+</head>
+<BODY marginheight=0 marginwidth=0 {$bodyattrs} innertag="body">
+<DIV id="height100___pageid___" layout="Rome">
+
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<DIV class="uplistmenu" id="toplinks_block___pageid___" outertag="toplinks_block">
+Logado Como&nbsp;<b></b>&nbsp;
+<span class=buttonborder><input type=button class="button" value="Log Out" {$logoutlink_attrs}></span>
+
+<SPAN class=buttonborder outertag="adminarea_link"><input type=button class=button value="Área  Admin" {$adminarealink_attrs}></span>
+
+
+<SPAN class=buttonborder outertag="asearch_link"><input type=button class=button value="Busca Avancada" {$asearchlink_attrs}></span>
+
+
+
+<SPAN class=buttonborder outertag="print_link"><input type=button class=button value="Impressão  Amigável" {$printlink_attrs}></span>
+
+<SPAN class=buttonborder outertag="printall_link"><input type=button class=button value="Imprimir relatório" {$printalllink_attrs}></span>
+
+
+
+<SPAN id="export_links___pageid___" outertag="export_link">
+<a href="Rel__Desvios_Chamadas_print.php?all=1&format=excel" {$excellink_attrs}><img alt="Expot to Excel" src="images/excel.gif" border="0"></a>
+<a href="Rel__Desvios_Chamadas_print.php?all=1&format=word" {$wordlink_attrs}><img alt="Export to Word" src="images/word.gif" border="0" ></a>
+</span>
+
+
+
+</div>
+<DIV class="main_table" id="global_block___pageid___">
+<DIV id="left_block___pageid___" outertag="left_block">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<!-- MenuBegin -->
+<DIV class="xboxcontent" id="menu_block___pageid___" outertag="menu_block">
+<!-- MainMenuBegin -->
+<span id = 'replace_mainmenu0' typeid='menu' contenteditable = false><style class="Vmenu">
+#mainmenu_block IMG, #mainmenu_block HR{vertical-align:middle;margin-right:10px;}
+/* For Vmenu1 on the list page */
+#mainmenu_block {width:200px;}
+#menu_block___pageid___, #tables_block {padding:10px 0;}
+.Vmenu1 ul, .Vmenu1 ul li{list-style:none;margin:0;padding:0px;}
+.Vmenu1 ul li {padding:5px 10px;position:relative;z-index:1;display:block;}
+</style>
+<div id="mainmenu_block" class="Vmenu1">
+
+<ul>
+	<li id="li1" view="topitem" >
+	
+<a id="itemlink1" class="tablelinkssearch"  title='Painel de Operações'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_3">Painel de Operações</a>
+
+
+
+
+
+	</li>
+	<li id="li2" view="topitem" >
+	
+<a id="itemlink2" class="tablelinkssearch"  title='Configurações Pessoais'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_4">Configurações Pessoais</a>
+
+
+
+
+
+	</li>
+	<li id="li3" view="topitem" >
+	
+<a id="itemlink3" class="tablelinkssearch"  title='Central Telefônica'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_5">Central Telefônica</a>
+
+
+
+
+
+	</li>
+	<li id="li49" view="topitem" >
+	
+<a id="itemlink49" class="tablelinkssearch"  title='Call Center'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_6">Call Center</a>
+
+
+
+
+
+	</li>
+	<li id="li82" view="topitem" >
+	
+<a id="itemlink82" class="tablelinkssearch"  title='Sala de Conferência'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_7">Sala de Conferência</a>
+
+
+
+
+
+	</li>
+	<li id="li83" view="topitem" >
+	
+<a id="itemlink83" class="tablelinkssearch"  title='FAX'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_8">FAX</a>
+
+
+
+
+
+	</li>
+	<li id="li88" view="topitem" >
+	
+<a id="itemlink88" class="tablelinkssearch"  title='Gestão SMS'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_9">Gestão SMS</a>
+
+
+
+
+
+	</li>
+	<li id="li92" view="topitem" >
+	
+<a id="itemlink92" class="tablelinkssearch"  title='Ura Reversa'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_10">Ura Reversa</a>
+
+
+
+
+
+	</li>
+	<li id="li100" view="topitem" >
+	
+<a id="itemlink100" class="tablelinkssearch"  title='Configurações'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_11">Configurações</a>
+
+
+
+
+
+	</li>
+	<li id="li115" view="topitem" >
+	
+<a id="itemlink115" class="tablelinkssearch"  title='Ajuda'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_12">Ajuda</a>
+
+
+
+
+
+	</li>
+	<li id="li116" view="topitem" >
+	
+<a id="itemlink116" class="tablelinkssearch"  title='Rel. Desvios Chamadas'><IMG alt="*" src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif" border="0" / id="replace_13">Rel. Desvios Chamadas</a>
+
+
+
+
+
+	</li>
+</ul>
+</div>
+</span>
+<!-- MainMenuEnd -->	
+  </div>
+
+<!-- MenuEnd -->
+<DIV outertag="search_records_block">
+
+<style>
+<!--
+#center_block___pageid___{
+	padding: 5px;
+}
+#searchPanelHeader___pageid___{
+	padding: 5px 0px 5px 5px;
+}
+-->
+</style>
+
+<!-- search panel and window header -->
+<DIV class="blackshade2" id="center_block___pageid___">
+	Buscar:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="buttonborder"><INPUT class="button" type="button" id="showSrchWin___pageid___" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs}></span>
+	&nbsp;		
+	<span class="buttonborder"><INPUT class="button" type="button" id="showOptPanel___pageid___" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs}></span>
+
+</div>
+<DIV id="searchform___pageid___">
+	<DIV class="blackshade" id="searchPanelHeader___pageid___">
+		
+		
+		
+		<INPUT type=text {$searchfor_attrs} size="25" outertag="searchform_text">
+		&nbsp;
+		<SPAN class="buttonborder" outertag="searchform_search"><input class="button" type="button" style="width: 18px; background-image: url(images/search/search.gif);" {$searchbutton_attrs} /></span>
+		&nbsp;		
+		<SPAN id="showall___pageid___" class=buttonborder outertag="searchform_showall"><input type=button class="button" value="Mostrar Todos" {$showallbutton_attrs}></span>
+	</div>
+</div>  
+
+<!-- search panel and window -->
+<DIV id="searchPanelContainer___pageid___" class="searchPanelContainer">
+ 
+</div>  
+
+
+
+<DIV class="toplist xboxcontent center" id="details_block___pageid___" outertag="details_block">
+<SPAN id="detFound___pageid___">Ítens Encontrados: &nbsp;</span>
+</div>
+<DIV class="toplist xboxcontent center" id="pages_block___pageid___" outertag="pages_block">
+<SPAN id="pageOf___pageid___">Página  de </span>
+</div>
+
+<DIV id="search_block_line_pp___pageid___" class="toplist xboxcontent center" outertag="recordspp_block">
+Registros por Página:&nbsp;
+<select onChange="javascript: document.location='Rel__Desvios_Chamadas_report.php?pagesize='+this.options[this.selectedIndex].value;">
+	<OPTION value="10" {$rpp10_selected} id="replace_14">10</OPTION>
+	<OPTION value="20" {$rpp20_selected} id="replace_15">20</OPTION>
+	<OPTION value="30" {$rpp30_selected} id="replace_16">30</OPTION>
+	<OPTION value="50" {$rpp50_selected} id="replace_17">50</OPTION>
+	<OPTION value="100" {$rpp100_selected} id="replace_18">100</OPTION>
+	<OPTION value="500" {$rpp500_selected} id="replace_19">500</OPTION>
+	<OPTION value="-1" {$rpp_all_selected} id="replace_20">Mostrar Todos</OPTION>
+</select>
+</div>
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+
+<!-- main block -->
+<div id="marginStyle">
+<DIV id="right_block___pageid___" class="right_block" innertag="recordcontrols_block">
+<div>
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<DIV class="xboxcontent" id="recordcontrols_block___pageid___">
+
+<SPAN id="record_controls___pageid___" outertag="record_controls">
+
+
+
+
+</span>
+
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+</div>
+<DIV class="message" id="usermessage___pageid___"></div>
+<DIV class="main_table" id="global_block_table___pageid___">
+
+<TABLE class=report WIDTH="auto" CELLPADDING=1 CELLSPACING=0 BORDER=0 style="border: solid; border-width: 1px; border-color: black;">
+<tr>
+<td class=blackshade>Periodo</td>
+<td class=blackshade>Origem</td>
+<td class=blackshade>Destino</td>
+<td class=blackshade>Tempo Custo</td>
+<td class=blackshade>Duração</td>
+<td class=blackshade>Centro de Custo</td>
+</tr>
+<!--{BEGIN grid_row}-->
+<!-------------------------------------  data ----------------------------------------->
+<TR outertag="row_data">
+	<td class=data>&nbsp;calldate</td>
+	<td class=data>&nbsp;src</td>
+	<td class=data>&nbsp;dst</td>
+	<td class=data>&nbsp;billsec</td>
+	<td class=data>&nbsp;duration</td>
+	<td class=data>&nbsp;accountcode</td>
+</tr>
+<!--{END grid_row}-->
+</table>
+</div>
+<div class="main_table message_block">
+<div style="text-align: center">[ 1<a> 2 3 4 5 6 7 8 9 10</a> ] <a>Next</a> : <a>Last</a><br /></div>
+</div>
+<b class="xbottom"><b class="xb4b3"></b><b class="xb3b3"></b><b class="xb2b3"></b><b class="xb1b3"></b></b>
+
+</div>
+</body>
+</html>

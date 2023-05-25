@@ -1,0 +1,246 @@
+<html {$html_attrs}>
+<head><title>Filas</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px;text-align:center}
+#span{$id} {margin:0 20px 0 20px;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN editForm}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Filas, Editar registro [
+Identificação: {$show_key1}
+]
+</div>
+
+{BEGIN message_block}
+<div class="downedit" id="message_block{$id}">{$message}</div>
+{END message_block}
+
+<table cellpadding=4 cellspacing=0 border=0 width=100%>
+{BEGIN nm_fila_fieldblock}
+<tr>
+    <td class=editshadeleft_b2 width=150 style="padding-left:15px;">
+{BEGIN nm_fila_label}Nome da fila{END nm_fila_label}
+</td>
+    <td width=250 class=editshaderight_lb2 style="padding-left:10px;">
+    {$nm_fila_editcontrol}
+  </td></tr>
+{END nm_fila_fieldblock}
+{BEGIN nm_grupo_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Grupo de filas</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$nm_grupo_editcontrol}
+  </td></tr>
+{END nm_grupo_fieldblock}
+{BEGIN tp_toques_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo entre toques (segundos)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$tp_toques_editcontrol}
+  </td></tr>
+{END tp_toques_fieldblock}
+{BEGIN estrategia_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Estratégia</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$estrategia_editcontrol}
+  </td></tr>
+{END estrategia_fieldblock}
+{BEGIN tp_excedido_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;"> Tempo máximo do usuário em fila (segundos)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$tp_excedido_editcontrol}
+  </td></tr>
+{END tp_excedido_fieldblock}
+{BEGIN acao_tp_excedido_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;"> Dentro do horário e Tempo máximo excedido</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$acao_tp_excedido_editcontrol}
+  </td></tr>
+{END acao_tp_excedido_fieldblock}
+{BEGIN acao_falta_agente_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;"> Dentro do horário e falta agente conectado</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$acao_falta_agente_editcontrol}
+  </td></tr>
+{END acao_falta_agente_fieldblock}
+{BEGIN acao_fr_horario_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;"> Fora do horário de atendimento</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$acao_fr_horario_editcontrol}
+  </td></tr>
+{END acao_fr_horario_fieldblock}
+{BEGIN id_desvio_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;"> Desvio</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_desvio_editcontrol}
+  </td></tr>
+{END id_desvio_fieldblock}
+{BEGIN gravacao_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Gravação</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$gravacao_editcontrol}
+  </td></tr>
+{END gravacao_fieldblock}
+{BEGIN arq_audio_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Mens. fora período atend. (WAV)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$arq_audio_editcontrol}
+  </td></tr>
+{END arq_audio_fieldblock}
+{BEGIN arq_mesg_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Mens. antes do atend. (WAV)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$arq_mesg_editcontrol}
+  </td></tr>
+{END arq_mesg_fieldblock}
+{BEGIN id_logout_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Deslogar agentes automaticamente</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_logout_editcontrol}
+  </td></tr>
+{END id_logout_fieldblock}
+{BEGIN maxlen_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tamanho da fila (0 para não especificar)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$maxlen_editcontrol}
+  </td></tr>
+{END maxlen_fieldblock}
+{BEGIN wrapuptime_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo em segundos para o atendente entre chamadas (0 para não especificar)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$wrapuptime_editcontrol}
+  </td></tr>
+{END wrapuptime_fieldblock}
+{BEGIN seg_tmo_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo máximo da operação </td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$seg_tmo_editcontrol}
+  </td></tr>
+{END seg_tmo_fieldblock}
+{BEGIN perc_tmo_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Percentual Contratado</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$perc_tmo_editcontrol}
+  </td></tr>
+{END perc_tmo_fieldblock}
+{BEGIN seg_tma_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo máximo do atendimento </td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$seg_tma_editcontrol}
+  </td></tr>
+{END seg_tma_fieldblock}
+{BEGIN perc_tma_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Percentual Contratado</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$perc_tma_editcontrol}
+  </td></tr>
+{END perc_tma_fieldblock}
+{BEGIN seg_tme_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo máximo de espera</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$seg_tme_editcontrol}
+  </td></tr>
+{END seg_tme_fieldblock}
+{BEGIN perc_tme_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Percentual Contratado</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$perc_tme_editcontrol}
+  </td></tr>
+{END perc_tme_fieldblock}
+{BEGIN tx_abandono_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Taxa de Abandono (Percentual)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$tx_abandono_editcontrol}
+  </td></tr>
+{END tx_abandono_fieldblock}
+{BEGIN flg_estim_do_dia_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Estimativa do dia</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$flg_estim_do_dia_editcontrol}
+  </td></tr>
+{END flg_estim_do_dia_fieldblock}
+{BEGIN tp_estimativa_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Tempo (Min.)</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$tp_estimativa_editcontrol}
+  </td></tr>
+{END tp_estimativa_fieldblock}
+{BEGIN id_name_gestor_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Gestor da fila</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_name_gestor_editcontrol}
+  </td></tr>
+{END id_name_gestor_fieldblock}
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN legend}
+ <div id="required_block{$id}" ><img alt="bullet" src="images/icon_required.gif"> - Required field</div>
+ {END legend}
+ {$legendBreak}
+{BEGIN save_button}
+ <span class=buttonborder><input id="savebutton{$id}" class=button type=submit value="Salvar" {$savebutton_attrs}></span>
+{END save_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=reset value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+<span id="span{$id}">&nbsp;</span>
+{BEGIN prev_button}
+ <span class=buttonborder><input id="prev{$id}" class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input id="next{$id}" class=button type=reset value=" >>> " {$nextbutton_attrs}></span>
+{END next_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+ </td></tr></table>
+{END editForm}
+ {BEGIN detail_tables}
+{END detail_tables}
+ <br><br>
+{$footer}
+{END body}
+</body>
+</html>

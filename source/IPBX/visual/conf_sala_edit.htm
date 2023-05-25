@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$event conf_sala_Snippet12}
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel conf_sala edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN dsc_sala_fieldblock}<TR class={$fielddispclass_dsc_sala} data-fieldname="dsc_sala">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsc_sala_label}{$label conf_sala dsc_sala}{END dsc_sala_label}</TD>
+    <TD class="rnr-control style3">
+      {$dsc_sala_editcontrol}&nbsp; </TD></TR>
+  {END dsc_sala_fieldblock}{BEGIN nm_sala_fieldblock}<TR class={$fielddispclass_nm_sala} data-fieldname="nm_sala">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN nm_sala_label}{$label conf_sala nm_sala}{END nm_sala_label}</TD>
+    <TD class="rnr-control style3">
+      {$nm_sala_editcontrol}&nbsp; </TD></TR>
+  {END nm_sala_fieldblock}{BEGIN dt_conferencia_fieldblock}<TR class={$fielddispclass_dt_conferencia} data-fieldname="dt_conferencia">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dt_conferencia_label}{$label conf_sala dt_conferencia}{END dt_conferencia_label}</TD>
+    <TD class="rnr-control style3">
+      {$dt_conferencia_editcontrol}&nbsp; </TD></TR>
+  {END dt_conferencia_fieldblock}{BEGIN hr_inicio_fieldblock}<TR class={$fielddispclass_hr_inicio} data-fieldname="hr_inicio">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_inicio_label}
+      {$label conf_sala hr_inicio}{END hr_inicio_label}</TD>
+    <TD class="rnr-control style3">
+      {$hr_inicio_editcontrol}&nbsp; </TD></TR>
+  {END hr_inicio_fieldblock}{BEGIN dt_expiracao_fieldblock}<TR class={$fielddispclass_dt_expiracao} data-fieldname="dt_expiracao">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dt_expiracao_label}{$label conf_sala dt_expiracao}{END dt_expiracao_label}</TD>
+    <TD class="rnr-control style3">
+      {$dt_expiracao_editcontrol}&nbsp; 
+    </TD></TR>
+  {END dt_expiracao_fieldblock}{BEGIN hr_fim_fieldblock}<TR class={$fielddispclass_hr_fim} data-fieldname="hr_fim">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_fim_label}{$label conf_sala hr_fim}{END hr_fim_label}</TD>
+    <TD class="rnr-control style3">
+      {$hr_fim_editcontrol}&nbsp; </TD></TR>
+  {END hr_fim_fieldblock}{BEGIN flg_rec_fieldblock}<TR class={$fielddispclass_flg_rec} data-fieldname="flg_rec">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_rec_label}{$label conf_sala flg_rec}{END flg_rec_label}</TD>
+    <TD class="rnr-control style3">
+      {$flg_rec_editcontrol}&nbsp; </TD></TR>
+  {END flg_rec_fieldblock}{BEGIN flg_pass_fieldblock}<TR class={$fielddispclass_flg_pass} data-fieldname="flg_pass">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_pass_label}{$label conf_sala flg_pass}{END flg_pass_label}</TD>
+    <TD class="rnr-control style3">
+      {$flg_pass_editcontrol}&nbsp; 
+  </TD></TR>{END flg_pass_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV>
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+{BEGIN container_details}
+<DIV class="rnr-c rnr-cv rnr-c-details">{BEGIN detail_tables}
+{BEGIN details_conf_sala_convidado}<DIV class="rnr-cw-detailsconf_sala_convidado rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsconf_sala_convidado rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsconf_sala_convidado rnr-b-editdetails">
+<DIV class=rnr-dcaption>Convite da Conferência </DIV>
+{$displayDetailTable_conf_sala_convidado}</DIV></DIV></DIV>{END details_conf_sala_convidado}{END detail_tables}</DIV>{END container_details}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

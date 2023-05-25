@@ -1,0 +1,12 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="dsc_bl_list">
+	{$dsc_bl_list_editcontrol}
+	</control>
+	<control 
+	field="num_bl_list">
+	{$num_bl_list_editcontrol}
+	</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

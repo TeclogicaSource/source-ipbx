@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel cc_receptivo_filas edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN nm_fila_fieldblock}<TR class={$fielddispclass_nm_fila} data-fieldname="nm_fila">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN nm_fila_label}
+      {$label cc_receptivo_filas nm_fila}{END nm_fila_label}</TD>
+    <TD class="rnr-control style3">
+      {$nm_fila_editcontrol}&nbsp; 
+      {$label cc_receptivo_filas nm_grupo}
+      {$nm_grupo_editcontrol}</TD></TR>
+  {END nm_fila_fieldblock}{BEGIN nm_grupo_fieldblock}<TR class={$fielddispclass_nm_grupo} data-fieldname="nm_grupo">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #7f7f7f; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label colSpan=2>{BEGIN nm_grupo_label}
+      <P align=center>&nbsp; <STRONG><FONT size=4>CONFIGURAÇÕES DA 
+      FILA</FONT></STRONG></P>{END nm_grupo_label}</TD></TR>
+  {END nm_grupo_fieldblock}{BEGIN estrategia_fieldblock}<TR class={$fielddispclass_estrategia} data-fieldname="estrategia">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN estrategia_label}{$label cc_receptivo_filas estrategia}{END estrategia_label}</TD>
+    <TD class="rnr-control style3">
+      {$estrategia_editcontrol}&nbsp; 
+</TD></TR>
+  {END estrategia_fieldblock}{BEGIN tp_toques_fieldblock}<TR class={$fielddispclass_tp_toques} data-fieldname="tp_toques">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tp_toques_label}{$label cc_receptivo_filas tp_toques}{END tp_toques_label}</TD>
+    <TD class="rnr-control style3">
+      {$tp_toques_editcontrol}&nbsp; </TD></TR>
+  {END tp_toques_fieldblock}{BEGIN id_desvio_fieldblock}<TR class={$fielddispclass_id_desvio}>
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #7f7f7f; WHITE-SPACE: normal" class=rnr-label colSpan=2><STRONG>Desvios 
+      dentro do 
+  horário:</STRONG></TD></TR>
+  <TR class={$fielddispclass_id_desvio} data-fieldname="id_desvio">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN id_desvio_label}
+      {$label cc_receptivo_filas id_desvio}{END id_desvio_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$id_desvio_editcontrol}&nbsp; </TD></TR>
+  {END id_desvio_fieldblock}{BEGIN tp_excedido_fieldblock}<TR class={$fielddispclass_tp_excedido} data-fieldname="tp_excedido">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tp_excedido_label}
+      {$label cc_receptivo_filas tp_excedido}{END tp_excedido_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$tp_excedido_editcontrol}&nbsp; 
+  </TD></TR>
+  {END tp_excedido_fieldblock}{BEGIN acao_tp_excedido_fieldblock}<TR class={$fielddispclass_acao_tp_excedido} data-fieldname="acao_tp_excedido">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN acao_tp_excedido_label}
+      {$label cc_receptivo_filas acao_tp_excedido}{END acao_tp_excedido_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$acao_tp_excedido_editcontrol}&nbsp; </TD></TR>
+  {END acao_tp_excedido_fieldblock}{BEGIN acao_falta_agente_fieldblock}<TR class={$fielddispclass_acao_falta_agente} data-fieldname="acao_falta_agente">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN acao_falta_agente_label}
+      {$label cc_receptivo_filas acao_falta_agente}{END acao_falta_agente_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$acao_falta_agente_editcontrol}&nbsp; </TD></TR>
+  {END acao_falta_agente_fieldblock}{BEGIN acao_fr_horario_fieldblock}<TR class={$fielddispclass_acao_fr_horario} data-fieldname="acao_fr_horario">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN acao_fr_horario_label}
+      {$label cc_receptivo_filas acao_fr_horario}{END acao_fr_horario_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$acao_fr_horario_editcontrol}&nbsp; </TD></TR>
+  {END acao_fr_horario_fieldblock}{BEGIN gravacao_fieldblock}<TR class={$fielddispclass_gravacao} data-fieldname="gravacao">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN gravacao_label}{$label cc_receptivo_filas gravacao}{END gravacao_label}</TD>
+    <TD class="rnr-control style3">
+      {$gravacao_editcontrol}&nbsp; </TD></TR>
+  {END gravacao_fieldblock}{BEGIN arq_audio_fieldblock}<TR class={$fielddispclass_arq_audio} data-fieldname="arq_audio">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN arq_audio_label}{$label cc_receptivo_filas arq_audio}{END arq_audio_label}</TD>
+    <TD class="rnr-control style3">
+      {$arq_audio_editcontrol}&nbsp; </TD></TR>
+  {END arq_audio_fieldblock}{BEGIN arq_mesg_fieldblock}<TR class={$fielddispclass_arq_mesg} data-fieldname="arq_mesg">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN arq_mesg_label}{$label cc_receptivo_filas arq_mesg}{END arq_mesg_label}</TD>
+    <TD class="rnr-control style3">
+      {$arq_mesg_editcontrol}&nbsp; </TD></TR>
+  {END arq_mesg_fieldblock}{BEGIN id_logout_fieldblock}<TR class={$fielddispclass_id_logout} data-fieldname="id_logout">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN id_logout_label}{$label cc_receptivo_filas id_logout}{END id_logout_label}</TD>
+    <TD class="rnr-control style3">
+      {$id_logout_editcontrol}&nbsp; </TD></TR>
+  {END id_logout_fieldblock}{BEGIN maxlen_fieldblock}<TR class={$fielddispclass_maxlen} data-fieldname="maxlen">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN maxlen_label}{$label cc_receptivo_filas maxlen}{END maxlen_label}</TD>
+    <TD class="rnr-control style3">
+      {$maxlen_editcontrol}&nbsp; Zero indica 
+      sem limites&nbsp; </TD></TR>
+  {END maxlen_fieldblock}{BEGIN wrapuptime_fieldblock}<TR class={$fielddispclass_wrapuptime} data-fieldname="wrapuptime">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN wrapuptime_label}{$label cc_receptivo_filas wrapuptime}{END wrapuptime_label}</TD>
+    <TD class="rnr-control style3">
+      {$wrapuptime_editcontrol}&nbsp; 
+      &nbsp;Zero indica que não haverá tempo após a ligação</TD></TR>
+  {END wrapuptime_fieldblock}{BEGIN seg_tmo_fieldblock}<TR class={$fielddispclass_seg_tmo}>
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #7f7f7f; WHITE-SPACE: normal" class=rnr-label colSpan=2>
+      <P align=center><STRONG><FONT size=4>SERVICE LEVEL AGREEMENT - 
+      SLA</FONT></STRONG></P></TD></TR>
+  <TR class={$fielddispclass_seg_tmo} data-fieldname="seg_tmo">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN seg_tmo_label}
+      {$label cc_receptivo_filas seg_tmo}{END seg_tmo_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$seg_tmo_editcontrol}&nbsp; &nbsp; 
+      segundos</TD></TR>
+  {END seg_tmo_fieldblock}{BEGIN perc_tmo_fieldblock}<TR class={$fielddispclass_perc_tmo} data-fieldname="perc_tmo">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN perc_tmo_label}
+      {$label cc_receptivo_filas perc_tmo}{END perc_tmo_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$perc_tmo_editcontrol}&nbsp; %&nbsp; 
+    </TD></TR>
+  {END perc_tmo_fieldblock}{BEGIN seg_tma_fieldblock}<TR class={$fielddispclass_seg_tma} data-fieldname="seg_tma">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN seg_tma_label}
+      {$label cc_receptivo_filas seg_tma}{END seg_tma_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$seg_tma_editcontrol}&nbsp; 
+      segundos&nbsp; </TD></TR>
+  {END seg_tma_fieldblock}{BEGIN perc_tma_fieldblock}<TR class={$fielddispclass_perc_tma} data-fieldname="perc_tma">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN perc_tma_label}
+      {$label cc_receptivo_filas perc_tma}{END perc_tma_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$perc_tma_editcontrol}&nbsp; %&nbsp; 
+    </TD></TR>
+  {END perc_tma_fieldblock}{BEGIN seg_tme_fieldblock}<TR class={$fielddispclass_seg_tme} data-fieldname="seg_tme">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN seg_tme_label}
+      {$label cc_receptivo_filas seg_tme}{END seg_tme_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$seg_tme_editcontrol}&nbsp; 
+      segundos&nbsp; </TD></TR>
+  {END seg_tme_fieldblock}{BEGIN perc_tme_fieldblock}<TR class={$fielddispclass_perc_tme} data-fieldname="perc_tme">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN perc_tme_label}
+      {$label cc_receptivo_filas perc_tme}{END perc_tme_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$perc_tme_editcontrol}&nbsp; %&nbsp; 
+    </TD></TR>
+  {END perc_tme_fieldblock}{BEGIN tx_abandono_fieldblock}<TR class={$fielddispclass_tx_abandono} data-fieldname="tx_abandono">
+    <TD style="BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tx_abandono_label}
+      {$label cc_receptivo_filas tx_abandono}{END tx_abandono_label}</TD>
+    <TD style="BACKGROUND-COLOR: #c0c0c0; WIDTH: 30%; WHITE-SPACE: normal" class="rnr-control style3">
+      {$tx_abandono_editcontrol}&nbsp; % 
+    </TD></TR>
+  {END tx_abandono_fieldblock}{BEGIN id_name_gestor_fieldblock}<TR class={$fielddispclass_id_name_gestor} data-fieldname="id_name_gestor">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN id_name_gestor_label}{$label cc_receptivo_filas id_name_gestor}{END id_name_gestor_label}</TD>
+    <TD class="rnr-control style3">
+      {$id_name_gestor_editcontrol}&nbsp; 
+  </TD></TR>{END id_name_gestor_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

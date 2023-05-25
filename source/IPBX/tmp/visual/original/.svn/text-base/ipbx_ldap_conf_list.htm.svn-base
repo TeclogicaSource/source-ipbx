@@ -1,0 +1,471 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}
+<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logado Como&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log Out</a>
+	{END logoutbutton}
+	{BEGIN adminarea_link}
+	<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Área  Admin</a>
+	{END adminarea_link}
+
+</div></div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN searchform_block}
+<div  class="style1 rnr-bl rnr-b-search {$brickclass_search}">	<span>
+		{BEGIN searchform_text}
+		<input type="text" {$searchfor_attrs} size="25">
+		{END searchform_text}
+		{BEGIN searchform_search}
+			<a href="#" class="rnr-button img" data-icon="search" {$searchbutton_attrs}></a>
+		{END searchform_search}
+		{BEGIN searchform_showall}	
+		<a href="#" class="rnr-button" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar Todos</a>
+		{END searchform_showall}
+	</span>
+</div>
+{END searchform_block}
+
+
+{BEGIN searchformbuttons_block}
+<div  class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}
+<span>
+	<a href="#" class="rnr-button img" id="showSrchWin{$id}" data-icon="panelfloat" {$showHideSearchWin_attrs}></a>
+	<a href="#" class="rnr-button img" id="showOptPanel{$id}" data-icon="paneldown" {$showHideSearchPanel_attrs}></a>
+</span>
+{END searchPanelTopButtons}
+</div>
+{END searchformbuttons_block}
+
+
+{BEGIN searchsaving_block}
+<div  class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></div>
+{END searchsaving_block}
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}
+<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+{BEGIN searchPanel}
+<div  class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}"><div class="searchPanelContainer">
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Critério:&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<span>Todos</span>{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType{$id}" class="rnr-radio-button" {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<span>Qualquer</span>{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="rnr-buttons-group">
+			<a href="#" id="showHideControlChooseMenu{$id}" class="rnr-button" {$showHideCtrls_attrs}>Adicionar campo</a>
+		</span>
+		
+		<a href="#" id="showHideSearchType{$id}" class="rnr-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+	</div>
+	
+
+	<table class="controlsBlock {$controls_block_class}">
+				{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>	
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="rnr-searchtype">{$searchtype}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol}</div>
+				<div class="rnr-searchcontrol">{$searchcontrol1}</div>
+			</td>	
+		</tr>
+		{END searchCtrlBlock}
+	</table>	
+
+
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<a href="#" class="rnr-button" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</a>
+	</div>
+</div>
+
+</div></div>{END searchPanel}
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">	
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Adicionar Novo</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN selectall_link}
+	<a href="#" class="rnr-button" {$selectalllink_span} {$selectalllink_attrs}>Selecionar Tudo</a>
+{END selectall_link}
+{BEGIN widhtSelected}
+<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">Com os selecionados</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}
+<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</a>
+</li>
+	{END editselected_link}
+
+	
+	
+</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Salvar todos</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar Edição</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}
+<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+{BEGIN moreButtons}
+<a class="rnr-button" id="extraButtonsToggler{$id}" href="#">Mais...</a>
+<ul class="rnr-list rnr-buttons-group" id="extraButtonsGroup{$id}">
+
+{BEGIN asearch_link}
+<li>
+	<a href="ipbx_ldap_conf_search.php" class="rnr-button link" {$advsearchlink_attrs}>Busca Avancada</a>
+</li>
+{END asearch_link}
+
+
+</ul>
+{END moreButtons}
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Ítens Encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> de <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Registros por Página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+	
+						<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical">
+							{BEGIN grid_row}
+							<tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+								{BEGIN grid_record}
+								<td class="rnr-cg" style="width: 100%;" {$recordattrs}>
+									{BEGIN grid_vrecord}
+									<table class="rnr-c rnr-vrecord" cellpadding="0" >
+										{BEGIN grid_recordheader}
+										<thead>
+										<tr class="rnr-toprow style1">
+											<th class="rnr-edge" colspan="2" iEditCont="all">
+												
+																								{BEGIN inlineedit_column}
+												{BEGIN inlineedit_link}
+																								<a  {$inlineeditlink_attrs} title="Editar" data-icon="inlineedit" class="rnr-verticalicons"></a>
+												{END inlineedit_link}
+												{END inlineedit_column}
+
+												
+												
+																								{BEGIN checkbox_column}
+												{BEGIN checkbox}
+												<input type="checkbox" {$checkbox_attrs} class="rnr-verticalcheckbox">
+												{END checkbox}
+												{END checkbox_column}
+
+																							</th>
+										</tr>
+										</thead>
+										{END grid_recordheader}
+										<tbody>
+											{BEGIN tp_ldap_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$tp_ldap_label_class}">{$label ipbx_ldap_conf tp_ldap}</td>
+	<td class="alt rnr-edge {$tp_ldap_class}" {$tp_ldap_style}>{$tp_ldap_value}&nbsp;</td>
+</tr>
+{END tp_ldap_fieldcolumn}
+	{BEGIN flg_ativo_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_ativo_label_class}">{$label ipbx_ldap_conf flg_ativo}</td>
+	<td class="alt rnr-edge {$flg_ativo_class}" {$flg_ativo_style}>{$flg_ativo_value}&nbsp;</td>
+</tr>
+{END flg_ativo_fieldcolumn}
+	{BEGIN dsc_conf_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$dsc_conf_label_class}">{$label ipbx_ldap_conf dsc_conf}</td>
+	<td class="alt rnr-edge {$dsc_conf_class}" {$dsc_conf_style}>{$dsc_conf_value}&nbsp;</td>
+</tr>
+{END dsc_conf_fieldcolumn}
+	{BEGIN port_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$port_label_class}">{$label ipbx_ldap_conf port}</td>
+	<td class="alt rnr-edge {$port_class}" {$port_style}>{$port_value}&nbsp;</td>
+</tr>
+{END port_fieldcolumn}
+	{BEGIN ip_server_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ip_server_label_class}">{$label ipbx_ldap_conf ip_server}</td>
+	<td class="alt rnr-edge {$ip_server_class}" {$ip_server_style}>{$ip_server_value}&nbsp;</td>
+</tr>
+{END ip_server_fieldcolumn}
+	{BEGIN ou_usuarios_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ou_usuarios_label_class}">{$label ipbx_ldap_conf ou_usuarios}</td>
+	<td class="alt rnr-edge {$ou_usuarios_class}" {$ou_usuarios_style}>{$ou_usuarios_value}&nbsp;</td>
+</tr>
+{END ou_usuarios_fieldcolumn}
+	{BEGIN filtro_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$filtro_label_class}">{$label ipbx_ldap_conf filtro}</td>
+	<td class="alt rnr-edge {$filtro_class}" {$filtro_style}>{$filtro_value}&nbsp;</td>
+</tr>
+{END filtro_fieldcolumn}
+	{BEGIN ad_usuario_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ad_usuario_label_class}">{$label ipbx_ldap_conf ad_usuario}</td>
+	<td class="alt rnr-edge {$ad_usuario_class}" {$ad_usuario_style}>{$ad_usuario_value}&nbsp;</td>
+</tr>
+{END ad_usuario_fieldcolumn}
+	{BEGIN ad_senha_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ad_senha_label_class}">{$label ipbx_ldap_conf ad_senha}</td>
+	<td class="alt rnr-edge {$ad_senha_class}" {$ad_senha_style}>{$ad_senha_value}&nbsp;</td>
+</tr>
+{END ad_senha_fieldcolumn}
+	{BEGIN ad_dominio_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ad_dominio_label_class}">{$label ipbx_ldap_conf ad_dominio}</td>
+	<td class="alt rnr-edge {$ad_dominio_class}" {$ad_dominio_style}>{$ad_dominio_value}&nbsp;</td>
+</tr>
+{END ad_dominio_fieldcolumn}
+	{BEGIN flg_padrao_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_padrao_label_class}">{$label ipbx_ldap_conf flg_padrao}</td>
+	<td class="alt rnr-edge {$flg_padrao_class}" {$flg_padrao_style}>{$flg_padrao_value}&nbsp;</td>
+</tr>
+{END flg_padrao_fieldcolumn}
+
+										</tbody>
+									</table>
+									{END grid_vrecord}
+								</td>
+								{BEGIN endrecord_block}
+								<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+								{END endrecord_block}
+								{END grid_record}
+							</tr>
+							{BEGIN grid_rowspace}
+							<tr class="rnr-rs {$rsclass}">
+								{BEGIN grid_recordspace}
+								<td>&nbsp;</td>
+								{END grid_recordspace}
+							</tr>
+							{END grid_rowspace}
+							{END grid_row}
+						</table>
+
+				
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}
+<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}
+<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Ítens Encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> de <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Registros por Página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,1477 @@
+<!DOCTYPE html><HTML xttag_0="{$html_attrs}" ruleindex="119"><HEAD><TITLE><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="75">pagetitle</DIV></TITLE><META content=IE=Edge http-equiv=X-UA-Compatible><META content="text/html; charset=utf-8" http-equiv=Content-Type ruleindex="118"><LINK rel=stylesheet type=text/css href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/default.css" ruleindex="56"><LINK rel=stylesheet id="skinCss2" href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/2.css" type="text/css" ruleindex="60"><LINK rel=stylesheet id="skinCssempty" href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/empty.css" type="text/css" ruleindex="61"><LINK rel=stylesheet id="skinCssgrid" href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/grid.css" type="text/css" ruleindex="62"><LINK rel=stylesheet id="skinCssmenu" href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/menu.css" type="text/css" ruleindex="63"><LINK rel=stylesheet id="skinCssundermenu" href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/undermenu.css" type="text/css" ruleindex="64"><LINK rel=stylesheet href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/editor.css" type="text/css" ruleindex="65"><LINK rel=stylesheet type=text/css href="styles/defaultRTL.css" ruleindex="8"><LINK rel=stylesheet type=text/css href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/Avenue1Avenue2/style.css" ruleindex="9 57" id="styleCss"><LINK rel=stylesheet type=text/css href="file:///C:/temp/PHPRUNNER8/IPBX/tmp/styleCache/list_centered_vert.css" ruleindex="10 58"><META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD><BODY class="{$stylename} function-list preview page-preview" ruleindex="11 59 120" style="box-sizing: border-box;" xttag_0="{$bodyattrs}"><DIV contenteditable="false" id='runner_ve_tooltip' class='hidden' ruleindex="138">
+    double-click to modify label
+</div>
+	<SPAN class=runner-btnframe contentEditable="false" ruleindex="49"><A id=New_Button1 class=runner-button href="#" typeid="ib" contentEditable="true">ON </A></SPAN><SPAN class=runner-btnframe contentEditable="false" ruleindex="50"><SPAN class=runner-btnleft contentEditable="false"></SPAN><SPAN class=runner-btnright contentEditable="false"></SPAN><A id=New_Button3 class=runner-button href="#" typeid="ib" contentEditable="true">New_Button3 </A></SPAN><SPAN class=runner-btnframe contentEditable="false" ruleindex="51"><SPAN class=runner-btnleft contentEditable="false"></SPAN><SPAN class=runner-btnright contentEditable="false"></SPAN><A id=New_Button4 class=runner-button href="#" typeid="ib" contentEditable="true">New_Button4 </A></SPAN><SPAN class=runner-btnframe contentEditable="false" ruleindex="52"><SPAN class=runner-btnleft contentEditable="false"></SPAN><SPAN class=runner-btnright contentEditable="false"></SPAN><A id=New_Button7 class=runner-button href="#" typeid="ib" contentEditable="true">New_Button7 </A></SPAN><DIV contentEditable=false id='header' class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="76">header</DIV><DIV class=rnr-page><DIV class="rnr-top {$blockclass_top}"><DIV class="rnr-cw-toplinks Avenue1Avenue2 rnr-s-empty preview aslinks" ruleindex="0"><DIV class="rnr-c rnr-ch rnr-c-toplinks"><DIV class=rnr-hfiller></DIV><DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}" ruleindex="12"><DIV id=login_block___pageid___ ruleindex="66"><SPAN ruleindex="13">Logado 
+Como&nbsp; <B><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="77">username</DIV></B>&nbsp; </SPAN><SPAN ruleindex="14"><A class=rnr-button href="#" contentEditable="true" ruleindex="53 121" xttag_0="{$guestloginlink_attrs}">Login </A></SPAN><A class=rnr-button href="#" ruleindex="15 54 122" contentEditable="true" xttag_0="{$logoutlink_attrs}">Log Out </A><A class=rnr-button href="admin_rights_list.php" ruleindex="16 55 123" contentEditable="true" xttag_0="{$adminarealink_attrs}">Área Admin </A></DIV></DIV></DIV></DIV><DIV class="rnr-cw-hmenu Avenue1Avenue2 rnr-s-undermenu preview asbuttons" ruleindex="1"><DIV class="rnr-c rnr-ch rnr-c-hmenu"><DIV class=rnr-hfiller></DIV><DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV></DIV></DIV><DIV class=rnr-middle><DIV class="rnr-left {$blockclass_left}"><DIV class="rnr-cw-left Avenue1Avenue2 rnr-s-menu preview asbuttons" ruleindex="2"><DIV class="rnr-c rnr-cv rnr-c-left" ruleindex="17">
+
+
+
+			<UL class="rnr-b-vmenu simple main" originalMenuTag="{$menu main}" menuID="main" contentEditable="false" stickBeginEnd09999="mainmenu_block">
+	<LI class="menuLeaf" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/application_form.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Painel de Operações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+	</LI contentEditable="false">
+	<LI class="menuLeaf" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Boss.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Configurações Pessoais</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Phone.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Central Telefônica</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/wrench_orange.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Interfaces</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/chart_curve.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Plano de Discagem</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Next.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Menu de Atendimento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group6" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Magic wand.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Desvio por prefixo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group6" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/trade.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Menu de Atendimento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Pinion.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Ramais</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/android.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Dispositivos Móveis</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/server.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Provisionamento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/application_cascade.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Painel de Operações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Calendar.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Desvios Programados</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group13" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Calendar.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Dias e horários específicos</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group13" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Calendar.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Feriados</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/note.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Agenda</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group16" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/traffic_lights.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Bloqueio de telefones indesejados (blacklist)</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group16" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user_comment.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Call Back</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group16" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/application_form_magnify.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Lista de contatos</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group16" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Phone number.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Telefones Corporativos</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Contratos</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group21" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Contrato Tradicional</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group21" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Contrato VOIP</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group21" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Contrato GSM</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Relatórios</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group25" class="Group menuGroup" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+											<UL contentEditable="false">
+							<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Simplificado Centro de Custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Detalhado Centro de Custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Sintético Custo por Interface</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório custo de chamadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Mês / Centro de custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico - Centro de Custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Custo Linha Tradicional</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Custo Linha VONO</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group26" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Custo Linha GSM</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+											</UL contentEditable="false">
+					</LI contentEditable="false">
+											<LI parent="group25" class="Group menuGroup" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Chamadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+											<UL contentEditable="false">
+							<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório chamadas Discadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório chamadas Recebidas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de desvios de chamadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico Ligações Discadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Minutagem Tradicional</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Minutagem VONO</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group36" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Minutagem GSM</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+											</UL contentEditable="false">
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/security.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Grupo de Captura</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Download.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Gravações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group45" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Download.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Configurações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group45" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Download.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Acesso as Gravações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Euro.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Centro de Custo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group3" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Alarm clock.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Horários</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/User group.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Call Center</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group50" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/bell.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Configuração de Filas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group51" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/bell.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Filas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group51" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Agentes</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group51" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Hourglass.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Cadastro Pausa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group51" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Alarm clock.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Horário de Atendimento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group51" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/View.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Pesquisa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group50" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/session_idle_time.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Monitoramento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group57" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Pie chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Painel Gestor</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group57" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user_add.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Painel Agente</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group50" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Relatórios</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group60" class="Group menuGroup" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Grupo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+											<UL contentEditable="false">
+							<LI parent="group61" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Produtividade por grupo de fila e mes</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group61" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Produtividade por grupo de fila e data</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+											</UL contentEditable="false">
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Detalhado das chamadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Detalhamento do Agente</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Disponibilidade do Agente</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório Detalhado das chamadas por fila e agente</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório chamadas abandonadas</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Histórico Fila por Hora</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Histórico Fila por Data</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Produtividade do Agente na fila por Dia</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório de Produtividade da Fila por Mês</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Relatório do Perfil do Tempo de Espera</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/newspaper.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Dados da pesquisa de satisfação</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de chamadas não atendidas por agente</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico Histórico fila hora</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico Histórico fila data</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de perfil do tempo de espera</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico do perfil do tempo de atendimento</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Atendimento e Abandonadas por dia</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group60" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/3d bar chart.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Gráfico de Atendimento e Abandonadas por Mês</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuLeaf" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/session_idle_time.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Sala de Conferência</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Print.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">FAX</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group83" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Next.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Envio de FAX</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group83" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Green pin.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">FAX Recebidos</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group83" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Sync.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">FAX Enviados</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group83" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/setting_tools.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Configuração</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Message.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Gestão SMS</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group88" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Message.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Grupo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group88" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Message.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Celulares</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group88" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Message.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Notícias</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Boss.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Ura Reversa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group92" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Search.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Pesquisa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group92" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/Info.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Monitoramento URA reversa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group92" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/help.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Respostas da URA Reversa</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group92" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/setting_tools.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Configuração</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group96" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/database_edit.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Inbound</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group96" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/database_go.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Outbound</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group96" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/setting_tools.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Configuração</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuGroup" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/setting_tools.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Configurações</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			<UL contentEditable="false">
+			<LI parent="group100" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/User group.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Acessos de usuário</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group100" class="Leaf menuLeaf" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/security.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Auditoria</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+			</LI contentEditable="false">
+					<LI parent="group100" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/servers_network.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Backup</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group103" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/servers_network.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Backup</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group103" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/servers_network.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Restore</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group100" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user_add.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">LDAP</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group106" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user_add.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Usuários LDAP</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group106" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/user_add.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Configurações LDAP</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+					<LI parent="group100" class="Group menuGroup" contentEditable="false">
+			<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/trade.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Painel de Controle</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							<UL contentEditable="false">
+					<LI parent="group109" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/trade.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Parâmetros do Sistema</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group109" class="Leaf menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/servers_network.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Sincronismo</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group109" class="Leaf current menuLeaf" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/wrench_orange.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Conf. IP e Diagnóstico</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+					</LI contentEditable="false">
+											<LI parent="group109" class="Group menuGroup" contentEditable="false">
+					<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<B class="raquo" contentEditable="false">&raquo;</B contentEditable="false">
+<A href=# style="margin-right: 1em;" contentEditable="false">Tarifação</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+											<UL contentEditable="false">
+							<LI parent="group113" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Tarifa VC2</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+																	<LI parent="group113" class="Leaf menuLeaf" contentEditable="false">
+							<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/account_balances.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Vono</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+							</LI contentEditable="false">
+											</UL contentEditable="false">
+					</LI contentEditable="false">
+							</UL contentEditable="false">
+			</LI contentEditable="false">
+			</UL contentEditable="false">
+	</LI contentEditable="false">
+	<LI class="menuLeaf" contentEditable="false">		
+	<DIV contentEditable="false">
+<DIV contentEditable="false">
+<IMG class="menu-icon" src="files/images/menuicons/help.png" border=0 contentEditable="false">
+
+<A href=# contentEditable="false">Ajuda</A contentEditable="false">
+</DIV contentEditable="false">
+</DIV contentEditable="false">
+
+
+
+	</LI contentEditable="false">
+</UL contentEditable="false">
+
+</DIV></DIV></DIV><DIV class="rnr-center {$blockclass_center}"><DIV class="rnr-cw-recordcontrols Avenue1Avenue2 rnr-s-2 preview asbuttons" ruleindex="3"><DIV class="rnr-c rnr-ch rnr-c-recordcontrols"><DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}" ruleindex="18"><SPAN class=rnr-buttons-group contentEditable="false" ruleindex="45"></SPAN></DIV><DIV class=rnr-hfiller></DIV></DIV></DIV><DIV class="rnr-cw-message Avenue1Avenue2 rnr-s-2 preview asbuttons" ruleindex="4"><DIV class="rnr-c rnr-ch rnr-c-message"><DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}" ruleindex="19"><DIV class=rnr-message><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="78">message</DIV></DIV></DIV></DIV></DIV><DIV class="rnr-cw-pagination Avenue1Avenue2 rnr-s-2 preview asbuttons" ruleindex="5"><TABLE><P>&nbsp; <P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P></P></TABLE><TABLE style="WIDTH: 90%" border=0 rules="" cellSpacing=1 cellPadding=1 
+width="75%"><TBODY><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Versão do S.O. </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_1' eventname=diag_ipbx_Snippet17 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="79">event diag_ipbx_Snippet17</DIV></TD><TD style="WIDTH: 198px; WHITE-SPACE: normal" rowSpan=6 colSpan=2>&nbsp;<DIV contentEditable=false id='event_2' eventname=diag_ipbx_snippet class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="80">event diag_ipbx_snippet</DIV><P></P><P></P><P></P>&nbsp; &nbsp; <P>Mysql: </P><P></P><DIV align=right><DIV contentEditable=false id='event_3' eventname=diag_ipbx_Snippet124 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="81">event diag_ipbx_Snippet124</DIV></DIV><DIV align=right><DIV contentEditable=false id='event_4' eventname=diag_ipbx_Snippet123 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="82">event diag_ipbx_Snippet123</DIV></DIV><DIV align=right><DIV contentEditable=false id='event_5' eventname=diag_ipbx_Snippet122 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="83">event diag_ipbx_Snippet122</DIV></DIV><DIV align=right><DIV contentEditable=false id='event_6' eventname=diag_ipbx_Snippet120 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="84">event diag_ipbx_Snippet120</DIV></DIV><DIV align=right><DIV contentEditable=false id='event_7' eventname=diag_ipbx_Snippet121 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="85">event diag_ipbx_Snippet121</DIV></DIV>&nbsp; 
+      &nbsp; </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" rowSpan=6>&nbsp; <P>Estados </P><P></P><P></P><DIV contentEditable=false id='event_8' eventname=diag_ipbx_Snippet119 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="86">event diag_ipbx_Snippet119</DIV><BR><DIV contentEditable=false id='event_9' eventname=diag_ipbx_Snippet118 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="87">event diag_ipbx_Snippet118</DIV><BR><DIV contentEditable=false id='event_10' eventname=diag_ipbx_Snippet116 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="88">event diag_ipbx_Snippet116</DIV><BR><DIV contentEditable=false id='event_11' eventname=diag_ipbx_Snippet111 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="89">event diag_ipbx_Snippet111</DIV><BR><DIV contentEditable=false id='event_12' eventname=diag_ipbx_Snippet117 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="90">event diag_ipbx_Snippet117</DIV><BR>&nbsp; &nbsp; </TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Uptime Servidor: </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_13' eventname=diag_ipbx_Snippet1 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="91">event diag_ipbx_Snippet1</DIV></TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Carga: </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_14' eventname=diag_ipbx_Snippet13 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="92">event diag_ipbx_Snippet13</DIV></TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Versão Asterisk: </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_15' eventname=diag_ipbx_Snippet18 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="93">event diag_ipbx_Snippet18</DIV></TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Uptime Asterisk: </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_16' eventname=diag_ipbx_Snippet1110 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="94">event diag_ipbx_Snippet1110</DIV></TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal">Usuario root: </TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV contentEditable=false id='event_17' eventname=diag_ipbx_Snippet161 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="95">event diag_ipbx_Snippet161</DIV></TD></TR><TR><TD style="WIDTH: 198px; WHITE-SPACE: normal"><DIV align=center><DIV contentEditable=false id='event_18' eventname=diag_ipbx_Snippet12 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="96">event diag_ipbx_Snippet12</DIV></DIV></TD><TD style="WIDTH: 197px; WHITE-SPACE: normal" class=runner-cc><DIV align=center><DIV contentEditable=false id='event_19' eventname=diag_ipbx_Snippet14 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="97">event diag_ipbx_Snippet14</DIV></DIV></TD><TD style="WIDTH: 408px; WHITE-SPACE: normal" colSpan=3><DIV align=center><DIV contentEditable=false id='event_20' eventname=diag_ipbx_Snippet15 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="98">event diag_ipbx_Snippet15</DIV></DIV></TD></TR></TBODY></TABLE><TABLE><TBODY><P></P><P><P>&nbsp; <P></P><P>Rotas: </P><P></P><DIV align=center><DIV contentEditable=false id='event_21' eventname=diag_ipbx_Snippet1121 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="99">event diag_ipbx_Snippet1121</DIV></DIV><DIV align=center><DIV contentEditable=false id='event_22' eventname=diag_ipbx_Snippet112 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="100">event diag_ipbx_Snippet112</DIV></DIV><P></P><P>verificar: </P><P></P><DIV align=center><DIV contentEditable=false id='event_23' eventname=diag_ipbx_Snippet110 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="101">event diag_ipbx_Snippet110</DIV></DIV><P></P><P></P><P></P><P>Drivers da khomp: </P><P></P><DIV align=left><DIV contentEditable=false id='event_24' eventname=diag_ipbx_Snippet113 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="102">event diag_ipbx_Snippet113</DIV></DIV><P></P><P></P><P></P><P>Registros: </P><P></P><DIV align=center><DIV contentEditable=false id='event_25' eventname=diag_ipbx_Snippet125 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="103">event diag_ipbx_Snippet125</DIV></DIV><P></P><P></P><P></P><P>DNS: </P><P></P><DIV align=left><DIV contentEditable=false id='event_26' eventname=diag_ipbx_Snippet127 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="104">event diag_ipbx_Snippet127</DIV></DIV><P></P><P></P><P>Sufixo </P><P></P><DIV align=left><DIV contentEditable=false id='event_27' eventname=diag_ipbx_Snippet126 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="105">event diag_ipbx_Snippet126</DIV></DIV><P></P><P></P><P>Configuração Interface (problema aqui): </P><P></P><DIV align=center><DIV contentEditable=false id='event_28' eventname=diag_ipbx_Snippet19 class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="106">event diag_ipbx_Snippet19</DIV></DIV><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P><P></P></P><TBODY><TR>&nbsp; </TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><TR></TR><P></P></TBODY></TABLE><DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination"><DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}" ruleindex="20"><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="107">pagination</DIV></DIV><DIV class=rnr-leftbricks><DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}" ruleindex="21"><SPAN xttag_0="{$details_attrs}" ruleindex="124">Ítens 
+Encontrados: <B><SPAN class=rnr-details_found_count><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="108">records_found</DIV></SPAN></B></SPAN></DIV></DIV><DIV class=rnr-rightbricks><DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}" ruleindex="22"><SPAN xttag_0="{$pages_attrs}" ruleindex="125">Página <B><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="109">page</DIV></B>de <B><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="110">maxpages</DIV></B></SPAN></DIV><DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}" ruleindex="23"><SPAN id=recordspp_block___pageid___ name="recordspp_block{$id}" ruleindex="67">Registros por Página:&nbsp;<DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="111">recsPerPage</DIV></SPAN></DIV></DIV></DIV></DIV><DIV class="rnr-cw-grid Avenue1Avenue2 rnr-s-grid preview aslinks" ruleindex="6"><TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" cellPadding=0 ruleindex="24"><THEAD ruleindex="25"><TR class="rnr-toprow style1 {$gridHeader_class}" ruleindex="26"><TH iEditCont="all" ruleindex="27">&nbsp; </TH><TH class="rnr-gridfieldlabel {$dt_timeout_class}" ruleindex="28"><SPAN ruleindex="29 46 126" contentEditable="false" style="display: inline-block;" xttag_0="{$dt_timeout_orderlinkattrs}"><DIV contentEditable=false typeid='label' id1='diag_ipbx' id2='dt_timeout' style='display: inline-block; text-decoration: inherit;' ruleindex="72"> Data do Timeout</div></SPAN></TH><TH class="rnr-gridfieldlabel {$ip_address_class}" ruleindex="30"><SPAN ruleindex="31 47 127" contentEditable="false" style="display: inline-block;" xttag_0="{$ip_address_orderlinkattrs}"><DIV contentEditable=false typeid='label' id1='diag_ipbx' id2='ip_address' style='display: inline-block; text-decoration: inherit;' ruleindex="73"> Endereço IP</div></SPAN></TH><TH class="rnr-gridfieldlabel {$timeout_class}" ruleindex="32"><SPAN ruleindex="33 48 128" contentEditable="false" style="display: inline-block;" xttag_0="{$timeout_orderlinkattrs}"><DIV contentEditable=false typeid='label' id1='diag_ipbx' id2='timeout' style='display: inline-block; text-decoration: inherit;' ruleindex="74"> Timeout</div></SPAN></TH><TH class=rnr-edge>&nbsp; </TH><TH class=rnr-cs ruleindex="34">&nbsp; </TH></TR></THEAD><TBODY><TR class="rnr-row style1 {$rowclass}" ruleindex="35 129" stickBeginEnd09998="grid_row" xttag_0="{$rowattrs}" xttag_1="{$rowstyle}"><TD class="rnr-cc rnr-bc rnr-icons" iEditCont="all" ruleindex="36 130" xttag_0="{$rowstyle}" xttag_1="{$recordattrs}"></TD><TD class={$dt_timeout_class} ruleindex="37 131" xttag_0="{$dt_timeout_style}" xttag_1="{$recordattrs}"><DIV contentEditable=false class="field_black view-control" typeid="view_dt_timeout" style="  overflow:hidden; background-image: url('file:///C:/Program%20Files/PHPRunner8.1/images/view_date_time.gif'); display: inline-block;" id="viewcontrol1" ruleindex="69">&nbsp;dt_timeout</DIV></TD><TD class={$ip_address_class} ruleindex="38 132" xttag_0="{$ip_address_style}" xttag_1="{$recordattrs}"><DIV contentEditable=false class="field_black view-control" typeid="view_ip_address" style="  overflow:hidden; background-image: url('file:///C:/Program%20Files/PHPRunner8.1/images/view_none.gif'); display: inline-block;" id="viewcontrol2" ruleindex="70">&nbsp;ip_address</DIV></TD><TD class={$timeout_class} ruleindex="39 133" xttag_0="{$timeout_style}" xttag_1="{$recordattrs}"><DIV contentEditable=false class="field_black view-control" typeid="view_timeout" style="  overflow:hidden; background-image: url('file:///C:/Program%20Files/PHPRunner8.1/images/view_none.gif'); display: inline-block;" id="viewcontrol3" ruleindex="71">&nbsp;timeout</DIV></TD><TD class=rnr-edge xttag_0="{$recordattrs}" ruleindex="134">&nbsp; </TD><TD class=rnr-cs ruleindex="40 135" xttag_0="{$endrecordblock_attrs}">&nbsp; </TD></TR></TBODY></TABLE></DIV><DIV class="rnr-cw-pagination_bottom Avenue1Avenue2 rnr-s-2 preview asbuttons" ruleindex="7"><DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom"><DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}" ruleindex="41"><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="112">pagination</DIV></DIV><DIV class=rnr-leftbricks><DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}" ruleindex="42"><SPAN xttag_0="{$details_attrs}" ruleindex="136">Ítens 
+Encontrados: <B><SPAN class=rnr-details_found_count><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="113">records_found</DIV></SPAN></B></SPAN></DIV></DIV><DIV class=rnr-rightbricks><DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}" ruleindex="43"><SPAN xttag_0="{$pages_attrs}" ruleindex="137">Página <B><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="114">page</DIV></B>de <B><DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="115">maxpages</DIV></B></SPAN></DIV><DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}" ruleindex="44"><SPAN id=recordspp_block___pageid___ name="recordspp_block{$id}" ruleindex="68">Registros por Página:&nbsp;<DIV contentEditable=false id class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="116">recsPerPage</DIV></SPAN></DIV></DIV></DIV></DIV></DIV><DIV class="rnr-right {$blockclass_right}"></DIV></DIV><DIV class="rnr-bottom {$blockclass_bottom}"></DIV></DIV><DIV contentEditable=false id='footer' class='simple-xt-tag' style='background-image: ; display: inline-block;' ruleindex="117">footer</DIV></BODY></HTML>

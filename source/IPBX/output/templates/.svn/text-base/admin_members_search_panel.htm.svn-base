@@ -1,0 +1,182 @@
+{BEGIN searchPanel}
+<style>
+<!--
+
+.searchOptions div{
+	/*margin: 10px 0px 10px 10px;*/
+	padding: 10px 0px 10px 10px;
+}
+
+
+
+#addOption{$id}{
+	/*padding: 1px 5px 13px 5px !important;*/
+}
+
+.addOptionLink{
+	margin: 1px 5px 13px 5px !important;
+}
+
+#bottomSearchButt{$id}{
+	padding: 13px 1px 5px 1px !important;
+}
+#controlChooseMenu{$id}{
+	position: absolute;			
+	display: none;	
+	width: auto;
+	text-align: left;
+	
+}	
+
+#controlsBlock_{$id}{
+	/*display:table;*/
+	width: 180px;
+}
+
+.srchPanelTable, .srchPanelRow{
+	padding:0px !important;
+}
+
+.srchPanelRow{
+	overflow: hidden;
+	width: 180px;
+	margin: 0px !important;
+}
+
+.srchPanelCell{
+	/*padding: 2px !important;*/
+	/*margin: 2px 0px 2px 2px !important;*/
+	padding: 2px 0px 2px 2px !important;
+	float: left; !important;	
+}
+
+.srchPanelCell2{
+	/*width: 100%;*/
+	width: 170px; 
+	/*margin-left: 17px !important;*/
+	padding-left: 17px !important;
+}
+.winTable{	
+	/*border-collapse: collapse;*/
+	border-collapse: separate;	
+}
+
+.delButt{
+	visibility: hidden;
+}
+
+
+
+.addSearchControl{
+	margin: 5px;
+}
+
+.critCont{
+	margin: 10px 0px 0px 0px; 
+}
+-->
+</style>
+
+
+
+<div id="searchOptions{$id}" class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div id="srchCritTop{$id}" class="critCont" style="display: none;">
+		Critério:&nbsp;
+    	<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Todos{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer{END any_checkbox_label}
+	</div>
+	<div id="addOption{$id}" class="addOption">
+      	<a id="showHideControlChooseMenu{$id}"  class="tablelinkssearch" {$showHideCtrls_attrs}>Adicionar campo</a>&nbsp;&nbsp;&nbsp;
+		<a id="showHideSearchType{$id}"  class="tablelinkssearch" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>		
+	</div>
+	<!-- choose controls div -->
+	<div id="controlChooseMenu{$id}" class="controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+			<a id="addSearchControl_id" class="addSearchControl" {$addSearchControl_id_attrs}>Id</a>
+			<a id="addSearchControl_name" class="addSearchControl" {$addSearchControl_name_attrs}>Name</a>
+			<a id="addSearchControl_host" class="addSearchControl" {$addSearchControl_host_attrs}>Host</a>
+			<a id="addSearchControl_nat" class="addSearchControl" {$addSearchControl_nat_attrs}>Nat</a>
+			<a id="addSearchControl_type" class="addSearchControl" {$addSearchControl_type_attrs}>Type</a>
+			<a id="addSearchControl_accountcode" class="addSearchControl" {$addSearchControl_accountcode_attrs}>Accountcode</a>
+			<a id="addSearchControl_amaflags" class="addSearchControl" {$addSearchControl_amaflags_attrs}>Amaflags</a>
+			<a id="addSearchControl_call_limit" class="addSearchControl" {$addSearchControl_call_limit_attrs}>Call-limit</a>
+			<a id="addSearchControl_callgroup" class="addSearchControl" {$addSearchControl_callgroup_attrs}>Callgroup</a>
+			<a id="addSearchControl_callerid" class="addSearchControl" {$addSearchControl_callerid_attrs}>Callerid</a>
+			<a id="addSearchControl_cancallforward" class="addSearchControl" {$addSearchControl_cancallforward_attrs}>Cancallforward</a>
+			<a id="addSearchControl_canreinvite" class="addSearchControl" {$addSearchControl_canreinvite_attrs}>Canreinvite</a>
+			<a id="addSearchControl_context" class="addSearchControl" {$addSearchControl_context_attrs}>Context</a>
+			<a id="addSearchControl_defaultip" class="addSearchControl" {$addSearchControl_defaultip_attrs}>Defaultip</a>
+			<a id="addSearchControl_dtmfmode" class="addSearchControl" {$addSearchControl_dtmfmode_attrs}>Dtmfmode</a>
+			<a id="addSearchControl_fromuser" class="addSearchControl" {$addSearchControl_fromuser_attrs}>Fromuser</a>
+			<a id="addSearchControl_fromdomain" class="addSearchControl" {$addSearchControl_fromdomain_attrs}>Fromdomain</a>
+			<a id="addSearchControl_insecure" class="addSearchControl" {$addSearchControl_insecure_attrs}>Insecure</a>
+			<a id="addSearchControl_language" class="addSearchControl" {$addSearchControl_language_attrs}>Language</a>
+			<a id="addSearchControl_mailbox" class="addSearchControl" {$addSearchControl_mailbox_attrs}>Mailbox</a>
+			<a id="addSearchControl_md5secret" class="addSearchControl" {$addSearchControl_md5secret_attrs}>Md5secret</a>
+			<a id="addSearchControl_deny" class="addSearchControl" {$addSearchControl_deny_attrs}>Deny</a>
+			<a id="addSearchControl_permit" class="addSearchControl" {$addSearchControl_permit_attrs}>Permit</a>
+			<a id="addSearchControl_mask" class="addSearchControl" {$addSearchControl_mask_attrs}>Mask</a>
+			<a id="addSearchControl_musiconhold" class="addSearchControl" {$addSearchControl_musiconhold_attrs}>Musiconhold</a>
+			<a id="addSearchControl_pickupgroup" class="addSearchControl" {$addSearchControl_pickupgroup_attrs}>Pickupgroup</a>
+			<a id="addSearchControl_qualify" class="addSearchControl" {$addSearchControl_qualify_attrs}>Qualify</a>
+			<a id="addSearchControl_rtcachefriends" class="addSearchControl" {$addSearchControl_rtcachefriends_attrs}>Rtcachefriends</a>
+			<a id="addSearchControl_regexten" class="addSearchControl" {$addSearchControl_regexten_attrs}>Regexten</a>
+			<a id="addSearchControl_restrictcid" class="addSearchControl" {$addSearchControl_restrictcid_attrs}>Restrictcid</a>
+			<a id="addSearchControl_rtptimeout" class="addSearchControl" {$addSearchControl_rtptimeout_attrs}>Rtptimeout</a>
+			<a id="addSearchControl_rtpholdtimeout" class="addSearchControl" {$addSearchControl_rtpholdtimeout_attrs}>Rtpholdtimeout</a>
+			<a id="addSearchControl_secret" class="addSearchControl" {$addSearchControl_secret_attrs}>Secret</a>
+			<a id="addSearchControl_setvar" class="addSearchControl" {$addSearchControl_setvar_attrs}>Setvar</a>
+			<a id="addSearchControl_disallow" class="addSearchControl" {$addSearchControl_disallow_attrs}>Disallow</a>
+			<a id="addSearchControl_allow" class="addSearchControl" {$addSearchControl_allow_attrs}>Allow</a>
+			<a id="addSearchControl_fullcontact" class="addSearchControl" {$addSearchControl_fullcontact_attrs}>Fullcontact</a>
+			<a id="addSearchControl_ipaddr" class="addSearchControl" {$addSearchControl_ipaddr_attrs}>Ipaddr</a>
+			<a id="addSearchControl_port" class="addSearchControl" {$addSearchControl_port_attrs}>Port</a>
+			<a id="addSearchControl_regserver" class="addSearchControl" {$addSearchControl_regserver_attrs}>Regserver</a>
+			<a id="addSearchControl_regseconds" class="addSearchControl" {$addSearchControl_regseconds_attrs}>Regseconds</a>
+			<a id="addSearchControl_lastms" class="addSearchControl" {$addSearchControl_lastms_attrs}>Lastms</a>
+			<a id="addSearchControl_username" class="addSearchControl" {$addSearchControl_username_attrs}>Username</a>
+			<a id="addSearchControl_defaultuser" class="addSearchControl" {$addSearchControl_defaultuser_attrs}>Defaultuser</a>
+			<a id="addSearchControl_subscribecontext" class="addSearchControl" {$addSearchControl_subscribecontext_attrs}>Subscribecontext</a>
+			<a id="addSearchControl_useragent" class="addSearchControl" {$addSearchControl_useragent_attrs}>Useragent</a>
+			<a id="addSearchControl_gateway" class="addSearchControl" {$addSearchControl_gateway_attrs}>Gateway</a>
+			<a id="addSearchControl_id_horario" class="addSearchControl" {$addSearchControl_id_horario_attrs}>Id Horario</a>
+			<a id="addSearchControl_mail" class="addSearchControl" {$addSearchControl_mail_attrs}>Mail</a>
+			<a id="addSearchControl_grava_chamada" class="addSearchControl" {$addSearchControl_grava_chamada_attrs}>Grava Chamada</a>
+			<a id="addSearchControl_tp_ramal" class="addSearchControl" {$addSearchControl_tp_ramal_attrs}>Tp Ramal</a>
+			<a id="addSearchControl_id_interf" class="addSearchControl" {$addSearchControl_id_interf_attrs}>Id Interf</a>
+			<a id="addSearchControl_tp_chamada" class="addSearchControl" {$addSearchControl_tp_chamada_attrs}>Tp Chamada</a>
+			<a id="addSearchControl_flg_cadeado" class="addSearchControl" {$addSearchControl_flg_cadeado_attrs}>Flg Cadeado</a>
+			<a id="addSearchControl_id_pesquisa" class="addSearchControl" {$addSearchControl_id_pesquisa_attrs}>Id Pesquisa</a>
+			<a id="addSearchControl_desvio_ddr" class="addSearchControl" {$addSearchControl_desvio_ddr_attrs}>Desvio Ddr</a>
+			<a id="addSearchControl_id_saida" class="addSearchControl" {$addSearchControl_id_saida_attrs}>Id Saida</a>
+	</div>
+	<!-- search window controls block, make it visible in window mode and hidden in panel -->
+	<table id="controlsBlock_{$id}_win" class="winTable" style="display: none;" CELLPADDING="3">
+	{BEGIN searchCtrlBlock_win}			
+		<tr class="winRow" {$filterRow_attrs}>	
+			<td class="srchWinCell"></td>		
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell" {$srchTypeCont_attrs_win}></td>
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell"></td>			
+		</tr>
+	{END searchCtrlBlock_win}
+	</table>
+	<!-- add for each for get predefined fields for list search panel, not adv search, visible in panel mode and hidden in window -->	
+	<div id="controlsBlock_{$id}" class="srchPanelTable">		
+	{BEGIN searchCtrlBlock}			
+		<div class="srchPanelRow blockBorder" {$filterDiv_attrs}>	
+			<div class="srchPanelCell">{$delCtrlButt}</div>		
+			<div class="srchPanelCell">{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2" {$srchTypeCont_attrs}>{$searchtype}</div>
+			<div class="srchPanelCell srchPanelCell2" >{$searchcontrol}</div>
+			<div class="srchPanelCell srchPanelCell2" {$secCtrlCont_attrs}>{$searchcontrol1}</div>			
+		</div>
+	{END searchCtrlBlock}
+	</div>
+	<div id="bottomSearchButt{$id}" align="center" {$bottomSearchButt_attrs}>
+		<span class=buttonborder><input type=button class="button" value="Buscar" {$searchbutton_attrs}></span> 
+	</div>
+</div>
+{END searchPanel}

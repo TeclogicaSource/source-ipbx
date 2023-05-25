@@ -1,0 +1,400 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel ipbx_ramais edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN name_fieldblock}
+<tr class="{$fielddispclass_name}" data-fieldname="name">
+	<td class="rnr-label">
+		{BEGIN name_label}{$label ipbx_ramais name}{END name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END name_fieldblock}
+	{BEGIN secret_fieldblock}
+<tr class="{$fielddispclass_secret}" data-fieldname="secret">
+	<td class="rnr-label">
+		{BEGIN secret_label}{$label ipbx_ramais secret}{END secret_label}
+	</td>
+	<td class="rnr-control style3">
+		{$secret_editcontrol}&nbsp;
+	</td>
+</tr>
+{END secret_fieldblock}
+	{BEGIN callerid_fieldblock}
+<tr class="{$fielddispclass_callerid}" data-fieldname="callerid">
+	<td class="rnr-label">
+		{BEGIN callerid_label}{$label ipbx_ramais callerid}{END callerid_label}
+	</td>
+	<td class="rnr-control style3">
+		{$callerid_editcontrol}&nbsp;
+	</td>
+</tr>
+{END callerid_fieldblock}
+	{BEGIN mail_fieldblock}
+<tr class="{$fielddispclass_mail}" data-fieldname="mail">
+	<td class="rnr-label">
+		{BEGIN mail_label}{$label ipbx_ramais mail}{END mail_label}
+	</td>
+	<td class="rnr-control style3">
+		{$mail_editcontrol}&nbsp;
+	</td>
+</tr>
+{END mail_fieldblock}
+	{BEGIN id_lang_fieldblock}
+<tr class="{$fielddispclass_id_lang}" data-fieldname="id_lang">
+	<td class="rnr-label">
+		{BEGIN id_lang_label}{$label ipbx_ramais id_lang}{END id_lang_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_lang_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_lang_fieldblock}
+	{BEGIN desvio_ddr_fieldblock}
+<tr class="{$fielddispclass_desvio_ddr}" data-fieldname="desvio_ddr">
+	<td class="rnr-label">
+		{BEGIN desvio_ddr_label}{$label ipbx_ramais desvio_ddr}{END desvio_ddr_label}
+	</td>
+	<td class="rnr-control style3">
+		{$desvio_ddr_editcontrol}&nbsp;
+	</td>
+</tr>
+{END desvio_ddr_fieldblock}
+	{BEGIN desvio_fieldblock}
+<tr class="{$fielddispclass_desvio}" data-fieldname="desvio">
+	<td class="rnr-label">
+		{BEGIN desvio_label}{$label ipbx_ramais desvio}{END desvio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$desvio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END desvio_fieldblock}
+	{BEGIN id_desvio_fieldblock}
+<tr class="{$fielddispclass_id_desvio}" data-fieldname="id_desvio">
+	<td class="rnr-label">
+		{BEGIN id_desvio_label}{$label ipbx_ramais id_desvio}{END id_desvio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_desvio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_desvio_fieldblock}
+	{BEGIN accountcode_fieldblock}
+<tr class="{$fielddispclass_accountcode}" data-fieldname="accountcode">
+	<td class="rnr-label">
+		{BEGIN accountcode_label}{$label ipbx_ramais accountcode}{END accountcode_label}
+	</td>
+	<td class="rnr-control style3">
+		{$accountcode_editcontrol}&nbsp;
+	</td>
+</tr>
+{END accountcode_fieldblock}
+	{BEGIN id_painel_op_fieldblock}
+<tr class="{$fielddispclass_id_painel_op}" data-fieldname="id_painel_op">
+	<td class="rnr-label">
+		{BEGIN id_painel_op_label}{$label ipbx_ramais id_painel_op}{END id_painel_op_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_painel_op_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_painel_op_fieldblock}
+	{BEGIN flg_info_centrocusto_fieldblock}
+<tr class="{$fielddispclass_flg_info_centrocusto}" data-fieldname="flg_info_centrocusto">
+	<td class="rnr-label">
+		{BEGIN flg_info_centrocusto_label}{$label ipbx_ramais flg_info_centrocusto}{END flg_info_centrocusto_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_info_centrocusto_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_info_centrocusto_fieldblock}
+	{BEGIN flg_cadeado_fieldblock}
+<tr class="{$fielddispclass_flg_cadeado}" data-fieldname="flg_cadeado">
+	<td class="rnr-label">
+		{BEGIN flg_cadeado_label}{$label ipbx_ramais flg_cadeado}{END flg_cadeado_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_cadeado_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_cadeado_fieldblock}
+	{BEGIN grava_chamada_fieldblock}
+<tr class="{$fielddispclass_grava_chamada}" data-fieldname="grava_chamada">
+	<td class="rnr-label">
+		{BEGIN grava_chamada_label}{$label ipbx_ramais grava_chamada}{END grava_chamada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$grava_chamada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END grava_chamada_fieldblock}
+	{BEGIN flg_show_mobile_fieldblock}
+<tr class="{$fielddispclass_flg_show_mobile}" data-fieldname="flg_show_mobile">
+	<td class="rnr-label">
+		{BEGIN flg_show_mobile_label}{$label ipbx_ramais flg_show_mobile}{END flg_show_mobile_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_show_mobile_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_show_mobile_fieldblock}
+	{BEGIN tp_ramal_fieldblock}
+<tr class="{$fielddispclass_tp_ramal}" data-fieldname="tp_ramal">
+	<td class="rnr-label">
+		{BEGIN tp_ramal_label}{$label ipbx_ramais tp_ramal}{END tp_ramal_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_ramal_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_ramal_fieldblock}
+	{BEGIN id_pesquisa_fieldblock}
+<tr class="{$fielddispclass_id_pesquisa}" data-fieldname="id_pesquisa">
+	<td class="rnr-label">
+		{BEGIN id_pesquisa_label}{$label ipbx_ramais id_pesquisa}{END id_pesquisa_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_pesquisa_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_pesquisa_fieldblock}
+	{BEGIN call_limit_fieldblock}
+<tr class="{$fielddispclass_call_limit}" data-fieldname="call_limit">
+	<td class="rnr-label">
+		{BEGIN call_limit_label}{$label ipbx_ramais call_limit}{END call_limit_label}
+	</td>
+	<td class="rnr-control style3">
+		{$call_limit_editcontrol}&nbsp;
+	</td>
+</tr>
+{END call_limit_fieldblock}
+	{BEGIN pickupgroup_fieldblock}
+<tr class="{$fielddispclass_pickupgroup}" data-fieldname="pickupgroup">
+	<td class="rnr-label">
+		{BEGIN pickupgroup_label}{$label ipbx_ramais pickupgroup}{END pickupgroup_label}
+	</td>
+	<td class="rnr-control style3">
+		{$pickupgroup_editcontrol}&nbsp;
+	</td>
+</tr>
+{END pickupgroup_fieldblock}
+	{BEGIN context_fieldblock}
+<tr class="{$fielddispclass_context}" data-fieldname="context">
+	<td class="rnr-label">
+		{BEGIN context_label}{$label ipbx_ramais context}{END context_label}
+	</td>
+	<td class="rnr-control style3">
+		{$context_editcontrol}&nbsp;
+	</td>
+</tr>
+{END context_fieldblock}
+	{BEGIN allow_fieldblock}
+<tr class="{$fielddispclass_allow}" data-fieldname="allow">
+	<td class="rnr-label">
+		{BEGIN allow_label}{$label ipbx_ramais allow}{END allow_label}
+	</td>
+	<td class="rnr-control style3">
+		{$allow_editcontrol}&nbsp;
+	</td>
+</tr>
+{END allow_fieldblock}
+	{BEGIN tp_chamada_fieldblock}
+<tr class="{$fielddispclass_tp_chamada}" data-fieldname="tp_chamada">
+	<td class="rnr-label">
+		{BEGIN tp_chamada_label}{$label ipbx_ramais tp_chamada}{END tp_chamada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_chamada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_chamada_fieldblock}
+	{BEGIN Transbordo_fieldblock}
+<tr class="{$fielddispclass_Transbordo}" data-fieldname="Transbordo">
+	<td class="rnr-label">
+		{BEGIN Transbordo_label}{$label ipbx_ramais Transbordo}{END Transbordo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Transbordo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Transbordo_fieldblock}
+	{BEGIN id_horario_fieldblock}
+<tr class="{$fielddispclass_id_horario}" data-fieldname="id_horario">
+	<td class="rnr-label">
+		{BEGIN id_horario_label}{$label ipbx_ramais id_horario}{END id_horario_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_horario_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_horario_fieldblock}
+	{BEGIN id_saida_fieldblock}
+<tr class="{$fielddispclass_id_saida}" data-fieldname="id_saida">
+	<td class="rnr-label">
+		{BEGIN id_saida_label}{$label ipbx_ramais id_saida}{END id_saida_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_saida_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_saida_fieldblock}
+	{BEGIN id_interf_fieldblock}
+<tr class="{$fielddispclass_id_interf}" data-fieldname="id_interf">
+	<td class="rnr-label">
+		{BEGIN id_interf_label}{$label ipbx_ramais id_interf}{END id_interf_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_interf_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_interf_fieldblock}
+	{BEGIN ident_interf_fieldblock}
+<tr class="{$fielddispclass_ident_interf}" data-fieldname="ident_interf">
+	<td class="rnr-label">
+		{BEGIN ident_interf_label}{$label ipbx_ramais ident_interf}{END ident_interf_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ident_interf_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ident_interf_fieldblock}
+	{BEGIN id_provis_fieldblock}
+<tr class="{$fielddispclass_id_provis}" data-fieldname="id_provis">
+	<td class="rnr-label">
+		{BEGIN id_provis_label}{$label ipbx_ramais id_provis}{END id_provis_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_provis_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_provis_fieldblock}
+	{BEGIN mc_addr_fieldblock}
+<tr class="{$fielddispclass_mc_addr}" data-fieldname="mc_addr">
+	<td class="rnr-label">
+		{BEGIN mc_addr_label}{$label ipbx_ramais mc_addr}{END mc_addr_label}
+	</td>
+	<td class="rnr-control style3">
+		{$mc_addr_editcontrol}&nbsp;
+	</td>
+</tr>
+{END mc_addr_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

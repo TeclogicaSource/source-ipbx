@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Diagnóstico</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}
+<STYLE>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links{$id} * {padding:0}
+</STYLE>
+{END style_block}{BEGIN iestyle_block}<!--[if IE]>
+<STYLE>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</STYLE>
+<![endif]-->{END iestyle_block}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY {$bodyattrs} marginwidth="0" marginheight="0">{BEGIN body}
+<DIV id="height100{$id}" layout="Rome">{$header} <B class=xtop><B 
+class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+{BEGIN toplinks_block}<DIV id="toplinks_block{$id}" class=uplistmenu>Logado Como&nbsp;<B>{$username}</B>&nbsp; <SPAN 
+class=buttonborder><INPUT class=button value="Log Out" type=button {$logoutlink_attrs}></SPAN> 
+{BEGIN adminarea_link}<SPAN class=buttonborder><INPUT class=button value="Área  Admin" type=button {$adminarealink_attrs}></SPAN>{END adminarea_link} 
+</DIV>{END toplinks_block}
+<DIV id="global_block{$id}" class=main_table>
+{BEGIN left_block}<DIV id="left_block{$id}"><B class=xtop><B 
+class=xb1></B><B class=xb2></B><B class=xb3></B><B class=xb4></B></B><!-- MenuBegin -->
+{BEGIN menu_block}<DIV id="menu_block{$id}" class=xboxcontent><!-- MainMenuBegin -->{$mainmenu}<!-- MainMenuEnd --></DIV>{END menu_block}<!-- MenuEnd -->
+{BEGIN search_records_block}<DIV>
+<STYLE>
+<!--
+
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+
+-->
+</STYLE>
+<!-- search panel and window header -->
+<DIV id="center_block{$id}" class=blackshade2>Buscar: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showWindowPin.gif); WIDTH: 18px" id="showSrchWin{$id}" class=button type=button {$showHideSearchWin_attrs}></SPAN> 
+&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showOptions.gif); WIDTH: 18px" id="showOptPanel{$id}" class=button type=button {$showHideSearchPanel_attrs}></SPAN> 
+</DIV>
+<DIV id="searchform{$id}">
+<DIV id="searchPanelHeader{$id}" class=blackshade>{$simpleSearchFieldCombo} {$simpleSearchTypeCombo} {BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text} &nbsp; {BEGIN searchform_search}<SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" class=button type=button {$searchbutton_attrs}></SPAN>{END searchform_search} 
+&nbsp; {BEGIN searchform_showall}<SPAN id="showall{$id}" class=buttonborder><INPUT class=button value="Mostrar Todos" type=button {$showallbutton_attrs}></SPAN>{END searchform_showall} 
+</DIV></DIV><!-- search panel and window -->
+<DIV id="searchPanelContainer{$id}" class=searchPanelContainer>{$adv_search_panel} </DIV>
+{BEGIN details_block}<DIV id="details_block{$id}" class="toplist xboxcontent center"><SPAN id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</SPAN> </DIV>{END details_block}
+{BEGIN pages_block}<DIV id="pages_block{$id}" class="toplist xboxcontent center"><SPAN id="pageOf{$id}">Página {$page} de {$maxpages}</SPAN> </DIV>{END pages_block}
+{BEGIN recordspp_block}<DIV id="recordspp_block{$id}" class="toplist xboxcontent center">Registros por Página:<BR><BR><SELECT 
+{$recordspp_attrs}><option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </DIV>{END recordspp_block}</DIV>{END search_records_block}<B class=xbottom><B 
+class=xb4></B><B class=xb3></B><B class=xb2></B><B class=xb1></B></B></DIV>{END left_block}<!-- main block -->
+<DIV id=marginStyle>
+<DIV id="right_block{$id}" class=right_block>{BEGIN recordcontrols_block}
+<DIV><B class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+class=xb4></B></B>
+<DIV id="recordcontrols_block{$id}" class=xboxcontent>{$lookupSearchControls} </DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV>{END recordcontrols_block}</DIV>
+<DIV id="usermessage{$id}" class=message>{$user_message}</DIV>
+<DIV class=message>&nbsp;</DIV>
+<DIV class=message>
+<TABLE style="WIDTH: 537px; FLOAT: left; HEIGHT: 147px" border=0 cellSpacing=1 
+cellPadding=1 width=537 bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WHITE-SPACE: normal" colSpan=2>
+      <P align=center><STRONG><U><FONT 
+      color=#336699>Geral</FONT></U></STRONG></P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center>&nbsp;<STRONG>Versão SO:</STRONG></P></TD>
+    <TD>
+      <P align=center>{$event diag_ipbx_Snippet17}</P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center>&nbsp;<STRONG>Uptime Servidor:</STRONG></P></TD>
+    <TD>
+      <P align=center>{$event diag_ipbx_Snippet1}</P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center><STRONG>Carga:</STRONG></P></TD>
+    <TD>
+      <P align=center>{$event diag_ipbx_Snippet13}</P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center>&nbsp;<STRONG>Versão Asterisk:</STRONG></P></TD>
+    <TD>
+      <P align=center>{$event diag_ipbx_Snippet18}</P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center>&nbsp;<STRONG>Uptime Asterisk:</STRONG></P></TD>
+    <TD>
+      <P align=center>{$event diag_ipbx_Snippet11}</P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 164px">
+      <P align=center>&nbsp;<STRONG>Usuários Root:</STRONG></P></TD>
+    <TD>
+      <DIV align=center>{$event diag_ipbx_Snippet16}</DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV class=message>
+<TABLE style="WIDTH: 494px; FLOAT: right; HEIGHT: 39px; MARGIN-RIGHT: 72px" 
+border=0 cellSpacing=1 cellPadding=1 width=494 bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WHITE-SPACE: normal" colSpan=3>
+      <P align=center>&nbsp;<STRONG><U><FONT 
+      color=#336699>Serviços</FONT></U></STRONG></P></TD></TR>
+  <TR height=20>
+    <TD style="WIDTH: 223px">
+      <DIV align=right>{$event diag_ipbx_Snippet120}</DIV></TD>
+    <TD style="WIDTH: 177px">
+      <DIV align=left>{$event diag_ipbx_Snippet111}</DIV></TD>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD style="WIDTH: 223px">
+      <DIV align=right>{$event diag_ipbx_Snippet121}</DIV></TD>
+    <TD style="WIDTH: 177px">
+      <DIV align=left>{$event diag_ipbx_Snippet116}</DIV></TD>
+    <TD>&nbsp;</TD></TR>
+  <TR height=24>
+    <TD style="WIDTH: 223px">
+      <DIV align=right>{$event diag_ipbx_Snippet122}</DIV></TD>
+    <TD style="WIDTH: 177px">
+      <DIV align=left>{$event diag_ipbx_Snippet117}</DIV></TD>
+    <TD>&nbsp;</TD></TR>
+  <TR>
+    <TD style="WIDTH: 223px">
+      <DIV align=right>{$event diag_ipbx_Snippet123}</DIV></TD>
+    <TD style="WIDTH: 177px">
+      <DIV align=left>{$event diag_ipbx_Snippet118}</DIV></TD>
+    <TD>&nbsp;</TD></TR>
+  <TR height=24>
+    <TD style="WIDTH: 223px">
+      <DIV align=right>{$event diag_ipbx_Snippet124}</DIV></TD>
+    <TD style="WIDTH: 177px">
+      <DIV align=left>{$event diag_ipbx_Snippet119}</DIV></TD>
+    <TD>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV class=message>&nbsp;</DIV>
+<DIV id="global_block_table{$id}" class=main_table>{BEGIN grid_block}
+<DIV id="grid_block{$id}">&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR height=18>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WIDTH: 33%; WHITE-SPACE: normal">
+      <P align=center>&nbsp;<STRONG><U><FONT color=#336699>Espaço em 
+      Disco</FONT></U></STRONG></P></TD>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WIDTH: 33%; WHITE-SPACE: normal">
+      <P align=center>&nbsp;<STRONG><U><FONT 
+      color=#336699>Inodes</FONT></U></STRONG></P></TD>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WIDTH: 33%; WHITE-SPACE: normal">
+      <P align=center>&nbsp;<STRONG><U><FONT 
+      color=#336699>Memória</FONT></U></STRONG></P></TD></TR>
+  <TR height=25>
+    <TD style="WIDTH: 398px">
+      <DIV align=center>{$event diag_ipbx_Snippet12}</DIV></TD>
+    <TD style="WIDTH: 398px">
+      <DIV align=center>{$event diag_ipbx_Snippet14}</DIV></TD>
+    <TD>
+      <DIV align=center>{$event diag_ipbx_Snippet15}</DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR height=17>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WIDTH: 475px; WHITE-SPACE: normal" 
+    colSpan=2>
+      <P align=center><STRONG><U><FONT 
+    color=#336699>Rede</FONT></U></STRONG></P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 125px">&nbsp;<STRONG>Informações:</STRONG></TD>
+    <TD>{$event diag_ipbx_Snippet19}&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV></TABLE>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR height=23>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WHITE-SPACE: normal" colSpan=2>
+      <P align=center><FONT 
+      color=#336699>&nbsp;<STRONG><U>DNS</U></STRONG></FONT></P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 92px">&nbsp;<STRONG>Sufixo:</STRONG></TD>
+    <TD>{$event diag_ipbx_Snippet126}&nbsp;- 
+      <EM>Espaço para separar cada sufixo. Exemplo: "sufixo 
+  bnu.sufixo"</EM></TD></TR>
+  <TR>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD></TR>
+  <TR height=16>
+    <TD style="WIDTH: 92px">&nbsp;<STRONG>Servidores:</STRONG></TD>
+    <TD>{$event diag_ipbx_Snippet127}</TD></TR></TBODY></TABLE>
+<DIV>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WIDTH: 1101px; WHITE-SPACE: normal" 
+    colSpan=5>
+      <P align=center>&nbsp;<STRONG><U><FONT 
+      color=#336699>Rotas</FONT></U></STRONG></P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 360px">
+      <P align=center><STRONG><U><FONT color=#000000>Endereço de 
+      IP</FONT></U></STRONG></P></TD>
+    <TD style="WIDTH: 306px">
+      <P align=center><STRONG><U><FONT color=#000000>Máscara de 
+      Subrede</FONT></U></STRONG></P></TD>
+    <TD style="WIDTH: 309px">
+      <P align=center><STRONG><U><FONT 
+      color=#000000>Gateway</FONT></U></STRONG></P></TD>
+    <TD style="WIDTH: 467px">
+      <P align=center><STRONG><U><FONT 
+      color=#000000>Metric</FONT></U></STRONG></P></TD>
+    <TD>
+      <P align=center>&nbsp;<STRONG><U>Interface</U></STRONG></P></TD></TR>
+  <P>
+  <P>{$event diag_ipbx_Snippet112} 
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P>
+  <P></P></P></TBODY>
+  <DIV>&nbsp;</DIV></TABLE></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WHITE-SPACE: normal">
+      <P align=center><STRONG><U><FONT color=#336699>Registros 
+      SIP</FONT></U></STRONG></P></TD></TR>
+  <TR>
+    <TD>
+      <DIV align=center>{$event diag_ipbx_Snippet125}</DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<TABLE border=0 cellSpacing=1 cellPadding=1 width="95%" bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD style="BACKGROUND-COLOR: #d1dcef; WHITE-SPACE: normal" colSpan=2>
+      <P align=center><STRONG><U><FONT 
+      color=#336699>Khomp</FONT></U></STRONG></P></TD></TR>
+  <TR>
+    <TD style="WIDTH: 282px">
+      <P align=center>&nbsp;<STRONG>Link errors</STRONG></P></TD>
+    <TD>{$event diag_ipbx_Snippet113}</TD></TR>
+  <TR>
+    <TD style="WIDTH: 282px">
+      <P align=center>&nbsp;<STRONG>Channels</STRONG></P></TD>
+    <TD>{$event diag_ipbx_Snippet114}</TD></TR>
+  <TR>
+    <TD style="WIDTH: 282px">
+      <P align=center>&nbsp;<STRONG>Summary</STRONG></P></TD>
+    <TD>{$event diag_ipbx_Snippet115}</TD></TR></TBODY></TABLE></DIV>
+<DIV>&nbsp;</DIV>
+<DIV>
+<TABLE class=data border=0 cellSpacing=0 cellPadding=3 width="100%" 
+name="maintable">
+  {BEGIN grid_header}<THEAD>
+  <TR vAlign=top {$gridHeader_attrs}>{BEGIN record_header}
+    <TH class=headerlist_left_M width=5>&nbsp;</TH>
+    {BEGIN listIcons_column}<TH class=headerlist noWrap align=middle {$widthListIcons}>&nbsp;</TH>{END listIcons_column}
+    {BEGIN dt_timeout_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN dt_timeout_fieldheader}&nbsp; <A class=tablelinks 
+      {$dt_timeout_orderlinkattrs}>Data do Timeout</A> &nbsp; {END dt_timeout_fieldheader}</TH>{END dt_timeout_fieldheadercolumn}
+    {BEGIN ip_address_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN ip_address_fieldheader}&nbsp; <A class=tablelinks 
+      {$ip_address_orderlinkattrs}>Endereço IP</A> &nbsp; {END ip_address_fieldheader}</TH>{END ip_address_fieldheadercolumn}
+    {BEGIN timeout_fieldheadercolumn}<TH class=headerlist_right_M align=middle>{BEGIN timeout_fieldheader}&nbsp; <A class=tablelinks 
+      {$timeout_orderlinkattrs}>Timeout</A> &nbsp; {END timeout_fieldheader}</TH>{END timeout_fieldheadercolumn}
+    <TH class=darkshade>&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class=darkshade></TH>{END endrecordheader_block}{END record_header}</TR></THEAD>{END grid_header}
+  <TBODY>
+  {BEGIN grid_row}<TR vAlign=top {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    <TD width=5>&nbsp;</TD>
+    {BEGIN listIcons_column}<TD class=listIcons vAlign=middle noWrap align=middle></TD>{END listIcons_column}
+    {BEGIN dt_timeout_fieldcolumn}<TD class=borderbody vAlign=middle {$dt_timeout_style}>
+      <P align=center>{$dt_timeout_value} </P></TD>{END dt_timeout_fieldcolumn}
+    {BEGIN ip_address_fieldcolumn}<TD class=borderbody vAlign=middle {$ip_address_style}>
+      <P align=center>{$ip_address_value} </P></TD>{END ip_address_fieldcolumn}
+    {BEGIN timeout_fieldcolumn}<TD class=borderbody vAlign=middle {$timeout_style}>
+      <P align=center>{$timeout_value} </P></TD>{END timeout_fieldcolumn}
+    <TD class=darkshade>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class=darkshade width=20 {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}{BEGIN grid_footer}
+  <TR>{BEGIN record_footer}
+    <TD class=headerlistdown2_left height=15></TD>
+    {BEGIN listIcons_column}<TD noWrap>&nbsp;</TD>{END listIcons_column}
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD class=headerlistdown2_right>&nbsp;</TD>
+    <TD class=darkshade height=15>&nbsp;</TD>
+    {BEGIN endrecordfooter_block}<TD class=darkshade width=20>&nbsp;</TD>{END endrecordfooter_block}{END record_footer}</TR></TFOOT>{END grid_footer}</TBODY></TABLE></DIV>{END grid_block}</DIV>
+{BEGIN message_block}<DIV class=main_table>{$message} </DIV>{END message_block}
+{BEGIN pagination_block}<DIV id="pagination_block{$id}" class=main_table>{$pagination} </DIV>{END pagination_block}</DIV></DIV><B 
+class=xbottom><B class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+class=xb1b3></B></B>{$footer} 
+</DIV>{END body}</BODY></HTML>

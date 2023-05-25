@@ -1,0 +1,47 @@
+<p>Tabela Principal: [Cadastro]</p>
+
+<table border=0 width=20% CELLPADDING=3 CELLSPACING=1 class="grid_block">
+<!-- header -->
+<tr valign="top">
+<td><b>Regexten</b></td>
+<td><b>Ramais</b></td>
+<td><b>Ramal</b></td>
+<td><b>Centro de custo</b></td>
+<td><b>Nome</b></td>
+<td><b>Privilégio</b></td>
+<td><b>Ligações simultâneas</b></td>
+<td><b>Grupo de captura</b></td>
+<td><b>Tipo de telefone</b></td>
+</tr>
+<!-- data -->
+<tr >
+<td>
+{$regexten_mastervalue}
+</td>
+<td>
+{$id_mastervalue}
+</td>
+<td>
+{$name_mastervalue}
+</td>
+<td>
+{$accountcode_mastervalue}
+</td>
+<td>
+{$callerid_mastervalue}
+</td>
+<td>
+{$context_mastervalue}
+</td>
+<td>
+{$call_limit_mastervalue}
+</td>
+<td>
+{$pickupgroup_mastervalue}
+</td>
+<td>
+{$allow_mastervalue}
+</td>
+</tr>
+
+</table>

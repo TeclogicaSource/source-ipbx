@@ -1,0 +1,452 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Rel__Produt_filas_grupo_por_data search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Critério:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas condições</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Qualquer condição</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>Não</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_dt_entrada}">
+	{BEGIN dt_entrada_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data dt_entrada}
+	</td>
+	<td>
+		<input type="checkbox" {$dt_entrada_notbox}>
+	</td>
+	<td>
+		{$searchtype_dt_entrada}
+	</td>
+	<td>
+		{$dt_entrada_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dt_entrada_editcontrol1}&nbsp;
+	</td>
+{END dt_entrada_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_nm_grupo}">
+	{BEGIN nm_grupo_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data nm_grupo}
+	</td>
+	<td>
+		<input type="checkbox" {$nm_grupo_notbox}>
+	</td>
+	<td>
+		{$searchtype_nm_grupo}
+	</td>
+	<td>
+		{$nm_grupo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$nm_grupo_editcontrol1}&nbsp;
+	</td>
+{END nm_grupo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Receb_}">
+	{BEGIN Receb__fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data Receb_}
+	</td>
+	<td>
+		<input type="checkbox" {$Receb__notbox}>
+	</td>
+	<td>
+		{$searchtype_Receb_}
+	</td>
+	<td>
+		{$Receb__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Receb__editcontrol1}&nbsp;
+	</td>
+{END Receb__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Atend_}">
+	{BEGIN Atend__fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data Atend_}
+	</td>
+	<td>
+		<input type="checkbox" {$Atend__notbox}>
+	</td>
+	<td>
+		{$searchtype_Atend_}
+	</td>
+	<td>
+		{$Atend__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Atend__editcontrol1}&nbsp;
+	</td>
+{END Atend__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aband_}">
+	{BEGIN Aband__fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data Aband_}
+	</td>
+	<td>
+		<input type="checkbox" {$Aband__notbox}>
+	</td>
+	<td>
+		{$searchtype_Aband_}
+	</td>
+	<td>
+		{$Aband__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aband__editcontrol1}&nbsp;
+	</td>
+{END Aband__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TME}">
+	{BEGIN TME_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data TME}
+	</td>
+	<td>
+		<input type="checkbox" {$TME_notbox}>
+	</td>
+	<td>
+		{$searchtype_TME}
+	</td>
+	<td>
+		{$TME_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TME_editcontrol1}&nbsp;
+	</td>
+{END TME_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TMA}">
+	{BEGIN TMA_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data TMA}
+	</td>
+	<td>
+		<input type="checkbox" {$TMA_notbox}>
+	</td>
+	<td>
+		{$searchtype_TMA}
+	</td>
+	<td>
+		{$TMA_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TMA_editcontrol1}&nbsp;
+	</td>
+{END TMA_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_TMO}">
+	{BEGIN TMO_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data TMO}
+	</td>
+	<td>
+		<input type="checkbox" {$TMO_notbox}>
+	</td>
+	<td>
+		{$searchtype_TMO}
+	</td>
+	<td>
+		{$TMO_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$TMO_editcontrol1}&nbsp;
+	</td>
+{END TMO_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aband_Contr_}">
+	{BEGIN Aband_Contr__fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data Aband_Contr_}
+	</td>
+	<td>
+		<input type="checkbox" {$Aband_Contr__notbox}>
+	</td>
+	<td>
+		{$searchtype_Aband_Contr_}
+	</td>
+	<td>
+		{$Aband_Contr__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aband_Contr__editcontrol1}&nbsp;
+	</td>
+{END Aband_Contr__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Aband_Real_}">
+	{BEGIN Aband_Real__fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data Aband_Real_}
+	</td>
+	<td>
+		<input type="checkbox" {$Aband_Real__notbox}>
+	</td>
+	<td>
+		{$searchtype_Aband_Real_}
+	</td>
+	<td>
+		{$Aband_Real__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Aband_Real__editcontrol1}&nbsp;
+	</td>
+{END Aband_Real__fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoEsperaContratado}">
+	{BEGIN NivelServicoEsperaContratado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaContratado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoEsperaContratado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoEsperaContratado}
+	</td>
+	<td>
+		{$NivelServicoEsperaContratado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoEsperaContratado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoEsperaContratado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoEsperaRealizado}">
+	{BEGIN NivelServicoEsperaRealizado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaRealizado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoEsperaRealizado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoEsperaRealizado}
+	</td>
+	<td>
+		{$NivelServicoEsperaRealizado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoEsperaRealizado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoEsperaRealizado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoEsperaQuantidade}">
+	{BEGIN NivelServicoEsperaQuantidade_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaQuantidade}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoEsperaQuantidade_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoEsperaQuantidade}
+	</td>
+	<td>
+		{$NivelServicoEsperaQuantidade_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoEsperaQuantidade_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoEsperaQuantidade_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoAtendimentoContratado}">
+	{BEGIN NivelServicoAtendimentoContratado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoContratado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoAtendimentoContratado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoAtendimentoContratado}
+	</td>
+	<td>
+		{$NivelServicoAtendimentoContratado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoAtendimentoContratado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoAtendimentoContratado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoAtendimentoRealizado}">
+	{BEGIN NivelServicoAtendimentoRealizado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoRealizado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoAtendimentoRealizado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoAtendimentoRealizado}
+	</td>
+	<td>
+		{$NivelServicoAtendimentoRealizado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoAtendimentoRealizado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoAtendimentoRealizado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoAtendimentoQuantidade}">
+	{BEGIN NivelServicoAtendimentoQuantidade_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoQuantidade}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoAtendimentoQuantidade_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoAtendimentoQuantidade}
+	</td>
+	<td>
+		{$NivelServicoAtendimentoQuantidade_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoAtendimentoQuantidade_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoAtendimentoQuantidade_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoOperacaoContratado}">
+	{BEGIN NivelServicoOperacaoContratado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoOperacaoContratado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoOperacaoContratado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoOperacaoContratado}
+	</td>
+	<td>
+		{$NivelServicoOperacaoContratado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoOperacaoContratado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoOperacaoContratado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoOperacaoRealizado}">
+	{BEGIN NivelServicoOperacaoRealizado_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoOperacaoRealizado}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoOperacaoRealizado_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoOperacaoRealizado}
+	</td>
+	<td>
+		{$NivelServicoOperacaoRealizado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoOperacaoRealizado_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoOperacaoRealizado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_NivelServicoOperacaoQuantidade}">
+	{BEGIN NivelServicoOperacaoQuantidade_fieldblock}		
+	<td>
+		{$label Rel__Produt_filas_grupo_por_data NivelServicoOperacaoQuantidade}
+	</td>
+	<td>
+		<input type="checkbox" {$NivelServicoOperacaoQuantidade_notbox}>
+	</td>
+	<td>
+		{$searchtype_NivelServicoOperacaoQuantidade}
+	</td>
+	<td>
+		{$NivelServicoOperacaoQuantidade_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$NivelServicoOperacaoQuantidade_editcontrol1}&nbsp;
+	</td>
+{END NivelServicoOperacaoQuantidade_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

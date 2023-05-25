@@ -1,0 +1,183 @@
+.preview span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-wrapper span.runner-btnframe > .runner-btnright
+{
+clip:rect(auto auto auto 497px);
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab > *.runner-cc a
+{
+color: #696969
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.active > *.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.current > *.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   .runner-menutab.expanded > *.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-wrapper .runner-hmenu.runner-hmenu.runner-hmenu.runner-hmenu   span.runner-btnframe > .runner-btnright
+{
+clip:rect(auto auto auto 497px);
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-toprow > th.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-toprow > th.runner-cc a
+{
+color: #FFFFFF
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.footer > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.footer > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > .runner-row > td.runner-cc a.alt
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid > table > * > tr > td.runner-cg > table > * > tr.style1.runner-row.hovered.interlaced > td.runner-cc a
+{
+color: #333333
+}
+.preview .runner-s-grid  span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-s-grid  span.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-wrapper .runner-s-grid  span.runner-btnframe > .runner-btnright
+{
+clip:rect(auto auto auto 497px);
+}
+.preview span.mainbutton.mainbutton.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper span.mainbutton.mainbutton.runner-btnframe > .runner-btnright,
+.preview  .runner-wrapper .runner-wrapper span.mainbutton.mainbutton.runner-btnframe > .runner-btnright
+{
+clip:rect(auto auto auto 497px);
+}
+.rnr-left, .rnr-center{
+    background-color:#ffffff;
+}
+
+body{    
+    background-size: cover;
+}
+.page-list_centered_vert > .rnr-page {
+    width: 98%!important;
+}
+.page-chart_centered_vert > .rnr-page {
+    width: 98%!important;
+}
+
+#inlineAdd1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/add-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;
+   vertical-align: -20%;
+}
+#delete_selected1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/delete-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;
+   vertical-align: -20%;
+}
+#edit_selected1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/edit-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;-
+}
+
+.saveEditing {
+			color:green;
+}
+
+.revertEditing {
+color: red;
+}
+
+select{
+				  width: auto!important;
+  min-width: auto!important;
+}
+input[type=text]{
+  width: 100px!important;
+}
+ 
+/* Tamanho da caixa de seleção */
+.chosen-choices {
+    width: 400px!important;    
+}
+
+.Avenue1Avenue2.rnr-s-1 > .rnr-c { 
+    width: 80%;
+}
+

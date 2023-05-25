@@ -1,0 +1,161 @@
+{BEGIN searchPanel}
+<style>
+<!--
+
+.searchOptions div{
+	/*margin: 10px 0px 10px 10px;*/
+	padding: 10px 0px 10px 10px;
+}
+
+
+
+#addOption{$id}{
+	/*padding: 1px 5px 13px 5px !important;*/
+}
+
+.addOptionLink{
+	margin: 1px 5px 13px 5px !important;
+}
+
+#bottomSearchButt{$id}{
+	padding: 13px 1px 5px 1px !important;
+}
+#controlChooseMenu{$id}{
+	position: absolute;			
+	display: none;	
+	width: auto;
+	text-align: left;
+	
+}	
+
+#controlsBlock_{$id}{
+	/*display:table;*/
+	width: 180px;
+}
+
+.srchPanelTable, .srchPanelRow{
+	padding:0px !important;
+}
+
+.srchPanelRow{
+	overflow: hidden;
+	width: 180px;
+	margin: 0px !important;
+}
+
+.srchPanelCell{
+	/*padding: 2px !important;*/
+	/*margin: 2px 0px 2px 2px !important;*/
+	padding: 2px 0px 2px 2px !important;
+	float: left; !important;	
+}
+
+.srchPanelCell2{
+	/*width: 100%;*/
+	width: 170px; 
+	/*margin-left: 17px !important;*/
+	padding-left: 17px !important;
+}
+.winTable{	
+	/*border-collapse: collapse;*/
+	border-collapse: separate;	
+}
+
+.delButt{
+	visibility: hidden;
+}
+
+
+
+.addSearchControl{
+	margin: 5px;
+}
+
+.critCont{
+	margin: 10px 0px 0px 0px; 
+}
+-->
+</style>
+
+
+
+<div id="searchOptions{$id}" class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div id="srchCritTop{$id}" class="critCont" style="display: none;">
+		Critério:&nbsp;
+    	<input type="radio" name="srchType" {$all_checkbox}>{BEGIN all_checkbox_label}Todos{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer{END any_checkbox_label}
+	</div>
+	<div id="addOption{$id}" class="addOption">
+      	<a id="showHideControlChooseMenu{$id}"  class="tablelinkssearch" {$showHideCtrls_attrs}>Adicionar campo</a>&nbsp;&nbsp;&nbsp;
+		<a id="showHideSearchType{$id}"  class="tablelinkssearch" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>		
+	</div>
+	<!-- choose controls div -->
+	<div id="controlChooseMenu{$id}" class="controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+			<a id="addSearchControl_name" class="addSearchControl" {$addSearchControl_name_attrs}>Nome</a>
+			<a id="addSearchControl_musiconhold" class="addSearchControl" {$addSearchControl_musiconhold_attrs}>Conjunto de musicas</a>
+			<a id="addSearchControl_announce" class="addSearchControl" {$addSearchControl_announce_attrs}>Announce</a>
+			<a id="addSearchControl_context" class="addSearchControl" {$addSearchControl_context_attrs}>Contexto</a>
+			<a id="addSearchControl_timeout" class="addSearchControl" {$addSearchControl_timeout_attrs}>Timeout</a>
+			<a id="addSearchControl_monitor_join" class="addSearchControl" {$addSearchControl_monitor_join_attrs}>Monitor Join</a>
+			<a id="addSearchControl_monitor_format" class="addSearchControl" {$addSearchControl_monitor_format_attrs}>Monitor Format</a>
+			<a id="addSearchControl_queue_youarenext" class="addSearchControl" {$addSearchControl_queue_youarenext_attrs}>Queue Youarenext</a>
+			<a id="addSearchControl_queue_thereare" class="addSearchControl" {$addSearchControl_queue_thereare_attrs}>Queue Thereare</a>
+			<a id="addSearchControl_queue_callswaiting" class="addSearchControl" {$addSearchControl_queue_callswaiting_attrs}>Queue Callswaiting</a>
+			<a id="addSearchControl_queue_holdtime" class="addSearchControl" {$addSearchControl_queue_holdtime_attrs}>Queue Holdtime</a>
+			<a id="addSearchControl_queue_minutes" class="addSearchControl" {$addSearchControl_queue_minutes_attrs}>Queue Minutes</a>
+			<a id="addSearchControl_queue_seconds" class="addSearchControl" {$addSearchControl_queue_seconds_attrs}>Queue Seconds</a>
+			<a id="addSearchControl_queue_lessthan" class="addSearchControl" {$addSearchControl_queue_lessthan_attrs}>Queue Lessthan</a>
+			<a id="addSearchControl_queue_thankyou" class="addSearchControl" {$addSearchControl_queue_thankyou_attrs}>Queue Thankyou</a>
+			<a id="addSearchControl_queue_reporthold" class="addSearchControl" {$addSearchControl_queue_reporthold_attrs}>Queue Reporthold</a>
+			<a id="addSearchControl_announce_frequency" class="addSearchControl" {$addSearchControl_announce_frequency_attrs}>Announce Frequency</a>
+			<a id="addSearchControl_announce_round_seconds" class="addSearchControl" {$addSearchControl_announce_round_seconds_attrs}>Announce Round Seconds</a>
+			<a id="addSearchControl_announce_holdtime" class="addSearchControl" {$addSearchControl_announce_holdtime_attrs}>Announce Holdtime</a>
+			<a id="addSearchControl_retry" class="addSearchControl" {$addSearchControl_retry_attrs}>Retry</a>
+			<a id="addSearchControl_wrapuptime" class="addSearchControl" {$addSearchControl_wrapuptime_attrs}>Wrapuptime</a>
+			<a id="addSearchControl_maxlen" class="addSearchControl" {$addSearchControl_maxlen_attrs}>Maxlen</a>
+			<a id="addSearchControl_servicelevel" class="addSearchControl" {$addSearchControl_servicelevel_attrs}>Servicelevel</a>
+			<a id="addSearchControl_strategy" class="addSearchControl" {$addSearchControl_strategy_attrs}>Estratégia</a>
+			<a id="addSearchControl_joinempty" class="addSearchControl" {$addSearchControl_joinempty_attrs}>Joinempty</a>
+			<a id="addSearchControl_leavewhenempty" class="addSearchControl" {$addSearchControl_leavewhenempty_attrs}>Leavewhenempty</a>
+			<a id="addSearchControl_eventmemberstatus" class="addSearchControl" {$addSearchControl_eventmemberstatus_attrs}>Eventmemberstatus</a>
+			<a id="addSearchControl_eventwhencalled" class="addSearchControl" {$addSearchControl_eventwhencalled_attrs}>Eventwhencalled</a>
+			<a id="addSearchControl_reportholdtime" class="addSearchControl" {$addSearchControl_reportholdtime_attrs}>Reportholdtime</a>
+			<a id="addSearchControl_memberdelay" class="addSearchControl" {$addSearchControl_memberdelay_attrs}>Memberdelay</a>
+			<a id="addSearchControl_weight" class="addSearchControl" {$addSearchControl_weight_attrs}>Weight</a>
+			<a id="addSearchControl_timeoutrestart" class="addSearchControl" {$addSearchControl_timeoutrestart_attrs}>Timeoutrestart</a>
+			<a id="addSearchControl_periodic_announce" class="addSearchControl" {$addSearchControl_periodic_announce_attrs}>Periodic Announce</a>
+			<a id="addSearchControl_periodic_announce_frequency" class="addSearchControl" {$addSearchControl_periodic_announce_frequency_attrs}>Periodic Announce Frequency</a>
+			<a id="addSearchControl_ringinuse" class="addSearchControl" {$addSearchControl_ringinuse_attrs}>Ringinuse</a>
+			<a id="addSearchControl_setinterfacevar" class="addSearchControl" {$addSearchControl_setinterfacevar_attrs}>Setinterfacevar</a>
+	</div>
+	<!-- search window controls block, make it visible in window mode and hidden in panel -->
+	<table id="controlsBlock_{$id}_win" class="winTable" style="display: none;" CELLPADDING="3">
+	{BEGIN searchCtrlBlock_win}			
+		<tr class="winRow" {$filterRow_attrs}>	
+			<td class="srchWinCell"></td>		
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell" {$srchTypeCont_attrs_win}></td>
+			<td class="srchWinCell"></td>
+			<td class="srchWinCell"></td>			
+		</tr>
+	{END searchCtrlBlock_win}
+	</table>
+	<!-- add for each for get predefined fields for list search panel, not adv search, visible in panel mode and hidden in window -->	
+	<div id="controlsBlock_{$id}" class="srchPanelTable">		
+	{BEGIN searchCtrlBlock}			
+		<div class="srchPanelRow blockBorder" {$filterDiv_attrs}>	
+			<div class="srchPanelCell">{$delCtrlButt}</div>		
+			<div class="srchPanelCell">{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2" {$srchTypeCont_attrs}>{$searchtype}</div>
+			<div class="srchPanelCell srchPanelCell2" >{$searchcontrol}</div>
+			<div class="srchPanelCell srchPanelCell2" {$secCtrlCont_attrs}>{$searchcontrol1}</div>			
+		</div>
+	{END searchCtrlBlock}
+	</div>
+	<div id="bottomSearchButt{$id}" align="center" {$bottomSearchButt_attrs}>
+		<span class=buttonborder><input type=button class="button" value="Buscar" {$searchbutton_attrs}></span> 
+	</div>
+</div>
+{END searchPanel}

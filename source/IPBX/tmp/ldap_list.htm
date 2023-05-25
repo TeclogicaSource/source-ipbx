@@ -1,0 +1,306 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Ldap</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_2 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]--><!--{BEGIN style_block}-->
+<STYLE>
+#height100___pageid___ {height:auto;width:100%;padding:10px;}
+#left_block___pageid___ {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block___pageid___{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block___pageid___{left:20px;right:0px;}
+{END LTR_block}
+#right_block___pageid___ {padding:10px 10px 0px 0px;}
+#menu_block___pageid___ {padding:5px 0px; width:auto;}
+#search_block___pageid___, #search_block_option___pageid___, #search_block_text___pageid___ {padding:3px 5px;}
+#toplinks_block___pageid___ {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block___pageid___ > * {margin:4px 6px;vertical-align:middle;}
+#global_block___pageid___ {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block___pageid___ {padding:0px 10px 10px 0px;}
+#global_block_table___pageid___, #right_block___pageid___{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table___pageid___ {width:auto;}
+#searchform_block___pageid___ {margin-top:1px;padding:3px}
+#searchform_block___pageid___ div {padding:3px 5px;}
+#details_block___pageid___,#pages_block___pageid___ {white-space:nowrap;text-align:center;padding:3px}
+#details_block___pageid___, #recordspp_block___pageid___ {margin-top:1px}
+#recordcontrols_block___pageid___ {padding:3px 6px;text-align:left;width:auto;}
+#record_controls___pageid___ > *,#newrecord_controls___pageid___ > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block___pageid___ {text-align:center;}
+#caption_block___pageid___ {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line___pageid___ {text-align:center;padding:4px;}
+#grid_block___pageid___ {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer___pageid___{	width: 200px}
+#searchOptions___pageid___{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links___pageid___ * {padding:0}
+</STYLE>
+<!--{END style_block}--><!--{BEGIN iestyle_block}--><!--[if IE]>
+<STYLE>
+#toplinks_block___pageid___ * {margin:1px 3px;vertical-align:middle;}
+#record_controls___pageid___ *,#newrecord_controls___pageid___ * {margin:1x 1px;vertical-align:middle}
+#global_block___pageid___ {height:95%}
+#recordcontrols_block___pageid___ {width:100%;}
+</STYLE>
+<![endif]--><!--{END iestyle_block}-->
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY innertag="body" {$bodyattrs} marginwidth="0" marginheight="0">
+<DIV id=height100___pageid___ layout="Rome"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> <B class=xtop><B 
+class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+<DIV id=toplinks_block___pageid___ class=uplistmenu 
+outertag="toplinks_block">Logado Como&nbsp;<B><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_4 contentEditable=false>username</SPAN></B>&nbsp; <SPAN 
+class=buttonborder><INPUT class=button value="Log Out" type=button {$logoutlink_attrs}></SPAN> 
+<SPAN class=buttonborder outertag="adminarea_link"><INPUT class=button value="Área  Admin" type=button {$adminarealink_attrs}></SPAN> 
+<SPAN class=buttonborder outertag="asearch_link"><INPUT class=button value="Busca Avancada" type=button {$asearchlink_attrs}></SPAN> 
+</DIV>
+<DIV id=global_block___pageid___ class=main_table>
+<DIV id=left_block___pageid___ outertag="left_block"><B class=xtop><B 
+class=xb1></B><B class=xb2></B><B class=xb3></B><B class=xb4></B></B><!-- MenuBegin -->
+<DIV id=menu_block___pageid___ class=xboxcontent outertag="menu_block"><!-- MainMenuBegin --><SPAN id=replace_mainmenu0 
+contentEditable=false typeid="menu">
+<STYLE class=Vmenu>
+#mainmenu_block IMG, #mainmenu_block HR{vertical-align:middle;margin-right:10px;}
+/* For Vmenu1 on the list page */
+#mainmenu_block {width:200px;}
+#menu_block___pageid___, #tables_block {padding:10px 0;}
+.Vmenu1 ul, .Vmenu1 ul li{list-style:none;margin:0;padding:0px;}
+.Vmenu1 ul li {padding:5px 10px;position:relative;z-index:1;display:block;}
+</STYLE>
+
+<DIV id=mainmenu_block class=Vmenu1>
+<UL>
+  <LI id=li1 view="topitem"><A id=itemlink1 class=tablelinkssearch 
+  title="Painel de Operações"><IMG id=replace_5 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Painel 
+  de Operações</A> 
+  <LI id=li2 view="topitem"><A id=itemlink2 class=tablelinkssearch 
+  title="Configurações Pessoais"><IMG id=replace_6 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Configurações 
+  Pessoais</A> 
+  <LI id=li3 view="topitem"><A id=itemlink3 class=tablelinkssearch 
+  title="Central Telefônica"><IMG id=replace_7 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Central 
+  Telefônica</A> 
+  <LI id=li50 view="topitem"><A id=itemlink50 class=tablelinkssearch 
+  title="Call Center"><IMG id=replace_8 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Call 
+  Center</A> 
+  <LI id=li82 view="topitem"><A id=itemlink82 class=tablelinkssearch 
+  title="Sala de Conferência"><IMG id=replace_9 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Sala 
+  de Conferência</A> 
+  <LI id=li83 view="topitem"><A id=itemlink83 class=tablelinkssearch 
+  title=FAX><IMG id=replace_10 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">FAX</A> 
+
+  <LI id=li88 view="topitem"><A id=itemlink88 class=tablelinkssearch 
+  title="Gestão SMS"><IMG id=replace_11 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Gestão 
+  SMS</A> 
+  <LI id=li92 view="topitem"><A id=itemlink92 class=tablelinkssearch 
+  title="Ura Reversa"><IMG id=replace_12 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Ura 
+  Reversa</A> 
+  <LI id=li100 view="topitem"><A id=itemlink100 class=tablelinkssearch 
+  title=Configurações><IMG id=replace_13 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Configurações</A> 
+
+  <LI id=li116 view="topitem"><A id=itemlink116 class=tablelinkssearch 
+  title=Ajuda><IMG id=replace_14 border=0 alt=* 
+  src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Ajuda</A> 
+  </LI></UL></DIV></SPAN><!-- MainMenuEnd --></DIV><!-- MenuEnd -->
+<DIV outertag="search_records_block">
+<STYLE>
+<!--
+
+#center_block___pageid___{
+	padding: 5px;
+}
+#searchPanelHeader___pageid___{
+	padding: 5px 0px 5px 5px;
+}
+
+-->
+</STYLE>
+<!-- search panel and window header -->
+<DIV id=center_block___pageid___ class=blackshade2>Buscar: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showWindowPin.gif); WIDTH: 18px" id=showSrchWin___pageid___ class=button type=button {$showHideSearchWin_attrs}></SPAN> 
+&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showOptions.gif); WIDTH: 18px" id=showOptPanel___pageid___ class=button type=button {$showHideSearchPanel_attrs}></SPAN> 
+</DIV>
+<DIV id=searchform___pageid___>
+<DIV id=searchPanelHeader___pageid___ class=blackshade><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_15 contentEditable=false>simpleSearchFieldCombo</SPAN> <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_16 contentEditable=false>simpleSearchTypeCombo</SPAN> <INPUT size=25 
+outertag="searchform_text" {$searchfor_attrs}> &nbsp; <SPAN class=buttonborder 
+outertag="searchform_search"><INPUT style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" class=button type=button {$searchbutton_attrs}></SPAN> 
+&nbsp; <SPAN id=showall___pageid___ class=buttonborder 
+outertag="searchform_showall"><INPUT class=button value="Mostrar Todos" type=button {$showallbutton_attrs}></SPAN> 
+</DIV></DIV><!-- search panel and window -->
+<DIV id=searchPanelContainer___pageid___ class=searchPanelContainer><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_17 contentEditable=false>adv_search_panel</SPAN> </DIV>
+<DIV id=details_block___pageid___ class="toplist xboxcontent center" 
+outertag="details_block"><SPAN id=detFound___pageid___>Ítens Encontrados: <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_18 contentEditable=false>records_found</SPAN>&nbsp;</SPAN> </DIV>
+<DIV id=pages_block___pageid___ class="toplist xboxcontent center" 
+outertag="pages_block"><SPAN id=pageOf___pageid___>Página <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_19 contentEditable=false>page</SPAN> de <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_20 contentEditable=false>maxpages</SPAN></SPAN> </DIV>
+<DIV id=recordspp_block___pageid___ class="toplist xboxcontent center" 
+outertag="recordspp_block">Registros por Página:<BR><BR><SELECT 
+{$recordspp_attrs}> <OPTION id=replace_21 selected value=10 
+  {$rpp10_selected}>10</OPTION> <OPTION id=replace_22 value=20 
+  {$rpp20_selected}>20</OPTION> <OPTION id=replace_23 value=30 
+  {$rpp30_selected}>30</OPTION> <OPTION id=replace_24 value=50 
+  {$rpp50_selected}>50</OPTION> <OPTION id=replace_25 value=100 
+  {$rpp100_selected}>100</OPTION> <OPTION id=replace_26 value=500 
+  {$rpp500_selected}>500</OPTION></SELECT> </DIV></DIV><B class=xbottom><B 
+class=xb4></B><B class=xb3></B><B class=xb2></B><B class=xb1></B></B></DIV><!-- main block -->
+<DIV id=marginStyle>
+<DIV id=right_block___pageid___ class=right_block 
+innertag="recordcontrols_block">
+<DIV><B class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+class=xb4></B></B>
+<DIV id=recordcontrols_block___pageid___ class=xboxcontent><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_27 contentEditable=false>lookupSearchControls</SPAN> <SPAN 
+id=record_controls___pageid___ outertag="record_controls"><SPAN 
+class=buttonborder outertag="editselected_link" {$editselectedlink_span}><INPUT class=button value="Editar selecionado" type=button {$editselectedlink_attrs}></SPAN> 
+<SPAN class=buttonborder outertag="saveall_link" {$savealllink_span}><INPUT class=button value="Salvar todos" type=button {$savealllink_attrs}></SPAN> 
+<SPAN class=buttonborder outertag="cancelall_link" {$cancelalllink_span}><INPUT class=button value="Cancelar Edição" type=button {$cancelalllink_attrs}></SPAN> 
+<INPUT id=Atualizar_Ramais1 class=button value="Atualizar Ramais" type=button typeid="ib"></SPAN></DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV></DIV>
+<DIV id=usermessage___pageid___ class=message><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_28 contentEditable=false>user_message</SPAN></DIV>
+<DIV id=global_block_table___pageid___ class=main_table innertag="grid_block">
+<DIV id=grid_block___pageid___>
+<TABLE class=data border=0 cellSpacing=0 cellPadding=3 width="100%" 
+name="maintable">
+  <THEAD outertag="grid_header">
+  <TR vAlign=top {$gridHeader_attrs}><!--{BEGIN record_header}-->
+    <TH class=headerlist_left_M width=5>&nbsp;</TH>
+    <TH class=headerlist noWrap align=middle outertag="listIcons_column" 
+    {$widthListIcons}>&nbsp;</TH>
+    <TH class=headerlist width=20 align=middle 
+      outertag="checkbox_column"><INPUT type=checkbox {$checkboxheader_attrs}> 
+    </TH>
+    <TH class=headerlist align=middle innertag="chave_fieldheader" 
+    outertag="chave_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$chave_orderlinkattrs}>Chave</A> &nbsp; </TH>
+    <TH class=headerlist align=middle innertag="nm_usuario_fieldheader" 
+    outertag="nm_usuario_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$nm_usuario_orderlinkattrs}>Nome do usuario</A> &nbsp; </TH>
+    <TH class=headerlist align=middle innertag="email_fieldheader" 
+    outertag="email_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$email_orderlinkattrs}>E-mail</A> &nbsp; </TH>
+    <TH class=headerlist align=middle innertag="name_fieldheader" 
+    outertag="name_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$name_orderlinkattrs}>Ramal</A> &nbsp; </TH>
+    <TH class=headerlist align=middle innertag="name2_fieldheader" 
+    outertag="name2_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$name2_orderlinkattrs}>Ramal Secundário</A> &nbsp; </TH>
+    <TH class=headerlist_right_M align=middle 
+    innertag="dt_atualizacao_fieldheader" 
+    outertag="dt_atualizacao_fieldheadercolumn">&nbsp; <A class=tablelinks 
+      {$dt_atualizacao_orderlinkattrs}>Data Atualização</A> &nbsp; </TH>
+    <TH class=darkshade>&nbsp;</TH>
+    <TH class=darkshade outertag="endrecordheader_block"></TH><!--{END record_header}--></TR></THEAD>
+  <TBODY innertag="grid_row">
+  <TR vAlign=top innertag="grid_record" {$rowattrs} {$rowstyle}>
+    <TD width=5>&nbsp;</TD>
+    <TD class=listIcons vAlign=center noWrap align=middle 
+    innertag="inlineedit_column inlineedit_link" 
+      outertag="listIcons_column"><A class=tablelinks title=Editar 
+      {$inlineeditlink_attrs}><IMG class=listIcon border=0 alt=Editar 
+      align=middle src="images/icon_inline_edit_new.gif"></A> </TD>
+    <TD vAlign=center width=20 align=middle innertag="checkbox" 
+    outertag="checkbox_column"><INPUT type=checkbox {$checkbox_attrs}> </TD>
+    <TD class=borderbody vAlign=center outertag="chave_fieldcolumn" 
+    {$chave_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_29 contentEditable=false typeid="view_chave">&nbsp;chave</SPAN> 
+    </TD>
+    <TD class=borderbody vAlign=center outertag="nm_usuario_fieldcolumn" 
+    {$nm_usuario_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_30 contentEditable=false 
+      typeid="view_nm_usuario">&nbsp;nm_usuario</SPAN> </TD>
+    <TD class=borderbody vAlign=center outertag="email_fieldcolumn" 
+    {$email_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_31 contentEditable=false typeid="view_email">&nbsp;email</SPAN> 
+    </TD>
+    <TD class=borderbody vAlign=center outertag="name_fieldcolumn" 
+      {$name_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 20px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_32 contentEditable=false typeid="view_name">&nbsp;name</SPAN> 
+    </TD>
+    <TD class=borderbody vAlign=center outertag="name2_fieldcolumn" 
+    {$name2_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_33 contentEditable=false typeid="view_name2">&nbsp;name2</SPAN> 
+    </TD>
+    <TD class=borderbody vAlign=center outertag="dt_atualizacao_fieldcolumn" 
+    {$dt_atualizacao_style}><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_date_short.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_34 contentEditable=false 
+      typeid="view_dt_atualizacao">&nbsp;dt_atualizacao</SPAN> </TD>
+    <TD class=darkshade>&nbsp;</TD>
+    <TD class=darkshade width=20 outertag="endrecord_block" 
+    {$endrecordblock_attrs}>&nbsp;</TD></TR></TBODY>
+  <TBODY outertag="grid_footer">
+  <TR innertag="record_footer">
+    <TD class=headerlistdown2_left height=15></TD>
+    <TD noWrap outertag="listIcons_column">&nbsp;</TD>
+    <TD outertag="checkbox_column">&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD class=headerlistdown2_right>&nbsp;</TD>
+    <TD class=darkshade height=15>&nbsp;</TD>
+    <TD class=darkshade width=20 
+  outertag="endrecordfooter_block">&nbsp;</TD></TR></TFOOT></TBODY></TABLE></DIV></DIV>
+<DIV class=main_table outertag="message_block"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_35 contentEditable=false>message</SPAN> </DIV>
+<DIV id=pagination_block___pageid___ class=main_table 
+outertag="pagination_block"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_36 contentEditable=false>pagination</SPAN> </DIV></DIV></DIV><B 
+class=xbottom><B class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+class=xb1b3></B></B><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> 
+</DIV></BODY></HTML>

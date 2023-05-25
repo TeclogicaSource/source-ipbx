@@ -1,0 +1,24 @@
+Agenda<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Nome</strong></td>
+<td><strong>Numero</strong></td>
+<td><strong>Centro de Custo</strong></td>
+<td><strong>Discar</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$Nome_value}</td>
+<td>{$Numero_value}</td>
+<td>{$idt_custo_value}</td>
+<td>{$Discar_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

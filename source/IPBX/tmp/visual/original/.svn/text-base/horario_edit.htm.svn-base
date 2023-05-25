@@ -1,0 +1,240 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel horario edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN dsc_horario_fieldblock}
+<tr class="{$fielddispclass_dsc_horario}" data-fieldname="dsc_horario">
+	<td class="rnr-label">
+		{BEGIN dsc_horario_label}{$label horario dsc_horario}{END dsc_horario_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsc_horario_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsc_horario_fieldblock}
+	{BEGIN hr_inicio_01_fieldblock}
+<tr class="{$fielddispclass_hr_inicio_01}" data-fieldname="hr_inicio_01">
+	<td class="rnr-label">
+		{BEGIN hr_inicio_01_label}{$label horario hr_inicio_01}{END hr_inicio_01_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_inicio_01_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_inicio_01_fieldblock}
+	{BEGIN hr_fim_01_fieldblock}
+<tr class="{$fielddispclass_hr_fim_01}" data-fieldname="hr_fim_01">
+	<td class="rnr-label">
+		{BEGIN hr_fim_01_label}{$label horario hr_fim_01}{END hr_fim_01_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_fim_01_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_fim_01_fieldblock}
+	{BEGIN hr_inicio_02_fieldblock}
+<tr class="{$fielddispclass_hr_inicio_02}" data-fieldname="hr_inicio_02">
+	<td class="rnr-label">
+		{BEGIN hr_inicio_02_label}{$label horario hr_inicio_02}{END hr_inicio_02_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_inicio_02_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_inicio_02_fieldblock}
+	{BEGIN hr_fim_02_fieldblock}
+<tr class="{$fielddispclass_hr_fim_02}" data-fieldname="hr_fim_02">
+	<td class="rnr-label">
+		{BEGIN hr_fim_02_label}{$label horario hr_fim_02}{END hr_fim_02_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_fim_02_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_fim_02_fieldblock}
+	{BEGIN seg_fieldblock}
+<tr class="{$fielddispclass_seg}" data-fieldname="seg">
+	<td class="rnr-label">
+		{BEGIN seg_label}{$label horario seg}{END seg_label}
+	</td>
+	<td class="rnr-control style3">
+		{$seg_editcontrol}&nbsp;
+	</td>
+</tr>
+{END seg_fieldblock}
+	{BEGIN ter_fieldblock}
+<tr class="{$fielddispclass_ter}" data-fieldname="ter">
+	<td class="rnr-label">
+		{BEGIN ter_label}{$label horario ter}{END ter_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ter_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ter_fieldblock}
+	{BEGIN qua_fieldblock}
+<tr class="{$fielddispclass_qua}" data-fieldname="qua">
+	<td class="rnr-label">
+		{BEGIN qua_label}{$label horario qua}{END qua_label}
+	</td>
+	<td class="rnr-control style3">
+		{$qua_editcontrol}&nbsp;
+	</td>
+</tr>
+{END qua_fieldblock}
+	{BEGIN qui_fieldblock}
+<tr class="{$fielddispclass_qui}" data-fieldname="qui">
+	<td class="rnr-label">
+		{BEGIN qui_label}{$label horario qui}{END qui_label}
+	</td>
+	<td class="rnr-control style3">
+		{$qui_editcontrol}&nbsp;
+	</td>
+</tr>
+{END qui_fieldblock}
+	{BEGIN sex_fieldblock}
+<tr class="{$fielddispclass_sex}" data-fieldname="sex">
+	<td class="rnr-label">
+		{BEGIN sex_label}{$label horario sex}{END sex_label}
+	</td>
+	<td class="rnr-control style3">
+		{$sex_editcontrol}&nbsp;
+	</td>
+</tr>
+{END sex_fieldblock}
+	{BEGIN sab_fieldblock}
+<tr class="{$fielddispclass_sab}" data-fieldname="sab">
+	<td class="rnr-label">
+		{BEGIN sab_label}{$label horario sab}{END sab_label}
+	</td>
+	<td class="rnr-control style3">
+		{$sab_editcontrol}&nbsp;
+	</td>
+</tr>
+{END sab_fieldblock}
+	{BEGIN dom_fieldblock}
+<tr class="{$fielddispclass_dom}" data-fieldname="dom">
+	<td class="rnr-label">
+		{BEGIN dom_label}{$label horario dom}{END dom_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dom_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dom_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

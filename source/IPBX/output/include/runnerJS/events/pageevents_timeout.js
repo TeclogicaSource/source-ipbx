@@ -1,0 +1,8 @@
+
+Runner.pages.PageSettings.addPageEvent("timeout",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button5';if(!pageObj.buttonEventBefore['New_Button5']){pageObj.buttonEventBefore['New_Button5']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['New_Button5']){pageObj.buttonEventAfter['New_Button5']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id=New_Button5]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="New_Button5"+"_"+Runner.genId();var button_New_Button5=new Runner.form.Button({id:this.id,btnName:"New_Button5"});button_New_Button5.init({args:[pageObj,proxy,pageid]});});});Runner.pages.PageSettings.addPageEvent("timeout",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='New_Button6';if(!pageObj.buttonEventBefore['New_Button6']){pageObj.buttonEventBefore['New_Button6']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['New_Button6']){pageObj.buttonEventAfter['New_Button6']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id=New_Button6]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="New_Button6"+"_"+Runner.genId();var button_New_Button6=new Runner.form.Button({id:this.id,btnName:"New_Button6"});button_New_Button6.init({args:[pageObj,proxy,pageid]});});});

@@ -1,0 +1,440 @@
+<html {$html_attrs}>
+<head>
+<title>Tarifação</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;}
+#mastertable_block{$id} {margin-left:50px;margin-top:10px}
+#toplinks_block{$id} {width:100%; text-align:right;padding:3px}
+#toplinks_block{$id} * {padding:0px 10px;}
+#left_block{$id} { position:absolute;width:200px;{BEGIN RTL_block} right:10px;{END RTL_block}{BEGIN LTR_block} left:10px;{END LTR_block} overflow:visible;}
+#search_records_block{$id} {width:100%;}
+#search_records_block{$id} > * {vertical-align:middle;}
+#search_records_block{$id} select {margin:0px 0px;}
+#login_block{$id},#languages_block{$id} {padding:10px; margin-bottom:3px}
+#login_block{$id} div {margin-left:0px; padding:5px 0px;}
+#menu_block{$id} {margin-bottom:3px;width:auto;}
+{BEGIN shiftstyle_block}
+#records_block{$id} {padding-left:203px;{BEGIN RTL_block}padding:0px;padding-right:203px;{END RTL_block}}
+{END shiftstyle_block}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+#recordcontrols_block{$id} {padding:10px;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px;vertical-align:middle;}
+#grid_block{$id} {margin-top:2px;}
+.grid_recordheader {padding:0 5px 5px}
+.grid_recordheader a {margin:0px 5px;}
+form#frmAdmin{$id} {display:inline;}
+body{margin:0px;padding:0px;}
+#searchOptions{$id}{margin-bottom: 3px;}
+#searchform{$id}{/*float: left;*/padding-left: 5px;}
+#searchPanelContainer{$id}{width: 200px}
+
+/*report styles*/
+#export_links{$id} * {padding:0}
+
+</style>
+{END style_block}
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+
+{BEGIN body}
+<div id="height100{$id}">
+{$header}
+
+{BEGIN toplinks_block}
+<div id="toplinks_block{$id}">
+
+
+
+
+
+{BEGIN export_link}
+<a target="_blank" href="cdr_tarifado_export.php" class="tablelinks3" {$exportlink_attrs}>Exportar os Resultados</a>
+{END export_link}
+
+</div>
+{END toplinks_block}
+
+{BEGIN search_records_block} 
+	<div id="search_records_block{$id}" class="linedownbody main_table2 toplist">
+		<table width=100% style="border: none;">
+			<tr>
+				<td nowrap="nowrap" width=22>
+					<img src="include/img/arrow_topmenu.gif" align="absmiddle" alt=" ">
+				</td>
+				<td nowrap="nowrap" align=left>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td nowrap="nowrap" align=right>
+					{BEGIN details_block}
+					<span id="detFound{$id}">Ítens Encontrados: <b>{$records_found}</b>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+					{END details_block}
+					{BEGIN pages_block}
+					<span id="pageOf{$id}">Página <b>{$page}</b> de <b>{$maxpages}</b></span>
+					{END pages_block}
+					
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					
+										{BEGIN recordspp_block}
+					<span id="recordspp_block{$id}">
+						Registros por Página:
+						<select {$recordspp_attrs}>
+							<option value="10" {$rpp10_selected}>10</option>
+							<option value="20" {$rpp20_selected}>20</option>
+							<option value="30" {$rpp30_selected}>30</option>
+							<option value="50" {$rpp50_selected}>50</option>
+							<option value="100" {$rpp100_selected}>100</option>
+							<option value="500" {$rpp500_selected}>500</option>
+						</select>
+					</span>
+					{END recordspp_block}
+				</td>
+			</tr>
+		</table>
+	</div>
+{END search_records_block} 
+
+{BEGIN left_block}
+<div id="left_block{$id}">
+
+{BEGIN security_block}
+<div id="login_block{$id}" class="blackshade toplist">
+	<div style="font-weight:normal;">Logado Como&nbsp;<b>{$username}</b></div>
+	<br><a class="tablelinks" href="login.php?a=logout" {$logoutlink_attrs}>Log Out</a>
+<!-- Permissions -->
+</div>
+{END security_block}
+
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel}
+</div>
+ 
+<!-- MenuBegin -->
+{BEGIN menu_block}
+<div id="menu_block{$id}" class="blackshade toplist">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->
+</div>
+{END menu_block}
+
+<!-- MenuEnd -->
+</div>
+{END left_block}
+
+<div id="records_block{$id}" moveForSearch="move{$id}" {$marginStyle}>
+{BEGIN recordcontrols_block}
+<div id="recordcontrols_block{$id}" class="main_table2" >
+
+
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+
+
+{BEGIN exportselected_link}
+<span class=buttonborder {$exportselectedlink_span}><input type=button class="button" value="Exportação selecionada" {$exportselectedlink_attrs}></span>
+{END exportselected_link}
+
+</span>
+{END record_controls}
+</div>
+{END recordcontrols_block}
+<div class="message" id="usermessage{$id}">{$user_message}</div>
+
+
+
+{BEGIN grid_block}
+<div id="grid_block{$id}" >
+<table name="maintable" class="data" cellspacing="0" cellpadding="5" border="0">
+{BEGIN grid_header}
+<thead>
+<tr class="blackshade" valign="top" {$gridHeader_attrs}>
+{BEGIN record_header}
+
+{BEGIN listIcons_column}
+	<th align="center" class="headerlist listIcons" {$widthListIcons} nowrap="nowrap">&nbsp;</th>
+{END listIcons_column}	
+
+{BEGIN checkbox_column}
+<th width="20" align="center" class="headerlist">
+<input type="checkbox" {$checkboxheader_attrs}>
+</th>
+{END checkbox_column}
+
+
+{BEGIN calldate_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN calldate_fieldheader}
+<a class="tablelinks" {$calldate_orderlinkattrs}>
+Data Hora</a>
+{END calldate_fieldheader}
+</th>
+{END calldate_fieldheadercolumn}
+{BEGIN clid_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN clid_fieldheader}
+<a class="tablelinks" {$clid_orderlinkattrs}>
+Usuario</a>
+{END clid_fieldheader}
+</th>
+{END clid_fieldheadercolumn}
+{BEGIN src_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN src_fieldheader}
+<a class="tablelinks" {$src_orderlinkattrs}>
+Origem</a>
+{END src_fieldheader}
+</th>
+{END src_fieldheadercolumn}
+{BEGIN dst_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN dst_fieldheader}
+<a class="tablelinks" {$dst_orderlinkattrs}>
+Destino</a>
+{END dst_fieldheader}
+</th>
+{END dst_fieldheadercolumn}
+{BEGIN dcontext_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN dcontext_fieldheader}
+<a class="tablelinks" {$dcontext_orderlinkattrs}>
+Dcontext</a>
+{END dcontext_fieldheader}
+</th>
+{END dcontext_fieldheadercolumn}
+{BEGIN channel_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN channel_fieldheader}
+<a class="tablelinks" {$channel_orderlinkattrs}>
+Channel</a>
+{END channel_fieldheader}
+</th>
+{END channel_fieldheadercolumn}
+{BEGIN dstchannel_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN dstchannel_fieldheader}
+<a class="tablelinks" {$dstchannel_orderlinkattrs}>
+Dstchannel</a>
+{END dstchannel_fieldheader}
+</th>
+{END dstchannel_fieldheadercolumn}
+{BEGIN lastapp_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN lastapp_fieldheader}
+<a class="tablelinks" {$lastapp_orderlinkattrs}>
+Lastapp</a>
+{END lastapp_fieldheader}
+</th>
+{END lastapp_fieldheadercolumn}
+{BEGIN lastdata_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN lastdata_fieldheader}
+<a class="tablelinks" {$lastdata_orderlinkattrs}>
+Lastdata</a>
+{END lastdata_fieldheader}
+</th>
+{END lastdata_fieldheadercolumn}
+{BEGIN duration_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN duration_fieldheader}
+<a class="tablelinks" {$duration_orderlinkattrs}>
+Duração (Seg)</a>
+{END duration_fieldheader}
+</th>
+{END duration_fieldheadercolumn}
+{BEGIN billsec_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN billsec_fieldheader}
+<a class="tablelinks" {$billsec_orderlinkattrs}>
+Duração Contabil (Seg)</a>
+{END billsec_fieldheader}
+</th>
+{END billsec_fieldheadercolumn}
+{BEGIN disposition_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN disposition_fieldheader}
+<a class="tablelinks" {$disposition_orderlinkattrs}>
+Disposition</a>
+{END disposition_fieldheader}
+</th>
+{END disposition_fieldheadercolumn}
+{BEGIN amaflags_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN amaflags_fieldheader}
+<a class="tablelinks" {$amaflags_orderlinkattrs}>
+Amaflags</a>
+{END amaflags_fieldheader}
+</th>
+{END amaflags_fieldheadercolumn}
+{BEGIN accountcode_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN accountcode_fieldheader}
+<a class="tablelinks" {$accountcode_orderlinkattrs}>
+Centro de Custo</a>
+{END accountcode_fieldheader}
+</th>
+{END accountcode_fieldheadercolumn}
+{BEGIN uniqueid_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN uniqueid_fieldheader}
+<a class="tablelinks" {$uniqueid_orderlinkattrs}>
+Uniqueid</a>
+{END uniqueid_fieldheader}
+</th>
+{END uniqueid_fieldheadercolumn}
+{BEGIN userfield_fieldheadercolumn}
+<th class="headerlist" align="center" style="vertical-align:baseline;">
+{BEGIN userfield_fieldheader}
+<a class="tablelinks" {$userfield_orderlinkattrs}>
+Userfield</a>
+{END userfield_fieldheader}
+</th>
+{END userfield_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+<th class="body2"></th>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+</thead>
+{END grid_header}
+
+<tbody>
+{BEGIN grid_row}
+<tr valign="top" {$rowstyle} {$rowattrs}> 
+{BEGIN grid_record}
+
+{BEGIN listIcons_column}
+	<td align="center" valign="middle" class="borderbody listIcons" nowrap="nowrap">
+	
+	
+	
+		{BEGIN view_column}
+	{BEGIN view_link}
+	<a class="tablelinks" {$viewlink_attrs} title="Exibir"><img class="listIcon" src="images/icon_view_new.gif" align="middle" alt="Exibir" border="0"></a>
+	{END view_link}
+	{END view_column}
+	</td>	
+{END listIcons_column}	
+
+{BEGIN checkbox_column}
+<td align="center" valign="middle" class="borderbody" width="20">
+{BEGIN checkbox}
+<input type="checkbox" {$checkbox_attrs}>
+{END checkbox}
+</td>
+{END checkbox_column}
+
+
+{BEGIN calldate_fieldcolumn}
+<td valign="middle" class="borderbody" {$calldate_style}>
+{$calldate_value}
+</td>
+{END calldate_fieldcolumn}
+{BEGIN clid_fieldcolumn}
+<td valign="middle" class="borderbody" {$clid_style}>
+{$clid_value}
+</td>
+{END clid_fieldcolumn}
+{BEGIN src_fieldcolumn}
+<td valign="middle" class="borderbody" {$src_style}>
+{$src_value}
+</td>
+{END src_fieldcolumn}
+{BEGIN dst_fieldcolumn}
+<td valign="middle" class="borderbody" {$dst_style}>
+{$dst_value}
+</td>
+{END dst_fieldcolumn}
+{BEGIN dcontext_fieldcolumn}
+<td valign="middle" class="borderbody" {$dcontext_style}>
+{$dcontext_value}
+</td>
+{END dcontext_fieldcolumn}
+{BEGIN channel_fieldcolumn}
+<td valign="middle" class="borderbody" {$channel_style}>
+{$channel_value}
+</td>
+{END channel_fieldcolumn}
+{BEGIN dstchannel_fieldcolumn}
+<td valign="middle" class="borderbody" {$dstchannel_style}>
+{$dstchannel_value}
+</td>
+{END dstchannel_fieldcolumn}
+{BEGIN lastapp_fieldcolumn}
+<td valign="middle" class="borderbody" {$lastapp_style}>
+{$lastapp_value}
+</td>
+{END lastapp_fieldcolumn}
+{BEGIN lastdata_fieldcolumn}
+<td valign="middle" class="borderbody" {$lastdata_style}>
+{$lastdata_value}
+</td>
+{END lastdata_fieldcolumn}
+{BEGIN duration_fieldcolumn}
+<td valign="middle" class="borderbody" {$duration_style}>
+{$duration_value}
+</td>
+{END duration_fieldcolumn}
+{BEGIN billsec_fieldcolumn}
+<td valign="middle" class="borderbody" {$billsec_style}>
+{$billsec_value}
+</td>
+{END billsec_fieldcolumn}
+{BEGIN disposition_fieldcolumn}
+<td valign="middle" class="borderbody" {$disposition_style}>
+{$disposition_value}
+</td>
+{END disposition_fieldcolumn}
+{BEGIN amaflags_fieldcolumn}
+<td valign="middle" class="borderbody" {$amaflags_style}>
+{$amaflags_value}
+</td>
+{END amaflags_fieldcolumn}
+{BEGIN accountcode_fieldcolumn}
+<td valign="middle" class="borderbody" {$accountcode_style}>
+{$accountcode_value}
+</td>
+{END accountcode_fieldcolumn}
+{BEGIN uniqueid_fieldcolumn}
+<td valign="middle" class="borderbody" {$uniqueid_style}>
+{$uniqueid_value}
+</td>
+{END uniqueid_fieldcolumn}
+{BEGIN userfield_fieldcolumn}
+<td valign="middle" class="borderbody" {$userfield_style}>
+{$userfield_value}
+</td>
+{END userfield_fieldcolumn}
+
+{BEGIN endrecord_block}
+<td class="body2" {$endrecordblock_attrs}></td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+</tbody>
+
+</table>
+</div>
+{END grid_block}
+{BEGIN pagination_block}
+<div id="pagination_block{$id}" align="center" class="toplist" >{$pagination}</div>
+{END pagination_block}
+
+{BEGIN message_block}
+<div align=center valign=middle class=toplist><b>{$message}</b></div>
+{END message_block}
+</div>
+{$footer}
+</div>
+{END body}
+</body>
+</html>

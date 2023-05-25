@@ -1,0 +1,382 @@
+<html {$html_attrs}>
+<head>
+<title>Desvio por prefixo</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links{$id} * {padding:0}
+</style>
+{END style_block}
+{BEGIN iestyle_block}
+<!--[if IE]>
+<style>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</style>
+<![endif]-->
+{END iestyle_block}
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+{BEGIN body}
+<div id="height100{$id}" layout="Rome">
+{$header}
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+{BEGIN toplinks_block}
+<div class="uplistmenu" id="toplinks_block{$id}">
+Logado Como&nbsp;<b>{$username}</b>&nbsp;
+<span class=buttonborder><input type=button class="button" value="Log Out" {$logoutlink_attrs}></span>
+
+{BEGIN adminarea_link}
+<span class=buttonborder><input type=button class=button value="Área  Admin" {$adminarealink_attrs}></span>
+{END adminarea_link}
+
+
+
+
+
+
+
+
+
+
+
+</div>
+{END toplinks_block}
+<div class="main_table" id="global_block{$id}">
+{BEGIN left_block}
+ <div id="left_block{$id}">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<!-- MenuBegin -->
+{BEGIN menu_block}
+  <div class="xboxcontent" id="menu_block{$id}">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->	
+  </div>
+  {END menu_block}
+
+<!-- MenuEnd -->
+{BEGIN search_records_block}
+<div>
+
+<style>
+<!--
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+-->
+</style>
+
+<!-- search panel and window header -->
+<div class="blackshade2" id="center_block{$id}">
+	Buscar:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+	&nbsp;		
+	<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+
+</div>
+<div id="searchform{$id}">
+	<div class="blackshade" id="searchPanelHeader{$id}">
+		{$simpleSearchFieldCombo}
+		{$simpleSearchTypeCombo}
+		
+		{BEGIN searchform_text}
+			<input type=text {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<span class="buttonborder"><input class="button" type="button" style="width: 18px; background-image: url(images/search/search.gif);" {$searchbutton_attrs} /></span>
+		{END searchform_search}
+		&nbsp;		
+		{BEGIN searchform_showall}
+			<span id="showall{$id}" class=buttonborder><input type=button class="button" value="Mostrar Todos" {$showallbutton_attrs}></span>
+		{END searchform_showall}
+	</div>
+</div>  
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel} 
+</div>  
+
+
+
+{BEGIN details_block}
+<div class="toplist xboxcontent center" id="details_block{$id}">
+<span  id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</span>
+</div>
+{END details_block}
+{BEGIN pages_block}
+<div class="toplist xboxcontent center" id="pages_block{$id}">
+<span id="pageOf{$id}">Página {$page} de {$maxpages}</span>
+</div>
+{END pages_block}
+
+{BEGIN recordspp_block}
+<div class="toplist xboxcontent center" id="recordspp_block{$id}">
+Registros por Página:<br><br>
+<select {$recordspp_attrs}>
+<option value="10" {$rpp10_selected}>10</option>
+<option value="20" {$rpp20_selected}>20</option>
+<option value="30" {$rpp30_selected}>30</option>
+<option value="50" {$rpp50_selected}>50</option>
+<option value="100" {$rpp100_selected}>100</option>
+<option value="500" {$rpp500_selected}>500</option>
+</select>
+</div>
+{END recordspp_block}
+</div>
+{END search_records_block}
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END left_block}
+
+<!-- main block -->
+<div id="marginStyle">
+<div id="right_block{$id}"  class="right_block">
+
+{BEGIN recordcontrols_block}
+<div>
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" id="recordcontrols_block{$id}">
+{BEGIN newrecord_controls}
+<span id="newrecord_controls{$id}">
+{BEGIN add_link}
+<span class=buttonborder><input type=button class="button" value="Adicionar Novo" {$addlink_attrs}></span>
+{END add_link}
+
+{BEGIN inlineadd_link}
+<span class=buttonborder><input type=button class="button" value="Adicionar Novo" {$inlineaddlink_attrs} ></span>
+{END inlineadd_link}
+</span>
+{END newrecord_controls}
+{$lookupSearchControls}
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+{BEGIN editselected_link}
+<span class=buttonborder {$editselectedlink_span}><input type=button class="button" value="Editar selecionado" {$editselectedlink_attrs}></span>
+{END editselected_link}
+{BEGIN saveall_link}
+<span class=buttonborder {$savealllink_span}><input type=button class="button" value="Salvar todos" {$savealllink_attrs}></span>
+{END saveall_link}
+{BEGIN cancelall_link}
+<span class=buttonborder {$cancelalllink_span}><input type=button class="button" value="Cancelar Edição" {$cancelalllink_attrs}></span>
+{END cancelall_link}
+
+{BEGIN deleteselected_link}
+<span class=buttonborder {$deleteselectedlink_span}><input type=button class="button" value="Elimina Selecionados" {$deleteselectedlink_attrs}></span>
+{END deleteselected_link}
+
+
+</span>
+{END record_controls}
+
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END recordcontrols_block}
+</div>
+<div class="message" id="usermessage{$id}">{$user_message}</div>
+<div class="main_table" id="global_block_table{$id}">
+
+{BEGIN grid_block}
+<div id="grid_block{$id}">
+<table width="100%" name="maintable" border=0 cellpadding=3 cellspacing=0 class="data">
+{BEGIN grid_header}
+<thead>
+<tr valign="top" {$gridHeader_attrs}>
+{BEGIN record_header}
+<th class="headerlist_left_M" width="5">&nbsp;</th>
+
+{BEGIN listIcons_column}
+	<th align="center" class="headerlist" {$widthListIcons} nowrap="nowrap">&nbsp;</th>
+{END listIcons_column}
+	
+{BEGIN checkbox_column}
+<th width="20" align="center" class="headerlist">
+<input type="checkbox" {$checkboxheader_attrs}>
+</th>
+{END checkbox_column}
+
+{BEGIN ipbx_desv_prefix_dtable_column}
+<th  align="center" class="headerlist">&nbsp;</th>
+{END ipbx_desv_prefix_dtable_column}
+
+{BEGIN dsc_grp_pref_fieldheadercolumn}
+<th class="headerlist_right_M" align="center">
+{BEGIN dsc_grp_pref_fieldheader}&nbsp;
+<a class="tablelinks" {$dsc_grp_pref_orderlinkattrs}>
+Descrição de grupo de prefixo</a>
+&nbsp;
+{END dsc_grp_pref_fieldheader}
+</th>
+{END dsc_grp_pref_fieldheadercolumn}
+
+<th class="darkshade">&nbsp;</th>
+{BEGIN endrecordheader_block}
+<th class="darkshade"></th>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+</thead>
+{END grid_header}
+
+<tbody>
+{BEGIN grid_row}
+<tr valign="top" {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+
+<td width="5">&nbsp;</td>
+
+{BEGIN listIcons_column}
+	<td align="center" valign="middle" class="listIcons" nowrap="nowrap">
+	
+		{BEGIN inlineedit_column}
+	{BEGIN inlineedit_link}
+	<a class="tablelinks" {$inlineeditlink_attrs} title="Editar"><img class="listIcon" src="images/icon_inline_edit_new.gif" align="middle" alt="Editar" border="0"></a>
+	{END inlineedit_link}
+	{END inlineedit_column}
+
+	
+		</td>
+{END listIcons_column}	
+	
+{BEGIN checkbox_column}
+<td align="center" valign="middle" width="20">
+{BEGIN checkbox}
+<input type="checkbox" {$checkbox_attrs}>
+{END checkbox}
+</td>
+{END checkbox_column}
+
+{BEGIN ipbx_desv_prefix_dtable_column}
+<td align="left" valign="middle" class="borderbody" nowrap="nowrap">
+{BEGIN ipbx_desv_prefix_item_dtable_link}
+<a  {$ipbx_desv_prefix_item_dtablelink_attrs}>Item do grupo de prefixo
+	<span {$ipbx_desv_prefix_item_childnumber_attr}>{BEGIN ipbx_desv_prefix_item_childcount}({$ipbx_desv_prefix_item_childnumber}){END ipbx_desv_prefix_item_childcount}</span>
+</a>
+&nbsp;
+{END ipbx_desv_prefix_item_dtable_link}
+</td>
+{END ipbx_desv_prefix_dtable_column}
+
+{BEGIN dsc_grp_pref_fieldcolumn}
+<td valign="middle" class="borderbody" {$dsc_grp_pref_style}>
+{$dsc_grp_pref_value}
+</td>
+{END dsc_grp_pref_fieldcolumn}
+
+<td class="darkshade">&nbsp;</td>
+{BEGIN endrecord_block}
+<td width=20 class="darkshade" {$endrecordblock_attrs}>&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+</tbody>
+
+
+{BEGIN grid_footer}
+<tr>
+{BEGIN record_footer}
+<td class=headerlistdown2_left height=15></td>
+{BEGIN listIcons_column}
+	<td nowrap="nowrap">&nbsp;</td>
+{END listIcons_column}
+
+{BEGIN checkbox_column}
+	<td>&nbsp;</td>
+{END checkbox_column}
+	
+		{BEGIN ipbx_desv_prefix_dtable_column}
+	<td>&nbsp;</td>
+	{END ipbx_desv_prefix_dtable_column}
+
+	    		<td class=headerlistdown2_right>&nbsp;</td>
+	<td class=darkshade height=15>&nbsp;</td>
+{BEGIN endrecordfooter_block}
+    <td width=20 class=darkshade>&nbsp;</td>
+{END endrecordfooter_block}
+{END record_footer}
+</tr>
+</tfoot>
+{END grid_footer}
+</table>
+</div>
+{END grid_block}
+</div>
+{BEGIN message_block}
+<div class="main_table">
+{$message}
+</div>
+{END message_block}
+{BEGIN pagination_block}
+<div id="pagination_block{$id}" class="main_table">
+{$pagination}
+</div>
+{END pagination_block}
+</div>
+</div>
+<b class="xbottom"><b class="xb4b3"></b><b class="xb3b3"></b><b class="xb2b3"></b><b class="xb1b3"></b></b>
+{$footer}
+</div>
+{END body}
+</body>
+</html>
+

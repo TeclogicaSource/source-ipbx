@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Bilhetagem</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<DIV>
+<H1>Relatório de Bilhetagem</H1>
+<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN Data_fieldheader}<B>Data</B> {END Data_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN conta_calldate_fieldheader}<B>Data e 
+      Hora</B> {END conta_calldate_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN origem_fieldheader}<B>Origem</B> {END origem_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN destino_fieldheader}<B>Destino</B> {END destino_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Centro_de_custos_fieldheader}<B>Centro de 
+      custos</B> {END Centro_de_custos_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Duracao_fieldheader}<B>Duração</B> {END Duracao_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Hora_fieldheader}<B>Hora</B> {END Hora_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN custo_fieldheader}<B>Custo</B> {END custo_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>{$Data_value}</TD>
+    <TD class=data>{$conta_calldate_value}</TD>
+    <TD class=data>{$origem_value}</TD>
+    <TD class=data>{$destino_value}</TD>
+    <TD class=data>{$Centro_de_custos_value}</TD>
+    <TD class=data>{$Duracao_value}</TD>
+    <TD class=data>{$Hora_value}</TD>
+    <TD class=data>{$custo_value}</TD></TR>{END row_data}{END grid_row}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

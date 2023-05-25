@@ -1,0 +1,22 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="mx_tent">
+	{$mx_tent_editcontrol}
+	</control>
+	<control field="tp_entre_tent">
+	{$tp_entre_tent_editcontrol}
+	</control>
+	<control field="hr_inicio">
+	{$hr_inicio_editcontrol}
+	</control>
+	<control field="hr_fim">
+	{$hr_fim_editcontrol}
+	</control>
+	<control field="mx_chamada">
+	{$mx_chamada_editcontrol}
+	</control>
+	<control field="id_interf">
+	{$id_interf_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

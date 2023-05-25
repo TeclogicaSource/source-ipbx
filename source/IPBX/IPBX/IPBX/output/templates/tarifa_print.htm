@@ -1,0 +1,236 @@
+<html {$html_attrs}>
+<head>
+<title>Tarifa</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Tarifa</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN dsc_tarifa_fieldheadercolumn}
+	<td>
+{BEGIN dsc_tarifa_fieldheader}
+	<b>Descrição</b>
+{END dsc_tarifa_fieldheader}
+	</td>
+{END dsc_tarifa_fieldheadercolumn}
+{BEGIN hr_inicio_fieldheadercolumn}
+	<td>
+{BEGIN hr_inicio_fieldheader}
+	<b>Hora Inicio</b>
+{END hr_inicio_fieldheader}
+	</td>
+{END hr_inicio_fieldheadercolumn}
+{BEGIN hr_fim_fieldheadercolumn}
+	<td>
+{BEGIN hr_fim_fieldheader}
+	<b>Hora Fim</b>
+{END hr_fim_fieldheader}
+	</td>
+{END hr_fim_fieldheadercolumn}
+{BEGIN vlr_unid_fieldheadercolumn}
+	<td>
+{BEGIN vlr_unid_fieldheader}
+	<b>Valor Unitário</b>
+{END vlr_unid_fieldheader}
+	</td>
+{END vlr_unid_fieldheadercolumn}
+{BEGIN cad_inicial_fieldheadercolumn}
+	<td>
+{BEGIN cad_inicial_fieldheader}
+	<b>Cadencia Inicial</b>
+{END cad_inicial_fieldheader}
+	</td>
+{END cad_inicial_fieldheadercolumn}
+{BEGIN cad_frac_fieldheadercolumn}
+	<td>
+{BEGIN cad_frac_fieldheader}
+	<b>Cadencia Fracionaria</b>
+{END cad_frac_fieldheader}
+	</td>
+{END cad_frac_fieldheadercolumn}
+{BEGIN seg_fieldheadercolumn}
+	<td>
+{BEGIN seg_fieldheader}
+	<b>Segunda Feira</b>
+{END seg_fieldheader}
+	</td>
+{END seg_fieldheadercolumn}
+{BEGIN ter_fieldheadercolumn}
+	<td>
+{BEGIN ter_fieldheader}
+	<b>Terça Feira</b>
+{END ter_fieldheader}
+	</td>
+{END ter_fieldheadercolumn}
+{BEGIN qua_fieldheadercolumn}
+	<td>
+{BEGIN qua_fieldheader}
+	<b>Quarta Feira</b>
+{END qua_fieldheader}
+	</td>
+{END qua_fieldheadercolumn}
+{BEGIN qui_fieldheadercolumn}
+	<td>
+{BEGIN qui_fieldheader}
+	<b>Quinta Feira</b>
+{END qui_fieldheader}
+	</td>
+{END qui_fieldheadercolumn}
+{BEGIN sex_fieldheadercolumn}
+	<td>
+{BEGIN sex_fieldheader}
+	<b>Sexta Feira</b>
+{END sex_fieldheader}
+	</td>
+{END sex_fieldheadercolumn}
+{BEGIN sab_fieldheadercolumn}
+	<td>
+{BEGIN sab_fieldheader}
+	<b>Sabado</b>
+{END sab_fieldheader}
+	</td>
+{END sab_fieldheadercolumn}
+{BEGIN dom_fieldheadercolumn}
+	<td>
+{BEGIN dom_fieldheader}
+	<b>Domingo</b>
+{END dom_fieldheader}
+	</td>
+{END dom_fieldheadercolumn}
+{BEGIN IDT_TARIFA_fieldheadercolumn}
+	<td>
+{BEGIN IDT_TARIFA_fieldheader}
+	<b>Tarifa</b>
+{END IDT_TARIFA_fieldheader}
+	</td>
+{END IDT_TARIFA_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN dsc_tarifa_fieldcolumn}
+<td {$dsc_tarifa_style}>
+{$dsc_tarifa_value}
+</td>
+{END dsc_tarifa_fieldcolumn}
+{BEGIN hr_inicio_fieldcolumn}
+<td {$hr_inicio_style}>
+{$hr_inicio_value}
+</td>
+{END hr_inicio_fieldcolumn}
+{BEGIN hr_fim_fieldcolumn}
+<td {$hr_fim_style}>
+{$hr_fim_value}
+</td>
+{END hr_fim_fieldcolumn}
+{BEGIN vlr_unid_fieldcolumn}
+<td {$vlr_unid_style}>
+{$vlr_unid_value}
+</td>
+{END vlr_unid_fieldcolumn}
+{BEGIN cad_inicial_fieldcolumn}
+<td {$cad_inicial_style}>
+{$cad_inicial_value}
+</td>
+{END cad_inicial_fieldcolumn}
+{BEGIN cad_frac_fieldcolumn}
+<td {$cad_frac_style}>
+{$cad_frac_value}
+</td>
+{END cad_frac_fieldcolumn}
+{BEGIN seg_fieldcolumn}
+<td {$seg_style}>
+{$seg_value}
+</td>
+{END seg_fieldcolumn}
+{BEGIN ter_fieldcolumn}
+<td {$ter_style}>
+{$ter_value}
+</td>
+{END ter_fieldcolumn}
+{BEGIN qua_fieldcolumn}
+<td {$qua_style}>
+{$qua_value}
+</td>
+{END qua_fieldcolumn}
+{BEGIN qui_fieldcolumn}
+<td {$qui_style}>
+{$qui_value}
+</td>
+{END qui_fieldcolumn}
+{BEGIN sex_fieldcolumn}
+<td {$sex_style}>
+{$sex_value}
+</td>
+{END sex_fieldcolumn}
+{BEGIN sab_fieldcolumn}
+<td {$sab_style}>
+{$sab_value}
+</td>
+{END sab_fieldcolumn}
+{BEGIN dom_fieldcolumn}
+<td {$dom_style}>
+{$dom_value}
+</td>
+{END dom_fieldcolumn}
+{BEGIN IDT_TARIFA_fieldcolumn}
+<td {$IDT_TARIFA_style}>
+{$IDT_TARIFA_value}
+</td>
+{END IDT_TARIFA_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

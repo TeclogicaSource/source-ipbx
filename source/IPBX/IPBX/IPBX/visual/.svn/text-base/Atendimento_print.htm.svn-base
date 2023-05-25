@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Atendimento</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+.group_1
+{
+background-color: #E6E6FA;
+}
+.group_2
+{
+background-color: #C0C0C0;
+}
+
+
+.nbgroup_1
+{
+background-color: #E6E6FA;
+border-style:none;
+}
+.nbgroup_2
+{
+background-color: #C0C0C0;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #C3C3D4;
+}
+.header_2
+{
+background-color: #A3A3A3;
+}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<DIV>
+<H1>Relatório Detalhado das chamadas por fila e agente</H1>
+<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>{BEGIN grid_row}<!-------------------------------------  group headers ----------------------------------------->
+  <TBODY>
+  {BEGIN Fila_newgroup}<TR>
+    <TD class=header_1 colSpan=9>Fila:&nbsp; <FONT 
+      style="FONT-WEIGHT: 900">{$Fila_grval}</FONT></TD></TR>{END Fila_newgroup}{BEGIN Agente_newgroup}
+  <TR>
+    <TD class=header_2 colSpan=9>Agente:&nbsp; <FONT 
+      style="FONT-WEIGHT: 900">{$Agente_grval}</FONT></TD></TR>
+  <TR>
+    <TD class=blackshade><B>Telefone</B></TD>
+    <TD class=blackshade><B>Entrada/Saida</B></TD>
+    <TD class=blackshade><B>Data Entrada</B></TD>
+    <TD class=blackshade><B>Hora Entrada</B></TD>
+    <TD class=blackshade><B>Terminado por</B></TD>
+    <TD class=blackshade><B>Tempo de Espera</B></TD>
+    <TD class=blackshade><B>Tempo de Atendimento</B></TD>
+    <TD class=blackshade><B>Tempo Total</B></TD>
+    <TD class=blackshade><B>Observação</B></TD></TR>{END Agente_newgroup}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>{$Telefone_value}</TD>
+    <TD class=data>{$Entrada_Saida_value}</TD>
+    <TD class=data>{$dt_entrada_value}</TD>
+    <TD class=data>{$hr_entrada_value}</TD>
+    <TD class=data>{$Terminado_value}</TD>
+    <TD class=data>{$tp_espera_value}</TD>
+    <TD class=data>{$tp_atendimento_value}</TD>
+    <TD class=data>{$tptotal_value}</TD>
+    <TD class=data>{$Obs__value}</TD></TR>{END row_data}<!-------------------------------------  group summary ----------------------------------------->{BEGIN Agente_endgroup}
+  <TR>
+    <TD class=group_2 colSpan=9>Resumo para Agente {$Agente_grval} - {$groupAgente_total_cnt} 
+      Total de registros 
+      <DIV></DIV></TD></TR><!--  Sum -->
+  <TR>
+    <TD class=group_2>Soma &nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>
+      <P align=center>&nbsp; {$groupAgente_totaltp_espera_sum} </P></TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltp_atendimento_sum} </TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltptotal_sum} </TD>
+    <TD class=group_2>&nbsp; </TD></TR><!--  Avg -->
+  <TR>
+    <TD class=group_2>Média &nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>
+      <P align=center>&nbsp; {$groupAgente_totaltp_espera_avg} </P></TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltp_atendimento_avg} </TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltptotal_avg} </TD>
+    <TD class=group_2>&nbsp; </TD></TR><!--  Min -->
+  <TR>
+    <TD class=group_2>Min &nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>
+      <P align=center>&nbsp; {$groupAgente_totaltp_espera_min} </P></TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltp_atendimento_min} </TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltptotal_min} </TD>
+    <TD class=group_2>&nbsp; </TD></TR><!--  Max -->
+  <TR>
+    <TD class=group_2>Max &nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>&nbsp; </TD>
+    <TD class=group_2>
+      <P align=center>&nbsp; {$groupAgente_totaltp_espera_max} </P></TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltp_atendimento_max} </TD>
+    <TD class=group_2>&nbsp; {$groupAgente_totaltptotal_max} </TD>
+    <TD class=group_2>&nbsp; </TD></TR>{END Agente_endgroup}{BEGIN Fila_endgroup}
+  <TR>
+    <TD class=group_1 colSpan=9>Resumo para Fila {$Fila_grval} - 
+      {$groupFila_total_cnt} 
+      Total de registros 
+      <DIV></DIV></TD></TR><!--  Sum -->
+  <TR>
+    <TD class=group_1>Soma &nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_espera_sum} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_atendimento_sum} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltptotal_sum} </P></TD>
+    <TD class=group_1>&nbsp; </TD></TR><!--  Avg -->
+  <TR>
+    <TD class=group_1>Média &nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_espera_avg} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_atendimento_avg} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltptotal_avg} </P></TD>
+    <TD class=group_1>&nbsp; </TD></TR><!--  Min -->
+  <TR>
+    <TD class=group_1>Min &nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_espera_min} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_atendimento_min} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltptotal_min} </P></TD>
+    <TD class=group_1>&nbsp; </TD></TR><!--  Max -->
+  <TR>
+    <TD class=group_1>Max &nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_espera_max} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltp_atendimento_max} </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; {$groupFila_totaltptotal_max} </P></TD>
+    <TD class=group_1>&nbsp; 
+</TD></TR>{END Fila_endgroup}</TBODY>{END grid_row}</TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

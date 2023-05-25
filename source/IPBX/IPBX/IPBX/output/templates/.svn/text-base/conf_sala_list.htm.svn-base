@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Sala de Conferência</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}
+<STYLE>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links{$id} * {padding:0}
+</STYLE>
+{END style_block}{BEGIN iestyle_block}<!--[if IE]>
+<STYLE>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</STYLE>
+<![endif]-->{END iestyle_block}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY {$bodyattrs} marginwidth="0" marginheight="0">{BEGIN body}
+<DIV id="height100{$id}" layout="Rome">{$header} <B class=xtop><B 
+class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+{BEGIN toplinks_block}<DIV id="toplinks_block{$id}" class=uplistmenu>Logado Como&nbsp;<B>{$username}</B>&nbsp; <SPAN 
+class=buttonborder><INPUT class=button value="Log Out" type=button {$logoutlink_attrs}></SPAN> 
+{BEGIN adminarea_link}<SPAN class=buttonborder><INPUT class=button value="Área  Admin" type=button {$adminarealink_attrs}></SPAN>{END adminarea_link} 
+</DIV>{END toplinks_block}
+<DIV id="global_block{$id}" class=main_table>
+{BEGIN left_block}<DIV id="left_block{$id}"><B class=xtop><B 
+class=xb1></B><B class=xb2></B><B class=xb3></B><B class=xb4></B></B><!-- MenuBegin -->
+{BEGIN menu_block}<DIV id="menu_block{$id}" class=xboxcontent><!-- MainMenuBegin -->{$mainmenu}<!-- MainMenuEnd --></DIV>{END menu_block}<!-- MenuEnd -->
+{BEGIN search_records_block}<DIV>
+<STYLE>
+<!--
+
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+
+-->
+</STYLE>
+<!-- search panel and window header -->
+<DIV id="center_block{$id}" class=blackshade2>Buscar: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showWindowPin.gif); WIDTH: 18px" id="showSrchWin{$id}" class=button type=button {$showHideSearchWin_attrs}></SPAN> 
+&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showOptions.gif); WIDTH: 18px" id="showOptPanel{$id}" class=button type=button {$showHideSearchPanel_attrs}></SPAN> 
+</DIV>
+<DIV id="searchform{$id}">
+<DIV id="searchPanelHeader{$id}" class=blackshade>{$simpleSearchFieldCombo} {$simpleSearchTypeCombo} {BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text} &nbsp; {BEGIN searchform_search}<SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" class=button type=button {$searchbutton_attrs}></SPAN>{END searchform_search} 
+&nbsp; {BEGIN searchform_showall}<SPAN id="showall{$id}" class=buttonborder><INPUT class=button value="Mostrar Todos" type=button {$showallbutton_attrs}></SPAN>{END searchform_showall} 
+</DIV></DIV><!-- search panel and window -->
+<DIV id="searchPanelContainer{$id}" class=searchPanelContainer>{$adv_search_panel} </DIV>
+{BEGIN details_block}<DIV id="details_block{$id}" class="toplist xboxcontent center"><SPAN id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</SPAN> </DIV>{END details_block}
+{BEGIN pages_block}<DIV id="pages_block{$id}" class="toplist xboxcontent center"><SPAN id="pageOf{$id}">Página {$page} de {$maxpages}</SPAN> </DIV>{END pages_block}
+{BEGIN recordspp_block}<DIV id="recordspp_block{$id}" class="toplist xboxcontent center">Registros por Página:<BR><BR><SELECT 
+{$recordspp_attrs}><option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </DIV>{END recordspp_block}</DIV>{END search_records_block}<B class=xbottom><B 
+class=xb4></B><B class=xb3></B><B class=xb2></B><B class=xb1></B></B></DIV>{END left_block}<!-- main block -->
+<DIV id=marginStyle>
+<DIV id="right_block{$id}" class=right_block>{BEGIN recordcontrols_block}
+<DIV><B class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+class=xb4></B></B>
+<DIV id="recordcontrols_block{$id}" class=xboxcontent>
+<P>{BEGIN newrecord_controls}<SPAN id="newrecord_controls{$id}">{BEGIN add_link}<SPAN class=buttonborder><INPUT class=button value="Adicionar Novo" type=button {$addlink_attrs}></SPAN> 
+{END add_link}</SPAN>{END newrecord_controls}{$lookupSearchControls} {BEGIN record_controls}<SPAN id="record_controls{$id}">{BEGIN deleteselected_link}<SPAN class=buttonborder {$deleteselectedlink_span}><INPUT class=button value="Elimina Selecionados" type=button {$deleteselectedlink_attrs}></SPAN> 
+{$event conf_sala_Snippet13}{END deleteselected_link}</SPAN>{END record_controls}</P>
+<P>{BEGIN record_controls}<SPAN>{BEGIN deleteselected_link}{END deleteselected_link}</SPAN>{END record_controls}{BEGIN record_controls}<SPAN>{BEGIN deleteselected_link}<INPUT id=New_Button class=button value="Envio de Convites" type=button typeid="ib"></P>{END deleteselected_link}</SPAN>{END record_controls}</DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV>{END recordcontrols_block}</DIV>
+<DIV id="usermessage{$id}" class=message>{$user_message}</DIV>
+<DIV id="global_block_table{$id}" class=main_table>{BEGIN grid_block}
+<DIV id="grid_block{$id}">
+<TABLE class=data border=0 cellSpacing=0 cellPadding=3 width="100%" 
+name="maintable">
+  {BEGIN grid_header}<THEAD>
+  <TR vAlign=top {$gridHeader_attrs}>{BEGIN record_header}
+    <TH class=headerlist_left_M width=5>&nbsp;</TH>
+    {BEGIN listIcons_column}<TH style="WIDTH: 42px" class=headerlist noWrap align=middle {$widthListIcons}>&nbsp;</TH>{END listIcons_column}
+    {BEGIN checkbox_column}<TH class=headerlist width=20 align=middle><INPUT type=checkbox {$checkboxheader_attrs}> 
+    </TH>{END checkbox_column}
+    {BEGIN id_conf_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN id_conf_fieldheader}&nbsp; <A class=tablelinks 
+      {$id_conf_orderlinkattrs}>Identificação</A> &nbsp; {END id_conf_fieldheader}</TH>{END id_conf_fieldheadercolumn}
+    {BEGIN nm_sala_fieldheadercolumn}<TH style="WIDTH: 241px" class=headerlist align=middle>{BEGIN nm_sala_fieldheader}&nbsp; 
+      <A class=tablelinks {$nm_sala_orderlinkattrs}>Sala</A> &nbsp; {END nm_sala_fieldheader}</TH>{END nm_sala_fieldheadercolumn}
+    {BEGIN dt_conferencia_fieldheadercolumn}<TH style="WIDTH: 220px" class=headerlist align=middle>{BEGIN dt_conferencia_fieldheader}&nbsp; <A class=tablelinks 
+      {$dt_conferencia_orderlinkattrs}>Data da conferência</A> &nbsp; {END dt_conferencia_fieldheader}</TH>{END dt_conferencia_fieldheadercolumn}
+    {BEGIN senha_fieldheadercolumn}<TH style="WIDTH: 201px" class=headerlist align=middle>{BEGIN senha_fieldheader}&nbsp; <A 
+      class=tablelinks {$senha_orderlinkattrs}>Senha</A> &nbsp; {END senha_fieldheader}</TH>{END senha_fieldheadercolumn}
+    {BEGIN Status_fieldheadercolumn}<TH style="WIDTH: 218px" class=headerlist_right_M align=middle>{BEGIN Status_fieldheader}&nbsp; 
+      <A class=tablelinks {$Status_orderlinkattrs}>Status</A> &nbsp; {END Status_fieldheader}</TH>{END Status_fieldheadercolumn}
+    <TH class=darkshade>&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class=darkshade></TH>{END endrecordheader_block}{END record_header}</TR></THEAD>{END grid_header}
+  <TBODY>
+  {BEGIN grid_row}<TR vAlign=top {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    <TD width=5>&nbsp;</TD>
+    {BEGIN listIcons_column}<TD style="WIDTH: 42px" class=listIcons vAlign=middle noWrap align=middle>{BEGIN edit_column}{BEGIN edit_link}<A 
+      class=tablelinks title=Editar {$editlink_attrs}><IMG class=listIcon 
+      border=0 alt=Editar align=middle src="images/icon_edit_new.gif"></A> {END edit_link}{END edit_column}</TD>{END listIcons_column}
+    {BEGIN checkbox_column}<TD vAlign=middle width=20 align=middle>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}> {END checkbox}</TD>{END checkbox_column}
+    {BEGIN id_conf_fieldcolumn}<TD class=borderbody vAlign=middle {$id_conf_style}>{$id_conf_value} </TD>{END id_conf_fieldcolumn}
+    {BEGIN nm_sala_fieldcolumn}<TD style="WIDTH: 241px" class=borderbody vAlign=middle {$nm_sala_style}>
+      <P align=left>{$nm_sala_value} </P></TD>{END nm_sala_fieldcolumn}
+    {BEGIN dt_conferencia_fieldcolumn}<TD style="WIDTH: 220px" class=borderbody vAlign=middle {$dt_conferencia_style}>
+      <P align=center>{$dt_conferencia_value} </P></TD>{END dt_conferencia_fieldcolumn}
+    {BEGIN senha_fieldcolumn}<TD style="WIDTH: 201px" class=borderbody vAlign=middle {$senha_style}>
+      <P align=center>{$senha_value} 
+      </P></TD>{END senha_fieldcolumn}
+    {BEGIN Status_fieldcolumn}<TD style="WIDTH: 218px" class=borderbody vAlign=middle {$Status_style}>
+      <P align=center>{$Status_value} </P></TD>{END Status_fieldcolumn}
+    <TD class=darkshade>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class=darkshade width=20 {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}{BEGIN grid_footer}
+  <TR>{BEGIN record_footer}
+    <TD class=headerlistdown2_left height=15></TD>
+    {BEGIN listIcons_column}<TD style="WIDTH: 42px" noWrap>&nbsp;</TD>{END listIcons_column}
+    {BEGIN checkbox_column}<TD>&nbsp;</TD>{END checkbox_column}
+    <TD style="WIDTH: 241px">&nbsp;</TD>
+    <TD style="WIDTH: 201px">&nbsp;</TD>
+    <TD style="WIDTH: 220px">&nbsp;</TD>
+    <TD>&nbsp;</TD>
+    <TD style="WIDTH: 218px" class=headerlistdown2_right>&nbsp;</TD>
+    <TD class=darkshade height=15>&nbsp;</TD>
+    {BEGIN endrecordfooter_block}<TD class=darkshade width=20>&nbsp;</TD>{END endrecordfooter_block}{END record_footer}</TR></TFOOT>{END grid_footer}</TBODY></TABLE></DIV>{END grid_block}</DIV>
+{BEGIN message_block}<DIV class=main_table>{$message} </DIV>{END message_block}
+{BEGIN pagination_block}<DIV id="pagination_block{$id}" class=main_table>{$pagination} </DIV>{END pagination_block}</DIV></DIV><B 
+class=xbottom><B class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+class=xb1b3></B></B>{$footer} 
+</DIV>{END body}</BODY></HTML>

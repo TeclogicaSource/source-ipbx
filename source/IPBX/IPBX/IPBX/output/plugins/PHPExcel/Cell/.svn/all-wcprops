@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell
+END
+IValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/IValueBinder.php
+END
+DataType.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/DataType.php
+END
+DataValidation.php
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/DataValidation.php
+END
+DefaultValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/DefaultValueBinder.php
+END
+Hyperlink.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/Hyperlink.php
+END
+AdvancedValueBinder.php
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/141/trunk/fontes/IPBX/IPBX/IPBX/output/plugins/PHPExcel/Cell/AdvancedValueBinder.php
+END

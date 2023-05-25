@@ -1,0 +1,10 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="tp_reter_fax">
+	{$tp_reter_fax_editcontrol}
+	</control>
+	<control field="pasta">
+	{$pasta_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

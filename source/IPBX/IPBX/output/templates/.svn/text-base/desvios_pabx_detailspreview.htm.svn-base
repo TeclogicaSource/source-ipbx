@@ -1,0 +1,38 @@
+Desvios Telefones<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Ramal</strong></td>
+<td><strong>Hora Início</strong></td>
+<td><strong>Hora Fim</strong></td>
+<td><strong>Destino</strong></td>
+<td><strong>Segunda-Feira</strong></td>
+<td><strong>Terça-Feira</strong></td>
+<td><strong>Quarta-Feira</strong></td>
+<td><strong>Quinta-Feira</strong></td>
+<td><strong>Sexta-Feira</strong></td>
+<td><strong>Sábado</strong></td>
+<td><strong>Domingo</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$ramal_value}</td>
+<td>{$hr_inicio_value}</td>
+<td>{$hr_fim_value}</td>
+<td>{$destino_value}</td>
+<td>{$seg_value}</td>
+<td>{$ter_value}</td>
+<td>{$qua_value}</td>
+<td>{$qui_value}</td>
+<td>{$sex_value}</td>
+<td>{$sab_value}</td>
+<td>{$dom_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

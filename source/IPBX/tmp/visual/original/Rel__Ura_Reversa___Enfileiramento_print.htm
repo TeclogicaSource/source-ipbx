@@ -1,0 +1,144 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Ura Reversa - Enfileiramento</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Ura Reversa - Enfileiramento</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN id_cliente_fieldheader}
+<b>TICKET Cliente</b>
+{END id_cliente_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_criado_fieldheader}
+<b>Data Entrada no sistema</b>
+{END dt_criado_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_tel1_fieldheader}
+<b>Número Telefone 1</b>
+{END nm_tel1_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_tel1_fieldheader}
+<b>Data Telefone 1</b>
+{END dt_tel1_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_tel2_fieldheader}
+<b>Número Telefone 2</b>
+{END nm_tel2_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_tel2_fieldheader}
+<b>Data Telefone 2</b>
+{END dt_tel2_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_tel3_fieldheader}
+<b>Número Telefone 3</b>
+{END nm_tel3_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_tel3_fieldheader}
+<b>Data Telefone 3</b>
+{END dt_tel3_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_tentativas_fieldheader}
+<b>Número de tentativas</b>
+{END nm_tentativas_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN resp_usuario_fieldheader}
+<b>Resposta do usuário</b>
+{END resp_usuario_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ult_status_fieldheader}
+<b>Estado</b>
+{END ult_status_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN flg_proc_fieldheader}
+<b>Processamento</b>
+{END flg_proc_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$id_cliente_value}</td>
+	<td class=data>{$dt_criado_value}</td>
+	<td class=data>{$nm_tel1_value}</td>
+	<td class=data>{$dt_tel1_value}</td>
+	<td class=data>{$nm_tel2_value}</td>
+	<td class=data>{$dt_tel2_value}</td>
+	<td class=data>{$nm_tel3_value}</td>
+	<td class=data>{$dt_tel3_value}</td>
+	<td class=data>{$nm_tentativas_value}</td>
+	<td class=data>{$resp_usuario_value}</td>
+	<td class=data>{$ult_status_value}</td>
+	<td class=data>{$flg_proc_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

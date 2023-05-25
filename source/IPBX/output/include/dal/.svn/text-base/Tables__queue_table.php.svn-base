@@ -1,0 +1,43 @@
+<?php
+$dalTablequeue_table = array();
+$dalTablequeue_table["name"] = array("type"=>200,"varname"=>"name");
+$dalTablequeue_table["musiconhold"] = array("type"=>200,"varname"=>"musiconhold");
+$dalTablequeue_table["announce"] = array("type"=>200,"varname"=>"announce");
+$dalTablequeue_table["context"] = array("type"=>200,"varname"=>"context");
+$dalTablequeue_table["timeout"] = array("type"=>3,"varname"=>"timeout");
+$dalTablequeue_table["monitor_join"] = array("type"=>16,"varname"=>"monitor_join");
+$dalTablequeue_table["monitor_format"] = array("type"=>200,"varname"=>"monitor_format");
+$dalTablequeue_table["queue_youarenext"] = array("type"=>200,"varname"=>"queue_youarenext");
+$dalTablequeue_table["queue_thereare"] = array("type"=>200,"varname"=>"queue_thereare");
+$dalTablequeue_table["queue_callswaiting"] = array("type"=>200,"varname"=>"queue_callswaiting");
+$dalTablequeue_table["queue_holdtime"] = array("type"=>200,"varname"=>"queue_holdtime");
+$dalTablequeue_table["queue_minutes"] = array("type"=>200,"varname"=>"queue_minutes");
+$dalTablequeue_table["queue_seconds"] = array("type"=>200,"varname"=>"queue_seconds");
+$dalTablequeue_table["queue_lessthan"] = array("type"=>200,"varname"=>"queue_lessthan");
+$dalTablequeue_table["queue_thankyou"] = array("type"=>200,"varname"=>"queue_thankyou");
+$dalTablequeue_table["queue_reporthold"] = array("type"=>200,"varname"=>"queue_reporthold");
+$dalTablequeue_table["announce_frequency"] = array("type"=>3,"varname"=>"announce_frequency");
+$dalTablequeue_table["announce_round_seconds"] = array("type"=>3,"varname"=>"announce_round_seconds");
+$dalTablequeue_table["announce_holdtime"] = array("type"=>200,"varname"=>"announce_holdtime");
+$dalTablequeue_table["retry"] = array("type"=>3,"varname"=>"retry");
+$dalTablequeue_table["wrapuptime"] = array("type"=>3,"varname"=>"wrapuptime");
+$dalTablequeue_table["maxlen"] = array("type"=>3,"varname"=>"maxlen");
+$dalTablequeue_table["servicelevel"] = array("type"=>3,"varname"=>"servicelevel");
+$dalTablequeue_table["strategy"] = array("type"=>200,"varname"=>"strategy");
+$dalTablequeue_table["joinempty"] = array("type"=>200,"varname"=>"joinempty");
+$dalTablequeue_table["leavewhenempty"] = array("type"=>200,"varname"=>"leavewhenempty");
+$dalTablequeue_table["eventmemberstatus"] = array("type"=>16,"varname"=>"eventmemberstatus");
+$dalTablequeue_table["eventwhencalled"] = array("type"=>16,"varname"=>"eventwhencalled");
+$dalTablequeue_table["reportholdtime"] = array("type"=>16,"varname"=>"reportholdtime");
+$dalTablequeue_table["memberdelay"] = array("type"=>3,"varname"=>"memberdelay");
+$dalTablequeue_table["weight"] = array("type"=>3,"varname"=>"weight");
+$dalTablequeue_table["timeoutrestart"] = array("type"=>16,"varname"=>"timeoutrestart");
+$dalTablequeue_table["periodic_announce"] = array("type"=>200,"varname"=>"periodic_announce");
+$dalTablequeue_table["periodic_announce_frequency"] = array("type"=>3,"varname"=>"periodic_announce_frequency");
+$dalTablequeue_table["ringinuse"] = array("type"=>16,"varname"=>"ringinuse");
+$dalTablequeue_table["setinterfacevar"] = array("type"=>16,"varname"=>"setinterfacevar");
+$dalTablequeue_table["autofill"] = array("type"=>16,"varname"=>"autofill");
+	$dalTablequeue_table["name"]["key"]=true;
+
+$dal_info["Tables__queue_table"] = &$dalTablequeue_table;
+?>

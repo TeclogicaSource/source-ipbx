@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Produt. Agentes Dia</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+
+.group_1
+{
+background-color: #C0C0C0;
+}
+
+
+.nbgroup_1
+{
+background-color: #C0C0C0;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #A3A3A3;
+}
+
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<DIV>
+<H1>Produtividade de Agentes por Dia</H1>
+<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN dt_entrada_fieldheader}<B>Dia Entrada</B> 
+    {END dt_entrada_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN agente_fieldheader}<B>Agente</B> {END agente_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN fila_fieldheader}<B>Fila</B> {END fila_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_logado_fieldheader}<B>Total 
+      Disponível</B> {END tot_logado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_atend_fieldheader}<B>Atendidas</B> {END qtd_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_atend_fieldheader}<B>Total 
+      Atendendo</B> {END tot_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN med_atend_fieldheader}<B>Média 
+      Atendimento</B> {END med_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_pausa_fieldheader}<B>Total em 
+      Pausa</B> {END tot_pausa_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_parado_fieldheader}<B>Total Parado</B> 
+    {END tot_parado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_nao_atend_fieldheader}<B>Rejeitadas/N 
+      Atendidas</B> {END qtd_nao_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_recebida_fieldheader}<B>Recebida</B> 
+    {END tot_recebida_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN cntrb_indiv_fieldheader}<B>Contribuição 
+      Individual</B> {END cntrb_indiv_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN cntrb_tot_fieldheader}<B>Contribuição 
+      Total</B> {END cntrb_tot_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  group headers ----------------------------------------->
+  {BEGIN agente_newgroup}<TR>
+    <TD class=header_1 colSpan=13><FONT style="FONT-WEIGHT: 900">{$agente_grval}</FONT></TD></TR>{END agente_newgroup}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD 
+    style="BORDER-BOTTOM-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-RIGHT: 1px solid" 
+    class="noborder group_1">&nbsp;</TD>
+    <TD class=data>{$dt_entrada_value}</TD>
+    <TD class=data>{$fila_value}</TD>
+    <TD class=data>{$tot_logado_value}</TD>
+    <TD class=data>{$qtd_atend_value}</TD>
+    <TD class=data>{$tot_atend_value}</TD>
+    <TD class=data>{$med_atend_value}</TD>
+    <TD class=data>{$tot_pausa_value}</TD>
+    <TD class=data>{$tot_parado_value}</TD>
+    <TD class=data>{$qtd_nao_atend_value}</TD>
+    <TD class=data>{$tot_recebida_value}</TD>
+    <TD class=data>{$cntrb_indiv_value}</TD>
+    <TD class=data>{$cntrb_tot_value}</TD></TR>{END row_data}<!-------------------------------------  group summary ----------------------------------------->{BEGIN agente_endgroup}
+  <TR>
+    <TD class="noborder group_1" colSpan=13>Resumo para Agente {$agente_grval} - {$groupagente_total_cnt} 
+      Total de registros 
+      <DIV></DIV></TD></TR><!--  Sum -->
+  <TR>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>&nbsp;</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>Soma</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>&nbsp;</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totaltot_logado_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totalqtd_atend_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totaltot_atend_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>&nbsp;</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totaltot_pausa_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totaltot_parado_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totalqtd_nao_atend_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>{$groupagente_totaltot_recebida_sum}</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>&nbsp;</TD>
+    <TD style="BORDER-BOTTOM: black 2px solid" class=group_1>&nbsp;</TD></TR>{END agente_endgroup}{END grid_row}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

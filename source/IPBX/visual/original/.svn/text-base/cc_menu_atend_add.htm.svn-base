@@ -1,0 +1,201 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel cc_menu_atend add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN dsc_menu_fieldblock}
+<tr class="{$fielddispclass_dsc_menu}" data-fieldname="dsc_menu">
+	<td class="rnr-label">
+		{BEGIN dsc_menu_label}{$label cc_menu_atend dsc_menu}{END dsc_menu_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsc_menu_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsc_menu_fieldblock}
+	{BEGIN nm_tentativas_fieldblock}
+<tr class="{$fielddispclass_nm_tentativas}" data-fieldname="nm_tentativas">
+	<td class="rnr-label">
+		{BEGIN nm_tentativas_label}{$label cc_menu_atend nm_tentativas}{END nm_tentativas_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_tentativas_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_tentativas_fieldblock}
+	{BEGIN ramal_acesso_fieldblock}
+<tr class="{$fielddispclass_ramal_acesso}" data-fieldname="ramal_acesso">
+	<td class="rnr-label">
+		{BEGIN ramal_acesso_label}{$label cc_menu_atend ramal_acesso}{END ramal_acesso_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ramal_acesso_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ramal_acesso_fieldblock}
+	{BEGIN destino_fieldblock}
+<tr class="{$fielddispclass_destino}" data-fieldname="destino">
+	<td class="rnr-label">
+		{BEGIN destino_label}{$label cc_menu_atend destino}{END destino_label}
+	</td>
+	<td class="rnr-control style3">
+		{$destino_editcontrol}&nbsp;
+	</td>
+</tr>
+{END destino_fieldblock}
+	{BEGIN flg_dig_ramal_fieldblock}
+<tr class="{$fielddispclass_flg_dig_ramal}" data-fieldname="flg_dig_ramal">
+	<td class="rnr-label">
+		{BEGIN flg_dig_ramal_label}{$label cc_menu_atend flg_dig_ramal}{END flg_dig_ramal_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_dig_ramal_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_dig_ramal_fieldblock}
+	{BEGIN arq_audio_fieldblock}
+<tr class="{$fielddispclass_arq_audio}" data-fieldname="arq_audio">
+	<td class="rnr-label">
+		{BEGIN arq_audio_label}{$label cc_menu_atend arq_audio}{END arq_audio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$arq_audio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END arq_audio_fieldblock}
+	{BEGIN id_fluxo_fieldblock}
+<tr class="{$fielddispclass_id_fluxo}" data-fieldname="id_fluxo">
+	<td class="rnr-label">
+		{BEGIN id_fluxo_label}{$label cc_menu_atend id_fluxo}{END id_fluxo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_fluxo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_fluxo_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+
+{BEGIN container_details}
+<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}
+		{BEGIN details_cc_menu_atend_item}
+<div class="rnr-cw-detailscc_menu_atend_item rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailscc_menu_atend_item rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailscc_menu_atend_item rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Item de menu
+	</div>
+	{$displayDetailTable_cc_menu_atend_item}
+</div>
+</div>
+</div>
+	{END details_cc_menu_atend_item}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+</div>
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

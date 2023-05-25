@@ -1,0 +1,20 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="mail">
+	{$mail_editcontrol}
+	</control>
+	<control 
+	field="trc_piloto">
+	{$trc_piloto_editcontrol}
+	</control>
+	<control 
+	field="call_forward">
+	{$call_forward_editcontrol}
+	</control>
+	<control 
+	field="flg_fax">
+	{$flg_fax_editcontrol}
+	</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

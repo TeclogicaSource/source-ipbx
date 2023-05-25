@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Linha GSM</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}<style>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links{$id} * {padding:0}
+</style>
+{END style_block}{BEGIN iestyle_block}<!--[if IE]>
+<style>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</style>
+<![endif]-->
+{END iestyle_block}
+<META content="MSHTML 6.00.2900.3698" name=GENERATOR></HEAD>
+<BODY marginheight="0" marginwidth="0" {$bodyattrs}>{BEGIN body}<div id="height100{$id}" layout="Rome">{$header} <B class=xtop><B class=xb1b></B><B 
+class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+{BEGIN toplinks_block}<div class="uplistmenu" id="toplinks_block{$id}">
+Logado Como&nbsp;<B>{$username}</B>&nbsp;
+<SPAN class=buttonborder><INPUT class=button type=button value="Log Out" {$logoutlink_attrs}></SPAN> 
+{BEGIN adminarea_link}<SPAN class=buttonborder><INPUT class=button type=button value="Área  Admin" {$adminarealink_attrs}></SPAN>{END adminarea_link} 
+{BEGIN changepwd_link}<SPAN class=buttonborder><INPUT class=button type=button value="Mudar senha" {$changepwdlink_attrs}></SPAN>{END changepwd_link} 
+{BEGIN asearch_link}<SPAN class=buttonborder><INPUT class=button type=button value="Busca Avancada" {$asearchlink_attrs}></SPAN>{END asearch_link} 
+</div>{END toplinks_block}
+<div class="main_table" id="global_block{$id}">{BEGIN left_block}<DIV id="left_block{$id}"><B class=xtop><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></B><!-- MenuBegin -->
+{BEGIN menu_block}<div class="xboxcontent" id="menu_block{$id}"><!-- MainMenuBegin -->{$mainmenu}<!-- MainMenuEnd --></div>{END menu_block}<!-- MenuEnd -->
+{BEGIN search_records_block}<DIV><style>
+<!--
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+-->
+</style>
+<!-- search panel and window header -->
+	Buscar:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+	&nbsp;		
+	<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+
+<div class="blackshade2" id="center_block{$id}">
+	Buscar:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+	&nbsp;		
+	<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+
+</div>
+<div id="searchform{$id}"><div class="blackshade" id="searchPanelHeader{$id}">{$simpleSearchFieldCombo}
+		{$simpleSearchTypeCombo}
+		
+		{BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}<SPAN class=buttonborder><INPUT class=button style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" type=button {$searchbutton_attrs}></SPAN>{END searchform_search}
+		&nbsp;		
+		{BEGIN searchform_showall}<SPAN class=buttonborder id="showall{$id}"><INPUT class=button type=button value="Mostrar Todos" {$showallbutton_attrs}></SPAN>{END searchform_showall}
+	</div>
+</div>  
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">{$adv_search_panel} 
+</div>  
+
+
+
+{BEGIN details_block}<div class="toplist xboxcontent center" id="details_block{$id}"><SPAN id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</SPAN>
+</div> 
+{END details_block}
+{BEGIN pages_block}<div class="toplist xboxcontent center" id="pages_block{$id}"><SPAN id="pageOf{$id}">Página {$page} 
+de {$maxpages}</SPAN>
+</div> 
+{END pages_block}
+
+{BEGIN recordspp_block}<div class="toplist xboxcontent center" id="recordspp_block{$id}">
+Registros por Página:<br><br>
+<SELECT {$recordspp_attrs}><option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </div>{END recordspp_block}
+<div id="searchform{$id}"><div class="blackshade" id="searchPanelHeader{$id}">{$simpleSearchFieldCombo}
+		{$simpleSearchTypeCombo}
+		
+		{BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}<SPAN class=buttonborder><INPUT class=button style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" type=button {$searchbutton_attrs}></SPAN>{END searchform_search}
+		&nbsp;		
+		{BEGIN searchform_showall}<SPAN class=buttonborder id="showall{$id}"><INPUT class=button type=button value="Mostrar Todos" {$showallbutton_attrs}></SPAN>{END searchform_showall}
+	</div>
+</div>  
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">{$adv_search_panel} 
+</div>  
+
+
+
+{BEGIN details_block}<div class="toplist xboxcontent center" id="details_block{$id}"><SPAN id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</SPAN>
+</div> 
+{END details_block}
+{BEGIN pages_block}<div class="toplist xboxcontent center" id="pages_block{$id}"><SPAN id="pageOf{$id}">Página {$page} 
+de {$maxpages}</SPAN>
+</div> 
+{END pages_block}
+
+{BEGIN recordspp_block}<div class="toplist xboxcontent center" id="recordspp_block{$id}">
+Registros por Página:<br><br>
+<SELECT {$recordspp_attrs}><option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </div>{END recordspp_block}</DIV>{END search_records_block}
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b></DIV>{END left_block}
+<!-- main block -->
+<div id="marginStyle"><div id="right_block{$id}"  class="right_block">{BEGIN recordcontrols_block}<div><b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" id="recordcontrols_block{$id}"><b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" id="recordcontrols_block{$id}">{BEGIN newrecord_controls}<SPAN id="newrecord_controls{$id}">{BEGIN add_link}<SPAN class=buttonborder><INPUT class=button type=button value="Adicionar Novo" {$addlink_attrs}></SPAN> 
+{END add_link}</SPAN>{END newrecord_controls}{$lookupSearchControls} 
+{BEGIN record_controls}<SPAN id="record_controls{$id}">{BEGIN deleteselected_link}<SPAN class=buttonborder 
+{$deleteselectedlink_span}><INPUT class=button type=button value="Elimina Selecionados" {$deleteselectedlink_attrs}></SPAN> 
+{END deleteselected_link}</SPAN>{END record_controls}</div>
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+</div>{END recordcontrols_block}
+</div>
+</div>
+<DIV class=message id="usermessage{$id}">{$user_message}</DIV>
+<div class="main_table" id="global_block_table{$id}">{BEGIN grid_block}<DIV id="grid_block{$id}"><table width="100%" name="maintable" border=0 cellpadding=3 cellspacing=0 class="data">{BEGIN grid_header}<THEAD><TR vAlign=top {$gridHeader_attrs}>{BEGIN record_header}<th class="headerlist_left_M" width="5">&nbsp;</th>
+
+{BEGIN listIcons_column}<TH class=headerlist noWrap align=middle {$widthListIcons}>&nbsp;</TH>{END listIcons_column}
+    {BEGIN checkbox_column}<TH class=headerlist align=middle width=20><INPUT type=checkbox {$checkboxheader_attrs}> 
+    </TH>{END checkbox_column}
+    {BEGIN num_contrato_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN num_contrato_fieldheader}&nbsp; <A class=tablelinks 
+      {$num_contrato_orderlinkattrs}>
+Número do Contrato</A> &nbsp; {END num_contrato_fieldheader}</TH>{END num_contrato_fieldheadercolumn}
+    {BEGIN nm_operadora_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN nm_operadora_fieldheader}&nbsp; <A class=tablelinks 
+      {$nm_operadora_orderlinkattrs}>Nome da Operadora</A> &nbsp; {END nm_operadora_fieldheader}</TH>{END nm_operadora_fieldheadercolumn}
+    {BEGIN Vingencia_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN Vingencia_fieldheader}&nbsp; <A class=tablelinks 
+      {$Vingencia_orderlinkattrs}>
+Vingência</A> &nbsp; {END Vingencia_fieldheader}</TH>{END Vingencia_fieldheadercolumn}
+    {BEGIN flg_ativo_fieldheadercolumn}<TH class=headerlist align=middle>{BEGIN flg_ativo_fieldheader}&nbsp; <A class=tablelinks 
+      {$flg_ativo_orderlinkattrs}>Contrato Ativo</A> &nbsp; {END flg_ativo_fieldheader}</TH>{END flg_ativo_fieldheadercolumn}
+    {BEGIN id_tronco_fieldheadercolumn}<th class="headerlist_right_M" align="center">{BEGIN id_tronco_fieldheader}&nbsp; <A class=tablelinks 
+      {$id_tronco_orderlinkattrs}>Informação do Tronco</A> &nbsp; {END id_tronco_fieldheader}</th>{END id_tronco_fieldheadercolumn}
+
+<th class="darkshade">&nbsp;</th>
+
+<th class="darkshade">&nbsp;</th>
+    {BEGIN endrecordheader_block}<th class="darkshade"></th>{END endrecordheader_block}{END record_header}</TR></THEAD>{END grid_header}
+  {BEGIN grid_row}<TR vAlign=top {$rowstyle} {$rowattrs}>{BEGIN grid_record}<td width="5">&nbsp;</td>
+
+{BEGIN listIcons_column}<TD class=listIcons vAlign=middle noWrap align=middle>{BEGIN edit_column}{BEGIN edit_link}<A 
+      class=tablelinks title=Editar {$editlink_attrs}><IMG class=listIcon 
+      alt=Editar src="images/icon_edit_new.gif" align=middle border=0></A> {END edit_link}{END edit_column}</TD>{END listIcons_column}
+    {BEGIN checkbox_column}<TD vAlign=middle align=middle width=20>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}> {END checkbox}</TD>{END checkbox_column}
+    {BEGIN num_contrato_fieldcolumn}<TD class=borderbody vAlign=middle {$num_contrato_style}>{$num_contrato_value} </TD>{END num_contrato_fieldcolumn}
+    {BEGIN nm_operadora_fieldcolumn}<TD class=borderbody vAlign=middle {$nm_operadora_style}>{$nm_operadora_value} </TD>{END nm_operadora_fieldcolumn}
+    {BEGIN Vingencia_fieldcolumn}<TD class=borderbody vAlign=middle {$Vingencia_style}>{$Vingencia_value} </TD>{END Vingencia_fieldcolumn}
+    {BEGIN flg_ativo_fieldcolumn}<TD class=borderbody vAlign=middle {$flg_ativo_style}>{$flg_ativo_value} </TD>{END flg_ativo_fieldcolumn}
+    {BEGIN id_tronco_fieldcolumn}<TD class=borderbody vAlign=middle {$id_tronco_style}>{$id_tronco_value} </TD>{END id_tronco_fieldcolumn}
+
+<td class="darkshade">&nbsp;</td>
+
+<td class="darkshade">&nbsp;</td>
+    {BEGIN endrecord_block}<td width=20 class="darkshade" {$endrecordblock_attrs}>&nbsp;</td>{END endrecord_block}{END grid_record}</TR>{END grid_row}{BEGIN grid_footer}<tr>{BEGIN record_footer}<td class=headerlistdown2_left height=15></td>
+{BEGIN listIcons_column}<td nowrap="nowrap">&nbsp;</td>{END listIcons_column}
+
+{BEGIN checkbox_column}<td>&nbsp;</td>{END checkbox_column}
+	
+
+	    		<td>&nbsp;</td>
+	    		<td>&nbsp;</td>
+	    		<td>&nbsp;</td>
+	    		<td>&nbsp;</td>
+	    		<td class=headerlistdown2_right>&nbsp;</td>
+	<td class=darkshade height=15>&nbsp;</td>
+{BEGIN endrecordfooter_block}<td width=20 class=darkshade>&nbsp;</td>
+{END endrecordfooter_block}
+{END record_footer}
+</tr>
+</tfoot>
+{END grid_footer}
+</table>
+</table></DIV>{END grid_block}</div>
+{BEGIN message_block}<div class="main_table">{$message} 
+</div>{END message_block}
+{BEGIN pagination_block}<div id="pagination_block{$id}" class="main_table">{$pagination} 
+</div>{END pagination_block}<B class=xbottom><b class="xb4b3"></b><b class="xb3b3"></b><b class="xb2b3"></b><b class="xb1b3"></b></B>{$footer} </div>{END body}</BODY></HTML>

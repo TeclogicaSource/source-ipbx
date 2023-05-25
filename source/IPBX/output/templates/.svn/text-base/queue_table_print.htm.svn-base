@@ -1,0 +1,500 @@
+<html {$html_attrs}>
+<head>
+<title>Fila de atendimento</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Fila de atendimento</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN name_fieldheadercolumn}
+	<td>
+{BEGIN name_fieldheader}
+	<b>Nome</b>
+{END name_fieldheader}
+	</td>
+{END name_fieldheadercolumn}
+{BEGIN musiconhold_fieldheadercolumn}
+	<td>
+{BEGIN musiconhold_fieldheader}
+	<b>Conjunto de musicas</b>
+{END musiconhold_fieldheader}
+	</td>
+{END musiconhold_fieldheadercolumn}
+{BEGIN announce_fieldheadercolumn}
+	<td>
+{BEGIN announce_fieldheader}
+	<b>Announce</b>
+{END announce_fieldheader}
+	</td>
+{END announce_fieldheadercolumn}
+{BEGIN context_fieldheadercolumn}
+	<td>
+{BEGIN context_fieldheader}
+	<b>Contexto</b>
+{END context_fieldheader}
+	</td>
+{END context_fieldheadercolumn}
+{BEGIN timeout_fieldheadercolumn}
+	<td>
+{BEGIN timeout_fieldheader}
+	<b>Timeout</b>
+{END timeout_fieldheader}
+	</td>
+{END timeout_fieldheadercolumn}
+{BEGIN monitor_join_fieldheadercolumn}
+	<td>
+{BEGIN monitor_join_fieldheader}
+	<b>Monitor Join</b>
+{END monitor_join_fieldheader}
+	</td>
+{END monitor_join_fieldheadercolumn}
+{BEGIN monitor_format_fieldheadercolumn}
+	<td>
+{BEGIN monitor_format_fieldheader}
+	<b>Monitor Format</b>
+{END monitor_format_fieldheader}
+	</td>
+{END monitor_format_fieldheadercolumn}
+{BEGIN queue_youarenext_fieldheadercolumn}
+	<td>
+{BEGIN queue_youarenext_fieldheader}
+	<b>Queue Youarenext</b>
+{END queue_youarenext_fieldheader}
+	</td>
+{END queue_youarenext_fieldheadercolumn}
+{BEGIN queue_thereare_fieldheadercolumn}
+	<td>
+{BEGIN queue_thereare_fieldheader}
+	<b>Queue Thereare</b>
+{END queue_thereare_fieldheader}
+	</td>
+{END queue_thereare_fieldheadercolumn}
+{BEGIN queue_callswaiting_fieldheadercolumn}
+	<td>
+{BEGIN queue_callswaiting_fieldheader}
+	<b>Queue Callswaiting</b>
+{END queue_callswaiting_fieldheader}
+	</td>
+{END queue_callswaiting_fieldheadercolumn}
+{BEGIN queue_holdtime_fieldheadercolumn}
+	<td>
+{BEGIN queue_holdtime_fieldheader}
+	<b>Queue Holdtime</b>
+{END queue_holdtime_fieldheader}
+	</td>
+{END queue_holdtime_fieldheadercolumn}
+{BEGIN queue_minutes_fieldheadercolumn}
+	<td>
+{BEGIN queue_minutes_fieldheader}
+	<b>Queue Minutes</b>
+{END queue_minutes_fieldheader}
+	</td>
+{END queue_minutes_fieldheadercolumn}
+{BEGIN queue_seconds_fieldheadercolumn}
+	<td>
+{BEGIN queue_seconds_fieldheader}
+	<b>Queue Seconds</b>
+{END queue_seconds_fieldheader}
+	</td>
+{END queue_seconds_fieldheadercolumn}
+{BEGIN queue_lessthan_fieldheadercolumn}
+	<td>
+{BEGIN queue_lessthan_fieldheader}
+	<b>Queue Lessthan</b>
+{END queue_lessthan_fieldheader}
+	</td>
+{END queue_lessthan_fieldheadercolumn}
+{BEGIN queue_thankyou_fieldheadercolumn}
+	<td>
+{BEGIN queue_thankyou_fieldheader}
+	<b>Queue Thankyou</b>
+{END queue_thankyou_fieldheader}
+	</td>
+{END queue_thankyou_fieldheadercolumn}
+{BEGIN queue_reporthold_fieldheadercolumn}
+	<td>
+{BEGIN queue_reporthold_fieldheader}
+	<b>Queue Reporthold</b>
+{END queue_reporthold_fieldheader}
+	</td>
+{END queue_reporthold_fieldheadercolumn}
+{BEGIN announce_frequency_fieldheadercolumn}
+	<td>
+{BEGIN announce_frequency_fieldheader}
+	<b>Announce Frequency</b>
+{END announce_frequency_fieldheader}
+	</td>
+{END announce_frequency_fieldheadercolumn}
+{BEGIN announce_round_seconds_fieldheadercolumn}
+	<td>
+{BEGIN announce_round_seconds_fieldheader}
+	<b>Announce Round Seconds</b>
+{END announce_round_seconds_fieldheader}
+	</td>
+{END announce_round_seconds_fieldheadercolumn}
+{BEGIN announce_holdtime_fieldheadercolumn}
+	<td>
+{BEGIN announce_holdtime_fieldheader}
+	<b>Announce Holdtime</b>
+{END announce_holdtime_fieldheader}
+	</td>
+{END announce_holdtime_fieldheadercolumn}
+{BEGIN retry_fieldheadercolumn}
+	<td>
+{BEGIN retry_fieldheader}
+	<b>Retry</b>
+{END retry_fieldheader}
+	</td>
+{END retry_fieldheadercolumn}
+{BEGIN wrapuptime_fieldheadercolumn}
+	<td>
+{BEGIN wrapuptime_fieldheader}
+	<b>Wrapuptime</b>
+{END wrapuptime_fieldheader}
+	</td>
+{END wrapuptime_fieldheadercolumn}
+{BEGIN maxlen_fieldheadercolumn}
+	<td>
+{BEGIN maxlen_fieldheader}
+	<b>Maxlen</b>
+{END maxlen_fieldheader}
+	</td>
+{END maxlen_fieldheadercolumn}
+{BEGIN servicelevel_fieldheadercolumn}
+	<td>
+{BEGIN servicelevel_fieldheader}
+	<b>Servicelevel</b>
+{END servicelevel_fieldheader}
+	</td>
+{END servicelevel_fieldheadercolumn}
+{BEGIN strategy_fieldheadercolumn}
+	<td>
+{BEGIN strategy_fieldheader}
+	<b>Estratégia</b>
+{END strategy_fieldheader}
+	</td>
+{END strategy_fieldheadercolumn}
+{BEGIN joinempty_fieldheadercolumn}
+	<td>
+{BEGIN joinempty_fieldheader}
+	<b>Joinempty</b>
+{END joinempty_fieldheader}
+	</td>
+{END joinempty_fieldheadercolumn}
+{BEGIN leavewhenempty_fieldheadercolumn}
+	<td>
+{BEGIN leavewhenempty_fieldheader}
+	<b>Leavewhenempty</b>
+{END leavewhenempty_fieldheader}
+	</td>
+{END leavewhenempty_fieldheadercolumn}
+{BEGIN eventmemberstatus_fieldheadercolumn}
+	<td>
+{BEGIN eventmemberstatus_fieldheader}
+	<b>Eventmemberstatus</b>
+{END eventmemberstatus_fieldheader}
+	</td>
+{END eventmemberstatus_fieldheadercolumn}
+{BEGIN eventwhencalled_fieldheadercolumn}
+	<td>
+{BEGIN eventwhencalled_fieldheader}
+	<b>Eventwhencalled</b>
+{END eventwhencalled_fieldheader}
+	</td>
+{END eventwhencalled_fieldheadercolumn}
+{BEGIN reportholdtime_fieldheadercolumn}
+	<td>
+{BEGIN reportholdtime_fieldheader}
+	<b>Reportholdtime</b>
+{END reportholdtime_fieldheader}
+	</td>
+{END reportholdtime_fieldheadercolumn}
+{BEGIN memberdelay_fieldheadercolumn}
+	<td>
+{BEGIN memberdelay_fieldheader}
+	<b>Memberdelay</b>
+{END memberdelay_fieldheader}
+	</td>
+{END memberdelay_fieldheadercolumn}
+{BEGIN weight_fieldheadercolumn}
+	<td>
+{BEGIN weight_fieldheader}
+	<b>Weight</b>
+{END weight_fieldheader}
+	</td>
+{END weight_fieldheadercolumn}
+{BEGIN timeoutrestart_fieldheadercolumn}
+	<td>
+{BEGIN timeoutrestart_fieldheader}
+	<b>Timeoutrestart</b>
+{END timeoutrestart_fieldheader}
+	</td>
+{END timeoutrestart_fieldheadercolumn}
+{BEGIN periodic_announce_fieldheadercolumn}
+	<td>
+{BEGIN periodic_announce_fieldheader}
+	<b>Periodic Announce</b>
+{END periodic_announce_fieldheader}
+	</td>
+{END periodic_announce_fieldheadercolumn}
+{BEGIN periodic_announce_frequency_fieldheadercolumn}
+	<td>
+{BEGIN periodic_announce_frequency_fieldheader}
+	<b>Periodic Announce Frequency</b>
+{END periodic_announce_frequency_fieldheader}
+	</td>
+{END periodic_announce_frequency_fieldheadercolumn}
+{BEGIN ringinuse_fieldheadercolumn}
+	<td>
+{BEGIN ringinuse_fieldheader}
+	<b>Ringinuse</b>
+{END ringinuse_fieldheader}
+	</td>
+{END ringinuse_fieldheadercolumn}
+{BEGIN setinterfacevar_fieldheadercolumn}
+	<td>
+{BEGIN setinterfacevar_fieldheader}
+	<b>Setinterfacevar</b>
+{END setinterfacevar_fieldheader}
+	</td>
+{END setinterfacevar_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN name_fieldcolumn}
+<td {$name_style}>
+{$name_value}
+</td>
+{END name_fieldcolumn}
+{BEGIN musiconhold_fieldcolumn}
+<td {$musiconhold_style}>
+{$musiconhold_value}
+</td>
+{END musiconhold_fieldcolumn}
+{BEGIN announce_fieldcolumn}
+<td {$announce_style}>
+{$announce_value}
+</td>
+{END announce_fieldcolumn}
+{BEGIN context_fieldcolumn}
+<td {$context_style}>
+{$context_value}
+</td>
+{END context_fieldcolumn}
+{BEGIN timeout_fieldcolumn}
+<td {$timeout_style}>
+{$timeout_value}
+</td>
+{END timeout_fieldcolumn}
+{BEGIN monitor_join_fieldcolumn}
+<td {$monitor_join_style}>
+{$monitor_join_value}
+</td>
+{END monitor_join_fieldcolumn}
+{BEGIN monitor_format_fieldcolumn}
+<td {$monitor_format_style}>
+{$monitor_format_value}
+</td>
+{END monitor_format_fieldcolumn}
+{BEGIN queue_youarenext_fieldcolumn}
+<td {$queue_youarenext_style}>
+{$queue_youarenext_value}
+</td>
+{END queue_youarenext_fieldcolumn}
+{BEGIN queue_thereare_fieldcolumn}
+<td {$queue_thereare_style}>
+{$queue_thereare_value}
+</td>
+{END queue_thereare_fieldcolumn}
+{BEGIN queue_callswaiting_fieldcolumn}
+<td {$queue_callswaiting_style}>
+{$queue_callswaiting_value}
+</td>
+{END queue_callswaiting_fieldcolumn}
+{BEGIN queue_holdtime_fieldcolumn}
+<td {$queue_holdtime_style}>
+{$queue_holdtime_value}
+</td>
+{END queue_holdtime_fieldcolumn}
+{BEGIN queue_minutes_fieldcolumn}
+<td {$queue_minutes_style}>
+{$queue_minutes_value}
+</td>
+{END queue_minutes_fieldcolumn}
+{BEGIN queue_seconds_fieldcolumn}
+<td {$queue_seconds_style}>
+{$queue_seconds_value}
+</td>
+{END queue_seconds_fieldcolumn}
+{BEGIN queue_lessthan_fieldcolumn}
+<td {$queue_lessthan_style}>
+{$queue_lessthan_value}
+</td>
+{END queue_lessthan_fieldcolumn}
+{BEGIN queue_thankyou_fieldcolumn}
+<td {$queue_thankyou_style}>
+{$queue_thankyou_value}
+</td>
+{END queue_thankyou_fieldcolumn}
+{BEGIN queue_reporthold_fieldcolumn}
+<td {$queue_reporthold_style}>
+{$queue_reporthold_value}
+</td>
+{END queue_reporthold_fieldcolumn}
+{BEGIN announce_frequency_fieldcolumn}
+<td {$announce_frequency_style}>
+{$announce_frequency_value}
+</td>
+{END announce_frequency_fieldcolumn}
+{BEGIN announce_round_seconds_fieldcolumn}
+<td {$announce_round_seconds_style}>
+{$announce_round_seconds_value}
+</td>
+{END announce_round_seconds_fieldcolumn}
+{BEGIN announce_holdtime_fieldcolumn}
+<td {$announce_holdtime_style}>
+{$announce_holdtime_value}
+</td>
+{END announce_holdtime_fieldcolumn}
+{BEGIN retry_fieldcolumn}
+<td {$retry_style}>
+{$retry_value}
+</td>
+{END retry_fieldcolumn}
+{BEGIN wrapuptime_fieldcolumn}
+<td {$wrapuptime_style}>
+{$wrapuptime_value}
+</td>
+{END wrapuptime_fieldcolumn}
+{BEGIN maxlen_fieldcolumn}
+<td {$maxlen_style}>
+{$maxlen_value}
+</td>
+{END maxlen_fieldcolumn}
+{BEGIN servicelevel_fieldcolumn}
+<td {$servicelevel_style}>
+{$servicelevel_value}
+</td>
+{END servicelevel_fieldcolumn}
+{BEGIN strategy_fieldcolumn}
+<td {$strategy_style}>
+{$strategy_value}
+</td>
+{END strategy_fieldcolumn}
+{BEGIN joinempty_fieldcolumn}
+<td {$joinempty_style}>
+{$joinempty_value}
+</td>
+{END joinempty_fieldcolumn}
+{BEGIN leavewhenempty_fieldcolumn}
+<td {$leavewhenempty_style}>
+{$leavewhenempty_value}
+</td>
+{END leavewhenempty_fieldcolumn}
+{BEGIN eventmemberstatus_fieldcolumn}
+<td {$eventmemberstatus_style}>
+{$eventmemberstatus_value}
+</td>
+{END eventmemberstatus_fieldcolumn}
+{BEGIN eventwhencalled_fieldcolumn}
+<td {$eventwhencalled_style}>
+{$eventwhencalled_value}
+</td>
+{END eventwhencalled_fieldcolumn}
+{BEGIN reportholdtime_fieldcolumn}
+<td {$reportholdtime_style}>
+{$reportholdtime_value}
+</td>
+{END reportholdtime_fieldcolumn}
+{BEGIN memberdelay_fieldcolumn}
+<td {$memberdelay_style}>
+{$memberdelay_value}
+</td>
+{END memberdelay_fieldcolumn}
+{BEGIN weight_fieldcolumn}
+<td {$weight_style}>
+{$weight_value}
+</td>
+{END weight_fieldcolumn}
+{BEGIN timeoutrestart_fieldcolumn}
+<td {$timeoutrestart_style}>
+{$timeoutrestart_value}
+</td>
+{END timeoutrestart_fieldcolumn}
+{BEGIN periodic_announce_fieldcolumn}
+<td {$periodic_announce_style}>
+{$periodic_announce_value}
+</td>
+{END periodic_announce_fieldcolumn}
+{BEGIN periodic_announce_frequency_fieldcolumn}
+<td {$periodic_announce_frequency_style}>
+{$periodic_announce_frequency_value}
+</td>
+{END periodic_announce_frequency_fieldcolumn}
+{BEGIN ringinuse_fieldcolumn}
+<td {$ringinuse_style}>
+{$ringinuse_value}
+</td>
+{END ringinuse_fieldcolumn}
+{BEGIN setinterfacevar_fieldcolumn}
+<td {$setinterfacevar_style}>
+{$setinterfacevar_value}
+</td>
+{END setinterfacevar_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

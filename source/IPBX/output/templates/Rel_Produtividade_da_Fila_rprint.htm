@@ -1,0 +1,524 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel Rel_Produtividade_da_Fila rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-grid asbuttons {$pageStyleName}">
+		{BEGIN grid_block}
+<TABLE class="rnr-c rnr-b-report report" CELLPADDING=0>
+<thead>
+<tr class="rnr-toprow table-header style1">
+
+<th>{$label Rel_Produtividade_da_Fila dt_entrada}</th>
+<th>{$label Rel_Produtividade_da_Fila Fila}</th>
+<th>{$label Rel_Produtividade_da_Fila Receb_}</th>
+<th>{$label Rel_Produtividade_da_Fila Atend_}</th>
+<th>{$label Rel_Produtividade_da_Fila Aband_}</th>
+<th>{$label Rel_Produtividade_da_Fila TME}</th>
+<th>{$label Rel_Produtividade_da_Fila TMA}</th>
+<th>{$label Rel_Produtividade_da_Fila TMO}</th>
+<th>{$label Rel_Produtividade_da_Fila Aband_Contr_}</th>
+<th>{$label Rel_Produtividade_da_Fila Aband_Real_}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoEsperaContratado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoEsperaRealizado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoEsperaQuantidade}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoContratado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoRealizado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoQuantidade}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoContratado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoRealizado}</th>
+<th>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoQuantidade}</th>
+<th class="rnr-edge"></th>
+</tr>
+</thead>
+<tbody>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr class="rnr-row style1" {$rowattrs}>
+
+	<!-------------------------------------  begin detail links for row ----------------------------------------->
+		<!-------------------------------------  end detail links for row ----------------------------------------->
+
+	<td {$recordattrs}>{$dt_entrada_value}</td>
+	<td {$recordattrs}>{$Fila_value}</td>
+	<td {$recordattrs}>{$Receb__value}</td>
+	<td {$recordattrs}>{$Atend__value}</td>
+	<td {$recordattrs}>{$Aband__value}</td>
+	<td {$recordattrs}>{$TME_value}</td>
+	<td {$recordattrs}>{$TMA_value}</td>
+	<td {$recordattrs}>{$TMO_value}</td>
+	<td {$recordattrs}>{$Aband_Contr__value}</td>
+	<td {$recordattrs}>{$Aband_Real__value}</td>
+	<td {$recordattrs}>{$NivelServicoEsperaContratado_value}</td>
+	<td {$recordattrs}>{$NivelServicoEsperaRealizado_value}</td>
+	<td {$recordattrs}>{$NivelServicoEsperaQuantidade_value}</td>
+	<td {$recordattrs}>{$NivelServicoAtendimentoContratado_value}</td>
+	<td {$recordattrs}>{$NivelServicoAtendimentoRealizado_value}</td>
+	<td {$recordattrs}>{$NivelServicoAtendimentoQuantidade_value}</td>
+	<td {$recordattrs}>{$NivelServicoOperacaoContratado_value}</td>
+	<td {$recordattrs}>{$NivelServicoOperacaoRealizado_value}</td>
+	<td {$recordattrs}>{$NivelServicoOperacaoQuantidade_value}</td>
+	<td class="rnr-edge" {$recordattrs}></td>
+</tr>
+{END row_data}
+{END grid_row}
+<tr class="rnr-toprow summary-header style1">
+<td>{$label Rel_Produtividade_da_Fila dt_entrada}</td>
+<td>{$label Rel_Produtividade_da_Fila Fila}</td>
+<td>{$label Rel_Produtividade_da_Fila Receb_}</td>
+<td>{$label Rel_Produtividade_da_Fila Atend_}</td>
+<td>{$label Rel_Produtividade_da_Fila Aband_}</td>
+<td>{$label Rel_Produtividade_da_Fila TME}</td>
+<td>{$label Rel_Produtividade_da_Fila TMA}</td>
+<td>{$label Rel_Produtividade_da_Fila TMO}</td>
+<td>{$label Rel_Produtividade_da_Fila Aband_Contr_}</td>
+<td>{$label Rel_Produtividade_da_Fila Aband_Real_}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoEsperaContratado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoEsperaRealizado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoEsperaQuantidade}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoContratado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoRealizado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoAtendimentoQuantidade}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoContratado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoRealizado}</td>
+<td>{$label Rel_Produtividade_da_Fila NivelServicoOperacaoQuantidade}</td>
+<td class="rnr-edge"></td>
+</tr>
+<!--------------------------------------global summary-------------------------------------------->
+{BEGIN global_summary}
+<tr class="rnr-row summary-global style1">
+	<td class="globalsummary rnr-edge" colspan=19>Resumo Global 
+	 {$global_total_cnt} - Total de registros</td>
+</tr>
+<!--  Sum -->
+<tr class="rnr-row style1">
+		  
+	<td class="globalsummary 0">
+			Soma&nbsp;
+			&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalReceb__sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAtend__sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband__sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTME_sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMA_sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMO_sum}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary rnr-edge">
+					&nbsp;
+	</td>
+</tr>	
+<!--  Avg -->
+<tr class="rnr-row style1">
+		  
+	<td class="globalsummary 0">
+			Média&nbsp;
+			&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalReceb__avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAtend__avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband__avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTME_avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMA_avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMO_avg}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary rnr-edge">
+					&nbsp;
+	</td>
+</tr>	
+<!--  Min -->
+<tr class="rnr-row style1">
+		  
+	<td class="globalsummary 0">
+			Min&nbsp;
+			&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalReceb__min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAtend__min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband__min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTME_min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMA_min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMO_min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband_Real__min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoEsperaRealizado_min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoAtendimentoRealizado_min}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoOperacaoRealizado_min}
+	</td>
+		  
+	<td class="globalsummary rnr-edge">
+					&nbsp;
+	</td>
+</tr>	
+<!--  Max -->
+<tr class="rnr-row style1">
+		  
+	<td class="globalsummary 0">
+			Max&nbsp;
+			&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalReceb__max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAtend__max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband__max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTME_max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMA_max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalTMO_max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalAband_Real__max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoEsperaRealizado_max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoAtendimentoRealizado_max}
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					&nbsp;
+	</td>
+		  
+	<td class="globalsummary 0">
+					{$global_totalNivelServicoOperacaoRealizado_max}
+	</td>
+		  
+	<td class="globalsummary rnr-edge">
+					&nbsp;
+	</td>
+</tr>	
+{END global_summary}
+</tbody>
+</table>
+{END grid_block}
+	</div>		
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,272 @@
+<html {$html_attrs}>
+<head>
+<title>Pesquisa Reversa</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+table.report {border-collapse: collapse} 
+table.report td {padding: 2px;border-width: 1px; border-style: solid; border-color: #cccccc;}
+td.pagesummary{background-color:#ffffbb;}
+td.globalsummary{background-color:#ffe0b0;}
+#export_links{$id} * {padding:0}
+</style>
+{END style_block}
+{BEGIN iestyle_block}
+<!--[if IE]>
+<style>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</style>
+<![endif]-->
+{END iestyle_block}
+</head>
+<body marginheight=0 marginwidth=0 {$bodyattrs}>
+{BEGIN body}
+<div id="height100{$id}" layout="Rome">
+{$header}
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+{BEGIN toplinks_block}
+<div class="uplistmenu" id="toplinks_block{$id}">
+Logado Como&nbsp;<b>{$username}</b>&nbsp;
+<span class=buttonborder><input type=button class="button" value="Log Out" {$logoutlink_attrs}></span>
+
+{BEGIN adminarea_link}
+<span class=buttonborder><input type=button class=button value="Área  Admin" {$adminarealink_attrs}></span>
+{END adminarea_link}
+
+
+{BEGIN asearch_link}
+<span class=buttonborder><input type=button class=button value="Busca Avancada" {$asearchlink_attrs}></span>
+{END asearch_link}
+
+
+
+{BEGIN print_link}
+<span class=buttonborder><input type=button class=button value="Impressão  Amigável" {$printlink_attrs}></span>
+{END print_link}
+
+{BEGIN printall_link}
+<span class=buttonborder><input type=button class=button value="Imprimir relatório" {$printalllink_attrs}></span>
+{END printall_link}
+
+
+
+{BEGIN export_link}
+<span id="export_links{$id}">
+<a href="ipbx_fila_pesquisa_ura_rev_resp_Report_print.php?all=1&format=excel" {$excellink_attrs}><img alt="Expot to Excel" src="images/excel.gif" border="0"></a>
+<a href="ipbx_fila_pesquisa_ura_rev_resp_Report_print.php?all=1&format=word" {$wordlink_attrs}><img alt="Export to Word" src="images/word.gif" border="0" ></a>
+</span>
+{END export_link}
+
+
+
+</div>
+{END toplinks_block}
+<div class="main_table" id="global_block{$id}">
+{BEGIN left_block}
+ <div id="left_block{$id}">
+  <b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<!-- MenuBegin -->
+{BEGIN menu_block}
+  <div class="xboxcontent" id="menu_block{$id}">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->	
+  </div>
+  {END menu_block}
+
+<!-- MenuEnd -->
+{BEGIN search_records_block}
+<div>
+
+<style>
+<!--
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+-->
+</style>
+
+<!-- search panel and window header -->
+<div class="blackshade2" id="center_block{$id}">
+	Buscar:
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span class="buttonborder"><input class="button" type="button" id="showSrchWin{$id}" style="width: 18px; background-image: url(images/search/showWindowPin.gif);" {$showHideSearchWin_attrs} ></span>
+	&nbsp;		
+	<span class="buttonborder"><input class="button" type="button" id="showOptPanel{$id}" style="width: 18px; background-image: url(images/search/showOptions.gif);" {$showHideSearchPanel_attrs} ></span>
+
+</div>
+<div id="searchform{$id}">
+	<div class="blackshade" id="searchPanelHeader{$id}">
+		{$simpleSearchFieldCombo}
+		{$simpleSearchTypeCombo}
+		
+		{BEGIN searchform_text}
+			<input type=text {$searchfor_attrs} size="25">
+		{END searchform_text}
+		&nbsp;
+		{BEGIN searchform_search}
+			<span class="buttonborder"><input class="button" type="button" style="width: 18px; background-image: url(images/search/search.gif);" {$searchbutton_attrs} /></span>
+		{END searchform_search}
+		&nbsp;		
+		{BEGIN searchform_showall}
+			<span id="showall{$id}" class=buttonborder><input type=button class="button" value="Mostrar Todos" {$showallbutton_attrs}></span>
+		{END searchform_showall}
+	</div>
+</div>  
+
+<!-- search panel and window -->
+<div id="searchPanelContainer{$id}" class="searchPanelContainer">
+{$adv_search_panel} 
+</div>  
+
+
+
+{BEGIN details_block}
+<div class="toplist xboxcontent center" id="details_block{$id}">
+<span  id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</span>
+</div>
+{END details_block}
+{BEGIN pages_block}
+<div class="toplist xboxcontent center" id="pages_block{$id}">
+<span id="pageOf{$id}">Página {$page} de {$maxpages}</span>
+</div>
+{END pages_block}
+
+{BEGIN recordspp_block}
+<div id="search_block_line_pp{$id}" class="toplist xboxcontent center">
+Registros por Página:&nbsp;
+<select onChange="javascript: document.location='ipbx_fila_pesquisa_ura_rev_resp_Report_report.php?pagesize='+this.options[this.selectedIndex].value;">
+	<option value="10" {$rpp10_selected}>10</option>
+	<option value="20" {$rpp20_selected}>20</option>
+	<option value="30" {$rpp30_selected}>30</option>
+	<option value="50" {$rpp50_selected}>50</option>
+	<option value="100" {$rpp100_selected}>100</option>
+	<option value="500" {$rpp500_selected}>500</option>
+	<option value="-1" {$rpp_all_selected}>Mostrar Todos</option>
+</select>
+</div>
+{END recordspp_block}
+</div>
+{END search_records_block}
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END left_block}
+
+<!-- main block -->
+<div id="marginStyle">
+<div id="right_block{$id}"  class="right_block">
+
+{BEGIN recordcontrols_block}
+<div>
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" id="recordcontrols_block{$id}">
+{$lookupSearchControls}
+{BEGIN record_controls}
+<span id="record_controls{$id}">
+
+
+
+
+</span>
+{END record_controls}
+
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+</div>
+{END recordcontrols_block}
+</div>
+<div class="message" id="usermessage{$id}">{$user_message}</div>
+<div class="main_table" id="global_block_table{$id}">
+
+<TABLE class=report WIDTH="auto" CELLPADDING=1 CELLSPACING=0 BORDER=0 style="border: solid; border-width: 1px; border-color: black;">
+<tr>
+<td class=blackshade>Ticket do Cliente</td>
+<td class=blackshade>Data Ocorrencia</td>
+<td class=blackshade>Nome Pesquisa</td>
+<td class=blackshade>Pergunta</td>
+<td class=blackshade>Telefone</td>
+<td class=blackshade>Resposta Numérica</td>
+<td class=blackshade>Data da Resposta</td>
+<td class=blackshade>Texto da Resposta </td>
+</tr>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$id_cliente_value}</td>
+	<td class=data>{$dt_criado_value}</td>
+	<td class=data>{$dsc_pesquisa_value}</td>
+	<td class=data>{$dsc_mensagem_value}</td>
+	<td class=data>{$nm_telefone_value}</td>
+	<td class=data>{$resp_usuario_value}</td>
+	<td class=data>{$dt_resp_value}</td>
+	<td class=data>{$txt_resp_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+</div>
+<div class="main_table message_block">
+{$pagination}
+</div>
+<b class="xbottom"><b class="xb4b3"></b><b class="xb3b3"></b><b class="xb2b3"></b><b class="xb1b3"></b></b>
+{$footer}
+</div>
+{END body}
+</body>
+</html>

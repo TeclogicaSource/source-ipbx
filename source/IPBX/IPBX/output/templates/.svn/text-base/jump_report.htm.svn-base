@@ -1,0 +1,22 @@
+<style>
+{literal}
+	div.action { position: absolute;  width: 170px; padding: 0; }
+{/literal}
+</style>
+<iframe id="framejump" style="display:none;position:absolute;" scrolling="no" frameborder="0"></iframe>
+<div id="menujump" class=action style="display:none;position:absolute;">
+	<table width=100% cellpadding=5 cellspacing=0 border=0 style="background-color:#F4F7FB;border: solid 1px blue;">
+		<tr><td id=row0 style="cursor:pointer">Tables</td></tr>
+		<tr><td id=row1 style="cursor:pointer">Table Relations</td></tr>
+		<tr><td id=row2 style="cursor:pointer">Where Condition</td></tr>
+		<tr><td id=row3 style="cursor:pointer">Group fields</td></tr>
+		<tr><td id=row4 style="cursor:pointer">Totals</td></tr>
+		<tr><td id=row5 style="cursor:pointer">Miscellaneous </td></tr>
+		<tr><td id=row6 style="cursor:pointer">Sort fields</td></tr>
+		<tr><td id=row7 style="cursor:pointer">Style Editor</td></tr>
+		<tr><td id=row8 style="cursor:pointer">Report Settings</td></tr>
+		<tr><td id=row9 style="cursor:pointer">Dynamic Permissions</td></tr>
+		<tr><td id=row10 style="cursor:pointer;border-top:1px solid blue;">Back to Web Reports menu</td></tr>
+		<tr><td id=row11 style="cursor:pointer">Back to main application</td></tr>
+	</table>
+</div>

@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Produt filas grupo por mes</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><!--{BEGIN stylesheetlink}--><LINK id=replace_0 
+rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]--><!--{END stylesheetlink}-->
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5 innertag="body"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> 
+<H1 outertag="page">Rel. Produt filas grupo por mes</H1>
+<DIV id=selpage outertag="page">Página <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_3 contentEditable=false>pageno</SPAN> de <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_4 contentEditable=false>maxpages</SPAN> </DIV>
+<DIV innertag="grid_block" outertag="page">
+<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  <TR outertag="grid_header">
+    <TD class=blackshade innertag="Mes_fieldheader">
+      <P align=center><B>Mes</B> </P></TD>
+    <TD class=blackshade innertag="Ano_fieldheader">
+      <P align=center><B>Ano</B> </P></TD>
+    <TD class=blackshade innertag="nm_grupo_fieldheader">
+      <P align=center><B>Grupo</B> </P></TD>
+    <TD class=blackshade innertag="Receb__fieldheader">
+      <P align=center><B>Recebidas</B> </P></TD>
+    <TD class=blackshade innertag="Atend__fieldheader">
+      <P align=center><B>Atendidas</B> </P></TD>
+    <TD class=blackshade innertag="Aband__fieldheader">
+      <P align=center><B>Abandonadas</B> </P></TD>
+    <TD class=blackshade innertag="TME_fieldheader">
+      <P align=center><B>TME</B> </P></TD>
+    <TD class=blackshade innertag="TMA_fieldheader">
+      <P align=center><B>TMA</B> </P></TD>
+    <TD class=blackshade innertag="Aband_Contr__fieldheader">
+      <P align=center><B>Abd.Contr.</B> </P></TD>
+    <TD class=blackshade innertag="Aband_Real__fieldheader">
+      <P align=center><B>Abd.Real(%)</B> </P></TD>
+    <TD class=blackshade innertag="NivelServicoEsperaContratado_fieldheader">
+      <P align=center><B>Esp.Cont.</B> </P></TD>
+    <TD class=blackshade innertag="NivelServicoEsperaRealizado_fieldheader">
+      <P align=center><B>Nív.Serv.Esp.(%)</B> </P></TD>
+    <TD class=blackshade innertag="NivelServicoEsperaQuantidade_fieldheader">
+      <P align=center><B>Esp.Quant.</B> </P></TD>
+    <TD class=blackshade 
+    innertag="NivelServicoAtendimentoContratado_fieldheader">
+      <P align=center><B>Atd.Cont.</B> </P></TD>
+    <TD class=blackshade 
+innertag="NivelServicoAtendimentoRealizado_fieldheader">
+      <P align=center><B>Nív.Serv.Atend.(%)</B> </P></TD>
+    <TD class=blackshade 
+    innertag="NivelServicoAtendimentoQuantidade_fieldheader">
+      <P align=center><B>Atd.Quant.</B> </P></TD></TR><!--{BEGIN grid_row}--><!-------------------------------------  data ----------------------------------------->
+  <TR outertag="row_data">
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_5 contentEditable=false 
+    typeid="view_Mes">&nbsp;Mes</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_6 contentEditable=false 
+    typeid="view_Ano">&nbsp;Ano</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_7 contentEditable=false 
+      typeid="view_nm_grupo">&nbsp;nm_grupo</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_8 contentEditable=false 
+      typeid="view_Receb_">&nbsp;Receb.</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_9 contentEditable=false 
+      typeid="view_Atend_">&nbsp;Atend.</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_10 contentEditable=false 
+      typeid="view_Aband_">&nbsp;Aband.</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_11 contentEditable=false 
+    typeid="view_TME">&nbsp;TME</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_12 contentEditable=false 
+    typeid="view_TMA">&nbsp;TMA</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_13 contentEditable=false 
+      typeid="view_Aband_Contr_">&nbsp;Aband.Contr.</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_14 contentEditable=false 
+      typeid="view_Aband_Real_">&nbsp;Aband.Real.</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_15 contentEditable=false 
+      typeid="view_NivelServicoEsperaContratado">&nbsp;NivelServicoEsperaContratado</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_16 contentEditable=false 
+      typeid="view_NivelServicoEsperaRealizado">&nbsp;NivelServicoEsperaRealizado</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_17 contentEditable=false 
+      typeid="view_NivelServicoEsperaQuantidade">&nbsp;NivelServicoEsperaQuantidade</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_18 contentEditable=false 
+      typeid="view_NivelServicoAtendimentoContratado">&nbsp;NivelServicoAtendimentoContratado</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_html.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_19 contentEditable=false 
+      typeid="view_NivelServicoAtendimentoRealizado">&nbsp;NivelServicoAtendimentoRealizado</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_20 contentEditable=false 
+      typeid="view_NivelServicoAtendimentoQuantidade">&nbsp;NivelServicoAtendimentoQuantidade</SPAN></P></TD></TR><!--{END grid_row}--></TBODY></TABLE></DIV><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> </BODY></HTML>

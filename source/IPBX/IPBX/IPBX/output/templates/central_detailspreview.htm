@@ -1,0 +1,18 @@
+Central<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Descrição da Configuração</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$dsc_conf_central_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

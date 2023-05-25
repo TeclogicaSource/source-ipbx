@@ -1,0 +1,24 @@
+Item de menu<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Prefixo</strong></td>
+<td><strong>Digito</strong></td>
+<td><strong>Ação do item de menu</strong></td>
+<td><strong>Destino</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$prefixo_value}</td>
+<td>{$opc_dig_value}</td>
+<td>{$rdb_opcao_value}</td>
+<td>{$id_cod_gen_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

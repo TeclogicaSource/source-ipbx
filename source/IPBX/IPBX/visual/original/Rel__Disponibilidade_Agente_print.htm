@@ -1,0 +1,204 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Disponibilidade Agente</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+.group_1
+{
+background-color: #E6E6FA;
+}
+
+
+.nbgroup_1
+{
+background-color: #E6E6FA;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #C3C3D4;
+}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Disponibilidade Agente</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_row}
+<!-------------------------------------  group headers ----------------------------------------->
+{BEGIN agente_newgroup}
+<tr>
+<td class=header_1 colspan=10>
+Agente:&nbsp;
+<font style="font-weight:900">{$agente_grval}</font></td>
+</tr>
+<tr>
+<td class=blackshade><b>Data</b></td>
+<td class=blackshade><b>Fila</b></td>
+<td class=blackshade><b>Logon</b></td>
+<td class=blackshade><b>Logout</b></td>
+<td class=blackshade><b>Tempo Disponível</b></td>
+<td class=blackshade><b>Tempo Pausa não Produtiva</b></td>
+<td class=blackshade><b>Tempo Pausa Produtiva</b></td>
+<td class=blackshade><b>Tempo Pausa</b></td>
+<td class=blackshade><b>Tempo Atendimento</b></td>
+<td class=blackshade><b>Tempo Livre</b></td>
+</tr>
+{END agente_newgroup}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$Data_value}</td>
+	<td class=data>{$Fila_value}</td>
+	<td class=data>{$Logon_value}</td>
+	<td class=data>{$Logout_value}</td>
+	<td class=data>{$TempoDisponivel_value}</td>
+	<td class=data>{$TempoPausaNProdutiva_value}</td>
+	<td class=data>{$TempoPausaProdutiva_value}</td>
+	<td class=data>{$TempoPausa_value}</td>
+	<td class=data>{$TempoAtendimento_value}</td>
+	<td class=data>{$TempoLivre_value}</td>
+</tr>
+{END row_data}
+<!-------------------------------------  group summary ----------------------------------------->
+{BEGIN agente_endgroup}
+<tr>
+	<td class=group_1 colspan=10 >
+	Resumo para Agente {$agente_grval}
+	 - {$groupagente_total_cnt} Total de registros</div></td>
+</tr>
+<!--  Sum -->
+<tr>
+	
+	<td class=group_1>
+				Soma
+		&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoDisponivel_sum}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausaNProdutiva_sum}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausaProdutiva_sum}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausa_sum}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoAtendimento_sum}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoLivre_sum}
+	</td>
+</tr>	
+<!--  Avg -->
+<tr>
+	<td class=group_1>
+				Média
+		&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+			</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoDisponivel_avg}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausaNProdutiva_avg}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausaProdutiva_avg}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoPausa_avg}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoAtendimento_avg}
+	</td>
+	<td class=group_1>
+				&nbsp;
+				{$groupagente_totalTempoLivre_avg}
+	</td>
+</tr>	
+{END agente_endgroup}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

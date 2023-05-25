@@ -1,0 +1,16 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="dsc_aviso">
+	{$dsc_aviso_editcontrol}
+	</control>
+	<control field="img_anexo">
+	{$img_anexo_editcontrol}
+	</control>
+	<control field="id_versao">
+	{$id_versao_editcontrol}
+	</control>
+	<control field="flg_visualizacao">
+	{$flg_visualizacao_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

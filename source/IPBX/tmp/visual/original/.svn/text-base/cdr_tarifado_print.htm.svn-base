@@ -1,0 +1,196 @@
+<html {$html_attrs}>
+<head>
+<title>Custos</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+
+.group_1
+{
+background-color: #FFFFFF;
+}
+.group_2
+{
+background-color: #FFFFFF;
+}
+
+
+.nbgroup_1
+{
+background-color: #FFFFFF;
+border-style:none;
+}
+.nbgroup_2
+{
+background-color: #FFFFFF;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #D8D8D8;
+}
+.header_2
+{
+background-color: #D8D8D8;
+}
+
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Custos</h1>
+<div id='selpage'>P·gina {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN clid_fieldheader}
+<b>Usu·rio</b>
+{END clid_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Data_fieldheader}
+<b>Data</b>
+{END Data_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN calldate_fieldheader}
+<b>Calldate</b>
+{END calldate_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dst_fieldheader}
+<b>Destino</b>
+{END dst_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN _Custo_R___fieldheader}
+<b>&quot;Custo R$&quot;</b>
+{END _Custo_R___fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN _Centro_Custo__fieldheader}
+<b>&quot;Centro Custo&quot;</b>
+{END _Centro_Custo__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Hora_fieldheader}
+<b>Hora</b>
+{END Hora_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Dura__o_fieldheader}
+<b>Dura√ß√£o</b>
+{END Dura__o_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  group headers ----------------------------------------->
+{BEGIN clid_firstnewgroup}
+	<tr>
+				<td class=header_1>
+		<font style="font-weight:900">{$clid_grval}</font>
+				</td>
+				<td class=header_2>
+		<font style="font-weight:900">{$Data_grval}</font>
+				</td>
+<!-------------------------------------  data ----------------------------------------->
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	</tr>
+{END clid_firstnewgroup}
+{BEGIN Data_firstnewgroup}
+	<tr>
+				<td class=group_1>
+				&nbsp;
+		</td>
+				<td class=header_2>
+		<font style="font-weight:900">{$Data_grval}</font>
+				</td>
+<!-------------------------------------  data ----------------------------------------->
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	<td class=data>
+		&nbsp;
+	</tr>
+{END Data_firstnewgroup}
+<!-------------------------------------  group summary ----------------------------------------->
+{BEGIN clid_endgroup}
+<tr>
+	<td class=group_1
+		style="border-bottom: solid black 2px"
+	colspan=8 >
+	Resumo para Usu·rio {$clid_grval}
+	 - {$groupclid_total_cnt} Total de registros</div></td>
+</tr>
+{END clid_endgroup}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

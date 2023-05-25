@@ -1,0 +1,71 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Critério:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}Todos{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}Qualquer{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Adicionar campo</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_dsc_interf}
+			<a href="#" id="addSearchControl_dsc_interf" class="addSearchControl" {$addSearchControl_dsc_interf_attrs}>Descrição</a><br>
+		{END addSearch_dsc_interf}
+		{BEGIN addSearch_id_central}
+			<a href="#" id="addSearchControl_id_central" class="addSearchControl" {$addSearchControl_id_central_attrs}>Central</a><br>
+		{END addSearch_id_central}
+		{BEGIN addSearch_board}
+			<a href="#" id="addSearchControl_board" class="addSearchControl" {$addSearchControl_board_attrs}>Board</a><br>
+		{END addSearch_board}
+		{BEGIN addSearch_id_tp_interf}
+			<a href="#" id="addSearchControl_id_tp_interf" class="addSearchControl" {$addSearchControl_id_tp_interf_attrs}>Tipo interface</a><br>
+		{END addSearch_id_tp_interf}
+		{BEGIN addSearch_tp_chamada}
+			<a href="#" id="addSearchControl_tp_chamada" class="addSearchControl" {$addSearchControl_tp_chamada_attrs}>Tempo chamada (s)</a><br>
+		{END addSearch_tp_chamada}
+		{BEGIN addSearch_piloto}
+			<a href="#" id="addSearchControl_piloto" class="addSearchControl" {$addSearchControl_piloto_attrs}>Piloto</a><br>
+		{END addSearch_piloto}
+		{BEGIN addSearch_cd_operadora}
+			<a href="#" id="addSearchControl_cd_operadora" class="addSearchControl" {$addSearchControl_cd_operadora_attrs}>Código da Operadora</a><br>
+		{END addSearch_cd_operadora}
+		{BEGIN addSearch_id_contrato}
+			<a href="#" id="addSearchControl_id_contrato" class="addSearchControl" {$addSearchControl_id_contrato_attrs}>Contrato</a><br>
+		{END addSearch_id_contrato}
+		{BEGIN addSearch_id_chamada}
+			<a href="#" id="addSearchControl_id_chamada" class="addSearchControl" {$addSearchControl_id_chamada_attrs}>Número identificador (saída)</a><br>
+		{END addSearch_id_chamada}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Buscar</a>
+		</span>
+	</div>
+</div>

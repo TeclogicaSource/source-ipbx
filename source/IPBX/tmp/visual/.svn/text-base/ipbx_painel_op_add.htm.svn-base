@@ -1,0 +1,122 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel ipbx_painel_op add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	<TBODY>
+  {BEGIN dsc_painel_fieldblock}<tr class="{$fielddispclass_dsc_painel}" data-fieldname="dsc_painel">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsc_painel_label}{$label ipbx_painel_op dsc_painel}{END dsc_painel_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsc_painel_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsc_painel_fieldblock}
+	{BEGIN privilegios_fieldblock}<tr class="{$fielddispclass_privilegios}" data-fieldname="privilegios">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN privilegios_label}{$label ipbx_painel_op privilegios}{END privilegios_label}
+	</td>
+	<td class="rnr-control style3">
+		{$privilegios_editcontrol}&nbsp;
+	</td>
+</tr>
+{END privilegios_fieldblock}
+	{BEGIN fila_fieldblock}<tr class="{$fielddispclass_fila}" data-fieldname="fila">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN fila_label}{$label ipbx_painel_op fila}{END fila_label}
+	</td>
+	<td class="rnr-control style3">
+		{$fila_editcontrol}&nbsp;
+	</td>
+</tr>
+{END fila_fieldblock}
+	{BEGIN usuarios_fieldblock}<tr class="{$fielddispclass_usuarios}" data-fieldname="usuarios">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN usuarios_label}{$label ipbx_painel_op usuarios}{END usuarios_label}
+	</td>
+	<td class="rnr-control style3">
+		{$usuarios_editcontrol}&nbsp;
+	</td>
+</tr>
+{END usuarios_fieldblock}
+</TBODY></table></div>
+
+
+{BEGIN addbuttons}<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

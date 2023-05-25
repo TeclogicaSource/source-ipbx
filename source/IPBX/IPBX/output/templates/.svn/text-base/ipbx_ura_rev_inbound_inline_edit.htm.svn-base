@@ -1,0 +1,7 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="Arquivo">
+	{$Arquivo_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

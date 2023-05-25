@@ -1,0 +1,273 @@
+<html {$html_attrs}>
+<head>
+<title>HistÃ³rico Da Fila: Busca Avancada</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;border-bottom:1px solid white;}
+#main_block{$id} {padding:10px 10px;}
+#buttons_block{$id} {padding:10px 0 5px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="tableheader">HistÃ³rico Da Fila - Busca Avancada</div>
+<div class="xboxcontentb" id="main_block{$id}">
+
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" style="width:100%">
+<span class=fieldname>Buscar:</span>
+<input type="radio" name="srchType"" {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label}
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+<br>
+</div>
+{END conditions_block}
+
+<table cellpadding=4 cellspacing=0 id="fields_block">
+<tr valign=center>
+<td align=center valign=middle class="headerlist_left">&nbsp;</td>
+<td width=30 align=center valign=middle class="headerlist2">NOT</td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist_right">&nbsp;</td></tr>
+
+{BEGIN Fila_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Fila
+	<td align=center class=editshade_lb><input type=CheckBox {$Fila_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_Fila}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Fila_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$Fila_editcontrol1}&nbsp;</td>
+</tr>
+{END Fila_fieldblock}	
+{BEGIN dt_periodo_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Dt Periodo
+	<td align=center class=editshade_lb><input type=CheckBox {$dt_periodo_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_dt_periodo}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$dt_periodo_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$dt_periodo_editcontrol1}&nbsp;</td>
+</tr>
+{END dt_periodo_fieldblock}	
+{BEGIN hr_periodo_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Hr Periodo
+	<td align=center class=editshade_lb><input type=CheckBox {$hr_periodo_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_hr_periodo}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$hr_periodo_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$hr_periodo_editcontrol1}&nbsp;</td>
+</tr>
+{END hr_periodo_fieldblock}	
+{BEGIN ag_logados_menor_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Logados Menor
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_logados_menor_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_logados_menor}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_menor_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_menor_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_logados_menor_fieldblock}	
+{BEGIN ag_logados_maior_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Logados Maior
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_logados_maior_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_logados_maior}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_maior_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_maior_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_logados_maior_fieldblock}	
+{BEGIN ag_logados_media_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Logados Media
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_logados_media_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_logados_media}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_media_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_logados_media_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_logados_media_fieldblock}	
+{BEGIN ag_pausados_menor_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Pausados Menor
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_pausados_menor_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_pausados_menor}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_menor_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_menor_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_pausados_menor_fieldblock}	
+{BEGIN ag_pausados_maior_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Pausados Maior
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_pausados_maior_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_pausados_maior}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_maior_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_maior_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_pausados_maior_fieldblock}	
+{BEGIN ag_pausados_media_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Pausados Media
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_pausados_media_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_pausados_media}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_media_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_pausados_media_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_pausados_media_fieldblock}	
+{BEGIN ag_atendendo_menor_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Atendendo Menor
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_atendendo_menor_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_atendendo_menor}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_menor_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_menor_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_atendendo_menor_fieldblock}	
+{BEGIN ag_atendendo_maior_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Atendendo Maior
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_atendendo_maior_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_atendendo_maior}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_maior_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_maior_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_atendendo_maior_fieldblock}	
+{BEGIN ag_atendendo_media_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Atendendo Media
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_atendendo_media_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_atendendo_media}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_media_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_atendendo_media_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_atendendo_media_fieldblock}	
+{BEGIN ag_discando_menor_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Discando Menor
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_discando_menor_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_discando_menor}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_menor_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_menor_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_discando_menor_fieldblock}	
+{BEGIN ag_discando_maior_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Discando Maior
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_discando_maior_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_discando_maior}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_maior_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_maior_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_discando_maior_fieldblock}	
+{BEGIN ag_discando_media_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ag Discando Media
+	<td align=center class=editshade_lb><input type=CheckBox {$ag_discando_media_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ag_discando_media}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_media_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ag_discando_media_editcontrol1}&nbsp;</td>
+</tr>
+{END ag_discando_media_fieldblock}	
+{BEGIN soma_atendimento_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Soma Atendimento
+	<td align=center class=editshade_lb><input type=CheckBox {$soma_atendimento_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_soma_atendimento}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$soma_atendimento_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$soma_atendimento_editcontrol1}&nbsp;</td>
+</tr>
+{END soma_atendimento_fieldblock}	
+{BEGIN soma_espera_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Soma Espera
+	<td align=center class=editshade_lb><input type=CheckBox {$soma_espera_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_soma_espera}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$soma_espera_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$soma_espera_editcontrol1}&nbsp;</td>
+</tr>
+{END soma_espera_fieldblock}	
+{BEGIN qtd_atendimento_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qtd Atendimento
+	<td align=center class=editshade_lb><input type=CheckBox {$qtd_atendimento_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qtd_atendimento}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_atendimento_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_atendimento_editcontrol1}&nbsp;</td>
+</tr>
+{END qtd_atendimento_fieldblock}	
+{BEGIN qtd_abandono_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qtd Abandono
+	<td align=center class=editshade_lb><input type=CheckBox {$qtd_abandono_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qtd_abandono}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_abandono_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_abandono_editcontrol1}&nbsp;</td>
+</tr>
+{END qtd_abandono_fieldblock}	
+{BEGIN qtd_sla_espera_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qtd Sla Espera
+	<td align=center class=editshade_lb><input type=CheckBox {$qtd_sla_espera_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qtd_sla_espera}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_espera_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_espera_editcontrol1}&nbsp;</td>
+</tr>
+{END qtd_sla_espera_fieldblock}	
+{BEGIN qtd_sla_atendimento_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qtd Sla Atendimento
+	<td align=center class=editshade_lb><input type=CheckBox {$qtd_sla_atendimento_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qtd_sla_atendimento}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_atendimento_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_atendimento_editcontrol1}&nbsp;</td>
+</tr>
+{END qtd_sla_atendimento_fieldblock}	
+{BEGIN qtd_sla_operacao_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qtd Sla Operacao
+	<td align=center class=editshade_lb><input type=CheckBox {$qtd_sla_operacao_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qtd_sla_operacao}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_operacao_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qtd_sla_operacao_editcontrol1}&nbsp;</td>
+</tr>
+{END qtd_sla_operacao_fieldblock}	
+</table>
+
+<div class="downedit" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Buscar" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>

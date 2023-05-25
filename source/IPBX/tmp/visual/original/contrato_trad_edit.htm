@@ -1,0 +1,330 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel contrato_trad edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN num_contrato_fieldblock}
+<tr class="{$fielddispclass_num_contrato}" data-fieldname="num_contrato">
+	<td class="rnr-label">
+		{BEGIN num_contrato_label}{$label contrato_trad num_contrato}{END num_contrato_label}
+	</td>
+	<td class="rnr-control style3">
+		{$num_contrato_editcontrol}&nbsp;
+	</td>
+</tr>
+{END num_contrato_fieldblock}
+	{BEGIN nm_operadora_fieldblock}
+<tr class="{$fielddispclass_nm_operadora}" data-fieldname="nm_operadora">
+	<td class="rnr-label">
+		{BEGIN nm_operadora_label}{$label contrato_trad nm_operadora}{END nm_operadora_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_operadora_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_operadora_fieldblock}
+	{BEGIN Vingencia_fieldblock}
+<tr class="{$fielddispclass_Vingencia}" data-fieldname="Vingencia">
+	<td class="rnr-label">
+		{BEGIN Vingencia_label}{$label contrato_trad Vingencia}{END Vingencia_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Vingencia_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Vingencia_fieldblock}
+	{BEGIN flg_ativo_fieldblock}
+<tr class="{$fielddispclass_flg_ativo}" data-fieldname="flg_ativo">
+	<td class="rnr-label">
+		{BEGIN flg_ativo_label}{$label contrato_trad flg_ativo}{END flg_ativo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_ativo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_ativo_fieldblock}
+	{BEGIN dia_ini_fieldblock}
+<tr class="{$fielddispclass_dia_ini}" data-fieldname="dia_ini">
+	<td class="rnr-label">
+		{BEGIN dia_ini_label}{$label contrato_trad dia_ini}{END dia_ini_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dia_ini_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dia_ini_fieldblock}
+	{BEGIN dia_fim_fieldblock}
+<tr class="{$fielddispclass_dia_fim}" data-fieldname="dia_fim">
+	<td class="rnr-label">
+		{BEGIN dia_fim_label}{$label contrato_trad dia_fim}{END dia_fim_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dia_fim_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dia_fim_fieldblock}
+	{BEGIN posicao_mes_fieldblock}
+<tr class="{$fielddispclass_posicao_mes}" data-fieldname="posicao_mes">
+	<td class="rnr-label">
+		{BEGIN posicao_mes_label}{$label contrato_trad posicao_mes}{END posicao_mes_label}
+	</td>
+	<td class="rnr-control style3">
+		{$posicao_mes_editcontrol}&nbsp;
+	</td>
+</tr>
+{END posicao_mes_fieldblock}
+	{BEGIN F_F_LOCAL_CAD_fieldblock}
+<tr class="{$fielddispclass_F_F_LOCAL_CAD}" data-fieldname="F_F_LOCAL_CAD">
+	<td class="rnr-label">
+		{BEGIN F_F_LOCAL_CAD_label}{$label contrato_trad F_F_LOCAL_CAD}{END F_F_LOCAL_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LOCAL_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LOCAL_CAD_fieldblock}
+	{BEGIN F_F_LOCAL_VLR_fieldblock}
+<tr class="{$fielddispclass_F_F_LOCAL_VLR}" data-fieldname="F_F_LOCAL_VLR">
+	<td class="rnr-label">
+		{BEGIN F_F_LOCAL_VLR_label}{$label contrato_trad F_F_LOCAL_VLR}{END F_F_LOCAL_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LOCAL_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LOCAL_VLR_fieldblock}
+	{BEGIN F_M_LOCAL_VC1_CAD_fieldblock}
+<tr class="{$fielddispclass_F_M_LOCAL_VC1_CAD}" data-fieldname="F_M_LOCAL_VC1_CAD">
+	<td class="rnr-label">
+		{BEGIN F_M_LOCAL_VC1_CAD_label}{$label contrato_trad F_M_LOCAL_VC1_CAD}{END F_M_LOCAL_VC1_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_LOCAL_VC1_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_LOCAL_VC1_CAD_fieldblock}
+	{BEGIN F_M_LOCAL_VC1_VLR_fieldblock}
+<tr class="{$fielddispclass_F_M_LOCAL_VC1_VLR}" data-fieldname="F_M_LOCAL_VC1_VLR">
+	<td class="rnr-label">
+		{BEGIN F_M_LOCAL_VC1_VLR_label}{$label contrato_trad F_M_LOCAL_VC1_VLR}{END F_M_LOCAL_VC1_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_LOCAL_VC1_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_LOCAL_VC1_VLR_fieldblock}
+	{BEGIN F_M_VC2_CAD_fieldblock}
+<tr class="{$fielddispclass_F_M_VC2_CAD}" data-fieldname="F_M_VC2_CAD">
+	<td class="rnr-label">
+		{BEGIN F_M_VC2_CAD_label}{$label contrato_trad F_M_VC2_CAD}{END F_M_VC2_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_VC2_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_VC2_CAD_fieldblock}
+	{BEGIN F_M_VC2_VLR_fieldblock}
+<tr class="{$fielddispclass_F_M_VC2_VLR}" data-fieldname="F_M_VC2_VLR">
+	<td class="rnr-label">
+		{BEGIN F_M_VC2_VLR_label}{$label contrato_trad F_M_VC2_VLR}{END F_M_VC2_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_VC2_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_VC2_VLR_fieldblock}
+	{BEGIN F_M_VC3_CAD_fieldblock}
+<tr class="{$fielddispclass_F_M_VC3_CAD}" data-fieldname="F_M_VC3_CAD">
+	<td class="rnr-label">
+		{BEGIN F_M_VC3_CAD_label}{$label contrato_trad F_M_VC3_CAD}{END F_M_VC3_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_VC3_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_VC3_CAD_fieldblock}
+	{BEGIN F_M_VC3_VLR_fieldblock}
+<tr class="{$fielddispclass_F_M_VC3_VLR}" data-fieldname="F_M_VC3_VLR">
+	<td class="rnr-label">
+		{BEGIN F_M_VC3_VLR_label}{$label contrato_trad F_M_VC3_VLR}{END F_M_VC3_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_VC3_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_VC3_VLR_fieldblock}
+	{BEGIN F_F_LDN_CAD_fieldblock}
+<tr class="{$fielddispclass_F_F_LDN_CAD}" data-fieldname="F_F_LDN_CAD">
+	<td class="rnr-label">
+		{BEGIN F_F_LDN_CAD_label}{$label contrato_trad F_F_LDN_CAD}{END F_F_LDN_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LDN_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LDN_CAD_fieldblock}
+	{BEGIN F_F_LDN_VLR_fieldblock}
+<tr class="{$fielddispclass_F_F_LDN_VLR}" data-fieldname="F_F_LDN_VLR">
+	<td class="rnr-label">
+		{BEGIN F_F_LDN_VLR_label}{$label contrato_trad F_F_LDN_VLR}{END F_F_LDN_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LDN_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LDN_VLR_fieldblock}
+	{BEGIN F_F_LDI_CAD_fieldblock}
+<tr class="{$fielddispclass_F_F_LDI_CAD}" data-fieldname="F_F_LDI_CAD">
+	<td class="rnr-label">
+		{BEGIN F_F_LDI_CAD_label}{$label contrato_trad F_F_LDI_CAD}{END F_F_LDI_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LDI_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LDI_CAD_fieldblock}
+	{BEGIN F_F_LDI_VLR_fieldblock}
+<tr class="{$fielddispclass_F_F_LDI_VLR}" data-fieldname="F_F_LDI_VLR">
+	<td class="rnr-label">
+		{BEGIN F_F_LDI_VLR_label}{$label contrato_trad F_F_LDI_VLR}{END F_F_LDI_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_F_LDI_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_F_LDI_VLR_fieldblock}
+	{BEGIN F_M_LDI_CAD_fieldblock}
+<tr class="{$fielddispclass_F_M_LDI_CAD}" data-fieldname="F_M_LDI_CAD">
+	<td class="rnr-label">
+		{BEGIN F_M_LDI_CAD_label}{$label contrato_trad F_M_LDI_CAD}{END F_M_LDI_CAD_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_LDI_CAD_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_LDI_CAD_fieldblock}
+	{BEGIN F_M_LDI_VLR_fieldblock}
+<tr class="{$fielddispclass_F_M_LDI_VLR}" data-fieldname="F_M_LDI_VLR">
+	<td class="rnr-label">
+		{BEGIN F_M_LDI_VLR_label}{$label contrato_trad F_M_LDI_VLR}{END F_M_LDI_VLR_label}
+	</td>
+	<td class="rnr-control style3">
+		{$F_M_LDI_VLR_editcontrol}&nbsp;
+	</td>
+</tr>
+{END F_M_LDI_VLR_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,38 @@
+Interfaces Vono<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Central</strong></td>
+<td><strong>Descrição</strong></td>
+<td><strong>Piloto</strong></td>
+<td><strong>Contrato</strong></td>
+<td><strong>Usuário</strong></td>
+<td><strong>Senha</strong></td>
+<td><strong>Host</strong></td>
+<td><strong>Codec</strong></td>
+<td><strong>Tempo Chamada (s)</strong></td>
+<td><strong>DDD (LOCAL)</strong></td>
+<td><strong>Tipo Interface</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_central_value}</td>
+<td>{$dsc_interf_value}</td>
+<td>{$piloto_value}</td>
+<td>{$id_contrato_value}</td>
+<td>{$usuario_value}</td>
+<td>{$senha_value}</td>
+<td>{$ip_host_value}</td>
+<td>{$codec_value}</td>
+<td>{$tp_chamada_value}</td>
+<td>{$ddd_localidade_value}</td>
+<td>{$id_tp_interf_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

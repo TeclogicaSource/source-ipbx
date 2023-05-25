@@ -1,0 +1,120 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Historico Fila Data</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Historico Fila Data</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN Fila_fieldheader}
+<b>Fila</b>
+{END Fila_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Data_fieldheader}
+<b>Data</b>
+{END Data_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Agent_Disp_fieldheader}
+<b>Média de Agentes Disponíveis</b>
+{END Agent_Disp_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Agent_Disp_Maior_fieldheader}
+<b>Maior qtd. de agentes Disponíveis</b>
+{END Agent_Disp_Maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN AgentesPausa_fieldheader}
+<b>Média de Agentes Pausa</b>
+{END AgentesPausa_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Agent_Pausa_Maior_fieldheader}
+<b>Maior qtd. de Agentes Pausados</b>
+{END Agent_Pausa_Maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Chamadas_Atendidas_fieldheader}
+<b>Total de chamadas Atendidas</b>
+{END Chamadas_Atendidas_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Chamadas_Abandonadas_fieldheader}
+<b>Total de chamadas Abandonadas</b>
+{END Chamadas_Abandonadas_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$Fila_value}</td>
+	<td class=data>{$Data_value}</td>
+	<td class=data>{$Agent_Disp_value}</td>
+	<td class=data>{$Agent_Disp_Maior_value}</td>
+	<td class=data>{$AgentesPausa_value}</td>
+	<td class=data>{$Agent_Pausa_Maior_value}</td>
+	<td class=data>{$Chamadas_Atendidas_value}</td>
+	<td class=data>{$Chamadas_Abandonadas_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

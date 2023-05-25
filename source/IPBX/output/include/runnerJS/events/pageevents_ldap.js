@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("ldap",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Atualizar_Ramais1';if(!pageObj.buttonEventBefore['Atualizar_Ramais1']){pageObj.buttonEventBefore['Atualizar_Ramais1']=function(params,ctrl,pageObj,proxy,pageid,rowData){ctrl.setMessage("Atualizando ramais...");}}
+if(!pageObj.buttonEventAfter['Atualizar_Ramais1']){pageObj.buttonEventAfter['Atualizar_Ramais1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+"!!!";ctrl.setMessage(message);}}
+$('a[id=Atualizar_Ramais1]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="Atualizar_Ramais1"+"_"+Runner.genId();var button_Atualizar_Ramais1=new Runner.form.Button({id:this.id,btnName:"Atualizar_Ramais1"});button_Atualizar_Ramais1.init({args:[pageObj,proxy,pageid]});});});

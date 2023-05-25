@@ -1,0 +1,215 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Critério:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}Todos{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}Qualquer{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Adicionar campo</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_id}
+			<a href="#" id="addSearchControl_id" class="addSearchControl" {$addSearchControl_id_attrs}>Id</a><br>
+		{END addSearch_id}
+		{BEGIN addSearch_name}
+			<a href="#" id="addSearchControl_name" class="addSearchControl" {$addSearchControl_name_attrs}>Name</a><br>
+		{END addSearch_name}
+		{BEGIN addSearch_host}
+			<a href="#" id="addSearchControl_host" class="addSearchControl" {$addSearchControl_host_attrs}>Host</a><br>
+		{END addSearch_host}
+		{BEGIN addSearch_nat}
+			<a href="#" id="addSearchControl_nat" class="addSearchControl" {$addSearchControl_nat_attrs}>Nat</a><br>
+		{END addSearch_nat}
+		{BEGIN addSearch_type}
+			<a href="#" id="addSearchControl_type" class="addSearchControl" {$addSearchControl_type_attrs}>Type</a><br>
+		{END addSearch_type}
+		{BEGIN addSearch_accountcode}
+			<a href="#" id="addSearchControl_accountcode" class="addSearchControl" {$addSearchControl_accountcode_attrs}>Accountcode</a><br>
+		{END addSearch_accountcode}
+		{BEGIN addSearch_amaflags}
+			<a href="#" id="addSearchControl_amaflags" class="addSearchControl" {$addSearchControl_amaflags_attrs}>Amaflags</a><br>
+		{END addSearch_amaflags}
+		{BEGIN addSearch_call_limit}
+			<a href="#" id="addSearchControl_call_limit" class="addSearchControl" {$addSearchControl_call_limit_attrs}>Call-limit</a><br>
+		{END addSearch_call_limit}
+		{BEGIN addSearch_callgroup}
+			<a href="#" id="addSearchControl_callgroup" class="addSearchControl" {$addSearchControl_callgroup_attrs}>Callgroup</a><br>
+		{END addSearch_callgroup}
+		{BEGIN addSearch_callerid}
+			<a href="#" id="addSearchControl_callerid" class="addSearchControl" {$addSearchControl_callerid_attrs}>Callerid</a><br>
+		{END addSearch_callerid}
+		{BEGIN addSearch_cancallforward}
+			<a href="#" id="addSearchControl_cancallforward" class="addSearchControl" {$addSearchControl_cancallforward_attrs}>Cancallforward</a><br>
+		{END addSearch_cancallforward}
+		{BEGIN addSearch_canreinvite}
+			<a href="#" id="addSearchControl_canreinvite" class="addSearchControl" {$addSearchControl_canreinvite_attrs}>Canreinvite</a><br>
+		{END addSearch_canreinvite}
+		{BEGIN addSearch_context}
+			<a href="#" id="addSearchControl_context" class="addSearchControl" {$addSearchControl_context_attrs}>Context</a><br>
+		{END addSearch_context}
+		{BEGIN addSearch_defaultip}
+			<a href="#" id="addSearchControl_defaultip" class="addSearchControl" {$addSearchControl_defaultip_attrs}>Defaultip</a><br>
+		{END addSearch_defaultip}
+		{BEGIN addSearch_dtmfmode}
+			<a href="#" id="addSearchControl_dtmfmode" class="addSearchControl" {$addSearchControl_dtmfmode_attrs}>Dtmfmode</a><br>
+		{END addSearch_dtmfmode}
+		{BEGIN addSearch_fromuser}
+			<a href="#" id="addSearchControl_fromuser" class="addSearchControl" {$addSearchControl_fromuser_attrs}>Fromuser</a><br>
+		{END addSearch_fromuser}
+		{BEGIN addSearch_fromdomain}
+			<a href="#" id="addSearchControl_fromdomain" class="addSearchControl" {$addSearchControl_fromdomain_attrs}>Fromdomain</a><br>
+		{END addSearch_fromdomain}
+		{BEGIN addSearch_insecure}
+			<a href="#" id="addSearchControl_insecure" class="addSearchControl" {$addSearchControl_insecure_attrs}>Insecure</a><br>
+		{END addSearch_insecure}
+		{BEGIN addSearch_language}
+			<a href="#" id="addSearchControl_language" class="addSearchControl" {$addSearchControl_language_attrs}>Language</a><br>
+		{END addSearch_language}
+		{BEGIN addSearch_mailbox}
+			<a href="#" id="addSearchControl_mailbox" class="addSearchControl" {$addSearchControl_mailbox_attrs}>Mailbox</a><br>
+		{END addSearch_mailbox}
+		{BEGIN addSearch_md5secret}
+			<a href="#" id="addSearchControl_md5secret" class="addSearchControl" {$addSearchControl_md5secret_attrs}>Md5secret</a><br>
+		{END addSearch_md5secret}
+		{BEGIN addSearch_deny}
+			<a href="#" id="addSearchControl_deny" class="addSearchControl" {$addSearchControl_deny_attrs}>Deny</a><br>
+		{END addSearch_deny}
+		{BEGIN addSearch_permit}
+			<a href="#" id="addSearchControl_permit" class="addSearchControl" {$addSearchControl_permit_attrs}>Permit</a><br>
+		{END addSearch_permit}
+		{BEGIN addSearch_mask}
+			<a href="#" id="addSearchControl_mask" class="addSearchControl" {$addSearchControl_mask_attrs}>Mask</a><br>
+		{END addSearch_mask}
+		{BEGIN addSearch_musiconhold}
+			<a href="#" id="addSearchControl_musiconhold" class="addSearchControl" {$addSearchControl_musiconhold_attrs}>Musiconhold</a><br>
+		{END addSearch_musiconhold}
+		{BEGIN addSearch_pickupgroup}
+			<a href="#" id="addSearchControl_pickupgroup" class="addSearchControl" {$addSearchControl_pickupgroup_attrs}>Pickupgroup</a><br>
+		{END addSearch_pickupgroup}
+		{BEGIN addSearch_qualify}
+			<a href="#" id="addSearchControl_qualify" class="addSearchControl" {$addSearchControl_qualify_attrs}>Qualify</a><br>
+		{END addSearch_qualify}
+		{BEGIN addSearch_rtcachefriends}
+			<a href="#" id="addSearchControl_rtcachefriends" class="addSearchControl" {$addSearchControl_rtcachefriends_attrs}>Rtcachefriends</a><br>
+		{END addSearch_rtcachefriends}
+		{BEGIN addSearch_regexten}
+			<a href="#" id="addSearchControl_regexten" class="addSearchControl" {$addSearchControl_regexten_attrs}>Regexten</a><br>
+		{END addSearch_regexten}
+		{BEGIN addSearch_restrictcid}
+			<a href="#" id="addSearchControl_restrictcid" class="addSearchControl" {$addSearchControl_restrictcid_attrs}>Restrictcid</a><br>
+		{END addSearch_restrictcid}
+		{BEGIN addSearch_rtptimeout}
+			<a href="#" id="addSearchControl_rtptimeout" class="addSearchControl" {$addSearchControl_rtptimeout_attrs}>Rtptimeout</a><br>
+		{END addSearch_rtptimeout}
+		{BEGIN addSearch_rtpholdtimeout}
+			<a href="#" id="addSearchControl_rtpholdtimeout" class="addSearchControl" {$addSearchControl_rtpholdtimeout_attrs}>Rtpholdtimeout</a><br>
+		{END addSearch_rtpholdtimeout}
+		{BEGIN addSearch_secret}
+			<a href="#" id="addSearchControl_secret" class="addSearchControl" {$addSearchControl_secret_attrs}>Secret</a><br>
+		{END addSearch_secret}
+		{BEGIN addSearch_setvar}
+			<a href="#" id="addSearchControl_setvar" class="addSearchControl" {$addSearchControl_setvar_attrs}>Setvar</a><br>
+		{END addSearch_setvar}
+		{BEGIN addSearch_disallow}
+			<a href="#" id="addSearchControl_disallow" class="addSearchControl" {$addSearchControl_disallow_attrs}>Disallow</a><br>
+		{END addSearch_disallow}
+		{BEGIN addSearch_allow}
+			<a href="#" id="addSearchControl_allow" class="addSearchControl" {$addSearchControl_allow_attrs}>Allow</a><br>
+		{END addSearch_allow}
+		{BEGIN addSearch_fullcontact}
+			<a href="#" id="addSearchControl_fullcontact" class="addSearchControl" {$addSearchControl_fullcontact_attrs}>Fullcontact</a><br>
+		{END addSearch_fullcontact}
+		{BEGIN addSearch_ipaddr}
+			<a href="#" id="addSearchControl_ipaddr" class="addSearchControl" {$addSearchControl_ipaddr_attrs}>Ipaddr</a><br>
+		{END addSearch_ipaddr}
+		{BEGIN addSearch_port}
+			<a href="#" id="addSearchControl_port" class="addSearchControl" {$addSearchControl_port_attrs}>Port</a><br>
+		{END addSearch_port}
+		{BEGIN addSearch_regserver}
+			<a href="#" id="addSearchControl_regserver" class="addSearchControl" {$addSearchControl_regserver_attrs}>Regserver</a><br>
+		{END addSearch_regserver}
+		{BEGIN addSearch_regseconds}
+			<a href="#" id="addSearchControl_regseconds" class="addSearchControl" {$addSearchControl_regseconds_attrs}>Regseconds</a><br>
+		{END addSearch_regseconds}
+		{BEGIN addSearch_lastms}
+			<a href="#" id="addSearchControl_lastms" class="addSearchControl" {$addSearchControl_lastms_attrs}>Lastms</a><br>
+		{END addSearch_lastms}
+		{BEGIN addSearch_username}
+			<a href="#" id="addSearchControl_username" class="addSearchControl" {$addSearchControl_username_attrs}>Username</a><br>
+		{END addSearch_username}
+		{BEGIN addSearch_defaultuser}
+			<a href="#" id="addSearchControl_defaultuser" class="addSearchControl" {$addSearchControl_defaultuser_attrs}>Defaultuser</a><br>
+		{END addSearch_defaultuser}
+		{BEGIN addSearch_subscribecontext}
+			<a href="#" id="addSearchControl_subscribecontext" class="addSearchControl" {$addSearchControl_subscribecontext_attrs}>Subscribecontext</a><br>
+		{END addSearch_subscribecontext}
+		{BEGIN addSearch_useragent}
+			<a href="#" id="addSearchControl_useragent" class="addSearchControl" {$addSearchControl_useragent_attrs}>Useragent</a><br>
+		{END addSearch_useragent}
+		{BEGIN addSearch_gateway}
+			<a href="#" id="addSearchControl_gateway" class="addSearchControl" {$addSearchControl_gateway_attrs}>Gateway</a><br>
+		{END addSearch_gateway}
+		{BEGIN addSearch_id_horario}
+			<a href="#" id="addSearchControl_id_horario" class="addSearchControl" {$addSearchControl_id_horario_attrs}>Id Horario</a><br>
+		{END addSearch_id_horario}
+		{BEGIN addSearch_mail}
+			<a href="#" id="addSearchControl_mail" class="addSearchControl" {$addSearchControl_mail_attrs}>Mail</a><br>
+		{END addSearch_mail}
+		{BEGIN addSearch_grava_chamada}
+			<a href="#" id="addSearchControl_grava_chamada" class="addSearchControl" {$addSearchControl_grava_chamada_attrs}>Grava Chamada</a><br>
+		{END addSearch_grava_chamada}
+		{BEGIN addSearch_tp_ramal}
+			<a href="#" id="addSearchControl_tp_ramal" class="addSearchControl" {$addSearchControl_tp_ramal_attrs}>Tp Ramal</a><br>
+		{END addSearch_tp_ramal}
+		{BEGIN addSearch_id_interf}
+			<a href="#" id="addSearchControl_id_interf" class="addSearchControl" {$addSearchControl_id_interf_attrs}>Id Interf</a><br>
+		{END addSearch_id_interf}
+		{BEGIN addSearch_tp_chamada}
+			<a href="#" id="addSearchControl_tp_chamada" class="addSearchControl" {$addSearchControl_tp_chamada_attrs}>Tp Chamada</a><br>
+		{END addSearch_tp_chamada}
+		{BEGIN addSearch_flg_cadeado}
+			<a href="#" id="addSearchControl_flg_cadeado" class="addSearchControl" {$addSearchControl_flg_cadeado_attrs}>Flg Cadeado</a><br>
+		{END addSearch_flg_cadeado}
+		{BEGIN addSearch_id_pesquisa}
+			<a href="#" id="addSearchControl_id_pesquisa" class="addSearchControl" {$addSearchControl_id_pesquisa_attrs}>Id Pesquisa</a><br>
+		{END addSearch_id_pesquisa}
+		{BEGIN addSearch_desvio_ddr}
+			<a href="#" id="addSearchControl_desvio_ddr" class="addSearchControl" {$addSearchControl_desvio_ddr_attrs}>Desvio Ddr</a><br>
+		{END addSearch_desvio_ddr}
+		{BEGIN addSearch_id_saida}
+			<a href="#" id="addSearchControl_id_saida" class="addSearchControl" {$addSearchControl_id_saida_attrs}>Id Saida</a><br>
+		{END addSearch_id_saida}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Buscar</a>
+		</span>
+	</div>
+</div>

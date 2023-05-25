@@ -1,0 +1,171 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel cc_agentes add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN nm_agente_fieldblock}
+<tr class="{$fielddispclass_nm_agente}" data-fieldname="nm_agente">
+	<td class="rnr-label">
+		{BEGIN nm_agente_label}{$label cc_agentes nm_agente}{END nm_agente_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_agente_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_agente_fieldblock}
+	{BEGIN tp_atendimento_fieldblock}
+<tr class="{$fielddispclass_tp_atendimento}" data-fieldname="tp_atendimento">
+	<td class="rnr-label">
+		{BEGIN tp_atendimento_label}{$label cc_agentes tp_atendimento}{END tp_atendimento_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_atendimento_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_atendimento_fieldblock}
+	{BEGIN name_fieldblock}
+<tr class="{$fielddispclass_name}" data-fieldname="name">
+	<td class="rnr-label">
+		{BEGIN name_label}{$label cc_agentes name}{END name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END name_fieldblock}
+	{BEGIN flg_ativo_fieldblock}
+<tr class="{$fielddispclass_flg_ativo}" data-fieldname="flg_ativo">
+	<td class="rnr-label">
+		{BEGIN flg_ativo_label}{$label cc_agentes flg_ativo}{END flg_ativo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_ativo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_ativo_fieldblock}
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+
+{BEGIN container_details}
+<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}
+		{BEGIN details_cc_agentes_fila}
+<div class="rnr-cw-detailscc_agentes_fila rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailscc_agentes_fila rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailscc_agentes_fila rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Agentes Fila
+	</div>
+	{$displayDetailTable_cc_agentes_fila}
+</div>
+</div>
+</div>
+	{END details_cc_agentes_fila}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+</div>
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

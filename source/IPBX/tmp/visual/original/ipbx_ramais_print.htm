@@ -1,0 +1,294 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}">	<h1>{$pagetitlelabel ipbx_ramais print}</h1>
+</div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+		<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical rp-maintable">
+	{BEGIN grid_row}
+		<tr {$rowattrs} {$rowstyle}>
+			{BEGIN grid_record}
+			<td class="rnr-cg" {$recordattrs}>
+				<table class="rnr-c rnr-vrecord" cellpadding="0">
+					<thead>
+					<tr class="rnr-toprow style1">
+						<th class="rnr-cc" colspan="4">
+							&nbsp;
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+						{BEGIN name_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$name_label_class}" {$recordattrs}>{$label ipbx_ramais name}</td>
+	<td class="alt rnr-edge {$name_class}" {$name_style} {$recordattrs}>{$name_value}</td>
+</tr>
+{END name_fieldcolumn}
+	{BEGIN secret_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$secret_label_class}" {$recordattrs}>{$label ipbx_ramais secret}</td>
+	<td class="alt rnr-edge {$secret_class}" {$secret_style} {$recordattrs}>{$secret_value}</td>
+</tr>
+{END secret_fieldcolumn}
+	{BEGIN callerid_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$callerid_label_class}" {$recordattrs}>{$label ipbx_ramais callerid}</td>
+	<td class="alt rnr-edge {$callerid_class}" {$callerid_style} {$recordattrs}>{$callerid_value}</td>
+</tr>
+{END callerid_fieldcolumn}
+	{BEGIN mail_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$mail_label_class}" {$recordattrs}>{$label ipbx_ramais mail}</td>
+	<td class="alt rnr-edge {$mail_class}" {$mail_style} {$recordattrs}>{$mail_value}</td>
+</tr>
+{END mail_fieldcolumn}
+	{BEGIN desvio_ddr_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$desvio_ddr_label_class}" {$recordattrs}>{$label ipbx_ramais desvio_ddr}</td>
+	<td class="alt rnr-edge {$desvio_ddr_class}" {$desvio_ddr_style} {$recordattrs}>{$desvio_ddr_value}</td>
+</tr>
+{END desvio_ddr_fieldcolumn}
+	{BEGIN desvio_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$desvio_label_class}" {$recordattrs}>{$label ipbx_ramais desvio}</td>
+	<td class="alt rnr-edge {$desvio_class}" {$desvio_style} {$recordattrs}>{$desvio_value}</td>
+</tr>
+{END desvio_fieldcolumn}
+	{BEGIN id_desvio_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_desvio_label_class}" {$recordattrs}>{$label ipbx_ramais id_desvio}</td>
+	<td class="alt rnr-edge {$id_desvio_class}" {$id_desvio_style} {$recordattrs}>{$id_desvio_value}</td>
+</tr>
+{END id_desvio_fieldcolumn}
+	{BEGIN accountcode_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$accountcode_label_class}" {$recordattrs}>{$label ipbx_ramais accountcode}</td>
+	<td class="alt rnr-edge {$accountcode_class}" {$accountcode_style} {$recordattrs}>{$accountcode_value}</td>
+</tr>
+{END accountcode_fieldcolumn}
+	{BEGIN id_painel_op_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_painel_op_label_class}" {$recordattrs}>{$label ipbx_ramais id_painel_op}</td>
+	<td class="alt rnr-edge {$id_painel_op_class}" {$id_painel_op_style} {$recordattrs}>{$id_painel_op_value}</td>
+</tr>
+{END id_painel_op_fieldcolumn}
+	{BEGIN flg_info_centrocusto_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_info_centrocusto_label_class}" {$recordattrs}>{$label ipbx_ramais flg_info_centrocusto}</td>
+	<td class="alt rnr-edge {$flg_info_centrocusto_class}" {$flg_info_centrocusto_style} {$recordattrs}>{$flg_info_centrocusto_value}</td>
+</tr>
+{END flg_info_centrocusto_fieldcolumn}
+	{BEGIN flg_cadeado_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_cadeado_label_class}" {$recordattrs}>{$label ipbx_ramais flg_cadeado}</td>
+	<td class="alt rnr-edge {$flg_cadeado_class}" {$flg_cadeado_style} {$recordattrs}>{$flg_cadeado_value}</td>
+</tr>
+{END flg_cadeado_fieldcolumn}
+	{BEGIN grava_chamada_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$grava_chamada_label_class}" {$recordattrs}>{$label ipbx_ramais grava_chamada}</td>
+	<td class="alt rnr-edge {$grava_chamada_class}" {$grava_chamada_style} {$recordattrs}>{$grava_chamada_value}</td>
+</tr>
+{END grava_chamada_fieldcolumn}
+	{BEGIN flg_show_mobile_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_show_mobile_label_class}" {$recordattrs}>{$label ipbx_ramais flg_show_mobile}</td>
+	<td class="alt rnr-edge {$flg_show_mobile_class}" {$flg_show_mobile_style} {$recordattrs}>{$flg_show_mobile_value}</td>
+</tr>
+{END flg_show_mobile_fieldcolumn}
+	{BEGIN tp_ramal_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$tp_ramal_label_class}" {$recordattrs}>{$label ipbx_ramais tp_ramal}</td>
+	<td class="alt rnr-edge {$tp_ramal_class}" {$tp_ramal_style} {$recordattrs}>{$tp_ramal_value}</td>
+</tr>
+{END tp_ramal_fieldcolumn}
+	{BEGIN id_pesquisa_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_pesquisa_label_class}" {$recordattrs}>{$label ipbx_ramais id_pesquisa}</td>
+	<td class="alt rnr-edge {$id_pesquisa_class}" {$id_pesquisa_style} {$recordattrs}>{$id_pesquisa_value}</td>
+</tr>
+{END id_pesquisa_fieldcolumn}
+	{BEGIN call_limit_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$call_limit_label_class}" {$recordattrs}>{$label ipbx_ramais call_limit}</td>
+	<td class="alt rnr-edge {$call_limit_class}" {$call_limit_style} {$recordattrs}>{$call_limit_value}</td>
+</tr>
+{END call_limit_fieldcolumn}
+	{BEGIN pickupgroup_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$pickupgroup_label_class}" {$recordattrs}>{$label ipbx_ramais pickupgroup}</td>
+	<td class="alt rnr-edge {$pickupgroup_class}" {$pickupgroup_style} {$recordattrs}>{$pickupgroup_value}</td>
+</tr>
+{END pickupgroup_fieldcolumn}
+	{BEGIN context_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$context_label_class}" {$recordattrs}>{$label ipbx_ramais context}</td>
+	<td class="alt rnr-edge {$context_class}" {$context_style} {$recordattrs}>{$context_value}</td>
+</tr>
+{END context_fieldcolumn}
+	{BEGIN allow_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$allow_label_class}" {$recordattrs}>{$label ipbx_ramais allow}</td>
+	<td class="alt rnr-edge {$allow_class}" {$allow_style} {$recordattrs}>{$allow_value}</td>
+</tr>
+{END allow_fieldcolumn}
+	{BEGIN tp_chamada_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$tp_chamada_label_class}" {$recordattrs}>{$label ipbx_ramais tp_chamada}</td>
+	<td class="alt rnr-edge {$tp_chamada_class}" {$tp_chamada_style} {$recordattrs}>{$tp_chamada_value}</td>
+</tr>
+{END tp_chamada_fieldcolumn}
+	{BEGIN Transbordo_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$Transbordo_label_class}" {$recordattrs}>{$label ipbx_ramais Transbordo}</td>
+	<td class="alt rnr-edge {$Transbordo_class}" {$Transbordo_style} {$recordattrs}>{$Transbordo_value}</td>
+</tr>
+{END Transbordo_fieldcolumn}
+	{BEGIN id_horario_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_horario_label_class}" {$recordattrs}>{$label ipbx_ramais id_horario}</td>
+	<td class="alt rnr-edge {$id_horario_class}" {$id_horario_style} {$recordattrs}>{$id_horario_value}</td>
+</tr>
+{END id_horario_fieldcolumn}
+	{BEGIN id_saida_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_saida_label_class}" {$recordattrs}>{$label ipbx_ramais id_saida}</td>
+	<td class="alt rnr-edge {$id_saida_class}" {$id_saida_style} {$recordattrs}>{$id_saida_value}</td>
+</tr>
+{END id_saida_fieldcolumn}
+	{BEGIN id_interf_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_interf_label_class}" {$recordattrs}>{$label ipbx_ramais id_interf}</td>
+	<td class="alt rnr-edge {$id_interf_class}" {$id_interf_style} {$recordattrs}>{$id_interf_value}</td>
+</tr>
+{END id_interf_fieldcolumn}
+	{BEGIN ident_interf_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ident_interf_label_class}" {$recordattrs}>{$label ipbx_ramais ident_interf}</td>
+	<td class="alt rnr-edge {$ident_interf_class}" {$ident_interf_style} {$recordattrs}>{$ident_interf_value}</td>
+</tr>
+{END ident_interf_fieldcolumn}
+	{BEGIN id_provis_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_provis_label_class}" {$recordattrs}>{$label ipbx_ramais id_provis}</td>
+	<td class="alt rnr-edge {$id_provis_class}" {$id_provis_style} {$recordattrs}>{$id_provis_value}</td>
+</tr>
+{END id_provis_fieldcolumn}
+	{BEGIN mc_addr_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$mc_addr_label_class}" {$recordattrs}>{$label ipbx_ramais mc_addr}</td>
+	<td class="alt rnr-edge {$mc_addr_class}" {$mc_addr_style} {$recordattrs}>{$mc_addr_value}</td>
+</tr>
+{END mc_addr_fieldcolumn}
+	{BEGIN id_lang_fieldcolumn}
+<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_lang_label_class}" {$recordattrs}>{$label ipbx_ramais id_lang}</td>
+	<td class="alt rnr-edge {$id_lang_class}" {$id_lang_style} {$recordattrs}>{$id_lang_value}</td>
+</tr>
+{END id_lang_fieldcolumn}
+
+					</tbody>
+				</table>
+			</td>
+			{BEGIN endrecord_block}
+			<td class="rnr-cs">&nbsp;</td>
+			{END endrecord_block}
+			{END grid_record}
+		</tr>
+				{BEGIN grid_rowspace}
+		<tr class="rnr-rs {$rsclass}">
+			{BEGIN grid_recordspace}
+			<td >&nbsp;</td>
+			{END grid_recordspace}
+		</tr>
+		{END grid_rowspace}
+	{END grid_row}
+	</table>
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

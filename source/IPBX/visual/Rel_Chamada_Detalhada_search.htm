@@ -1,0 +1,278 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Rel__Cham_Detalhada search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Critério:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas condições</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Qualquer condição</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>Não</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Fila}">
+	{BEGIN Fila_fieldblock}<td>
+		{$label Rel__Cham_Detalhada Fila}
+	</td>
+	<td>
+		<input type="checkbox" {$Fila_notbox}>
+	</td>
+	<td>
+		{$searchtype_Fila}
+	</td>
+	<td>
+		{$Fila_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Fila_editcontrol1}&nbsp;
+	</td>
+{END Fila_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Telefone}">
+	{BEGIN Telefone_fieldblock}<td>
+		{$label Rel__Cham_Detalhada Telefone}
+	</td>
+	<td>
+		<input type="checkbox" {$Telefone_notbox}>
+	</td>
+	<td>
+		{$searchtype_Telefone}
+	</td>
+	<td>
+		{$Telefone_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Telefone_editcontrol1}&nbsp;
+	</td>
+{END Telefone_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Entrada_Saida}">
+	{BEGIN Entrada_Saida_fieldblock}<td>
+		{$label Rel__Cham_Detalhada Entrada_Saida}
+	</td>
+	<td>
+		<input type="checkbox" {$Entrada_Saida_notbox}>
+	</td>
+	<td>
+		{$searchtype_Entrada_Saida}
+	</td>
+	<td>
+		{$Entrada_Saida_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Entrada_Saida_editcontrol1}&nbsp;
+	</td>
+{END Entrada_Saida_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Terminado}">
+	{BEGIN Terminado_fieldblock}<td>
+		{$label Rel__Cham_Detalhada Terminado}
+	</td>
+	<td>
+		<input type="checkbox" {$Terminado_notbox}>
+	</td>
+	<td>
+		{$searchtype_Terminado}
+	</td>
+	<td>
+		{$Terminado_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Terminado_editcontrol1}&nbsp;
+	</td>
+{END Terminado_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Agente}">
+	{BEGIN Agente_fieldblock}<td>
+		{$label Rel__Cham_Detalhada Agente}
+	</td>
+	<td>
+		<input type="checkbox" {$Agente_notbox}>
+	</td>
+	<td>
+		{$searchtype_Agente}
+	</td>
+	<td>
+		{$Agente_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Agente_editcontrol1}&nbsp;
+	</td>
+{END Agente_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dt_entrada}">
+	{BEGIN dt_entrada_fieldblock}<td>
+		{$label Rel__Cham_Detalhada dt_entrada}
+	</td>
+	<td>
+		<input type="checkbox" {$dt_entrada_notbox}>
+	</td>
+	<td>
+		{$searchtype_dt_entrada}
+	</td>
+	<td>
+		{$dt_entrada_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dt_entrada_editcontrol1}&nbsp;
+	</td>
+{END dt_entrada_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_hr_entrada}">
+	{BEGIN hr_entrada_fieldblock}<td>
+		{$label Rel__Cham_Detalhada hr_entrada}
+	</td>
+	<td>
+		<input type="checkbox" {$hr_entrada_notbox}>
+	</td>
+	<td>
+		{$searchtype_hr_entrada}
+	</td>
+	<td>
+		{$hr_entrada_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$hr_entrada_editcontrol1}&nbsp;
+	</td>
+{END hr_entrada_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_tp_espera}">
+	{BEGIN tp_espera_fieldblock}<td>
+		{$label Rel__Cham_Detalhada tp_espera}
+	</td>
+	<td>
+		<input type="checkbox" {$tp_espera_notbox}>
+	</td>
+	<td>
+		{$searchtype_tp_espera}
+	</td>
+	<td>
+		{$tp_espera_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$tp_espera_editcontrol1}&nbsp;
+	</td>
+{END tp_espera_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_tp_atendimento}">
+	{BEGIN tp_atendimento_fieldblock}<td>
+		{$label Rel__Cham_Detalhada tp_atendimento}
+	</td>
+	<td>
+		<input type="checkbox" {$tp_atendimento_notbox}>
+	</td>
+	<td>
+		{$searchtype_tp_atendimento}
+	</td>
+	<td>
+		{$tp_atendimento_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$tp_atendimento_editcontrol1}&nbsp;
+	</td>
+{END tp_atendimento_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_tptotal}">
+	{BEGIN tptotal_fieldblock}<td>
+		{$label Rel__Cham_Detalhada tptotal}
+	</td>
+	<td>
+		<input type="checkbox" {$tptotal_notbox}>
+	</td>
+	<td>
+		{$searchtype_tptotal}
+	</td>
+	<td>
+		{$tptotal_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$tptotal_editcontrol1}&nbsp;
+	</td>
+{END tptotal_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Obs_}">
+	{BEGIN Obs__fieldblock}<td>
+		{$label Rel__Cham_Detalhada Obs_}
+	</td>
+	<td>
+		<input type="checkbox" {$Obs__notbox}>
+	</td>
+	<td>
+		{$searchtype_Obs_}
+	</td>
+	<td>
+		{$Obs__editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Obs__editcontrol1}&nbsp;
+	</td>
+{END Obs__fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+{END reset_button}
+{BEGIN back_button}<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

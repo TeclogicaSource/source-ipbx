@@ -1,0 +1,808 @@
+<?php
+
+//	field labels
+$fieldLabelsRel__Detalhamento_Agente = array();
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]=array();
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["dt_entrada"] = "Data Entrada";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["hr_entrada"] = "Hora Entrada";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Fila"] = "Fila";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Agente"] = "Agente";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["tp_espera"] = "Espera";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["tp_atendimento"] = "Atendimento";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Telefone"] = "Telefone";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Terminado"] = "Terminado por";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Gravacao"] = "Audio";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["tptotal"] = "Total";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["TempoParado"] = "Tempo Parado";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Entrada_Saida"] = "Entrada/Saida";
+$fieldLabelsRel__Detalhamento_Agente["Portuguese(Brazil)"]["Obs"] = "Observação";
+
+
+$tdataRel__Detalhamento_Agente=array();
+	$tdataRel__Detalhamento_Agente[".NumberOfChars"]=80; 
+	$tdataRel__Detalhamento_Agente[".ShortName"]="Rel__Detalhamento_Agente";
+	$tdataRel__Detalhamento_Agente[".OwnerID"]="";
+	$tdataRel__Detalhamento_Agente[".OriginalTable"]="v_rel_detalhado_agentes";
+	$tdataRel__Detalhamento_Agente[".NCSearch"]=true;
+	
+
+$tdataRel__Detalhamento_Agente[".shortTableName"] = "Rel__Detalhamento_Agente";
+$tdataRel__Detalhamento_Agente[".dataSourceTable"] = "Rel. Detalhamento Agente";
+$tdataRel__Detalhamento_Agente[".nSecOptions"] = 0;
+$tdataRel__Detalhamento_Agente[".nLoginMethod"] = 1;
+$tdataRel__Detalhamento_Agente[".recsPerRowList"] = 1;	
+$tdataRel__Detalhamento_Agente[".tableGroupBy"] = "0";
+$tdataRel__Detalhamento_Agente[".dbType"] = 0;
+$tdataRel__Detalhamento_Agente[".mainTableOwnerID"] = "";
+$tdataRel__Detalhamento_Agente[".moveNext"] = 1;
+
+$tdataRel__Detalhamento_Agente[".listAjax"] = false;
+
+	$tdataRel__Detalhamento_Agente[".audit"] = false;
+
+	$tdataRel__Detalhamento_Agente[".locking"] = false;
+	
+$tdataRel__Detalhamento_Agente[".listIcons"] = true;
+
+$tdataRel__Detalhamento_Agente[".exportTo"] = true;
+
+$tdataRel__Detalhamento_Agente[".printFriendly"] = true;
+
+
+$tdataRel__Detalhamento_Agente[".showSimpleSearchOptions"] = false;
+
+$tdataRel__Detalhamento_Agente[".showSearchPanel"] = true;
+
+
+$tdataRel__Detalhamento_Agente[".isUseAjaxSuggest"] = true;
+
+
+$tdataRel__Detalhamento_Agente[".delFile"] = true;
+
+// button handlers file names
+
+// start on load js handlers
+
+
+
+
+
+
+
+
+// end on load js handlers
+
+
+
+
+// use datepicker for search panel
+$tdataRel__Detalhamento_Agente[".isUseCalendarForSearch"] = true;
+
+// use timepicker for search panel
+$tdataRel__Detalhamento_Agente[".isUseTimeForSearch"] = false;
+
+
+
+
+
+$tdataRel__Detalhamento_Agente[".isUseInlineJs"] = $tdataRel__Detalhamento_Agente[".isUseInlineAdd"] || $tdataRel__Detalhamento_Agente[".isUseInlineEdit"];
+
+$tdataRel__Detalhamento_Agente[".allSearchFields"] = array();
+
+$tdataRel__Detalhamento_Agente[".globSearchFields"][] = "Fila";
+// do in this way, because combine functions array_unique and array_merge returns array with keys like 1,2, 4 etc
+if (!in_array("Fila", $tdataRel__Detalhamento_Agente[".allSearchFields"]))
+{
+	$tdataRel__Detalhamento_Agente[".allSearchFields"][] = "Fila";	
+}
+$tdataRel__Detalhamento_Agente[".globSearchFields"][] = "Telefone";
+// do in this way, because combine functions array_unique and array_merge returns array with keys like 1,2, 4 etc
+if (!in_array("Telefone", $tdataRel__Detalhamento_Agente[".allSearchFields"]))
+{
+	$tdataRel__Detalhamento_Agente[".allSearchFields"][] = "Telefone";	
+}
+$tdataRel__Detalhamento_Agente[".globSearchFields"][] = "Terminado";
+// do in this way, because combine functions array_unique and array_merge returns array with keys like 1,2, 4 etc
+if (!in_array("Terminado", $tdataRel__Detalhamento_Agente[".allSearchFields"]))
+{
+	$tdataRel__Detalhamento_Agente[".allSearchFields"][] = "Terminado";	
+}
+$tdataRel__Detalhamento_Agente[".globSearchFields"][] = "Agente";
+// do in this way, because combine functions array_unique and array_merge returns array with keys like 1,2, 4 etc
+if (!in_array("Agente", $tdataRel__Detalhamento_Agente[".allSearchFields"]))
+{
+	$tdataRel__Detalhamento_Agente[".allSearchFields"][] = "Agente";	
+}
+$tdataRel__Detalhamento_Agente[".globSearchFields"][] = "dt_entrada";
+// do in this way, because combine functions array_unique and array_merge returns array with keys like 1,2, 4 etc
+if (!in_array("dt_entrada", $tdataRel__Detalhamento_Agente[".allSearchFields"]))
+{
+	$tdataRel__Detalhamento_Agente[".allSearchFields"][] = "dt_entrada";	
+}
+
+
+$tdataRel__Detalhamento_Agente[".isDynamicPerm"] = true;
+
+	
+
+$tdataRel__Detalhamento_Agente[".isDisplayLoading"] = true;
+
+$tdataRel__Detalhamento_Agente[".isResizeColumns"] = false;
+
+
+$tdataRel__Detalhamento_Agente[".createLoginPage"] = true;
+
+
+ 	
+
+$tdataRel__Detalhamento_Agente[".noRecordsFirstPage"] = true;
+
+
+
+
+$gstrOrderBy = "ORDER BY dt_entrada, hr_entrada";
+if(strlen($gstrOrderBy) && strtolower(substr($gstrOrderBy,0,8))!="order by")
+	$gstrOrderBy = "order by ".$gstrOrderBy;
+$tdataRel__Detalhamento_Agente[".strOrderBy"] = $gstrOrderBy;
+	
+$tdataRel__Detalhamento_Agente[".orderindexes"] = array();
+$tdataRel__Detalhamento_Agente[".orderindexes"][] = array(6, (1 ? "ASC" : "DESC"), "dt_entrada");
+$tdataRel__Detalhamento_Agente[".orderindexes"][] = array(7, (1 ? "ASC" : "DESC"), "hr_entrada");
+
+$tdataRel__Detalhamento_Agente[".sqlHead"] = "SELECT Fila,  Telefone,  Entrada_Saida,  Terminado,  Agente,  dt_entrada,  hr_entrada,  tp_espera,  tp_atendimento,  Gravacao,  tptotal,  TempoParado,  Obs";
+
+$tdataRel__Detalhamento_Agente[".sqlFrom"] = "FROM v_rel_detalhado_agentes";
+
+$tdataRel__Detalhamento_Agente[".sqlWhereExpr"] = "";
+
+$tdataRel__Detalhamento_Agente[".sqlTail"] = "";
+
+
+
+	$tableKeys=array();
+	$tdataRel__Detalhamento_Agente[".Keys"]=$tableKeys;
+
+	
+//	Fila
+	$fdata = array();
+	$fdata["strName"] = "Fila";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+				$fdata["FieldType"]= 200;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Lookup wizard";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		$fdata["LookupType"]=1;
+	
+				
+						$fdata["LookupUnique"]=true;
+
+	$fdata["LinkField"]="Fila";
+	$fdata["LinkFieldType"]=200;
+	$fdata["DisplayField"]="Fila";
+				$fdata["LookupTable"]="v_rel_detalhado_agentes";
+	$fdata["LookupOrderBy"]="";
+						
+				
+										$fdata["SimpleAdd"]=true;
+	
+					
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Fila";
+		$fdata["FullName"]= "Fila";
+						$fdata["Index"]= 1;
+	
+			
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Fila"]=$fdata;
+	
+//	Telefone
+	$fdata = array();
+	$fdata["strName"] = "Telefone";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+				$fdata["FieldType"]= 200;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Text field";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Telefone";
+		$fdata["FullName"]= "Telefone";
+						$fdata["Index"]= 2;
+	
+			$fdata["EditParams"]="";
+			$fdata["EditParams"].= " maxlength=50";
+		
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Telefone"]=$fdata;
+	
+//	Entrada_Saida
+	$fdata = array();
+	$fdata["strName"] = "Entrada_Saida";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Entrada/Saida"; 
+			$fdata["FieldType"]= 13;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Text field";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Entrada_Saida";
+		$fdata["FullName"]= "Entrada_Saida";
+						$fdata["Index"]= 3;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Entrada_Saida"]=$fdata;
+	
+//	Terminado
+	$fdata = array();
+	$fdata["strName"] = "Terminado";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Terminado por"; 
+			$fdata["FieldType"]= 200;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Text field";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Terminado";
+		$fdata["FullName"]= "Terminado";
+						$fdata["Index"]= 4;
+	
+			$fdata["EditParams"]="";
+			$fdata["EditParams"].= " maxlength=30";
+		
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Terminado"]=$fdata;
+	
+//	Agente
+	$fdata = array();
+	$fdata["strName"] = "Agente";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+				$fdata["FieldType"]= 200;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Lookup wizard";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		$fdata["LookupType"]=1;
+	
+				
+						$fdata["LookupUnique"]=true;
+
+	$fdata["LinkField"]="Agente";
+	$fdata["LinkFieldType"]=200;
+	$fdata["DisplayField"]="Agente";
+				$fdata["LookupTable"]="v_rel_detalhado_agentes";
+	$fdata["LookupOrderBy"]="Agente";
+						
+				
+										$fdata["SimpleAdd"]=true;
+	
+					
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Agente";
+		$fdata["FullName"]= "Agente";
+						$fdata["Index"]= 5;
+	
+			
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Agente"]=$fdata;
+	
+//	dt_entrada
+	$fdata = array();
+	$fdata["strName"] = "dt_entrada";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Data Entrada"; 
+			$fdata["FieldType"]= 7;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Date";
+	$fdata["ViewFormat"]= "Short Date";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "dt_entrada";
+		$fdata["FullName"]= "dt_entrada";
+		$fdata["IsRequired"]=true; 
+					$fdata["Index"]= 6;
+	 $fdata["DateEditType"]=13; 
+			
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["dt_entrada"]=$fdata;
+	
+//	hr_entrada
+	$fdata = array();
+	$fdata["strName"] = "hr_entrada";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Hora Entrada"; 
+			$fdata["FieldType"]= 134;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Time";
+	$fdata["ViewFormat"]= "Time";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "hr_entrada";
+		$fdata["FullName"]= "hr_entrada";
+		$fdata["IsRequired"]=true; 
+					$fdata["Index"]= 7;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+							$fdata["FormatTimeAttrs"] = array("useTimePicker" => 0,
+										  "hours" => 24,
+										  "minutes" => 1,
+										  "showSeconds" => 0);
+	$tdataRel__Detalhamento_Agente["hr_entrada"]=$fdata;
+	
+//	tp_espera
+	$fdata = array();
+	$fdata["strName"] = "tp_espera";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Espera"; 
+			$fdata["FieldType"]= 134;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Time";
+	$fdata["ViewFormat"]= "Time";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "tp_espera";
+		$fdata["FullName"]= "tp_espera";
+						$fdata["Index"]= 8;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+							$fdata["FormatTimeAttrs"] = array("useTimePicker" => 0,
+										  "hours" => 24,
+										  "minutes" => 1,
+										  "showSeconds" => 0);
+	$tdataRel__Detalhamento_Agente["tp_espera"]=$fdata;
+	
+//	tp_atendimento
+	$fdata = array();
+	$fdata["strName"] = "tp_atendimento";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Atendimento"; 
+			$fdata["FieldType"]= 134;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Time";
+	$fdata["ViewFormat"]= "Time";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "tp_atendimento";
+		$fdata["FullName"]= "tp_atendimento";
+						$fdata["Index"]= 9;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+							$fdata["FormatTimeAttrs"] = array("useTimePicker" => 0,
+										  "hours" => 24,
+										  "minutes" => 1,
+										  "showSeconds" => 0);
+	$tdataRel__Detalhamento_Agente["tp_atendimento"]=$fdata;
+	
+//	Gravacao
+	$fdata = array();
+	$fdata["strName"] = "Gravacao";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Audio"; 
+			$fdata["FieldType"]= 13;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Text field";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Gravacao";
+		$fdata["FullName"]= "Gravacao";
+						$fdata["Index"]= 10;
+	
+			$fdata["EditParams"]="";
+			$fdata["EditParams"].= " maxlength=120";
+		
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Gravacao"]=$fdata;
+	
+//	tptotal
+	$fdata = array();
+	$fdata["strName"] = "tptotal";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Total"; 
+			$fdata["FieldType"]= 134;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Time";
+	$fdata["ViewFormat"]= "Time";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "tptotal";
+		$fdata["FullName"]= "tptotal";
+						$fdata["Index"]= 11;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+							$fdata["FormatTimeAttrs"] = array("useTimePicker" => 0,
+										  "hours" => 24,
+										  "minutes" => 1,
+										  "showSeconds" => 0);
+	$tdataRel__Detalhamento_Agente["tptotal"]=$fdata;
+	
+//	TempoParado
+	$fdata = array();
+	$fdata["strName"] = "TempoParado";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Tempo Parado"; 
+			$fdata["FieldType"]= 134;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Time";
+	$fdata["ViewFormat"]= "Time";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "TempoParado";
+		$fdata["FullName"]= "TempoParado";
+						$fdata["Index"]= 12;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+							$fdata["FormatTimeAttrs"] = array("useTimePicker" => 0,
+										  "hours" => 24,
+										  "minutes" => 1,
+										  "showSeconds" => 0);
+	$tdataRel__Detalhamento_Agente["TempoParado"]=$fdata;
+	
+//	Obs
+	$fdata = array();
+	$fdata["strName"] = "Obs";
+	$fdata["ownerTable"] = "v_rel_detalhado_agentes";
+		$fdata["Label"]="Observação"; 
+			$fdata["FieldType"]= 13;
+				$fdata["UseiBox"] = false;
+	$fdata["EditFormat"]= "Text field";
+	$fdata["ViewFormat"]= "";
+	
+	
+
+		
+			$fdata["NeedEncode"]=true;
+	
+	$fdata["GoodName"]= "Obs";
+		$fdata["FullName"]= "Obs";
+						$fdata["Index"]= 13;
+	
+			$fdata["EditParams"]="";
+			
+				$fdata["FieldPermissions"]=true;
+						$tdataRel__Detalhamento_Agente["Obs"]=$fdata;
+
+	
+$tables_data["Rel. Detalhamento Agente"]=&$tdataRel__Detalhamento_Agente;
+$field_labels["Rel__Detalhamento_Agente"] = &$fieldLabelsRel__Detalhamento_Agente;
+
+// -----------------start  prepare master-details data arrays ------------------------------//
+// tables which are detail tables for current table (master)
+$detailsTablesData["Rel. Detalhamento Agente"] = array();
+
+	
+// tables which are master tables for current table (detail)
+$masterTablesData["Rel. Detalhamento Agente"] = array();
+
+// -----------------end  prepare master-details data arrays ------------------------------//
+
+require_once(getabspath("classes/sql.php"));
+
+
+
+
+
+
+
+
+
+
+$proto751=array();
+$proto751["m_strHead"] = "SELECT";
+$proto751["m_strFieldList"] = "Fila,  Telefone,  Entrada_Saida,  Terminado,  Agente,  dt_entrada,  hr_entrada,  tp_espera,  tp_atendimento,  Gravacao,  tptotal,  TempoParado,  Obs";
+$proto751["m_strFrom"] = "FROM v_rel_detalhado_agentes";
+$proto751["m_strWhere"] = "";
+$proto751["m_strOrderBy"] = "ORDER BY dt_entrada, hr_entrada";
+$proto751["m_strTail"] = "";
+$proto752=array();
+$proto752["m_sql"] = "";
+$proto752["m_uniontype"] = "SQLL_UNKNOWN";
+	$obj = new SQLNonParsed(array(
+	"m_sql" => ""
+));
+
+$proto752["m_column"]=$obj;
+$proto752["m_contained"] = array();
+$proto752["m_strCase"] = "";
+$proto752["m_havingmode"] = "0";
+$proto752["m_inBrackets"] = "0";
+$proto752["m_useAlias"] = "0";
+$obj = new SQLLogicalExpr($proto752);
+
+$proto751["m_where"] = $obj;
+$proto754=array();
+$proto754["m_sql"] = "";
+$proto754["m_uniontype"] = "SQLL_UNKNOWN";
+	$obj = new SQLNonParsed(array(
+	"m_sql" => ""
+));
+
+$proto754["m_column"]=$obj;
+$proto754["m_contained"] = array();
+$proto754["m_strCase"] = "";
+$proto754["m_havingmode"] = "0";
+$proto754["m_inBrackets"] = "0";
+$proto754["m_useAlias"] = "0";
+$obj = new SQLLogicalExpr($proto754);
+
+$proto751["m_having"] = $obj;
+$proto751["m_fieldlist"] = array();
+						$proto756=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Fila",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto756["m_expr"]=$obj;
+$proto756["m_alias"] = "";
+$obj = new SQLFieldListItem($proto756);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto758=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Telefone",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto758["m_expr"]=$obj;
+$proto758["m_alias"] = "";
+$obj = new SQLFieldListItem($proto758);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto760=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Entrada_Saida",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto760["m_expr"]=$obj;
+$proto760["m_alias"] = "";
+$obj = new SQLFieldListItem($proto760);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto762=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Terminado",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto762["m_expr"]=$obj;
+$proto762["m_alias"] = "";
+$obj = new SQLFieldListItem($proto762);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto764=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Agente",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto764["m_expr"]=$obj;
+$proto764["m_alias"] = "";
+$obj = new SQLFieldListItem($proto764);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto766=array();
+			$obj = new SQLField(array(
+	"m_strName" => "dt_entrada",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto766["m_expr"]=$obj;
+$proto766["m_alias"] = "";
+$obj = new SQLFieldListItem($proto766);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto768=array();
+			$obj = new SQLField(array(
+	"m_strName" => "hr_entrada",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto768["m_expr"]=$obj;
+$proto768["m_alias"] = "";
+$obj = new SQLFieldListItem($proto768);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto770=array();
+			$obj = new SQLField(array(
+	"m_strName" => "tp_espera",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto770["m_expr"]=$obj;
+$proto770["m_alias"] = "";
+$obj = new SQLFieldListItem($proto770);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto772=array();
+			$obj = new SQLField(array(
+	"m_strName" => "tp_atendimento",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto772["m_expr"]=$obj;
+$proto772["m_alias"] = "";
+$obj = new SQLFieldListItem($proto772);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto774=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Gravacao",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto774["m_expr"]=$obj;
+$proto774["m_alias"] = "";
+$obj = new SQLFieldListItem($proto774);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto776=array();
+			$obj = new SQLField(array(
+	"m_strName" => "tptotal",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto776["m_expr"]=$obj;
+$proto776["m_alias"] = "";
+$obj = new SQLFieldListItem($proto776);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto778=array();
+			$obj = new SQLField(array(
+	"m_strName" => "TempoParado",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto778["m_expr"]=$obj;
+$proto778["m_alias"] = "";
+$obj = new SQLFieldListItem($proto778);
+
+$proto751["m_fieldlist"][]=$obj;
+						$proto780=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Obs",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto780["m_expr"]=$obj;
+$proto780["m_alias"] = "";
+$obj = new SQLFieldListItem($proto780);
+
+$proto751["m_fieldlist"][]=$obj;
+$proto751["m_fromlist"] = array();
+												$proto782=array();
+$proto782["m_link"] = "SQLL_MAIN";
+			$proto783=array();
+$proto783["m_strName"] = "v_rel_detalhado_agentes";
+$proto783["m_columns"] = array();
+$proto783["m_columns"][] = "Fila";
+$proto783["m_columns"][] = "Telefone";
+$proto783["m_columns"][] = "Entrada_Saida";
+$proto783["m_columns"][] = "Terminado";
+$proto783["m_columns"][] = "Agente";
+$proto783["m_columns"][] = "dt_entrada";
+$proto783["m_columns"][] = "hr_entrada";
+$proto783["m_columns"][] = "tp_espera";
+$proto783["m_columns"][] = "tp_atendimento";
+$proto783["m_columns"][] = "Gravacao";
+$proto783["m_columns"][] = "tptotal";
+$proto783["m_columns"][] = "TempoParado";
+$proto783["m_columns"][] = "Obs";
+$obj = new SQLTable($proto783);
+
+$proto782["m_table"] = $obj;
+$proto782["m_alias"] = "";
+$proto784=array();
+$proto784["m_sql"] = "";
+$proto784["m_uniontype"] = "SQLL_UNKNOWN";
+	$obj = new SQLNonParsed(array(
+	"m_sql" => ""
+));
+
+$proto784["m_column"]=$obj;
+$proto784["m_contained"] = array();
+$proto784["m_strCase"] = "";
+$proto784["m_havingmode"] = "0";
+$proto784["m_inBrackets"] = "0";
+$proto784["m_useAlias"] = "0";
+$obj = new SQLLogicalExpr($proto784);
+
+$proto782["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto782);
+
+$proto751["m_fromlist"][]=$obj;
+$proto751["m_groupby"] = array();
+$proto751["m_orderby"] = array();
+												$proto786=array();
+						$obj = new SQLField(array(
+	"m_strName" => "dt_entrada",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto786["m_column"]=$obj;
+$proto786["m_bAsc"] = 1;
+$proto786["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto786);
+
+$proto751["m_orderby"][]=$obj;					
+												$proto788=array();
+						$obj = new SQLField(array(
+	"m_strName" => "hr_entrada",
+	"m_strTable" => "v_rel_detalhado_agentes"
+));
+
+$proto788["m_column"]=$obj;
+$proto788["m_bAsc"] = 1;
+$proto788["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto788);
+
+$proto751["m_orderby"][]=$obj;					
+$obj = new SQLQuery($proto751);
+
+$queryData_Rel__Detalhamento_Agente = $obj;
+$tdataRel__Detalhamento_Agente[".sqlquery"] = $queryData_Rel__Detalhamento_Agente;
+
+
+
+?>

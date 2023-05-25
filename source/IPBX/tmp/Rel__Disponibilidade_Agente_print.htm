@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Disponibilidade Agente</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><!--{BEGIN stylesheetlink}--><LINK id=replace_0 
+rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]--><!--{END stylesheetlink}-->
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+.group_1
+{
+background-color: #E6E6FA;
+}
+
+
+.nbgroup_1
+{
+background-color: #E6E6FA;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #C3C3D4;
+}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5 innertag="body"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> 
+<H1 outertag="page">Relatório de&nbsp;Disponibilidade Agente</H1>
+<DIV id=selpage outertag="page">Página <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_3 contentEditable=false>pageno</SPAN> de <SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=replace_4 contentEditable=false>maxpages</SPAN> </DIV>
+<DIV innertag="grid_block" outertag="page">
+<TABLE class=grid_block cellPadding=5 align=center innertag="grid_row"><!-------------------------------------  group headers -----------------------------------------><!--{BEGIN agente_newgroup}-->
+  <TBODY>
+  <TR>
+    <TD class=header_1 colSpan=10>Agente:&nbsp; <FONT 
+      style="FONT-WEIGHT: 900"><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_5 contentEditable=false 
+      typeid="view_agente">&nbsp;agente</SPAN></FONT></TD></TR>
+  <TR>
+    <TD class=blackshade>
+      <P align=center><B>Data</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Fila</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Logon</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Logout</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Disponível</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Pausa Obrigatória</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Pausa Produtiva</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Pausa</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Atendimento</B></P></TD>
+    <TD class=blackshade>
+      <P align=center><B>Tempo Livre</B></P></TD></TR><!--{END agente_newgroup}--><!-------------------------------------  data ----------------------------------------->
+  <TR outertag="row_data">
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_date_short.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_6 contentEditable=false 
+    typeid="view_Data">&nbsp;Data</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_7 contentEditable=false 
+    typeid="view_Fila">&nbsp;Fila</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_8 contentEditable=false 
+      typeid="view_Logon">&nbsp;Logon</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_9 contentEditable=false 
+      typeid="view_Logout">&nbsp;Logout</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_10 contentEditable=false 
+      typeid="view_TempoDisponivel">&nbsp;TempoDisponivel</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_11 contentEditable=false 
+      typeid="view_TempoPausaNProdutiva">&nbsp;TempoPausaNProdutiva</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_12 contentEditable=false 
+      typeid="view_TempoPausaProdutiva">&nbsp;TempoPausaProdutiva</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_13 contentEditable=false 
+      typeid="view_TempoPausa">&nbsp;TempoPausa</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_14 contentEditable=false 
+      typeid="view_TempoAtendimento">&nbsp;TempoAtendimento</SPAN></P></TD>
+    <TD class=data>
+      <P align=center><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\edit_time.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_15 contentEditable=false 
+      typeid="view_TempoLivre">&nbsp;TempoLivre</SPAN></P></TD></TR><!-------------------------------------  group summary -----------------------------------------><!--{BEGIN agente_endgroup}-->
+  <TR>
+    <TD class=group_1 colSpan=10>
+      <P align=left>Resumo para Agente <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; TEXT-INDENT: 16px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: url(C:\Program Files\PHPRunner5.2\images\view_none.gif) #ffff99 no-repeat left 50%; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_16 contentEditable=false 
+      typeid="view_agente">&nbsp;agente</SPAN> - <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_17 contentEditable=false typeid="total">&nbsp;COUNT</SPAN> 
+      Total de registros </P>
+      <DIV align=center></DIV></TD></TR><!--  Sum -->
+  <TR>
+    <TD class=group_1>
+      <P align=center>Soma &nbsp; </P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_18 contentEditable=false 
+      typeid="total">&nbsp;TempoDisponivel&nbsp;-&nbsp;SUM</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_19 contentEditable=false 
+      typeid="total">&nbsp;TempoPausaNProdutiva&nbsp;-&nbsp;SUM</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_20 contentEditable=false 
+      typeid="total">&nbsp;TempoPausaProdutiva&nbsp;-&nbsp;SUM</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_21 contentEditable=false 
+      typeid="total">&nbsp;TempoPausa&nbsp;-&nbsp;SUM</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_22 contentEditable=false 
+      typeid="total">&nbsp;TempoAtendimento&nbsp;-&nbsp;SUM</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_23 contentEditable=false 
+      typeid="total">&nbsp;TempoLivre&nbsp;-&nbsp;SUM</SPAN> </P></TD></TR><!--  Avg -->
+  <TR>
+    <TD class=group_1>
+      <P align=center>Média &nbsp; </P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center></P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_24 contentEditable=false 
+      typeid="total">&nbsp;TempoDisponivel&nbsp;-&nbsp;AVERAGE</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_25 contentEditable=false 
+      typeid="total">&nbsp;TempoPausaNProdutiva&nbsp;-&nbsp;AVERAGE</SPAN> 
+    </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_26 contentEditable=false 
+      typeid="total">&nbsp;TempoPausaProdutiva&nbsp;-&nbsp;AVERAGE</SPAN> 
+</P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_27 contentEditable=false 
+      typeid="total">&nbsp;TempoPausa&nbsp;-&nbsp;AVERAGE</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_28 contentEditable=false 
+      typeid="total">&nbsp;TempoAtendimento&nbsp;-&nbsp;AVERAGE</SPAN> </P></TD>
+    <TD class=group_1>
+      <P align=center>&nbsp; <SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 70px; PADDING-RIGHT: 2px; BACKGROUND: #ffff99; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+      id=replace_29 contentEditable=false 
+      typeid="total">&nbsp;TempoLivre&nbsp;-&nbsp;AVERAGE</SPAN> </P></TD></TR><!--{END agente_endgroup}--></TBODY></TABLE></DIV><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> </BODY></HTML>

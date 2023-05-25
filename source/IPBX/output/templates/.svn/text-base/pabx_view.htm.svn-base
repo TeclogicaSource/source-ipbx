@@ -1,0 +1,101 @@
+<html {$html_attrs}>
+<head><title>Pabx</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#height100{$id} {padding:10px;} 
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#footer_block{$id} {height:15px;}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding:5px;white-space:nowrap;text-align:center;}
+#required_block{$id} {text-align:left;padding:5px}
+#message_block{$id} {padding:5px 5px;text-align:center;}
+a.pdf{float:left;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+<div id="height100{$id}" align="center">
+
+
+<TABLE align=center id="center_block{$id}" cellpadding=0 cellspacing=0><tr><td>
+
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Pabx, Exibir Registro [
+Idt Tronco: {$show_key1}
+]
+</div>
+<div class="main_table_border2" style="border: 1px solid #516C81;">
+<div class="main_table_border">
+<TABLE CELLPADDING=0 CELLSPACING=0 align=center border=0 width="480">
+
+{BEGIN ramal_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Ramal</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$ramal_value}&nbsp;
+  </td></tr>
+{END ramal_fieldblock}
+{BEGIN Nome_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Nome</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Nome_value}&nbsp;
+  </td></tr>
+{END Nome_fieldblock}
+{BEGIN idt_custo_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Centro de Custo</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$idt_custo_value}&nbsp;
+  </td></tr>
+{END idt_custo_fieldblock}
+{BEGIN context_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Contexto</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$context_value}&nbsp;
+  </td></tr>
+{END context_fieldblock}
+{BEGIN id_horario_fieldblock}
+<tr style="padding:3px">
+<td class=editshade_b width=150 style="padding-left:15px;">Horario</td>
+<td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_horario_value}&nbsp;
+  </td></tr>
+{END id_horario_fieldblock}
+</table>
+</div>
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN prev_button}
+ <span class=buttonborder><input class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+<span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input class=button type=reset value=" >>> " {$nextbutton_attrs} ></span>
+{END next_button}
+</div>
+
+
+</div>
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+
+</td></tr>
+</table>
+</div>
+
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

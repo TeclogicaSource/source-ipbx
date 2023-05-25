@@ -1,0 +1,26 @@
+Detalhamento<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>E-mail (Secretária Eletronica)</strong></td>
+<td><strong>Piloto do tronco</strong></td>
+<td><strong>Ramal transbordo do usuário</strong></td>
+<td><strong>Ramal de Fax</strong></td>
+<td><strong>Gravar ligações</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$mail_value}</td>
+<td>{$trc_piloto_value}</td>
+<td>{$call_forward_value}</td>
+<td>{$flg_fax_value}</td>
+<td>{$flg_grava_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

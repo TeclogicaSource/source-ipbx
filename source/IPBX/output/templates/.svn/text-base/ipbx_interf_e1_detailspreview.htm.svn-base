@@ -1,0 +1,40 @@
+Interfaces E1<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Central</strong></td>
+<td><strong>Descrição</strong></td>
+<td><strong>Piloto</strong></td>
+<td><strong>Contrato</strong></td>
+<td><strong>Board</strong></td>
+<td><strong>Link</strong></td>
+<td><strong>Código da Operadora</strong></td>
+<td><strong>Tempo Chamada (s)</strong></td>
+<td><strong>Número Identificador (Saída)</strong></td>
+<td><strong>Fixar identificador (Saída)</strong></td>
+<td><strong>Tipo Interface</strong></td>
+<td><strong>Logon Remoto</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_central_value}</td>
+<td>{$dsc_interf_value}</td>
+<td>{$piloto_value}</td>
+<td>{$id_contrato_value}</td>
+<td>{$board_value}</td>
+<td>{$link_value}</td>
+<td>{$cd_operadora_value}</td>
+<td>{$tp_chamada_value}</td>
+<td>{$id_chamada_value}</td>
+<td>{$flg_id_cham_parc_value}</td>
+<td>{$id_tp_interf_value}</td>
+<td>{$flg_logon_remoto_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

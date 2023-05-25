@@ -1,0 +1,322 @@
+<?php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// After record updated
+function AfterEdit(&$values,$where,&$oldvalues,&$keys,$inline)
+{
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+//Inserir mensagem informando da alteração
+insereMensagem("Alteração realizada na interface VOXIP.");
+;
+} // function AfterEdit
+$arrEventTables["AfterEdit"]="ipbx_interf_voxip";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// After record added
+function AfterAdd(&$values,&$keys,$inline)
+{
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+//Inserir mensagem informando da alteração
+insereMensagem("Alteração realizada na interface VOXIP.");
+;
+} // function AfterAdd
+$arrEventTables["AfterAdd"]="ipbx_interf_voxip";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// After record deleted
+function AfterDelete($where,&$deleted_values,&$message)
+{
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+//Inserir mensagem informando da alteração
+insereMensagem("Alteração realizada na interface VOXIP.");
+;
+} // function AfterDelete
+$arrEventTables["AfterDelete"]="ipbx_interf_voxip";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Before record added
+function BeforeAdd(&$values,&$message,$inline)
+{
+
+//**********  Check if specific record exists  ************
+global $conn;
+$strSQLExists = "SELECT SUM(IFNULL(flg_logon_remoto, 0)) logon FROM ipbx_interf";
+$rsExists = db_query($strSQLExists,$conn);
+$data=db_fetch_array($rsExists);
+
+if ($values['flg_logon_remoto'] == 1) {
+	if($data['logon'] > 0)
+	{
+		$message = "Não é possível ativar o logon remoto se outro já estiver em uso. " . $data['login'];
+		return false;
+	}
+	else
+	{
+		$values["id_chamada"]=trim($values["id_chamada"]);
+		return true;
+	}
+}
+
+$values["id_chamada"]=trim($values["id_chamada"]);
+return true;
+
+;
+} // function BeforeAdd
+$arrEventTables["BeforeAdd"]="ipbx_interf_voxip";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Before record updated
+function BeforeEdit(&$values,$where,&$oldvalues,&$keys,&$message,$inline)
+{
+
+//**********  Check if specific record exists  ************
+if ($values['flg_logon_remoto'] !== $oldvalues['flg_logon_remoto']) {
+	if ($values['flg_logon_remoto'] == 1) {
+		global $conn;
+		$strSQLExists = "SELECT SUM(IFNULL(flg_logon_remoto, 0)) logon FROM ipbx_interf";
+		$rsExists = db_query($strSQLExists,$conn);
+		$data=db_fetch_array($rsExists);
+		if ($data['logon'] == 1) {
+			$message = "Não é possível ativar o logon remoto se outro já estiver em uso.";
+			return false;
+		} else {
+			return true;
+		}
+	}
+} 
+
+$values["id_chamada"]=trim($values["id_chamada"]);
+return true;
+;
+} // function BeforeEdit
+$arrEventTables["BeforeEdit"]="ipbx_interf_voxip";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

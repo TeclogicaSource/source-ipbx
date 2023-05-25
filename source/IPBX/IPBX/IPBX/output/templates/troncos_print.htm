@@ -1,0 +1,212 @@
+<html {$html_attrs}>
+<head>
+<title>Troncos</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Troncos</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_tronco_fieldheadercolumn}
+	<td>
+{BEGIN id_tronco_fieldheader}
+	<b>Id Tronco</b>
+{END id_tronco_fieldheader}
+	</td>
+{END id_tronco_fieldheadercolumn}
+{BEGIN dsc_tronco_fieldheadercolumn}
+	<td>
+{BEGIN dsc_tronco_fieldheader}
+	<b>Dsc Tronco</b>
+{END dsc_tronco_fieldheader}
+	</td>
+{END dsc_tronco_fieldheadercolumn}
+{BEGIN channel_fieldheadercolumn}
+	<td>
+{BEGIN channel_fieldheader}
+	<b>Channel</b>
+{END channel_fieldheader}
+	</td>
+{END channel_fieldheadercolumn}
+{BEGIN id_interf_fieldheadercolumn}
+	<td>
+{BEGIN id_interf_fieldheader}
+	<b>Id Interf</b>
+{END id_interf_fieldheader}
+	</td>
+{END id_interf_fieldheadercolumn}
+{BEGIN usuario_fieldheadercolumn}
+	<td>
+{BEGIN usuario_fieldheader}
+	<b>Usuario</b>
+{END usuario_fieldheader}
+	</td>
+{END usuario_fieldheadercolumn}
+{BEGIN senha_fieldheadercolumn}
+	<td>
+{BEGIN senha_fieldheader}
+	<b>Senha</b>
+{END senha_fieldheader}
+	</td>
+{END senha_fieldheadercolumn}
+{BEGIN ip_interf_fieldheadercolumn}
+	<td>
+{BEGIN ip_interf_fieldheader}
+	<b>Ip Interf</b>
+{END ip_interf_fieldheader}
+	</td>
+{END ip_interf_fieldheadercolumn}
+{BEGIN mcdu_inicio_fieldheadercolumn}
+	<td>
+{BEGIN mcdu_inicio_fieldheader}
+	<b>Mcdu Inicio</b>
+{END mcdu_inicio_fieldheader}
+	</td>
+{END mcdu_inicio_fieldheadercolumn}
+{BEGIN mcdu_fim_fieldheadercolumn}
+	<td>
+{BEGIN mcdu_fim_fieldheader}
+	<b>Mcdu Fim</b>
+{END mcdu_fim_fieldheader}
+	</td>
+{END mcdu_fim_fieldheadercolumn}
+{BEGIN tp_toques_fieldheadercolumn}
+	<td>
+{BEGIN tp_toques_fieldheader}
+	<b>Tp Toques</b>
+{END tp_toques_fieldheader}
+	</td>
+{END tp_toques_fieldheadercolumn}
+{BEGIN dig_rota_fieldheadercolumn}
+	<td>
+{BEGIN dig_rota_fieldheader}
+	<b>Dig Rota</b>
+{END dig_rota_fieldheader}
+	</td>
+{END dig_rota_fieldheadercolumn}
+{BEGIN id_contrato_fieldheadercolumn}
+	<td>
+{BEGIN id_contrato_fieldheader}
+	<b>Id Contrato</b>
+{END id_contrato_fieldheader}
+	</td>
+{END id_contrato_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_tronco_fieldcolumn}
+<td {$id_tronco_style}>
+{$id_tronco_value}
+</td>
+{END id_tronco_fieldcolumn}
+{BEGIN dsc_tronco_fieldcolumn}
+<td {$dsc_tronco_style}>
+{$dsc_tronco_value}
+</td>
+{END dsc_tronco_fieldcolumn}
+{BEGIN channel_fieldcolumn}
+<td {$channel_style}>
+{$channel_value}
+</td>
+{END channel_fieldcolumn}
+{BEGIN id_interf_fieldcolumn}
+<td {$id_interf_style}>
+{$id_interf_value}
+</td>
+{END id_interf_fieldcolumn}
+{BEGIN usuario_fieldcolumn}
+<td {$usuario_style}>
+{$usuario_value}
+</td>
+{END usuario_fieldcolumn}
+{BEGIN senha_fieldcolumn}
+<td {$senha_style}>
+{$senha_value}
+</td>
+{END senha_fieldcolumn}
+{BEGIN ip_interf_fieldcolumn}
+<td {$ip_interf_style}>
+{$ip_interf_value}
+</td>
+{END ip_interf_fieldcolumn}
+{BEGIN mcdu_inicio_fieldcolumn}
+<td {$mcdu_inicio_style}>
+{$mcdu_inicio_value}
+</td>
+{END mcdu_inicio_fieldcolumn}
+{BEGIN mcdu_fim_fieldcolumn}
+<td {$mcdu_fim_style}>
+{$mcdu_fim_value}
+</td>
+{END mcdu_fim_fieldcolumn}
+{BEGIN tp_toques_fieldcolumn}
+<td {$tp_toques_style}>
+{$tp_toques_value}
+</td>
+{END tp_toques_fieldcolumn}
+{BEGIN dig_rota_fieldcolumn}
+<td {$dig_rota_style}>
+{$dig_rota_value}
+</td>
+{END dig_rota_fieldcolumn}
+{BEGIN id_contrato_fieldcolumn}
+<td {$id_contrato_style}>
+{$id_contrato_value}
+</td>
+{END id_contrato_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

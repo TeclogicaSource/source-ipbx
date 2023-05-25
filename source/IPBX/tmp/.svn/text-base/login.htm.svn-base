@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Login</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><LINK 
+id=replace_0 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]-->
+<STYLE>
+#center_block {width:38%;margin:0 auto;}
+#contents_block {text-align:center;}
+#header_block {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#main_block {padding:10px 0 5px 0;text-align:center;}
+#inmain_block {margin:0 10px}
+#fields_block {width:100%;margin:0;padding:10px;}
+#header_block > span {margin:0 5px}
+#buttons_block {padding:10px 10px 5px;border-top:1px #D1BA84 solid;}
+#buttons_block div {padding:3px}
+#delimiter {margin:2px}
+</STYLE>
+<!--[if IE]>
+<STYLE>
+#main_block {padding:10px 10px 5px 10px;}
+#inmain_block {margin:0 0px;width:100%}
+#fields_block td {padding:3px 14px}
+#username_block td {padding-top:13px}
+#remember_block td {padding-bottom:13px}
+</STYLE>
+<![endif]-->
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY innertag="body"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> 
+<TABLE id=center_block align=center>
+  <TBODY>
+  <TR>
+    <TD id=contents_block><B class=xtop><B class=xb1b></B><B class=xb2b></B><B 
+      class=xb3b></B><B class=xb4b></B></B>
+      <DIV id=header_block class=upeditmenu><B><FONT size=+1>Login</FONT></B> 
+      </DIV>
+      <DIV id=main_block class=main_table>
+      <DIV id=inmain_block class=main_table><B class=xtop><B class=xb1></B><B 
+      class=xb2></B><B class=xb3></B><B class=xb4></B></B>
+      <TABLE id=fields_block class=loginshade border=0 cellSpacing=0 
+      cellPadding=4>
+        <TBODY>
+        <TR id=username_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left innertag="username_label">Nome do Usuário:</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT name=username 
+            {$username_attrs}> </TD></TR>
+        <TR id=password_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left innertag="password_label">Senha:</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT type=password name=password 
+            {$password_attrs}> </TD></TR>
+        <TR>
+          <TD><FONT color=#336699>Domínio (opcional):</FONT></TD>
+          <TD><SPAN 
+            style="BORDER-BOTTOM: #c0c0c0 1px solid; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 10px; WIDTH: 70px; PADDING-RIGHT: 10px; FONT-FAMILY: Verdana; BACKGROUND: url(images/snippet.gif) #ffff99 no-repeat left 50%; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 2px" 
+            id=replace_3 contentEditable=false typeid="event" 
+            eventname="ipbx_ramais_Snippet11">ipbx_ramais_Snippet11</SPAN>&nbsp;</TD></TR>
+        <TR id=remember_block>
+          <TD class=loginshade width="50%" align=right>
+            <DIV align=left innertag="remember_password_label">Lembrar 
+            Senha:</DIV></TD>
+          <TD class=loginshade width="50%"><INPUT type=checkbox 
+            {$rememberbox_attrs}> </TD></TR></TBODY></TABLE>
+      <DIV id=buttons_block class=downedit2>
+      <DIV id=submit_block><SPAN class=buttonborder><INPUT class=button value=Entrar type=submit {$loginlink_attrs}></SPAN> 
+      </DIV>
+      <DIV outertag="message_block"><FONT color=red><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+      id=replace_4 contentEditable=false>message</SPAN></FONT> </DIV>
+      <DIV id=delimiter></DIV>
+      <DIV outertag="guestlink_block"><A {$guestlink_attrs}>Logar como 
+      Convidado</A> </DIV></DIV><B class=xbottom><B class=xb4a></B><B 
+      class=xb3a></B><B class=xb2a></B><B class=xb1a></B></B></DIV></DIV><B 
+      class=xbottom><B class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+      class=xb1b3></B></B></TD></TR></TBODY></TABLE><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> </BODY></HTML>

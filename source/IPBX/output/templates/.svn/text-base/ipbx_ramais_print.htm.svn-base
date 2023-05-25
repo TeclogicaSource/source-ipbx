@@ -1,0 +1,211 @@
+<html {$html_attrs}>
+<head>
+<title>Ipbx Ramais</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block table {border-collapse: collapse;}
+.grid_block table td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+	
+<h1>Ipbx Ramais</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+<td>
+<table width=100%>
+<tr><td width=20% class=shade>Ramal</td>
+<td {$name_style}>
+{$name_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Senha</td>
+<td {$secret_style}>
+{$secret_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Nome</td>
+<td {$callerid_style}>
+{$callerid_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>E-Mail (secretária eletrônica)</td>
+<td {$mail_style}>
+{$mail_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>1º - Entrada no DDR desvia para:</td>
+<td {$desvio_ddr_style}>
+{$desvio_ddr_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>2º - Qualquer ligação desvia para:</td>
+<td {$desvio_style}>
+{$desvio_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>3º - Em horários e dias específicos desvia para:</td>
+<td {$id_desvio_style}>
+{$id_desvio_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Centro de custo</td>
+<td {$accountcode_style}>
+{$accountcode_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Painel de Operações</td>
+<td {$id_painel_op_style}>
+{$id_painel_op_value}
+</td>
+</tr>
+<tr><td width=20% class=shade> Informar centro de custo?</td>
+<td {$flg_info_centrocusto_style}>
+{$flg_info_centrocusto_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Trava de ramal (cadeado)</td>
+<td {$flg_cadeado_style}>
+{$flg_cadeado_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Gravar Chamadas</td>
+<td {$grava_chamada_style}>
+{$grava_chamada_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Adicionar a lista de contatos (iPBX Mobile)</td>
+<td {$flg_show_mobile_style}>
+{$flg_show_mobile_value}
+</td>
+</tr>
+<tr><td width=20% class=shade> Tipo de ramal</td>
+<td {$tp_ramal_style}>
+{$tp_ramal_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Pesquisa</td>
+<td {$id_pesquisa_style}>
+{$id_pesquisa_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Ligações simultâneas</td>
+<td {$call_limit_style}>
+{$call_limit_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Grupo de captura</td>
+<td {$pickupgroup_style}>
+{$pickupgroup_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Privilégio</td>
+<td {$context_style}>
+{$context_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Codec</td>
+<td {$allow_style}>
+{$allow_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Toque (segundos)</td>
+<td {$tp_chamada_style}>
+{$tp_chamada_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Ramal de Transbordo</td>
+<td {$Transbordo_style}>
+{$Transbordo_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Horário Saída de Chamadas</td>
+<td {$id_horario_style}>
+{$id_horario_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Identificação Chamada (callerid)</td>
+<td {$id_saida_style}>
+{$id_saida_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Interface</td>
+<td {$id_interf_style}>
+{$id_interf_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Canal de saída</td>
+<td {$ident_interf_style}>
+{$ident_interf_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Template Provisionamento</td>
+<td {$id_provis_style}>
+{$id_provis_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>MAC</td>
+<td {$mc_addr_style}>
+{$mc_addr_value}
+</td>
+</tr>
+<tr><td width=20% class=shade>Linguagem</td>
+<td {$id_lang_style}>
+{$id_lang_value}
+</td>
+</tr>
+</table>
+</td>
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{BEGIN grid_rowspace}
+<tr>
+{BEGIN grid_recordspace}
+<td style="border-width:0">&nbsp;</td>
+{END grid_recordspace}
+</tr>
+{END grid_rowspace}
+{END grid_row}
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

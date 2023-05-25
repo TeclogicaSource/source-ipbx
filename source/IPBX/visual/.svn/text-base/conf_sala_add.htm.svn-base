@@ -1,0 +1,179 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel conf_sala add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	<TBODY>
+  {BEGIN dsc_sala_fieldblock}<tr class="{$fielddispclass_dsc_sala}" data-fieldname="dsc_sala">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsc_sala_label}{$label conf_sala dsc_sala}{END dsc_sala_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsc_sala_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsc_sala_fieldblock}
+	{BEGIN nm_sala_fieldblock}<tr class="{$fielddispclass_nm_sala}" data-fieldname="nm_sala">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN nm_sala_label}{$label conf_sala nm_sala}{END nm_sala_label}
+	</td>
+	<td class="rnr-control style3">
+		{$nm_sala_editcontrol}&nbsp;
+	</td>
+</tr>
+{END nm_sala_fieldblock}
+	{BEGIN dt_conferencia_fieldblock}<tr class="{$fielddispclass_dt_conferencia}" data-fieldname="dt_conferencia">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dt_conferencia_label}{$label conf_sala dt_conferencia}{END dt_conferencia_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dt_conferencia_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dt_conferencia_fieldblock}
+	{BEGIN hr_inicio_fieldblock}<tr class="{$fielddispclass_hr_inicio}" data-fieldname="hr_inicio">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_inicio_label}{$label conf_sala hr_inicio}{END hr_inicio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_inicio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_inicio_fieldblock}
+	{BEGIN dt_expiracao_fieldblock}<tr class="{$fielddispclass_dt_expiracao}" data-fieldname="dt_expiracao">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dt_expiracao_label}{$label conf_sala dt_expiracao}{END dt_expiracao_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dt_expiracao_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dt_expiracao_fieldblock}
+	{BEGIN hr_fim_fieldblock}<tr class="{$fielddispclass_hr_fim}" data-fieldname="hr_fim">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_fim_label}{$label conf_sala hr_fim}{END hr_fim_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_fim_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_fim_fieldblock}
+	{BEGIN flg_rec_fieldblock}<tr class="{$fielddispclass_flg_rec}" data-fieldname="flg_rec">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_rec_label}{$label conf_sala flg_rec}{END flg_rec_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_rec_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_rec_fieldblock}
+	{BEGIN flg_pass_fieldblock}<tr class="{$fielddispclass_flg_pass}" data-fieldname="flg_pass">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_pass_label}{$label conf_sala flg_pass}{END flg_pass_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_pass_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_pass_fieldblock}
+</TBODY></table></div>
+
+
+{BEGIN addbuttons}<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+
+{BEGIN container_details}<div class="rnr-c rnr-cv rnr-c-details">
+
+{BEGIN detail_tables}{BEGIN details_conf_sala_convidado}<div class="rnr-cw-detailsconf_sala_convidado rnr-s-empty aslinks {$pageStyleName}">
+<div class="rnr-c rnr-cv rnr-c-detailsconf_sala_convidado rnr-c-details">
+<div class="rnr-brickcontents style1 rnr-b-adddetailsconf_sala_convidado rnr-b-adddetails">
+
+	<div class="rnr-dcaption">
+		Convite da Conferência
+	</div>
+	{$displayDetailTable_conf_sala_convidado}
+</div>
+</div>
+</div>
+	{END details_conf_sala_convidado}
+{END detail_tables}
+
+
+</div>
+{END container_details}
+
+</div>
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,24 @@
+Interf Khomp E1<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Dsc Interf</strong></td>
+<td><strong>Id Contrato</strong></td>
+<td><strong>Board</strong></td>
+<td><strong>Link</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$dsc_interf_value}</td>
+<td>{$id_contrato_value}</td>
+<td>{$board_value}</td>
+<td>{$link_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

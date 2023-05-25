@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Linha Tradicional</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}
+<STYLE>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px;text-align:center}
+</STYLE>
+{END style_block}
+<META name=GENERATOR content="MSHTML 8.00.6001.18702"></HEAD>
+<BODY>{BEGIN body}{$header} 
+{BEGIN addForm}<TABLE style="WIDTH: 80%" id="center_block{$id}" align=center>
+  <TBODY>
+  <TR>
+    <TD id="contents_block{$id}">{BEGIN flybody}<B class=xtop><B 
+      class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+      <DIV id="header_block{$id}" class=upeditmenu>Linha Tradicional, Novo 
+      Registro </DIV>
+      {BEGIN message_block}<DIV id="message_block{$id}" class=downedit>{$message}</DIV>{END message_block}
+      <TABLE border=0 cellSpacing=0 cellPadding=4 width="100%">
+        <TBODY>
+        {BEGIN num_contrato_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshadeleft_b2 width=150>{BEGIN num_contrato_label}Numero do Contrato{END num_contrato_label}</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshaderight_lb2 
+            width=250>{$num_contrato_editcontrol} </TD></TR>{END num_contrato_fieldblock}
+        {BEGIN nm_operadora_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Nome da 
+            Operadora</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$nm_operadora_editcontrol} </TD></TR>{END nm_operadora_fieldblock}
+        {BEGIN Vingencia_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+          width=150>Vingência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$Vingencia_editcontrol} </TD></TR>{END Vingencia_fieldblock}
+        {BEGIN flg_ativo_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Contrato 
+            Ativo</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$flg_ativo_editcontrol} </TD></TR>{END flg_ativo_fieldblock}
+        {BEGIN F_F_LOCAL_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            Local Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LOCAL_CAD_editcontrol} </TD></TR>{END F_F_LOCAL_CAD_fieldblock}
+        {BEGIN F_F_LOCAL_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            Local Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LOCAL_VLR_editcontrol} </TD></TR>{END F_F_LOCAL_VLR_fieldblock}
+        {BEGIN F_M_LOCAL_VC1_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel Local VC1 Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_LOCAL_VC1_CAD_editcontrol} 
+</TD></TR>{END F_M_LOCAL_VC1_CAD_fieldblock}
+        {BEGIN F_M_LOCAL_VC1_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel Local VC1 Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_LOCAL_VC1_VLR_editcontrol} 
+</TD></TR>{END F_M_LOCAL_VC1_VLR_fieldblock}
+        {BEGIN F_M_VC2_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel VC2 Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_VC2_CAD_editcontrol} </TD></TR>{END F_M_VC2_CAD_fieldblock}
+        {BEGIN F_M_VC2_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel VC2 Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_VC2_VLR_editcontrol} </TD></TR>{END F_M_VC2_VLR_fieldblock}
+        {BEGIN F_M_VC3_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel VC3 Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_VC3_CAD_editcontrol} </TD></TR>{END F_M_VC3_CAD_fieldblock}
+        {BEGIN F_M_VC3_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel VC3 Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_VC3_VLR_editcontrol} </TD></TR>{END F_M_VC3_VLR_fieldblock}
+        {BEGIN F_F_LDN_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            LDN Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LDN_CAD_editcontrol} </TD></TR>{END F_F_LDN_CAD_fieldblock}
+        {BEGIN F_F_LDN_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            LDN Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LDN_VLR_editcontrol} </TD></TR>{END F_F_LDN_VLR_fieldblock}
+        {BEGIN F_F_LDI_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            LDI Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LDI_CAD_editcontrol} </TD></TR>{END F_F_LDI_CAD_fieldblock}
+        {BEGIN F_F_LDI_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b width=150>Fixo-Fixo 
+            LDI Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_F_LDI_VLR_editcontrol} </TD></TR>{END F_F_LDI_VLR_fieldblock}
+        {BEGIN F_M_LDI_CAD_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel LDI Cadência</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_LDI_CAD_editcontrol} </TD></TR>{END F_M_LDI_CAD_fieldblock}
+        {BEGIN F_M_LDI_VLR_fieldblock}<TR>
+          <TD style="PADDING-LEFT: 15px" class=editshade_b 
+            width=150>Fixo-Móvel LDI Valor</TD>
+          <TD style="PADDING-LEFT: 10px" class=editshade_lb width=250>{$F_M_LDI_VLR_editcontrol} 
+      </TD></TR>{END F_M_LDI_VLR_fieldblock}</TBODY></TABLE>
+      <DIV id="buttons_block{$id}" class=downedit2>
+      {BEGIN legend}<DIV id="required_block{$id}"><IMG alt=bullet 
+      src="images/icon_required.gif"> - Required field</DIV>{END legend}{$legendBreak} {BEGIN save_button}<SPAN class=buttonborder><INPUT class=button value=Salvar type=submit {$savebutton_attrs}></SPAN>{END save_button} 
+      {BEGIN back_button}<SPAN class=buttonborder><INPUT class=button value="Voltar à Lista" type=button {$backbutton_attrs}></SPAN>{END back_button} 
+      {BEGIN cancel_button}<SPAN class=buttonborder><INPUT class=button value=Cancela type=button {$cancelbutton_attrs}></SPAN>{END cancel_button} 
+      </DIV><B class=xbottom><B class=xb4a></B><B class=xb3a></B><B 
+      class=xb2a></B><B class=xb1a></B></B>{END flybody}</TD></TR></TBODY></TABLE>{END addForm}{BEGIN detail_tables}{END detail_tables}<BR><BR>{$footer} {END body}</BODY></HTML>

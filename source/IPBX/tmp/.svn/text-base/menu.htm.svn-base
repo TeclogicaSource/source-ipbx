@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type><LINK 
+id=replace_1 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/style.css"><!--[if IE]><LINK 
+id=replace_2 rel=stylesheet type=text/css 
+href="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/styleIE.css"><![endif]-->
+<STYLE>
+#center_block {width:35%;margin:0 auto;min-width:300px}
+#contents_block {text-align:left;}
+#header_block {padding:2px 5px 6px;text-align:center;line-height: 1.8}
+#tables_block {width:auto;margin:0;padding:10px;}
+#header_block span {padding-right:10px}
+.captions {padding:6px 10px;}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY innertag="body"><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=header contentEditable=false typeid="header">header</SPAN> 
+<TABLE id=center_block align=center>
+  <TBODY>
+  <TR>
+    <TD id=contents_block><B class=xtop><B class=xb1b></B><B class=xb2b></B><B 
+      class=xb3b></B><B class=xb4b></B></B>
+      <DIV id=header_block class=upeditmenu><SPAN 
+      outertag="loggedas_block">Logado Como <B><SPAN 
+      style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+      id=replace_4 contentEditable=false>username</SPAN></B> </SPAN><A 
+      class=tablelinks href="login.php?a=logout" outertag="logout_link" 
+      {$logoutlink_attrs}>Log Out</A> </DIV>
+      <DIV id=tables_block class="shade captions"><!-- MainMenuBegin --><SPAN 
+      id=replace_mainmenu0 contentEditable=false typeid="menu">
+      <STYLE class=Vmenu>
+#mainmenu_block IMG, #mainmenu_block HR{vertical-align:middle;margin-right:10px;}
+/* For Vmenu1 on the list page */
+#mainmenu_block {width:200px;}
+#menu_block___pageid___, #tables_block {padding:10px 0;}
+.Vmenu1 ul, .Vmenu1 ul li{list-style:none;margin:0;padding:0px;}
+.Vmenu1 ul li {padding:5px 10px;position:relative;z-index:1;display:block;}
+</STYLE>
+
+      <DIV id=mainmenu_block class=Vmenu1>
+      <UL>
+        <LI id=li1 view="topitem"><A id=itemlink1 class=tablelinkssearch 
+        title="Painel de Operações"><IMG id=replace_5 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Painel 
+        de Operações</A> 
+        <LI id=li2 view="topitem"><A id=itemlink2 class=tablelinkssearch 
+        title="Configurações Pessoais"><IMG id=replace_6 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Configurações 
+        Pessoais</A> 
+        <LI id=li3 view="topitem"><A id=itemlink3 class=tablelinkssearch 
+        title="Central Telefônica"><IMG id=replace_7 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Central 
+        Telefônica</A> 
+        <LI id=li50 view="topitem"><A id=itemlink50 class=tablelinkssearch 
+        title="Call Center"><IMG id=replace_8 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Call 
+        Center</A> 
+        <LI id=li82 view="topitem"><A id=itemlink82 class=tablelinkssearch 
+        title="Sala de Conferência"><IMG id=replace_9 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Sala 
+        de Conferência</A> 
+        <LI id=li83 view="topitem"><A id=itemlink83 class=tablelinkssearch 
+        title=FAX><IMG id=replace_10 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">FAX</A> 
+
+        <LI id=li88 view="topitem"><A id=itemlink88 class=tablelinkssearch 
+        title="Gestão SMS"><IMG id=replace_11 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Gestão 
+        SMS</A> 
+        <LI id=li92 view="topitem"><A id=itemlink92 class=tablelinkssearch 
+        title="Ura Reversa"><IMG id=replace_12 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Ura 
+        Reversa</A> 
+        <LI id=li100 view="topitem"><A id=itemlink100 class=tablelinkssearch 
+        title=Configurações><IMG id=replace_13 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Configurações</A> 
+
+        <LI id=li116 view="topitem"><A id=itemlink116 class=tablelinkssearch 
+        title=Ajuda><IMG id=replace_14 border=0 alt=* 
+        src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">Ajuda</A> 
+        </LI></UL></DIV></SPAN><!-- MainMenuEnd --></DIV>
+      <DIV class="shade captions" outertag="adminarea_link">
+      <HR>
+      <IMG id=replace_15 border=0 alt=" " 
+      src="file:///C:/Program%20Files/PHPRunner5.2/templates/styles/London/img/arrow_searchR.gif">&nbsp;&nbsp;<A 
+      class=tablelinks href="admin_rights_list.php" {$adminarealink_attrs}>Área 
+      Admin</A> </DIV><B class=xbottom><B class=xb4b></B><B class=xb3b></B><B 
+      class=xb2b></B><B class=xb1b></B></B></TD></TR></TBODY></TABLE><SPAN 
+style="BORDER-BOTTOM: #c0c0c0 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #c0c0c0 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FONT-FAMILY: Verdana; BACKGROUND: #ffff99; COLOR: black; FONT-SIZE: 9pt; VERTICAL-ALIGN: middle; BORDER-TOP: #c0c0c0 1px solid; FONT-WEIGHT: normal; BORDER-RIGHT: #c0c0c0 1px solid; PADDING-TOP: 1px" 
+id=footer contentEditable=false typeid="footer">footer</SPAN> </BODY></HTML>

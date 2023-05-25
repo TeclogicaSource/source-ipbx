@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-list" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class=rnr-hfiller></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id=login_block{$id}>{BEGIN loggedas_message}<SPAN>Logado 
+Como&nbsp;<B> 
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class=rnr-button href="#" {$guestloginlink_attrs}>Login</A> </SPAN>{END guestloginbutton}{BEGIN logoutbutton}<A class=rnr-button href="#" {$logoutlink_attrs}>Log Out</A> {END logoutbutton}{BEGIN adminarea_link}<A class=rnr-button href="admin_rights_list.php" {$adminarealink_attrs}>Área Admin</A> {END adminarea_link}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+<DIV class=rnr-hfiller></DIV>
+<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></DIV></DIV>{END container_hmenu}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">{BEGIN menu_block}
+{$menu main}{END menu_block}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN newrecord_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">{BEGIN inlineadd_link}<A class=rnr-button href="#" {$inlineaddlink_attrs}>Adicionar Novo</A> {END inlineadd_link}</DIV>
+{END newrecord_controls_block}{BEGIN record_controls_block}<DIV class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN widhtSelected}<SPAN class=rnr-buttons-group><A id=selectButtonsToggler{$id} class="rnr-button {$withSelectedClass}" href="#">Com os selecionados</A> 
+<UL id=selectButtonsGroup{$id} class=rnr-list>
+  {BEGIN editselected_link}<LI><A class="rnr-button link" href="#" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</A> </LI>
+  {END editselected_link}{BEGIN deleteselected_link}<LI><A class="rnr-button link" href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Eliminar</A> </LI>{END deleteselected_link}</UL></SPAN>{END widhtSelected}{BEGIN saveall_link}<A class=rnr-button href="#" {$savealllink_attrs} {$savealllink_span}>Salvar todos</A> {END saveall_link}{BEGIN cancelall_link}<A class=rnr-button href="#" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar 
+Edição</A> {END cancelall_link}</DIV>
+{END record_controls_block}{BEGIN more_list}<DIV class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><SPAN class=rnr-buttons-group></SPAN></DIV>
+{END more_list}<DIV class=rnr-hfiller><A id=New_Button12 class="rnr-button button" href="#" typeid="ib">Aplicar&nbsp;plano&nbsp;de&nbsp;discagem</A></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_pagination}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class=rnr-leftbricks>
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>Ítens 
+Encontrados: <B><SPAN class=rnr-details_found_count>
+{$records_found}</SPAN></B></SPAN></DIV>{END details_block}</DIV>
+<DIV class=rnr-rightbricks>
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>Página <B>
+{$page}</B>de <B>
+{$maxpages}</B></SPAN></DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id=recordspp_block{$id} name="recordspp_block{$id}">Registros por Página:&nbsp; 
+{$recsPerPage}</SPAN></DIV>{END recordspp_block}</DIV></DIV>{END container_pagination}
+{BEGIN container_grid}
+{BEGIN grid_block}<TABLE class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable hoverable" cellPadding=0>
+  <THEAD>{BEGIN grid_header}
+  <TR class="rnr-toprow style1 {$gridHeader_class}">{BEGIN record_header}
+    {BEGIN listIcons_column}<TH iEditCont="all">&nbsp;</TH>
+    {END listIcons_column}{BEGIN checkbox_column}<TH class=rnr-bc><INPUT type=checkbox {$checkboxheader_attrs}> </TH>
+    {END checkbox_column}{BEGIN padrao_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$padrao_class}">{BEGIN padrao_fieldheader}<SPAN {$padrao_orderlinkattrs}>
+      {$label ipbx_plano_disc padrao}</SPAN>{END padrao_fieldheader}</TH>
+    {END padrao_fieldheadercolumn}{BEGIN contexto_fieldheadercolumn}<TH style="WHITE-SPACE: normal" class="rnr-gridfieldlabel {$contexto_class}">{BEGIN contexto_fieldheader}<SPAN {$contexto_orderlinkattrs}>
+      {$label ipbx_plano_disc contexto}</SPAN>{END contexto_fieldheader}</TH>
+    {END contexto_fieldheadercolumn}{BEGIN rota_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$rota_class}">{BEGIN rota_fieldheader}<SPAN {$rota_orderlinkattrs}>
+      {$label ipbx_plano_disc rota}</SPAN>{END rota_fieldheader}</TH>
+    {END rota_fieldheadercolumn}{BEGIN id_interf_1_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$id_interf_1_class}">{BEGIN id_interf_1_fieldheader}<SPAN {$id_interf_1_orderlinkattrs}>
+      {$label ipbx_plano_disc id_interf_1}</SPAN>{END id_interf_1_fieldheader}</TH>
+    {END id_interf_1_fieldheadercolumn}{BEGIN add_rota_1_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$add_rota_1_class}">{BEGIN add_rota_1_fieldheader}<SPAN {$add_rota_1_orderlinkattrs}>
+      {$label ipbx_plano_disc add_rota_1}</SPAN>{END add_rota_1_fieldheader}</TH>
+    {END add_rota_1_fieldheadercolumn}{BEGIN id_interf_2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$id_interf_2_class}">{BEGIN id_interf_2_fieldheader}<SPAN {$id_interf_2_orderlinkattrs}>
+      {$label ipbx_plano_disc id_interf_2}</SPAN>{END id_interf_2_fieldheader}</TH>
+    {END id_interf_2_fieldheadercolumn}{BEGIN add_rota_2_fieldheadercolumn}<TH class="rnr-gridfieldlabel {$add_rota_2_class}">{BEGIN add_rota_2_fieldheader}<SPAN {$add_rota_2_orderlinkattrs}>
+      {$label ipbx_plano_disc add_rota_2}</SPAN>{END add_rota_2_fieldheader}</TH>
+    {END add_rota_2_fieldheadercolumn}<TH class=rnr-edge>&nbsp;</TH>
+    {BEGIN endrecordheader_block}<TH class=rnr-cs>&nbsp;</TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
+  <TBODY>
+  {BEGIN grid_row}<TR class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
+    {BEGIN listIcons_column}<TD class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A class=rnr-button-img title=Editar data-icon="inlineedit" {$inlineeditlink_attrs}></A>{END inlineedit_link}{END inlineedit_column}</TD>
+    {END listIcons_column}{BEGIN checkbox_column}<TD class=rnr-bc iEditCont="checkBox" {$rowstyle} {$recordattrs}>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox} </TD>
+    {END checkbox_column}{BEGIN padrao_fieldcolumn}<TD class={$padrao_class} {$padrao_style} {$recordattrs}>
+      {$padrao_value}</TD>
+    {END padrao_fieldcolumn}{BEGIN contexto_fieldcolumn}<TD style="WHITE-SPACE: normal" class={$contexto_class} {$contexto_style} {$recordattrs}>
+      {$contexto_value}</TD>
+    {END contexto_fieldcolumn}{BEGIN rota_fieldcolumn}<TD class={$rota_class} {$rota_style} {$recordattrs}>
+      {$rota_value}</TD>
+    {END rota_fieldcolumn}{BEGIN id_interf_1_fieldcolumn}<TD class={$id_interf_1_class} {$id_interf_1_style} {$recordattrs}>
+      {$id_interf_1_value}</TD>
+    {END id_interf_1_fieldcolumn}{BEGIN add_rota_1_fieldcolumn}<TD class={$add_rota_1_class} {$add_rota_1_style} {$recordattrs}>
+      {$add_rota_1_value}</TD>
+    {END add_rota_1_fieldcolumn}{BEGIN id_interf_2_fieldcolumn}<TD class={$id_interf_2_class} {$id_interf_2_style} {$recordattrs}>
+      {$id_interf_2_value}</TD>
+    {END id_interf_2_fieldcolumn}{BEGIN add_rota_2_fieldcolumn}<TD class={$add_rota_2_class} {$add_rota_2_style} {$recordattrs}>
+      {$add_rota_2_value}</TD>
+    {END add_rota_2_fieldcolumn}<TD class=rnr-edge {$recordattrs}>&nbsp;</TD>
+    {BEGIN endrecord_block}<TD class=rnr-cs {$endrecordblock_attrs}>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}</TBODY></TABLE>{END grid_block}{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>
+{END pagination_block}<DIV class=rnr-leftbricks>
+{BEGIN details_block}<DIV class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>Ítens 
+Encontrados: <B><SPAN class=rnr-details_found_count>
+{$records_found}</SPAN></B></SPAN></DIV>{END details_block}</DIV>
+<DIV class=rnr-rightbricks>
+{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>Página <B>
+{$page}</B>de <B>
+{$maxpages}</B></SPAN></DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id=recordspp_block{$id} name="recordspp_block{$id}">Registros por Página:&nbsp; 
+{$recsPerPage}</SPAN></DIV>{END recordspp_block}</DIV></DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

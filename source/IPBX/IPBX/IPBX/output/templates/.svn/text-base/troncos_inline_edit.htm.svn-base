@@ -1,0 +1,37 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="dsc_tronco">
+	{$dsc_tronco_editcontrol}
+	</control>
+	<control field="channel">
+	{$channel_editcontrol}
+	</control>
+	<control field="id_interf">
+	{$id_interf_editcontrol}
+	</control>
+	<control field="usuario">
+	{$usuario_editcontrol}
+	</control>
+	<control field="senha">
+	{$senha_editcontrol}
+	</control>
+	<control field="ip_interf">
+	{$ip_interf_editcontrol}
+	</control>
+	<control field="mcdu_inicio">
+	{$mcdu_inicio_editcontrol}
+	</control>
+	<control field="mcdu_fim">
+	{$mcdu_fim_editcontrol}
+	</control>
+	<control field="tp_toques">
+	{$tp_toques_editcontrol}
+	</control>
+	<control field="dig_rota">
+	{$dig_rota_editcontrol}
+	</control>
+	<control field="id_contrato">
+	{$id_contrato_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

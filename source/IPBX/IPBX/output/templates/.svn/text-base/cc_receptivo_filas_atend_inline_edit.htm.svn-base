@@ -1,0 +1,49 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="chave">
+	{$chave_editcontrol}
+	</control>
+	<control field="dt_entrada">
+	{$dt_entrada_editcontrol}
+	</control>
+	<control field="hr_entrada">
+	{$hr_entrada_editcontrol}
+	</control>
+	<control field="Fila">
+	{$Fila_editcontrol}
+	</control>
+	<control field="Agente">
+	{$Agente_editcontrol}
+	</control>
+	<control field="hr_atendimento">
+	{$hr_atendimento_editcontrol}
+	</control>
+	<control field="hr_abandono">
+	{$hr_abandono_editcontrol}
+	</control>
+	<control field="tp_espera">
+	{$tp_espera_editcontrol}
+	</control>
+	<control field="tp_atendimento">
+	{$tp_atendimento_editcontrol}
+	</control>
+	<control field="Telefone">
+	{$Telefone_editcontrol}
+	</control>
+	<control field="ps_entrada">
+	{$ps_entrada_editcontrol}
+	</control>
+	<control field="ps_abandono">
+	{$ps_abandono_editcontrol}
+	</control>
+	<control field="tel_trans">
+	{$tel_trans_editcontrol}
+	</control>
+	<control field="dsl_motiv">
+	{$dsl_motiv_editcontrol}
+	</control>
+	<control field="flg_timeout_fila">
+	{$flg_timeout_fila_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

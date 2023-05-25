@@ -1,0 +1,161 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel Rel__Ura_Reversa___Enfileiramento rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-grid asbuttons {$pageStyleName}">
+		{BEGIN grid_block}
+<TABLE class="rnr-c rnr-b-report report" CELLPADDING=0>
+<thead>
+<tr class="rnr-toprow table-header style1">
+
+<th>{$label Rel__Ura_Reversa___Enfileiramento id_cliente}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento dt_criado}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento nm_tel1}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento dt_tel1}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento nm_tel2}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento dt_tel2}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento nm_tel3}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento dt_tel3}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento nm_tentativas}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento resp_usuario}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento ult_status}</th>
+<th>{$label Rel__Ura_Reversa___Enfileiramento flg_proc}</th>
+<th class="rnr-edge"></th>
+</tr>
+</thead>
+<tbody>
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr class="rnr-row style1" {$rowattrs}>
+
+	<!-------------------------------------  begin detail links for row ----------------------------------------->
+		<!-------------------------------------  end detail links for row ----------------------------------------->
+
+	<td {$recordattrs}>{$id_cliente_value}</td>
+	<td {$recordattrs}>{$dt_criado_value}</td>
+	<td {$recordattrs}>{$nm_tel1_value}</td>
+	<td {$recordattrs}>{$dt_tel1_value}</td>
+	<td {$recordattrs}>{$nm_tel2_value}</td>
+	<td {$recordattrs}>{$dt_tel2_value}</td>
+	<td {$recordattrs}>{$nm_tel3_value}</td>
+	<td {$recordattrs}>{$dt_tel3_value}</td>
+	<td {$recordattrs}>{$nm_tentativas_value}</td>
+	<td {$recordattrs}>{$resp_usuario_value}</td>
+	<td {$recordattrs}>{$ult_status_value}</td>
+	<td {$recordattrs}>{$flg_proc_value}</td>
+	<td class="rnr-edge" {$recordattrs}></td>
+</tr>
+{END row_data}
+{END grid_row}
+</tbody>
+</table>
+{END grid_block}
+	</div>		
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,126 @@
+<?php
+
+
+
+
+
+
+
+
+
+
+
+// After record added
+function AfterAdd(&$values,&$keys,$inline)
+{
+
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+// Será utilizado comunicação com o banco de dados
+global $conn;
+
+// Pedido para gerar provisionamento
+geraProvisionamento ();
+;
+} // function AfterAdd
+$arrEventTables["AfterAdd"]="ipbx_provisionamento";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// After record updated
+function AfterEdit(&$values,$where,&$oldvalues,&$keys,$inline)
+{
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+// Será utilizado comunicação com o banco de dados
+global $conn;
+
+
+// Pedido para gerar provisionamento
+geraProvisionamento ();
+;
+} // function AfterEdit
+$arrEventTables["AfterEdit"]="ipbx_provisionamento";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

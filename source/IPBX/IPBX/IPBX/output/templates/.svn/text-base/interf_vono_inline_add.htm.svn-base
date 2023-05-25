@@ -1,0 +1,24 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="id_contrato">
+	{$id_contrato_editcontrol}
+	</control>
+	<control 
+	field="codec">
+	{$codec_editcontrol}
+	</control>
+	<control 
+	field="usuario">
+	{$usuario_editcontrol}
+	</control>
+	<control 
+	field="senha">
+	{$senha_editcontrol}
+	</control>
+	<control 
+	field="ip_host">
+	{$ip_host_editcontrol}
+	</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

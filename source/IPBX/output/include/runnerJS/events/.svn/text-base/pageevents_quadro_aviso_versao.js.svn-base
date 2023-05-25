@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("quadro_aviso_versao",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='OK_Entendi1';if(!pageObj.buttonEventBefore['OK_Entendi1']){pageObj.buttonEventBefore['OK_Entendi1']=function(params,ctrl,pageObj,proxy,pageid,rowData){params["txt"]="Hello";ctrl.setMessage("Sending request to server...");}}
+if(!pageObj.buttonEventAfter['OK_Entendi1']){pageObj.buttonEventAfter['OK_Entendi1']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=result["txt"]+" !!!";ctrl.setMessage(message);}}
+$('a[id=OK_Entendi1]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="OK_Entendi1"+"_"+Runner.genId();var button_OK_Entendi1=new Runner.form.Button({id:this.id,btnName:"OK_Entendi1"});button_OK_Entendi1.init({args:[pageObj,proxy,pageid]});});});

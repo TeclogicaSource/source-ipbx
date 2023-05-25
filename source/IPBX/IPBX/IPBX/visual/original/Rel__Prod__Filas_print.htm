@@ -1,0 +1,138 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Prod. Filas</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Prod. Filas</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN dt_entrada_fieldheader}
+<b>Data </b>
+{END dt_entrada_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Fila_fieldheader}
+<b>Fila</b>
+{END Fila_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Receb__fieldheader}
+<b>Receb.</b>
+{END Receb__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Atend__fieldheader}
+<b>Atend.</b>
+{END Atend__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Aband__fieldheader}
+<b>Aband.</b>
+{END Aband__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN TME_fieldheader}
+<b>TME</b>
+{END TME_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN TMA_fieldheader}
+<b>TMA</b>
+{END TMA_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN TMO_fieldheader}
+<b>TMO</b>
+{END TMO_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Aband_Contr__fieldheader}
+<b>Aband.Contr.</b>
+{END Aband_Contr__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Aband_Real__fieldheader}
+<b>Aband.Real.</b>
+{END Aband_Real__fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN NivelServicoContratado_fieldheader}
+<b>Nivel Servico Contratado</b>
+{END NivelServicoContratado_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$dt_entrada_value}</td>
+	<td class=data>{$Fila_value}</td>
+	<td class=data>{$Receb__value}</td>
+	<td class=data>{$Atend__value}</td>
+	<td class=data>{$Aband__value}</td>
+	<td class=data>{$TME_value}</td>
+	<td class=data>{$TMA_value}</td>
+	<td class=data>{$TMO_value}</td>
+	<td class=data>{$Aband_Contr__value}</td>
+	<td class=data>{$Aband_Real__value}</td>
+	<td class=data>{$NivelServicoContratado_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

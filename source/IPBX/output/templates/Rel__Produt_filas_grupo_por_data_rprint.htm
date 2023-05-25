@@ -1,0 +1,230 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #EEEEEE;}
+		td.nbgroup_1{background-color: #EEEEEE;}
+		td.header_1 {
+			background-color: #CACACA; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel Rel__Produt_filas_grupo_por_data rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #EEEEEE;}
+		td.nbgroup_1{background-color: #EEEEEE;}
+		td.header_1 {
+			background-color: #CACACA; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.grouptotalsrow + :not(.grouptotalsrow) > * {
+		border-top:solid #808080 1px; 
+	}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-empty asbuttons {$pageStyleName}">		
+						<div class="rnr-c rnr-cv rnr-c-grid">
+		<div class="rnr-brickcontents style1 rnr-b-report">		
+			<table class="rnr-report" cellspacing=0 cellpadding=0 border=0>
+<tbody>
+			
+			
+			{BEGIN grid_row}
+
+			{BEGIN nm_grupo_newgroup}
+								<tr class="group-headers">
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data nm_grupo}</td>
+										<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data dt_entrada}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data Receb_}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data Atend_}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data Aband_}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data TME}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data TMA}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data Aband_Contr_}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data Aband_Real_}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaContratado}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaRealizado}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoEsperaQuantidade}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoContratado}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoRealizado}</td>
+					<td class="blackshade">{$label Rel__Produt_filas_grupo_por_data NivelServicoAtendimentoQuantidade}</td>
+				</tr>
+				<tr class="group-spliter-1" {$rowattrs}>
+													
+							<td colspan=15 class=header_1>
+								<font>
+									{$nm_grupo_grval} 
+
+								</font>
+							</td>
+				</tr>
+			{END nm_grupo_newgroup}
+						<!-------------------------------------  data ----------------------------------------->
+			{BEGIN row_data}
+				<tr >
+										<td class=" group_1" >&nbsp;</td>
+									<td class=data>{$dt_entrada_value}</td>
+					<td class=data>{$Receb__value}</td>
+					<td class=data>{$Atend__value}</td>
+					<td class=data>{$Aband__value}</td>
+					<td class=data>{$TME_value}</td>
+					<td class=data>{$TMA_value}</td>
+					<td class=data>{$Aband_Contr__value}</td>
+					<td class=data>{$Aband_Real__value}</td>
+					<td class=data>{$NivelServicoEsperaContratado_value}</td>
+					<td class=data>{$NivelServicoEsperaRealizado_value}</td>
+					<td class=data>{$NivelServicoEsperaQuantidade_value}</td>
+					<td class=data>{$NivelServicoAtendimentoContratado_value}</td>
+					<td class=data>{$NivelServicoAtendimentoRealizado_value}</td>
+					<td class=data>{$NivelServicoAtendimentoQuantidade_value}</td>
+				</tr>
+			{END row_data}
+			<!-------------------------------------  group summary ----------------------------------------->
+						{BEGIN nm_grupo_endgroup}
+				<tr class="summaryrow"  style="display:none; height:0px" >
+										<td  class="group_1" colspan=15 >
+				Resumo para {$label Rel__Produt_filas_grupo_por_data nm_grupo} {$nm_grupo_grval}
+					- <span class="summary-1" data-type="summary" data-value="{$groupnm_grupo_total_cnt}">{$groupnm_grupo_total_cnt}</span> Total de registros</td>
+				</tr>
+															{END nm_grupo_endgroup}
+			{END grid_row}
+
+							</tbody>
+			</table>
+		</div>
+	</div>
+
+	</div>
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

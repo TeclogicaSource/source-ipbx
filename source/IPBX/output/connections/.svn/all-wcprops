@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections
+END
+ConnectionManager.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/ConnectionManager.php
+END
+MSSQLWinConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/MSSQLWinConnection.php
+END
+MySQLiConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/MySQLiConnection.php
+END
+Connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/Connection.php
+END
+dbfunctions_legacy.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbfunctions_legacy.php
+END
+PostgreConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/PostgreConnection.php
+END
+SQLite3Connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/SQLite3Connection.php
+END
+QueryResult.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/QueryResult.php
+END
+MSSQLSrvConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/MSSQLSrvConnection.php
+END
+InformixConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/InformixConnection.php
+END
+MSSQLUnixConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/MSSQLUnixConnection.php
+END
+ADOConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/ADOConnection.php
+END
+OracleConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/OracleConnection.php
+END
+MySQLConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/MySQLConnection.php
+END
+DB2Connection.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/DB2Connection.php
+END
+ODBCConnection.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/ODBCConnection.php
+END

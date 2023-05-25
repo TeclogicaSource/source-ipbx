@@ -1,0 +1,178 @@
+body.page-add_vmenu
+{
+padding-top:10px; padding-left:10px;
+}
+.page-add_vmenu .rnr-c-fields,
+  .rnr-pagewrapper .page-add_vmenu .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-c-fields
+{
+margin-bottom:5px;
+}
+.page-add_vmenu .rnr-c-fields,
+  .rnr-pagewrapper .page-add_vmenu .rnr-c-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-c-fields
+{
+min-width: 500px; display:inline-block
+}
+.page-add_vmenu .rnr-cw-fields,
+  .rnr-pagewrapper .page-add_vmenu .rnr-cw-fields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-cw-fields
+{
+text-align: left;
+}
+.page-add_vmenu .rnr-b-addheader,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-addheader,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-addheader > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addheader > *
+{
+font-size: 120%;
+}
+.page-add_vmenu .rnr-b-message,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-message
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-message,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-message,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-message
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-message > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-message > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-message > *
+{
+
+}
+.page-add_vmenu .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-multistep_nav_add > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-multistep_nav_add > *
+{
+
+}
+.page-add_vmenu .rnr-b-addfields,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-addfields,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-addfields > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addfields > *
+{
+
+}
+.page-add_vmenu .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-addbuttons,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-addbuttons > *
+{
+
+}
+.page-add_vmenu .rnr-c-details,
+  .rnr-pagewrapper .page-add_vmenu .rnr-c-details,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-c-details
+{
+margin-bottom:5px;
+}
+.page-add_vmenu .rnr-b-adddetails,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-adddetails,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-adddetails > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-adddetails > *
+{
+
+}
+body.page-add_vmenu .rnr-center
+{
+padding-right: 5px;
+}
+.page-add_vmenu .rnr-c-menu,
+  .rnr-pagewrapper .page-add_vmenu .rnr-c-menu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-c-menu
+{
+margin-bottom:5px;
+}
+.page-add_vmenu .rnr-c-menu,
+  .rnr-pagewrapper .page-add_vmenu .rnr-c-menu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-c-menu
+{
+min-width: 100px;
+}
+.page-add_vmenu .rnr-b-vmenu,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu
+{
+white-space: nowrap;
+}
+.page-add_vmenu .rnr-b-vmenu,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu
+{
+text-align: right;
+}
+.page-add_vmenu .rnr-b-vmenu > *,
+  .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu > *,
+  .rnr-pagewrapper .rnr-pagewrapper .page-add_vmenu .rnr-b-vmenu > *
+{
+
+}
+body.page-add_vmenu  > * > * > .rnr-left
+{
+min-width:260px;
+}
+body.page-add_vmenu .rnr-left
+{
+padding-right: 5px;
+}

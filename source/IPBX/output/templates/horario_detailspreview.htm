@@ -1,0 +1,36 @@
+Horario<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Descrição</strong></td>
+<td><strong>Horario Inicio</strong></td>
+<td><strong>Horario Fim</strong></td>
+<td><strong>Segunda Feira</strong></td>
+<td><strong>Terça Feira</strong></td>
+<td><strong>Quarta Feira</strong></td>
+<td><strong>Quinta Feira</strong></td>
+<td><strong>Sexta Feira</strong></td>
+<td><strong>Sabado</strong></td>
+<td><strong>Domingo</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$dsc_horario_value}</td>
+<td>{$hr_inicio_value}</td>
+<td>{$hr_fim_value}</td>
+<td>{$seg_value}</td>
+<td>{$ter_value}</td>
+<td>{$qua_value}</td>
+<td>{$qui_value}</td>
+<td>{$sex_value}</td>
+<td>{$sab_value}</td>
+<td>{$dom_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

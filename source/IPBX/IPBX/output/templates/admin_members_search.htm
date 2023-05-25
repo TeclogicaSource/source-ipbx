@@ -1,0 +1,588 @@
+<html {$html_attrs}>
+<head>
+<title>Assign users to groups: Busca Avancada</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;border-bottom:1px solid white;}
+#main_block{$id} {padding:10px 10px;}
+#buttons_block{$id} {padding:10px 0 5px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="tableheader">Assign users to groups - Busca Avancada</div>
+<div class="xboxcontentb" id="main_block{$id}">
+
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" style="width:100%">
+<span class=fieldname>Buscar:</span>
+<input type="radio" name="srchType"" {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label}
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+<br>
+</div>
+{END conditions_block}
+
+<table cellpadding=4 cellspacing=0 id="fields_block">
+<tr valign=center>
+<td align=center valign=middle class="headerlist_left">&nbsp;</td>
+<td width=30 align=center valign=middle class="headerlist2">NOT</td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist_right">&nbsp;</td></tr>
+
+{BEGIN id_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Id
+	<td align=center class=editshade_lb><input type=CheckBox {$id_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_id}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_editcontrol1}&nbsp;</td>
+</tr>
+{END id_fieldblock}	
+{BEGIN name_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Name
+	<td align=center class=editshade_lb><input type=CheckBox {$name_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_name}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$name_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$name_editcontrol1}&nbsp;</td>
+</tr>
+{END name_fieldblock}	
+{BEGIN host_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Host
+	<td align=center class=editshade_lb><input type=CheckBox {$host_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_host}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$host_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$host_editcontrol1}&nbsp;</td>
+</tr>
+{END host_fieldblock}	
+{BEGIN nat_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Nat
+	<td align=center class=editshade_lb><input type=CheckBox {$nat_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_nat}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$nat_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$nat_editcontrol1}&nbsp;</td>
+</tr>
+{END nat_fieldblock}	
+{BEGIN type_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Type
+	<td align=center class=editshade_lb><input type=CheckBox {$type_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_type}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$type_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$type_editcontrol1}&nbsp;</td>
+</tr>
+{END type_fieldblock}	
+{BEGIN accountcode_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Accountcode
+	<td align=center class=editshade_lb><input type=CheckBox {$accountcode_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_accountcode}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$accountcode_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$accountcode_editcontrol1}&nbsp;</td>
+</tr>
+{END accountcode_fieldblock}	
+{BEGIN amaflags_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Amaflags
+	<td align=center class=editshade_lb><input type=CheckBox {$amaflags_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_amaflags}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$amaflags_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$amaflags_editcontrol1}&nbsp;</td>
+</tr>
+{END amaflags_fieldblock}	
+{BEGIN call_limit_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Call-limit
+	<td align=center class=editshade_lb><input type=CheckBox {$call_limit_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_call_limit}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$call_limit_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$call_limit_editcontrol1}&nbsp;</td>
+</tr>
+{END call_limit_fieldblock}	
+{BEGIN callgroup_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Callgroup
+	<td align=center class=editshade_lb><input type=CheckBox {$callgroup_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_callgroup}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$callgroup_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$callgroup_editcontrol1}&nbsp;</td>
+</tr>
+{END callgroup_fieldblock}	
+{BEGIN callerid_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Callerid
+	<td align=center class=editshade_lb><input type=CheckBox {$callerid_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_callerid}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$callerid_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$callerid_editcontrol1}&nbsp;</td>
+</tr>
+{END callerid_fieldblock}	
+{BEGIN cancallforward_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Cancallforward
+	<td align=center class=editshade_lb><input type=CheckBox {$cancallforward_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_cancallforward}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$cancallforward_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$cancallforward_editcontrol1}&nbsp;</td>
+</tr>
+{END cancallforward_fieldblock}	
+{BEGIN canreinvite_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Canreinvite
+	<td align=center class=editshade_lb><input type=CheckBox {$canreinvite_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_canreinvite}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$canreinvite_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$canreinvite_editcontrol1}&nbsp;</td>
+</tr>
+{END canreinvite_fieldblock}	
+{BEGIN context_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Context
+	<td align=center class=editshade_lb><input type=CheckBox {$context_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_context}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$context_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$context_editcontrol1}&nbsp;</td>
+</tr>
+{END context_fieldblock}	
+{BEGIN defaultip_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Defaultip
+	<td align=center class=editshade_lb><input type=CheckBox {$defaultip_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_defaultip}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$defaultip_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$defaultip_editcontrol1}&nbsp;</td>
+</tr>
+{END defaultip_fieldblock}	
+{BEGIN dtmfmode_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Dtmfmode
+	<td align=center class=editshade_lb><input type=CheckBox {$dtmfmode_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_dtmfmode}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$dtmfmode_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$dtmfmode_editcontrol1}&nbsp;</td>
+</tr>
+{END dtmfmode_fieldblock}	
+{BEGIN fromuser_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Fromuser
+	<td align=center class=editshade_lb><input type=CheckBox {$fromuser_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_fromuser}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fromuser_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fromuser_editcontrol1}&nbsp;</td>
+</tr>
+{END fromuser_fieldblock}	
+{BEGIN fromdomain_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Fromdomain
+	<td align=center class=editshade_lb><input type=CheckBox {$fromdomain_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_fromdomain}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fromdomain_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fromdomain_editcontrol1}&nbsp;</td>
+</tr>
+{END fromdomain_fieldblock}	
+{BEGIN insecure_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Insecure
+	<td align=center class=editshade_lb><input type=CheckBox {$insecure_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_insecure}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$insecure_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$insecure_editcontrol1}&nbsp;</td>
+</tr>
+{END insecure_fieldblock}	
+{BEGIN language_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Language
+	<td align=center class=editshade_lb><input type=CheckBox {$language_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_language}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$language_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$language_editcontrol1}&nbsp;</td>
+</tr>
+{END language_fieldblock}	
+{BEGIN mailbox_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Mailbox
+	<td align=center class=editshade_lb><input type=CheckBox {$mailbox_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_mailbox}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mailbox_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mailbox_editcontrol1}&nbsp;</td>
+</tr>
+{END mailbox_fieldblock}	
+{BEGIN md5secret_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Md5secret
+	<td align=center class=editshade_lb><input type=CheckBox {$md5secret_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_md5secret}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$md5secret_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$md5secret_editcontrol1}&nbsp;</td>
+</tr>
+{END md5secret_fieldblock}	
+{BEGIN deny_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Deny
+	<td align=center class=editshade_lb><input type=CheckBox {$deny_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_deny}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$deny_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$deny_editcontrol1}&nbsp;</td>
+</tr>
+{END deny_fieldblock}	
+{BEGIN permit_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Permit
+	<td align=center class=editshade_lb><input type=CheckBox {$permit_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_permit}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$permit_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$permit_editcontrol1}&nbsp;</td>
+</tr>
+{END permit_fieldblock}	
+{BEGIN mask_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Mask
+	<td align=center class=editshade_lb><input type=CheckBox {$mask_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_mask}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mask_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mask_editcontrol1}&nbsp;</td>
+</tr>
+{END mask_fieldblock}	
+{BEGIN musiconhold_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Musiconhold
+	<td align=center class=editshade_lb><input type=CheckBox {$musiconhold_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_musiconhold}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$musiconhold_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$musiconhold_editcontrol1}&nbsp;</td>
+</tr>
+{END musiconhold_fieldblock}	
+{BEGIN pickupgroup_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Pickupgroup
+	<td align=center class=editshade_lb><input type=CheckBox {$pickupgroup_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_pickupgroup}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$pickupgroup_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$pickupgroup_editcontrol1}&nbsp;</td>
+</tr>
+{END pickupgroup_fieldblock}	
+{BEGIN qualify_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Qualify
+	<td align=center class=editshade_lb><input type=CheckBox {$qualify_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_qualify}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qualify_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$qualify_editcontrol1}&nbsp;</td>
+</tr>
+{END qualify_fieldblock}	
+{BEGIN rtcachefriends_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Rtcachefriends
+	<td align=center class=editshade_lb><input type=CheckBox {$rtcachefriends_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_rtcachefriends}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtcachefriends_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtcachefriends_editcontrol1}&nbsp;</td>
+</tr>
+{END rtcachefriends_fieldblock}	
+{BEGIN regexten_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Regexten
+	<td align=center class=editshade_lb><input type=CheckBox {$regexten_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_regexten}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regexten_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regexten_editcontrol1}&nbsp;</td>
+</tr>
+{END regexten_fieldblock}	
+{BEGIN restrictcid_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Restrictcid
+	<td align=center class=editshade_lb><input type=CheckBox {$restrictcid_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_restrictcid}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$restrictcid_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$restrictcid_editcontrol1}&nbsp;</td>
+</tr>
+{END restrictcid_fieldblock}	
+{BEGIN rtptimeout_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Rtptimeout
+	<td align=center class=editshade_lb><input type=CheckBox {$rtptimeout_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_rtptimeout}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtptimeout_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtptimeout_editcontrol1}&nbsp;</td>
+</tr>
+{END rtptimeout_fieldblock}	
+{BEGIN rtpholdtimeout_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Rtpholdtimeout
+	<td align=center class=editshade_lb><input type=CheckBox {$rtpholdtimeout_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_rtpholdtimeout}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtpholdtimeout_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$rtpholdtimeout_editcontrol1}&nbsp;</td>
+</tr>
+{END rtpholdtimeout_fieldblock}	
+{BEGIN secret_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Secret
+	<td align=center class=editshade_lb><input type=CheckBox {$secret_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_secret}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$secret_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$secret_editcontrol1}&nbsp;</td>
+</tr>
+{END secret_fieldblock}	
+{BEGIN setvar_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Setvar
+	<td align=center class=editshade_lb><input type=CheckBox {$setvar_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_setvar}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$setvar_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$setvar_editcontrol1}&nbsp;</td>
+</tr>
+{END setvar_fieldblock}	
+{BEGIN disallow_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Disallow
+	<td align=center class=editshade_lb><input type=CheckBox {$disallow_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_disallow}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$disallow_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$disallow_editcontrol1}&nbsp;</td>
+</tr>
+{END disallow_fieldblock}	
+{BEGIN allow_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Allow
+	<td align=center class=editshade_lb><input type=CheckBox {$allow_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_allow}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$allow_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$allow_editcontrol1}&nbsp;</td>
+</tr>
+{END allow_fieldblock}	
+{BEGIN fullcontact_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Fullcontact
+	<td align=center class=editshade_lb><input type=CheckBox {$fullcontact_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_fullcontact}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fullcontact_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$fullcontact_editcontrol1}&nbsp;</td>
+</tr>
+{END fullcontact_fieldblock}	
+{BEGIN ipaddr_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ipaddr
+	<td align=center class=editshade_lb><input type=CheckBox {$ipaddr_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ipaddr}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ipaddr_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ipaddr_editcontrol1}&nbsp;</td>
+</tr>
+{END ipaddr_fieldblock}	
+{BEGIN port_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Port
+	<td align=center class=editshade_lb><input type=CheckBox {$port_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_port}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$port_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$port_editcontrol1}&nbsp;</td>
+</tr>
+{END port_fieldblock}	
+{BEGIN regserver_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Regserver
+	<td align=center class=editshade_lb><input type=CheckBox {$regserver_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_regserver}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regserver_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regserver_editcontrol1}&nbsp;</td>
+</tr>
+{END regserver_fieldblock}	
+{BEGIN regseconds_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Regseconds
+	<td align=center class=editshade_lb><input type=CheckBox {$regseconds_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_regseconds}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regseconds_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$regseconds_editcontrol1}&nbsp;</td>
+</tr>
+{END regseconds_fieldblock}	
+{BEGIN lastms_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Lastms
+	<td align=center class=editshade_lb><input type=CheckBox {$lastms_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_lastms}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$lastms_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$lastms_editcontrol1}&nbsp;</td>
+</tr>
+{END lastms_fieldblock}	
+{BEGIN username_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Username
+	<td align=center class=editshade_lb><input type=CheckBox {$username_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_username}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$username_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$username_editcontrol1}&nbsp;</td>
+</tr>
+{END username_fieldblock}	
+{BEGIN defaultuser_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Defaultuser
+	<td align=center class=editshade_lb><input type=CheckBox {$defaultuser_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_defaultuser}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$defaultuser_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$defaultuser_editcontrol1}&nbsp;</td>
+</tr>
+{END defaultuser_fieldblock}	
+{BEGIN subscribecontext_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Subscribecontext
+	<td align=center class=editshade_lb><input type=CheckBox {$subscribecontext_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_subscribecontext}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$subscribecontext_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$subscribecontext_editcontrol1}&nbsp;</td>
+</tr>
+{END subscribecontext_fieldblock}	
+{BEGIN useragent_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Useragent
+	<td align=center class=editshade_lb><input type=CheckBox {$useragent_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_useragent}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$useragent_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$useragent_editcontrol1}&nbsp;</td>
+</tr>
+{END useragent_fieldblock}	
+{BEGIN gateway_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Gateway
+	<td align=center class=editshade_lb><input type=CheckBox {$gateway_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_gateway}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$gateway_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$gateway_editcontrol1}&nbsp;</td>
+</tr>
+{END gateway_fieldblock}	
+{BEGIN id_horario_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Id Horario
+	<td align=center class=editshade_lb><input type=CheckBox {$id_horario_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_id_horario}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_horario_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_horario_editcontrol1}&nbsp;</td>
+</tr>
+{END id_horario_fieldblock}	
+{BEGIN mail_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Mail
+	<td align=center class=editshade_lb><input type=CheckBox {$mail_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_mail}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mail_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$mail_editcontrol1}&nbsp;</td>
+</tr>
+{END mail_fieldblock}	
+{BEGIN grava_chamada_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Grava Chamada
+	<td align=center class=editshade_lb><input type=CheckBox {$grava_chamada_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_grava_chamada}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$grava_chamada_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$grava_chamada_editcontrol1}&nbsp;</td>
+</tr>
+{END grava_chamada_fieldblock}	
+{BEGIN tp_ramal_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Tp Ramal
+	<td align=center class=editshade_lb><input type=CheckBox {$tp_ramal_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_tp_ramal}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$tp_ramal_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$tp_ramal_editcontrol1}&nbsp;</td>
+</tr>
+{END tp_ramal_fieldblock}	
+{BEGIN id_interf_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Id Interf
+	<td align=center class=editshade_lb><input type=CheckBox {$id_interf_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_id_interf}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_interf_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_interf_editcontrol1}&nbsp;</td>
+</tr>
+{END id_interf_fieldblock}	
+{BEGIN tp_chamada_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Tp Chamada
+	<td align=center class=editshade_lb><input type=CheckBox {$tp_chamada_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_tp_chamada}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$tp_chamada_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$tp_chamada_editcontrol1}&nbsp;</td>
+</tr>
+{END tp_chamada_fieldblock}	
+{BEGIN flg_cadeado_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Flg Cadeado
+	<td align=center class=editshade_lb><input type=CheckBox {$flg_cadeado_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_flg_cadeado}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$flg_cadeado_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$flg_cadeado_editcontrol1}&nbsp;</td>
+</tr>
+{END flg_cadeado_fieldblock}	
+{BEGIN id_pesquisa_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Id Pesquisa
+	<td align=center class=editshade_lb><input type=CheckBox {$id_pesquisa_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_id_pesquisa}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_pesquisa_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_pesquisa_editcontrol1}&nbsp;</td>
+</tr>
+{END id_pesquisa_fieldblock}	
+{BEGIN desvio_ddr_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Desvio Ddr
+	<td align=center class=editshade_lb><input type=CheckBox {$desvio_ddr_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_desvio_ddr}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$desvio_ddr_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$desvio_ddr_editcontrol1}&nbsp;</td>
+</tr>
+{END desvio_ddr_fieldblock}	
+{BEGIN id_saida_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Id Saida
+	<td align=center class=editshade_lb><input type=CheckBox {$id_saida_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_id_saida}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_saida_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$id_saida_editcontrol1}&nbsp;</td>
+</tr>
+{END id_saida_fieldblock}	
+</table>
+
+<div class="downedit" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Buscar" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>

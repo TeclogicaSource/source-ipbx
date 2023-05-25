@@ -1,0 +1,228 @@
+<!doctype html><p align=center><font size=+1 color=red>This website was created by evaluation version of PHPRunner Trial.</font></p>
+<p align=center><font size=+1 color=red>This warning message will not appear on website created by a paid-for version of PHPRunner Trial.</font></p>
+<html  {$html_attrs}>
+	<head>
+		<title>{$pagetitle}</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=7">
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+		<!--%%pagestyle%%-->
+		<!--[if IE]>
+			<link REL="stylesheet" href="styles/defaultIE.css" type="text/css">
+			{BEGIN IEcssFiles}
+			<link REL="stylesheet" href="{$stylepathIE}" type="text/css">
+			{END IEcssFiles}
+		<![endif]-->
+	</head>
+	
+	<body class="{$stylename}" {$bodyattrs}>
+	{BEGIN body}
+			
+
+
+
+{BEGIN container_grid}
+
+
+
+{BEGIN pages}
+<h1>Atendimento</h1>
+	<span {$pages_attrs}>
+		Página <b>{$pageno}</b> de <b>{$maxpages}</b>
+	</span>
+
+
+			<style>
+table.report {border-collapse: collapse} 
+table.report td {padding: 2px;border-width: 1px; border-style: solid; border-color: #cccccc;}
+div.page_block{clear:left;}
+td.noborder{padding-right:8px}
+td.data{padding-right:8px}
+td.group_1{background-color: #E6E6FA;}
+td.group_2{background-color: #C0C0C0;}
+td.nbgroup_1{background-color: #E6E6FA;border-style:none;}
+td.nbgroup_2{background-color: #C0C0C0;border-style:none;}
+td.header_1{background-color: #C3C3D4;}
+td.header_2{background-color: #A3A3A3;}
+td.pagesummary{background-color:#ffffbb;}
+td.globalsummary{background-color:#ffe0b0;}
+</style>
+<div id="grid_block{$id}">
+<TABLE CELLPADDING=5 CELLSPACING=0 BORDER=0>
+	<tr class="runner-toprow style1">
+		<td class="runner-cl"><img src="images/spacer.gif"/></td>
+		<td class="runner-cc"></td>
+		<td class="runner-cr"><img src="images/spacer.gif"/></td>
+	</tr>
+	<tr class="runner-row style1">
+		<td class="runner-cl"></td>
+		<td class="runner-cc">
+			<table cellspacing=0 cellpadding=0 border=0 style="padding:2px">
+				{BEGIN grid_row}
+				<!-------------------------------------  group headers ----------------------------------------->
+					{BEGIN Fila_firstnewgroup}
+									<tr>
+					<td class=blackshade>Hora Entrada</td>
+					<td class=blackshade>Fila</td>
+					<td class=blackshade>Telefone</td>
+					<td class=blackshade>Agente</td>
+					<td class=blackshade>Tempo Espera</td>
+					<td class=blackshade>Data Entrada</td>
+					<td class=blackshade>Hora Atendimento</td>
+					<td class=blackshade>Tempo de Operação</td>
+					<td class=blackshade>Tempo de Atendimento</td>
+					</tr>
+					<tr>
+												<td class=header_1 >
+						<font style="font-weight:900">{$Fila_grval}</font>
+												</td>
+												<td class=header_2 >
+						<font style="font-weight:900">{$Agente_grval}</font>
+												</td>
+				<!-------------------------------------  data ----------------------------------------->
+					<td class=data>
+										{$hr_entrada_value}</td>
+					<td class=data>
+										{$Telefone_value}</td>
+					<td class=data>
+										{$tp_espera_value}</td>
+					<td class=data>
+										{$dt_entrada_value}</td>
+					<td class=data>
+										{$hr_atendimento_value}</td>
+					<td class=data>
+										{$tp_atendimento_value}</td>
+					<td class=data>
+										{$TMA_value}</td>
+					</tr>
+					{END Fila_firstnewgroup}
+					{BEGIN Agente_firstnewgroup}
+									<tr>
+												<td class=group_1>
+												&nbsp;
+						</td>
+												<td class=header_2 >
+						<font style="font-weight:900">{$Agente_grval}</font>
+												</td>
+				<!-------------------------------------  data ----------------------------------------->
+					<td class=data>
+										{$hr_entrada_value}</td>
+					<td class=data>
+										{$Telefone_value}</td>
+					<td class=data>
+										{$tp_espera_value}</td>
+					<td class=data>
+										{$dt_entrada_value}</td>
+					<td class=data>
+										{$hr_atendimento_value}</td>
+					<td class=data>
+										{$tp_atendimento_value}</td>
+					<td class=data>
+										{$TMA_value}</td>
+					</tr>
+					{END Agente_firstnewgroup}
+								{BEGIN nonewgroup}
+					<tr>
+						<td class=group_1 >
+												&nbsp;
+						</td>
+						<td class=group_2 >
+												&nbsp;
+						</td>
+					<td class=data>
+					{$hr_entrada_value}
+					</td>
+					<td class=data>
+					{$Telefone_value}
+					</td>
+					<td class=data>
+					{$tp_espera_value}
+					</td>
+					<td class=data>
+					{$dt_entrada_value}
+					</td>
+					<td class=data>
+					{$hr_atendimento_value}
+					</td>
+					<td class=data>
+					{$tp_atendimento_value}
+					</td>
+					<td class=data>
+					{$TMA_value}
+					</td>
+					</tr>
+				{END nonewgroup}
+				<!-------------------------------------  group summary ----------------------------------------->
+								{BEGIN Agente_endgroup}
+				<tr>
+					<td class=group_1></td>
+					<td class=group_2 colspan=8 >
+					Resumo para Agente {$Agente_grval}
+					 - {$groupAgente_total_cnt} Total de registros</div></td>
+				</tr>
+												<!--  Avg -->
+				<tr>
+											<td class=group_2>Média</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>{$groupAgente_totaltp_atendimento_avg}</td>
+											<td class=group_2>{$groupAgente_totalTMA_avg}</td>
+				</tr>	
+												<!--  Max -->
+				<tr>
+											<td class=group_2>Max</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>&nbsp;</td>
+											<td class=group_2>{$groupAgente_totaltp_atendimento_max}</td>
+											<td class=group_2>{$groupAgente_totalTMA_max}</td>
+				</tr>	
+				{END Agente_endgroup}
+								{END grid_row}
+			</table>
+		</td>
+		<td class="runner-cr"></td>
+	</tr>
+	<tr class="runner-row style1">
+		<td class="runner-cl"></td>
+		<td class="runner-cc">
+			<table cellspacing=0 cellpadding=0 border=0>
+															</table>
+		</td>
+		<td class="runner-cr"></td>
+	</tr>
+	<tr class="runner-bottomrow style1">
+		<td class="runner-cl"><img src="images/spacer.gif"/></td>
+		<td class="runner-cc"></td>
+		<td class="runner-cr"><img src="images/spacer.gif"/></td>
+	</tr>
+</table>			
+</div>
+{END pages}
+
+
+
+
+
+{END container_grid}
+
+
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="ramal">
+	{$ramal_editcontrol}
+	</control>
+	<control 
+	field="Nome">
+	{$Nome_editcontrol}
+	</control>
+	<control 
+	field="idt_custo">
+	{$idt_custo_editcontrol}
+	</control>
+	<control 
+	field="context">
+	{$context_editcontrol}
+	</control>
+	<control 
+	field="id_horario">
+	{$id_horario_editcontrol}
+	</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

@@ -1,0 +1,107 @@
+<p>Tabela Principal: [Ipbx Ramais]</p>
+
+<table border=0 width=20% CELLPADDING=3 CELLSPACING=1 class="grid_block">
+<!-- header -->
+<tr valign="top">
+<td><b>Ramal</b></td>
+<td><b>Senha</b></td>
+<td><b>Nome</b></td>
+<td><b>E-Mail (secretária eletrônica)</b></td>
+<td><b>Desvio Externo (DDR)</b></td>
+<td><b>Desvio</b></td>
+<td><b> Desvio pré-configurado</b></td>
+<td><b>Centro de custo</b></td>
+<td><b> Informar centro de custo?</b></td>
+<td><b>Painel de Operações</b></td>
+<td><b>Trava de ramal (cadeado)</b></td>
+<td><b>Gravar Chamadas</b></td>
+<td><b> Tipo de ramal</b></td>
+<td><b>Pesquisa</b></td>
+<td><b>Ligações simultâneas</b></td>
+<td><b>Grupo de captura</b></td>
+<td><b>Privilégio</b></td>
+<td><b>Codec</b></td>
+<td><b>Toque (segundos)</b></td>
+<td><b>Ramal de Transbordo</b></td>
+<td><b>Horário Saída de Chamadas</b></td>
+<td><b>Identificação Chamada (callerid)</b></td>
+<td><b>Interface</b></td>
+<td><b>Canal de saída</b></td>
+</tr>
+<!-- data -->
+<tr >
+<td>
+{$name_mastervalue}
+</td>
+<td>
+{$secret_mastervalue}
+</td>
+<td>
+{$callerid_mastervalue}
+</td>
+<td>
+{$mail_mastervalue}
+</td>
+<td>
+{$desvio_ddr_mastervalue}
+</td>
+<td>
+{$desvio_mastervalue}
+</td>
+<td>
+{$id_desvio_mastervalue}
+</td>
+<td>
+{$accountcode_mastervalue}
+</td>
+<td>
+{$flg_info_centrocusto_mastervalue}
+</td>
+<td>
+{$id_painel_op_mastervalue}
+</td>
+<td>
+{$flg_cadeado_mastervalue}
+</td>
+<td>
+{$grava_chamada_mastervalue}
+</td>
+<td>
+{$tp_ramal_mastervalue}
+</td>
+<td>
+{$id_pesquisa_mastervalue}
+</td>
+<td>
+{$call_limit_mastervalue}
+</td>
+<td>
+{$pickupgroup_mastervalue}
+</td>
+<td>
+{$context_mastervalue}
+</td>
+<td>
+{$allow_mastervalue}
+</td>
+<td>
+{$tp_chamada_mastervalue}
+</td>
+<td>
+{$Transbordo_mastervalue}
+</td>
+<td>
+{$id_horario_mastervalue}
+</td>
+<td>
+{$id_saida_mastervalue}
+</td>
+<td>
+{$id_interf_mastervalue}
+</td>
+<td>
+{$ident_interf_mastervalue}
+</td>
+</tr>
+
+</table>

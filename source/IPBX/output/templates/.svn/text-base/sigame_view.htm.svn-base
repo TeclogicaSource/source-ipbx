@@ -1,0 +1,67 @@
+<html {$html_attrs}>
+<head><title>Sigame</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#height100{$id} {padding:10px;} 
+#center_block{$id} {width:55%;margin:0 auto;min-width: 500px;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding:5px;text-align:center;}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding:5px;white-space:nowrap;text-align:center;}
+#required_block{$id} {text-align:left;padding:5px}
+a.pdf{float:left;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+<div id="height100{$id}" align="center">
+
+<table cellpadding=0 cellspacing=0 class="main_table2" border=0 align=center width=400><tr><td id="contents_block">
+
+<div id="header_block{$id}" class="upeditmenu">
+Sigame, Exibir Registro [
+Ramal: {$show_key1}
+]
+</div>
+
+<table cellpadding=4 cellspacing=0 border=0 id="fields_block{$id}">
+{BEGIN Ramal_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Ramal</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Ramal_value}&nbsp;
+  </td></tr>
+{END Ramal_fieldblock}
+{BEGIN Destino_fieldblock}
+  <tr><td class=editshade_b width=150 style="padding-left:20px;"><b>Destino</b></td>
+  <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$Destino_value}&nbsp;
+  </td></tr>
+{END Destino_fieldblock}
+</table>
+
+<div class="toplist" id="buttons_block{$id}">
+{BEGIN prev_button}
+ <span class=buttonborder><input class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=reset value="Voltar à Lista" onclick="window.location.href='sigame_list.php?a=return'" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input class=button type=reset value=" >>> " {$nextbutton_attrs} ></span>
+{END next_button}
+</div>
+
+</td></tr></table>
+</div>
+
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

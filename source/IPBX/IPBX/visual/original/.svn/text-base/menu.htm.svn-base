@@ -1,0 +1,48 @@
+<html {$html_attrs}>
+<head>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block {width:35%;margin:0 auto;min-width:300px}
+#contents_block {text-align:left;}
+#header_block {padding:2px 5px 6px;text-align:center;line-height: 1.8}
+#tables_block {width:auto;margin:0;padding:10px;}
+#header_block span {padding-right:10px}
+.captions {padding:6px 10px;}
+</style>
+</head>
+<body>
+{BEGIN body}
+{$header}
+<table align=center id="center_block"><tr><td id="contents_block">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div class=upeditmenu id="header_block">
+{BEGIN loggedas_block}
+<span>
+Logado Como <b>{$username}</b>
+</span>
+{END loggedas_block}
+{BEGIN logout_link}
+<a href="login.php?a=logout" class=tablelinks {$logoutlink_attrs}>Log Out</a>
+{END logout_link}
+</div>
+
+<div id="tables_block" class="shade captions">
+<!-- MainMenuBegin -->
+{$mainmenu}
+<!-- MainMenuEnd -->
+</div>
+{BEGIN adminarea_link}
+<div class="shade captions">
+<hr>
+<img alt=" " src="include/img/arrow_searchR.gif" border=0>&nbsp;&nbsp;<a href="admin_rights_list.php" class=tablelinks {$adminarealink_attrs}>Área  Admin</a>
+</div>
+{END adminarea_link}
+<b class="xbottom"><b class="xb4b"></b><b class="xb3b"></b><b class="xb2b"></b><b class="xb1b"></b></b>
+</td></tr></table>
+{$footer}
+{END body}
+</body>
+</html>

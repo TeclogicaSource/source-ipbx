@@ -1,0 +1,331 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}<div  class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Voltar para {$backtomasterlink_caption}</b>
+</a></div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+{BEGIN container_toplinks}<div class="rnr-c rnr-ch rnr-c-toplinks">
+<div class="rnr-hfiller"></div>
+{BEGIN security_block}<div  class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message}<span>Logado Como&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}<a href="#" class="rnr-button" {$logoutlink_attrs}>Log Out</a>
+	{END logoutbutton}
+	{BEGIN adminarea_link}<a href="admin_rights_list.php" class="rnr-button" {$adminarealink_attrs}>Área  Admin</a>
+	{END adminarea_link}
+
+</div></div>
+{END security_block}
+
+
+
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+
+
+<div class="rnr-hfiller"></div>
+
+<div  class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+</div>
+{END container_hmenu}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_left}<div class="rnr-c rnr-cv rnr-c-left">
+
+{BEGIN menu_block}{$menu main}
+{END menu_block}
+
+
+
+
+</div>
+{END container_left}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_recordcontrols}<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">	
+		{BEGIN inlineadd_link}<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Adicionar Novo</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">{BEGIN selectall_link}<a href="#" class="rnr-button" {$selectalllink_span} {$selectalllink_attrs}>Selecionar Tudo</a>
+{END selectall_link}
+{BEGIN widhtSelected}<span class="rnr-buttons-group">
+<a class="rnr-button {$withSelectedClass}" href="#" id="selectButtonsToggler{$id}">Com os selecionados</a>
+<ul class="rnr-list" id="selectButtonsGroup{$id}">
+
+		{BEGIN editselected_link}<li>
+		<a href="#" class="rnr-button link" {$editselectedlink_attrs} {$editselectedlink_span}>Editar</a>
+</li>
+	{END editselected_link}
+
+		{BEGIN deleteselected_link}<li>
+		<a href="#" class="rnr-button link" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Eliminar</a>
+</li>
+	{END deleteselected_link}
+
+	
+</ul>
+</span>
+{END widhtSelected}
+		{BEGIN saveall_link}<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Salvar todos</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancelar Edição</a>
+	{END cancelall_link}
+</div>
+{END record_controls_block}
+
+
+{BEGIN more_list}<div  class="style1 rnr-bl rnr-b-toplinks {$brickclass_toplinks}"><span class="rnr-buttons-group">
+</span></div>
+{END more_list}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+
+{BEGIN container_message}<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_pagination}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Ítens Encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> de <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Registros por Página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination}
+
+
+
+{BEGIN container_grid}{BEGIN grid_block}<table cellpadding="0" class="rnr-cont rnr-c-grid rnr-b-grid vertical">
+							{BEGIN grid_row}<TBODY>
+  <tr class="{$rowclass}" {$rowattrs} {$rowstyle}>
+								{BEGIN grid_record}<td class="rnr-cg" style="width: 100%;" {$recordattrs}>
+									{BEGIN grid_vrecord}<table class="rnr-c rnr-vrecord" cellpadding="0" >
+										<TBODY>
+        {BEGIN grid_recordheader}<thead>
+										<tr class="rnr-toprow style1">
+											<th class="rnr-edge" colspan="2" iEditCont="all">
+												
+																								{BEGIN inlineedit_column}{BEGIN inlineedit_link}<a  {$inlineeditlink_attrs} title="Editar" data-icon="inlineedit" class="rnr-verticalicons"></a>
+												{END inlineedit_link}
+												{END inlineedit_column}
+
+												
+												
+																								{BEGIN checkbox_column}{BEGIN checkbox}<input type="checkbox" {$checkbox_attrs} class="rnr-verticalcheckbox">
+												{END checkbox}
+												{END checkbox_column}
+
+																							</th>
+										</tr>
+										</thead>
+										{END grid_recordheader}
+										<tbody>
+											{BEGIN dsc_interf_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$dsc_interf_label_class}">{$label ipbx_interf_callman dsc_interf}</td>
+	<td class="alt rnr-edge {$dsc_interf_class}" {$dsc_interf_style}>{$dsc_interf_value}&nbsp;</td>
+</tr>
+{END dsc_interf_fieldcolumn}
+	{BEGIN ip_host_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$ip_host_label_class}">{$label ipbx_interf_callman ip_host}</td>
+	<td class="alt rnr-edge {$ip_host_class}" {$ip_host_style}>{$ip_host_value}&nbsp;</td>
+</tr>
+{END ip_host_fieldcolumn}
+	{BEGIN id_central_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_central_label_class}">{$label ipbx_interf_callman id_central}</td>
+	<td class="alt rnr-edge {$id_central_class}" {$id_central_style}>{$id_central_value}&nbsp;</td>
+</tr>
+{END id_central_fieldcolumn}
+	{BEGIN codec_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$codec_label_class}">{$label ipbx_interf_callman codec}</td>
+	<td class="alt rnr-edge {$codec_class}" {$codec_style}>{$codec_value}&nbsp;</td>
+</tr>
+{END codec_fieldcolumn}
+	{BEGIN dtmf_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$dtmf_label_class}">{$label ipbx_interf_callman dtmf}</td>
+	<td class="alt rnr-edge {$dtmf_class}" {$dtmf_style}>{$dtmf_value}&nbsp;</td>
+</tr>
+{END dtmf_fieldcolumn}
+	{BEGIN id_tp_interf_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$id_tp_interf_label_class}">{$label ipbx_interf_callman id_tp_interf}</td>
+	<td class="alt rnr-edge {$id_tp_interf_class}" {$id_tp_interf_style}>{$id_tp_interf_value}&nbsp;</td>
+</tr>
+{END id_tp_interf_fieldcolumn}
+	{BEGIN tp_chamada_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$tp_chamada_label_class}">{$label ipbx_interf_callman tp_chamada}</td>
+	<td class="alt rnr-edge {$tp_chamada_class}" {$tp_chamada_style}>{$tp_chamada_value}&nbsp;</td>
+</tr>
+{END tp_chamada_fieldcolumn}
+	{BEGIN piloto_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$piloto_label_class}">{$label ipbx_interf_callman piloto}</td>
+	<td class="alt rnr-edge {$piloto_class}" {$piloto_style}>{$piloto_value}&nbsp;</td>
+</tr>
+{END piloto_fieldcolumn}
+	{BEGIN flg_logon_remoto_fieldcolumn}<tr class="rnr-row style1">
+	<td class="rnr-gridfieldlabel {$flg_logon_remoto_label_class}">{$label ipbx_interf_callman flg_logon_remoto}</td>
+	<td class="alt rnr-edge {$flg_logon_remoto_class}" {$flg_logon_remoto_style}>{$flg_logon_remoto_value}&nbsp;</td>
+</tr>
+{END flg_logon_remoto_fieldcolumn}
+
+										</tbody>
+									</table>
+									{END grid_vrecord}
+								</td>
+								{BEGIN endrecord_block}<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+								{END endrecord_block}
+								{END grid_record}
+							</tr>
+							{BEGIN grid_rowspace}<tr class="rnr-rs {$rsclass}">
+								{BEGIN grid_recordspace}<td>&nbsp;</td>
+								{END grid_recordspace}
+							</tr>
+							{END grid_rowspace}
+							</TBODY>{END grid_row}
+						</table>
+
+				
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination_bottom}<div class="rnr-c rnr-ch rnr-multialign rnr-c-pagination_bottom">
+
+{BEGIN pagination_block}<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+<div class="rnr-leftbricks">
+{BEGIN details_block}<div  class="style1 rnr-bl rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Ítens Encontrados: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+</div><div class="rnr-rightbricks">
+{BEGIN pages_block}<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Página <b>{$page}</b> de <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Registros por Página:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+</div>
+</div>
+{END container_pagination_bottom}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

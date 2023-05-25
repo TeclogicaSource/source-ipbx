@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo
+END
+MySQLiInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/MySQLiInfo.php
+END
+MSSQLInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/MSSQLInfo.php
+END
+SQLLite3Info.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/SQLLite3Info.php
+END
+ADOInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/ADOInfo.php
+END
+PostgreInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/PostgreInfo.php
+END
+DBInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/DBInfo.php
+END
+MySQLInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/MySQLInfo.php
+END
+OracleInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/OracleInfo.php
+END
+DB2Info.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/DB2Info.php
+END
+ODBCInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/ODBCInfo.php
+END
+InformixInfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbinfo/InformixInfo.php
+END

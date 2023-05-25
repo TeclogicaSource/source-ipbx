@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Agentes logados</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19120"></HEAD>
+<BODY style="BACKGROUND-COLOR: white">{BEGIN body}{$header} {BEGIN page}
+<H1>Agentes logados<IMG border=0 alt=Atendente src="images/atendente.png"></H1>
+{BEGIN page_number}<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>{END page_number}
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>{BEGIN record_header}
+    {BEGIN membername_fieldheadercolumn}<TD>{BEGIN membername_fieldheader}<B>Agente</B> {END membername_fieldheader}</TD>{END membername_fieldheadercolumn}
+    {BEGIN queue_name_fieldheadercolumn}<TD>{BEGIN queue_name_fieldheader}<B>Nome da Fila</B> {END queue_name_fieldheader}</TD>{END queue_name_fieldheadercolumn}
+    {BEGIN ramal_fieldheadercolumn}<TD>{BEGIN ramal_fieldheader}<B>Ramal</B> {END ramal_fieldheader}</TD>{END ramal_fieldheadercolumn}
+    {BEGIN penalty_fieldheadercolumn}<TD>{BEGIN penalty_fieldheader}<B>Prioridade</B> {END penalty_fieldheader}</TD>{END penalty_fieldheadercolumn}
+    {BEGIN paused_fieldheadercolumn}<TD>{BEGIN paused_fieldheader}<B>Pausa</B> {END paused_fieldheader}</TD>{END paused_fieldheadercolumn}
+    {BEGIN endrecordheader_block}<TD class=gridspacing>&nbsp;</TD>{END endrecordheader_block}{END record_header}</TR>{END grid_header}
+  {BEGIN grid_row}<TR vAlign=top {$rowstyle} {$rowattrs}>{BEGIN grid_record}
+    {BEGIN membername_fieldcolumn}<TD {$membername_style}>{$membername_value} </TD>{END membername_fieldcolumn}
+    {BEGIN queue_name_fieldcolumn}<TD {$queue_name_style}>{$queue_name_value} </TD>{END queue_name_fieldcolumn}
+    {BEGIN ramal_fieldcolumn}<TD {$ramal_style}>{$ramal_value} 
+    </TD>{END ramal_fieldcolumn}
+    {BEGIN penalty_fieldcolumn}<TD {$penalty_style}>{$penalty_value} </TD>{END penalty_fieldcolumn}
+    {BEGIN paused_fieldcolumn}<TD {$paused_style}>{$paused_value} </TD>{END paused_fieldcolumn}
+    {BEGIN endrecord_block}<TD class=gridspacing>&nbsp;</TD>{END endrecord_block}{END grid_record}</TR>{END grid_row}<!-- totals row --></TBODY></TABLE>{END grid_block}{END page}{$footer} {END body}</BODY></HTML>

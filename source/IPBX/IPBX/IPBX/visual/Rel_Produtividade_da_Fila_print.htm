@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel Produtividade da Fila</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<H1>Relatório de Produtividade da Fila</H1>{END page}
+{BEGIN page}<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>{END page}
+{BEGIN page}<DIV>{BEGIN grid_block}
+<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN dt_entrada_fieldheader}
+      <P align=center><B>Data</B> </P>{END dt_entrada_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Fila_fieldheader}
+      <P align=center><B>Fila</B> </P>{END Fila_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Receb__fieldheader}
+      <P align=center><B>Qtd. Receb.</B> </P>{END Receb__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Atend__fieldheader}
+      <P align=center><B>Qtd. Atentend.</B> </P>{END Atend__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband__fieldheader}
+      <P align=center><B>Qtd. Aband.</B> </P>{END Aband__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN TME_fieldheader}
+      <P align=center><B>TME</B> </P>{END TME_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN TMA_fieldheader}
+      <P align=center><B>TMA</B> </P>{END TMA_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN TMO_fieldheader}
+      <P align=center><B>TMO</B> </P>{END TMO_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband_Contr__fieldheader}
+      <P align=center><B>Abd.Cont.</B> </P>{END Aband_Contr__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Aband_Real__fieldheader}
+      <P align=center><B>Abd.Real(%)</B> </P>{END Aband_Real__fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaContratado_fieldheader}
+      <P align=center><B>Esp.Cont.</B> </P>{END NivelServicoEsperaContratado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaRealizado_fieldheader}
+      <P align=center><B>Nív.Serv.Esp.(%)</B> </P>{END NivelServicoEsperaRealizado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoEsperaQuantidade_fieldheader}
+      <P align=center><B>Esp.Quant.</B> </P>{END NivelServicoEsperaQuantidade_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoContratado_fieldheader}
+      <P align=center><B>Atd.Cont.</B> </P>{END NivelServicoAtendimentoContratado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoRealizado_fieldheader}
+      <P align=center><B>Nív.Serv.Atend.(%)</B> </P>{END NivelServicoAtendimentoRealizado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoAtendimentoQuantidade_fieldheader}
+      <P align=center><B>Atd.Quant.</B> </P>{END NivelServicoAtendimentoQuantidade_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoOperacaoContratado_fieldheader}<P 
+      align=center><B>Oper.Cont.</B> </P>{END NivelServicoOperacaoContratado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoOperacaoRealizado_fieldheader}
+      <P align=center><B>Nív.Serv.Oper.(%)</B> </P>{END NivelServicoOperacaoRealizado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN NivelServicoOperacaoQuantidade_fieldheader}<P 
+      align=center><B>Oper.Quant.</B> </P>{END NivelServicoOperacaoQuantidade_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>
+      <P align=center>{$dt_entrada_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Fila_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Receb__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Atend__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$TME_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$TMA_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$TMO_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband_Contr__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$Aband_Real__value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaContratado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaRealizado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoEsperaQuantidade_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoContratado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoRealizado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoAtendimentoQuantidade_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoOperacaoContratado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoOperacaoRealizado_value}</P></TD>
+    <TD class=data>
+      <P align=center>{$NivelServicoOperacaoQuantidade_value}</P></TD></TR>{END row_data}{END grid_row}{BEGIN global_summary}<!--------------------------------------global summary-------------------------------------------->
+  <TR>
+    <TD style="BORDER-TOP: black 2px solid" class=globalsummary colSpan=19>
+      <P align=left>Resumo Global {$global_total_cnt} - 
+      Total de registros</P></TD></TR><!--  Sum -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Soma&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalReceb__sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAtend__sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband__sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTME_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMA_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMO_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD></TR><!--  Avg -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Média&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalReceb__avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAtend__avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband__avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTME_avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMA_avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMO_avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD></TR><!--  Min -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Min&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalReceb__min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAtend__min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband__min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTME_min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMA_min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMO_min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband_Real__min} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoEsperaRealizado_min} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoAtendimentoRealizado_min} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoOperacaoRealizado_min} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD></TR><!--  Max -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Max&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalReceb__max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAtend__max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband__max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTME_max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMA_max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalTMO_max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalAband_Real__max} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoEsperaRealizado_max} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoAtendimentoRealizado_max} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalNivelServicoOperacaoRealizado_max} 
+      </P></TD>
+    <TD class=globalsummary>
+      <P 
+align=center></P></TD></TR>{END global_summary}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

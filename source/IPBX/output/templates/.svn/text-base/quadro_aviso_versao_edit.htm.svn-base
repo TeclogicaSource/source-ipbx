@@ -1,0 +1,150 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+{BEGIN container_menu}
+<div class="rnr-c rnr-cv rnr-c-menu">
+
+{BEGIN menu_block}
+{$menu main}
+{END menu_block}
+
+
+</div>
+{END container_menu}
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel quadro_aviso_versao edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN dsc_aviso_fieldblock}
+<tr class="{$fielddispclass_dsc_aviso}" data-fieldname="dsc_aviso">
+	<td class="rnr-label">
+		{BEGIN dsc_aviso_label}{$label quadro_aviso_versao dsc_aviso}{END dsc_aviso_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsc_aviso_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsc_aviso_fieldblock}
+	{BEGIN img_anexo_fieldblock}
+<tr class="{$fielddispclass_img_anexo}" data-fieldname="img_anexo">
+	<td class="rnr-label">
+		{BEGIN img_anexo_label}{$label quadro_aviso_versao img_anexo}{END img_anexo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$img_anexo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END img_anexo_fieldblock}
+	{BEGIN id_versao_fieldblock}
+<tr class="{$fielddispclass_id_versao}" data-fieldname="id_versao">
+	<td class="rnr-label">
+		{BEGIN id_versao_label}{$label quadro_aviso_versao id_versao}{END id_versao_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_versao_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_versao_fieldblock}
+	{BEGIN flg_visualizacao_fieldblock}
+<tr class="{$fielddispclass_flg_visualizacao}" data-fieldname="flg_visualizacao">
+	<td class="rnr-label">
+		{BEGIN flg_visualizacao_label}{$label quadro_aviso_versao flg_visualizacao}{END flg_visualizacao_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_visualizacao_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_visualizacao_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,114 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Pesquisa</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Pesquisa</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN dsc_pesquisa_fieldheader}
+<b>Descrição</b>
+{END dsc_pesquisa_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_ramal_fieldheader}
+<b>Ramal</b>
+{END nm_ramal_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_telefone_fieldheader}
+<b>Telefone</b>
+{END nm_telefone_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_resp_fieldheader}
+<b>Data e Hora</b>
+{END dt_resp_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dsc_mensagem_fieldheader}
+<b>Pergunta</b>
+{END dsc_mensagem_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN resp_usuario_fieldheader}
+<b>Resposta númerica</b>
+{END resp_usuario_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN Resposta_fieldheader}
+<b>Descrição da resposta</b>
+{END Resposta_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$dsc_pesquisa_value}</td>
+	<td class=data>{$nm_ramal_value}</td>
+	<td class=data>{$nm_telefone_value}</td>
+	<td class=data>{$dt_resp_value}</td>
+	<td class=data>{$dsc_mensagem_value}</td>
+	<td class=data>{$resp_usuario_value}</td>
+	<td class=data>{$Resposta_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

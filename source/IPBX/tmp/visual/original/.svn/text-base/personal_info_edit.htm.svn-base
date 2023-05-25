@@ -1,0 +1,230 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+
+{BEGIN container_edit}
+<div class="rnr-c rnr-cv rnr-c-edit">
+
+{BEGIN editheader}
+<div  class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><span>	<h1>{$pagetitlelabel personal_info edit}</h1>
+</span></div>{END editheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}"><table class="fieldGrid">
+	{BEGIN name_fieldblock}
+<tr class="{$fielddispclass_name}" data-fieldname="name">
+	<td class="rnr-label">
+		{BEGIN name_label}{$label personal_info name}{END name_label}
+	</td>
+	<td class="rnr-control style3">
+		{$name_editcontrol}&nbsp;
+	</td>
+</tr>
+{END name_fieldblock}
+	{BEGIN secret_fieldblock}
+<tr class="{$fielddispclass_secret}" data-fieldname="secret">
+	<td class="rnr-label">
+		{BEGIN secret_label}{$label personal_info secret}{END secret_label}
+	</td>
+	<td class="rnr-control style3">
+		{$secret_editcontrol}&nbsp;
+	</td>
+</tr>
+{END secret_fieldblock}
+	{BEGIN callerid_fieldblock}
+<tr class="{$fielddispclass_callerid}" data-fieldname="callerid">
+	<td class="rnr-label">
+		{BEGIN callerid_label}{$label personal_info callerid}{END callerid_label}
+	</td>
+	<td class="rnr-control style3">
+		{$callerid_editcontrol}&nbsp;
+	</td>
+</tr>
+{END callerid_fieldblock}
+	{BEGIN mail_fieldblock}
+<tr class="{$fielddispclass_mail}" data-fieldname="mail">
+	<td class="rnr-label">
+		{BEGIN mail_label}{$label personal_info mail}{END mail_label}
+	</td>
+	<td class="rnr-control style3">
+		{$mail_editcontrol}&nbsp;
+	</td>
+</tr>
+{END mail_fieldblock}
+	{BEGIN desvio_ddr_fieldblock}
+<tr class="{$fielddispclass_desvio_ddr}" data-fieldname="desvio_ddr">
+	<td class="rnr-label">
+		{BEGIN desvio_ddr_label}{$label personal_info desvio_ddr}{END desvio_ddr_label}
+	</td>
+	<td class="rnr-control style3">
+		{$desvio_ddr_editcontrol}&nbsp;
+	</td>
+</tr>
+{END desvio_ddr_fieldblock}
+	{BEGIN desvio_fieldblock}
+<tr class="{$fielddispclass_desvio}" data-fieldname="desvio">
+	<td class="rnr-label">
+		{BEGIN desvio_label}{$label personal_info desvio}{END desvio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$desvio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END desvio_fieldblock}
+	{BEGIN id_desvio_fieldblock}
+<tr class="{$fielddispclass_id_desvio}" data-fieldname="id_desvio">
+	<td class="rnr-label">
+		{BEGIN id_desvio_label}{$label personal_info id_desvio}{END id_desvio_label}
+	</td>
+	<td class="rnr-control style3">
+		{$id_desvio_editcontrol}&nbsp;
+	</td>
+</tr>
+{END id_desvio_fieldblock}
+	{BEGIN flg_cadeado_fieldblock}
+<tr class="{$fielddispclass_flg_cadeado}" data-fieldname="flg_cadeado">
+	<td class="rnr-label">
+		{BEGIN flg_cadeado_label}{$label personal_info flg_cadeado}{END flg_cadeado_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_cadeado_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_cadeado_fieldblock}
+	{BEGIN flg_info_centrocusto_fieldblock}
+<tr class="{$fielddispclass_flg_info_centrocusto}" data-fieldname="flg_info_centrocusto">
+	<td class="rnr-label">
+		{BEGIN flg_info_centrocusto_label}{$label personal_info flg_info_centrocusto}{END flg_info_centrocusto_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_info_centrocusto_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_info_centrocusto_fieldblock}
+	{BEGIN tp_chamada_fieldblock}
+<tr class="{$fielddispclass_tp_chamada}" data-fieldname="tp_chamada">
+	<td class="rnr-label">
+		{BEGIN tp_chamada_label}{$label personal_info tp_chamada}{END tp_chamada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_chamada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_chamada_fieldblock}
+	{BEGIN Transbordo_fieldblock}
+<tr class="{$fielddispclass_Transbordo}" data-fieldname="Transbordo">
+	<td class="rnr-label">
+		{BEGIN Transbordo_label}{$label personal_info Transbordo}{END Transbordo_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Transbordo_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Transbordo_fieldblock}
+</table></div>
+
+
+{BEGIN editbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}"><div class="rnr-buttons-right">
+	{BEGIN prev_button}
+	<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+	{END prev_button}
+	{BEGIN next_button}
+	<a href="#" class="rnr-button  {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+	{END next_button}
+</div>
+<div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+	{END reset_button}
+	{BEGIN back_button}
+		<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+	{END back_button}
+	{BEGIN close_button}
+	<a href="#" class="rnr-button" {$closebutton_attrs}>Fechar Janela</a>
+	{END close_button}
+	</div>
+</div>{END editbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_edit}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

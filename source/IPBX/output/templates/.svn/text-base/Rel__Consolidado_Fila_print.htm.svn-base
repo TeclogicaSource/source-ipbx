@@ -1,0 +1,204 @@
+<html {$html_attrs}>
+<head>
+<title>Rel. Consolidado Fila</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Rel. Consolidado Fila</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN Fila_fieldheader}
+<b>Fila</b>
+{END Fila_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_periodo_fieldheader}
+<b>Dt Periodo</b>
+{END dt_periodo_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN hr_periodo_fieldheader}
+<b>Hr Periodo</b>
+{END hr_periodo_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_logados_menor_fieldheader}
+<b>Ag Logados Menor</b>
+{END ag_logados_menor_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_logados_maior_fieldheader}
+<b>Ag Logados Maior</b>
+{END ag_logados_maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_logados_media_fieldheader}
+<b>Ag Logados Media</b>
+{END ag_logados_media_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_pausados_menor_fieldheader}
+<b>Ag Pausados Menor</b>
+{END ag_pausados_menor_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_pausados_maior_fieldheader}
+<b>Ag Pausados Maior</b>
+{END ag_pausados_maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_pausados_media_fieldheader}
+<b>Ag Pausados Media</b>
+{END ag_pausados_media_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_atendendo_menor_fieldheader}
+<b>Ag Atendendo Menor</b>
+{END ag_atendendo_menor_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_atendendo_maior_fieldheader}
+<b>Ag Atendendo Maior</b>
+{END ag_atendendo_maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_atendendo_media_fieldheader}
+<b>Ag Atendendo Media</b>
+{END ag_atendendo_media_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_discando_menor_fieldheader}
+<b>Ag Discando Menor</b>
+{END ag_discando_menor_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_discando_maior_fieldheader}
+<b>Ag Discando Maior</b>
+{END ag_discando_maior_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ag_discando_media_fieldheader}
+<b>Ag Discando Media</b>
+{END ag_discando_media_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN soma_atendimento_fieldheader}
+<b>Soma Atendimento</b>
+{END soma_atendimento_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN soma_espera_fieldheader}
+<b>Soma Espera</b>
+{END soma_espera_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN qtd_atendimento_fieldheader}
+<b>Qtd Atendimento</b>
+{END qtd_atendimento_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN qtd_abandono_fieldheader}
+<b>Qtd Abandono</b>
+{END qtd_abandono_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN qtd_sla_espera_fieldheader}
+<b>Qtd Sla Espera</b>
+{END qtd_sla_espera_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN qtd_sla_atendimento_fieldheader}
+<b>Qtd Sla Atendimento</b>
+{END qtd_sla_atendimento_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN qtd_sla_operacao_fieldheader}
+<b>Qtd Sla Operacao</b>
+{END qtd_sla_operacao_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$Fila_value}</td>
+	<td class=data>{$dt_periodo_value}</td>
+	<td class=data>{$hr_periodo_value}</td>
+	<td class=data>{$ag_logados_menor_value}</td>
+	<td class=data>{$ag_logados_maior_value}</td>
+	<td class=data>{$ag_logados_media_value}</td>
+	<td class=data>{$ag_pausados_menor_value}</td>
+	<td class=data>{$ag_pausados_maior_value}</td>
+	<td class=data>{$ag_pausados_media_value}</td>
+	<td class=data>{$ag_atendendo_menor_value}</td>
+	<td class=data>{$ag_atendendo_maior_value}</td>
+	<td class=data>{$ag_atendendo_media_value}</td>
+	<td class=data>{$ag_discando_menor_value}</td>
+	<td class=data>{$ag_discando_maior_value}</td>
+	<td class=data>{$ag_discando_media_value}</td>
+	<td class=data>{$soma_atendimento_value}</td>
+	<td class=data>{$soma_espera_value}</td>
+	<td class=data>{$qtd_atendimento_value}</td>
+	<td class=data>{$qtd_abandono_value}</td>
+	<td class=data>{$qtd_sla_espera_value}</td>
+	<td class=data>{$qtd_sla_atendimento_value}</td>
+	<td class=data>{$qtd_sla_operacao_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

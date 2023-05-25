@@ -1,0 +1,25 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="callerid">
+	{$callerid_editcontrol}
+	</control>
+	<control field="name">
+	{$name_editcontrol}
+	</control>
+	<control field="accountcode">
+	{$accountcode_editcontrol}
+	</control>
+	<control field="context">
+	{$context_editcontrol}
+	</control>
+	<control field="mailbox">
+	{$mailbox_editcontrol}
+	</control>
+	<control field="secret">
+	{$secret_editcontrol}
+	</control>
+	<control field="allow">
+	{$allow_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

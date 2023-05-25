@@ -1,0 +1,399 @@
+<html {$html_attrs}>
+<head>
+<title>Fila de atendimento: Busca Avancada</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+#center_block{$id} {margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;border-bottom:1px solid white;}
+#main_block{$id} {padding:10px 10px;}
+#buttons_block{$id} {padding:10px 0 5px 0;}
+#buttons_block{$id} > * {margin:0 2px}
+</style>
+<!--[if IE]>
+<style>
+#main_block{$id} {padding:10px 10;}
+#inmain_block{$id} {margin:0 0px}
+</style>
+<![endif]-->
+</head>
+<body bgcolor=white>
+{BEGIN body}
+{$header}
+{BEGIN contents_block}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="tableheader">Fila de atendimento - Busca Avancada</div>
+<div class="xboxcontentb" id="main_block{$id}">
+
+{BEGIN conditions_block}
+<DIV id="conditions_block{$id}">
+<b class="xtop"><b class="xb1"></b><b class="xb2"></b><b class="xb3"></b><b class="xb4"></b></b>
+<div class="xboxcontent" style="width:100%">
+<span class=fieldname>Buscar:</span>
+<input type="radio" name="srchType"" {$all_checkbox}>{BEGIN all_checkbox_label}Todas condições{END all_checkbox_label}
+&nbsp;&nbsp;&nbsp;
+<input type="radio" name="srchType" {$any_checkbox}>{BEGIN any_checkbox_label}Qualquer condição{END any_checkbox_label}
+</div>
+<b class="xbottom"><b class="xb4"></b><b class="xb3"></b><b class="xb2"></b><b class="xb1"></b></b>
+<br>
+</div>
+{END conditions_block}
+
+<table cellpadding=4 cellspacing=0 id="fields_block">
+<tr valign=center>
+<td align=center valign=middle class="headerlist_left">&nbsp;</td>
+<td width=30 align=center valign=middle class="headerlist2">NOT</td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist">&nbsp; </td>
+<td align=center valign=middle class="headerlist_right">&nbsp;</td></tr>
+
+{BEGIN name_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Nome
+	<td align=center class=editshade_lb><input type=CheckBox {$name_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_name}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$name_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$name_editcontrol1}&nbsp;</td>
+</tr>
+{END name_fieldblock}	
+{BEGIN musiconhold_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Conjunto de musicas
+	<td align=center class=editshade_lb><input type=CheckBox {$musiconhold_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_musiconhold}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$musiconhold_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$musiconhold_editcontrol1}&nbsp;</td>
+</tr>
+{END musiconhold_fieldblock}	
+{BEGIN announce_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Announce
+	<td align=center class=editshade_lb><input type=CheckBox {$announce_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_announce}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_editcontrol1}&nbsp;</td>
+</tr>
+{END announce_fieldblock}	
+{BEGIN context_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Contexto
+	<td align=center class=editshade_lb><input type=CheckBox {$context_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_context}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$context_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$context_editcontrol1}&nbsp;</td>
+</tr>
+{END context_fieldblock}	
+{BEGIN timeout_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Timeout
+	<td align=center class=editshade_lb><input type=CheckBox {$timeout_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_timeout}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$timeout_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$timeout_editcontrol1}&nbsp;</td>
+</tr>
+{END timeout_fieldblock}	
+{BEGIN monitor_join_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Monitor Join
+	<td align=center class=editshade_lb><input type=CheckBox {$monitor_join_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_monitor_join}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$monitor_join_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$monitor_join_editcontrol1}&nbsp;</td>
+</tr>
+{END monitor_join_fieldblock}	
+{BEGIN monitor_format_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Monitor Format
+	<td align=center class=editshade_lb><input type=CheckBox {$monitor_format_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_monitor_format}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$monitor_format_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$monitor_format_editcontrol1}&nbsp;</td>
+</tr>
+{END monitor_format_fieldblock}	
+{BEGIN queue_youarenext_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Youarenext
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_youarenext_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_youarenext}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_youarenext_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_youarenext_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_youarenext_fieldblock}	
+{BEGIN queue_thereare_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Thereare
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_thereare_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_thereare}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_thereare_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_thereare_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_thereare_fieldblock}	
+{BEGIN queue_callswaiting_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Callswaiting
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_callswaiting_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_callswaiting}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_callswaiting_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_callswaiting_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_callswaiting_fieldblock}	
+{BEGIN queue_holdtime_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Holdtime
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_holdtime_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_holdtime}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_holdtime_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_holdtime_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_holdtime_fieldblock}	
+{BEGIN queue_minutes_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Minutes
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_minutes_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_minutes}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_minutes_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_minutes_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_minutes_fieldblock}	
+{BEGIN queue_seconds_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Seconds
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_seconds_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_seconds}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_seconds_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_seconds_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_seconds_fieldblock}	
+{BEGIN queue_lessthan_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Lessthan
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_lessthan_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_lessthan}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_lessthan_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_lessthan_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_lessthan_fieldblock}	
+{BEGIN queue_thankyou_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Thankyou
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_thankyou_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_thankyou}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_thankyou_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_thankyou_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_thankyou_fieldblock}	
+{BEGIN queue_reporthold_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Queue Reporthold
+	<td align=center class=editshade_lb><input type=CheckBox {$queue_reporthold_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_queue_reporthold}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_reporthold_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$queue_reporthold_editcontrol1}&nbsp;</td>
+</tr>
+{END queue_reporthold_fieldblock}	
+{BEGIN announce_frequency_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Announce Frequency
+	<td align=center class=editshade_lb><input type=CheckBox {$announce_frequency_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_announce_frequency}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_frequency_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_frequency_editcontrol1}&nbsp;</td>
+</tr>
+{END announce_frequency_fieldblock}	
+{BEGIN announce_round_seconds_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Announce Round Seconds
+	<td align=center class=editshade_lb><input type=CheckBox {$announce_round_seconds_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_announce_round_seconds}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_round_seconds_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_round_seconds_editcontrol1}&nbsp;</td>
+</tr>
+{END announce_round_seconds_fieldblock}	
+{BEGIN announce_holdtime_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Announce Holdtime
+	<td align=center class=editshade_lb><input type=CheckBox {$announce_holdtime_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_announce_holdtime}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_holdtime_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$announce_holdtime_editcontrol1}&nbsp;</td>
+</tr>
+{END announce_holdtime_fieldblock}	
+{BEGIN retry_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Retry
+	<td align=center class=editshade_lb><input type=CheckBox {$retry_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_retry}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$retry_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$retry_editcontrol1}&nbsp;</td>
+</tr>
+{END retry_fieldblock}	
+{BEGIN wrapuptime_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Wrapuptime
+	<td align=center class=editshade_lb><input type=CheckBox {$wrapuptime_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_wrapuptime}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$wrapuptime_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$wrapuptime_editcontrol1}&nbsp;</td>
+</tr>
+{END wrapuptime_fieldblock}	
+{BEGIN maxlen_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Maxlen
+	<td align=center class=editshade_lb><input type=CheckBox {$maxlen_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_maxlen}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$maxlen_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$maxlen_editcontrol1}&nbsp;</td>
+</tr>
+{END maxlen_fieldblock}	
+{BEGIN servicelevel_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Servicelevel
+	<td align=center class=editshade_lb><input type=CheckBox {$servicelevel_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_servicelevel}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$servicelevel_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$servicelevel_editcontrol1}&nbsp;</td>
+</tr>
+{END servicelevel_fieldblock}	
+{BEGIN strategy_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Estratégia
+	<td align=center class=editshade_lb><input type=CheckBox {$strategy_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_strategy}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$strategy_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$strategy_editcontrol1}&nbsp;</td>
+</tr>
+{END strategy_fieldblock}	
+{BEGIN joinempty_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Joinempty
+	<td align=center class=editshade_lb><input type=CheckBox {$joinempty_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_joinempty}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$joinempty_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$joinempty_editcontrol1}&nbsp;</td>
+</tr>
+{END joinempty_fieldblock}	
+{BEGIN leavewhenempty_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Leavewhenempty
+	<td align=center class=editshade_lb><input type=CheckBox {$leavewhenempty_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_leavewhenempty}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$leavewhenempty_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$leavewhenempty_editcontrol1}&nbsp;</td>
+</tr>
+{END leavewhenempty_fieldblock}	
+{BEGIN eventmemberstatus_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Eventmemberstatus
+	<td align=center class=editshade_lb><input type=CheckBox {$eventmemberstatus_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_eventmemberstatus}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$eventmemberstatus_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$eventmemberstatus_editcontrol1}&nbsp;</td>
+</tr>
+{END eventmemberstatus_fieldblock}	
+{BEGIN eventwhencalled_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Eventwhencalled
+	<td align=center class=editshade_lb><input type=CheckBox {$eventwhencalled_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_eventwhencalled}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$eventwhencalled_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$eventwhencalled_editcontrol1}&nbsp;</td>
+</tr>
+{END eventwhencalled_fieldblock}	
+{BEGIN reportholdtime_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Reportholdtime
+	<td align=center class=editshade_lb><input type=CheckBox {$reportholdtime_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_reportholdtime}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$reportholdtime_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$reportholdtime_editcontrol1}&nbsp;</td>
+</tr>
+{END reportholdtime_fieldblock}	
+{BEGIN memberdelay_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Memberdelay
+	<td align=center class=editshade_lb><input type=CheckBox {$memberdelay_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_memberdelay}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$memberdelay_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$memberdelay_editcontrol1}&nbsp;</td>
+</tr>
+{END memberdelay_fieldblock}	
+{BEGIN weight_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Weight
+	<td align=center class=editshade_lb><input type=CheckBox {$weight_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_weight}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$weight_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$weight_editcontrol1}&nbsp;</td>
+</tr>
+{END weight_fieldblock}	
+{BEGIN timeoutrestart_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Timeoutrestart
+	<td align=center class=editshade_lb><input type=CheckBox {$timeoutrestart_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_timeoutrestart}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$timeoutrestart_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$timeoutrestart_editcontrol1}&nbsp;</td>
+</tr>
+{END timeoutrestart_fieldblock}	
+{BEGIN periodic_announce_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Periodic Announce
+	<td align=center class=editshade_lb><input type=CheckBox {$periodic_announce_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_periodic_announce}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$periodic_announce_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$periodic_announce_editcontrol1}&nbsp;</td>
+</tr>
+{END periodic_announce_fieldblock}	
+{BEGIN periodic_announce_frequency_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Periodic Announce Frequency
+	<td align=center class=editshade_lb><input type=CheckBox {$periodic_announce_frequency_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_periodic_announce_frequency}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$periodic_announce_frequency_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$periodic_announce_frequency_editcontrol1}&nbsp;</td>
+</tr>
+{END periodic_announce_frequency_fieldblock}	
+{BEGIN ringinuse_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Ringinuse
+	<td align=center class=editshade_lb><input type=CheckBox {$ringinuse_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_ringinuse}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ringinuse_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$ringinuse_editcontrol1}&nbsp;</td>
+</tr>
+{END ringinuse_fieldblock}	
+{BEGIN setinterfacevar_fieldblock}			
+<tr>
+	<td class=editshade_b style="padding-left:15px;padding-right:10px;">Setinterfacevar
+	<td align=center class=editshade_lb><input type=CheckBox {$setinterfacevar_notbox}></td>
+	<td class=editshade_lb style="padding-left:10px;">{$searchtype_setinterfacevar}</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$setinterfacevar_editcontrol}&nbsp;</td>
+	<td width=270 class=editshade_lb style="padding-left:10px;">{$setinterfacevar_editcontrol1}&nbsp;</td>
+</tr>
+{END setinterfacevar_fieldblock}	
+</table>
+
+<div class="downedit" id="buttons_block{$id}">
+{BEGIN search_button}
+ <span class=buttonborder><input class=button type=button value="Buscar" {$searchbutton_attrs}></span>
+{END search_button} 
+{BEGIN reset_button}
+ <span class=buttonborder><input class=button type=button value="Limpar" {$resetbutton_attrs}></span>
+{END reset_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+{END contents_block}
+{$footer}
+{END body}
+</body>
+</html>

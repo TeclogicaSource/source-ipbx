@@ -1,0 +1,176 @@
+<?php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// After record updated
+function AfterEdit(&$values,$where,&$oldvalues,&$keys,$inline)
+{
+
+
+// Inclusão das interfaces de geração
+include_once './include/teclogica/funcoes_gerais.php';
+
+//Inserir mensagem informando da alteração
+insereMensagem("Alteração realizada no plano de discagem.");
+;
+} // function AfterEdit
+$arrEventTables["AfterEdit"]="ipbx_plano_disc";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Edit page: Before process
+function BeforeProcessEdit(&$conn)
+{
+
+
+;
+} // function BeforeProcessEdit
+$arrEventTables["BeforeProcessEdit"]="ipbx_plano_disc";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// List page: Before process
+function BeforeProcessList(&$conn)
+{
+
+
+/*
+// Inclusão das interfaces de geração
+include_once './include/teclogica/gerador_interf.php';
+
+// Geração do plano de discagem.
+geraPlanoDiscagem();
+*/
+;
+} // function BeforeProcessList
+$arrEventTables["BeforeProcessList"]="ipbx_plano_disc";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

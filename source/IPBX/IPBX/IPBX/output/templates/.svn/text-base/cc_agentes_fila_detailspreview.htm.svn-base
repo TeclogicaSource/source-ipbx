@@ -1,0 +1,20 @@
+Agentes Fila<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Filas</strong></td>
+<td><strong>Penalidade</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_filas_value}</td>
+<td>{$penalidade_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

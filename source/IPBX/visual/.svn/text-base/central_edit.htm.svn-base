@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel central edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN dsc_conf_central_fieldblock}<TR class={$fielddispclass_dsc_conf_central} data-fieldname="dsc_conf_central">
+    <TD style="WIDTH: 20%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsc_conf_central_label}{$label central dsc_conf_central}{END dsc_conf_central_label}</TD>
+    <TD class="rnr-control style3">
+      {$dsc_conf_central_editcontrol}&nbsp; </TD></TR>
+  {END dsc_conf_central_fieldblock}{BEGIN pers_params_fieldblock}<TR class={$fielddispclass_pers_params} data-fieldname="pers_params">
+    <TD style="WIDTH: 20%; WHITE-SPACE: normal" class=rnr-label>{BEGIN pers_params_label}
+      {$label central pers_params}{END pers_params_label}</TD>
+    <TD class="rnr-control style3">
+      {$pers_params_editcontrol}&nbsp; 
+  </TD></TR>{END pers_params_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV>
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_details} rnr-wrapper rnr-cbw-details">
+{BEGIN container_details}
+<DIV class="rnr-c rnr-cv rnr-c-details">{BEGIN detail_tables}
+{BEGIN details_ipbx_interf_vono}<DIV class="rnr-cw-detailsipbx_interf_vono rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_vono rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_vono rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces Vono </DIV>
+{$displayDetailTable_ipbx_interf_vono}</DIV></DIV></DIV>
+{END details_ipbx_interf_vono}{BEGIN details_ipbx_interf_fxs}<DIV class="rnr-cw-detailsipbx_interf_fxs rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_fxs rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_fxs rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces FXS </DIV>
+{$displayDetailTable_ipbx_interf_fxs}</DIV></DIV></DIV>
+{END details_ipbx_interf_fxs}{BEGIN details_ipbx_interf_e1}<DIV class="rnr-cw-detailsipbx_interf_e1 rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_e1 rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_e1 rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces E1 </DIV>
+{$displayDetailTable_ipbx_interf_e1}</DIV></DIV></DIV>
+{END details_ipbx_interf_e1}{BEGIN details_ipbx_interf_gsm}<DIV class="rnr-cw-detailsipbx_interf_gsm rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_gsm rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_gsm rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces GSM </DIV>
+{$displayDetailTable_ipbx_interf_gsm}</DIV></DIV></DIV>
+{END details_ipbx_interf_gsm}{BEGIN details_ipbx_interf_sip}<DIV class="rnr-cw-detailsipbx_interf_sip rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_sip rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_sip rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces SIP </DIV>
+{$displayDetailTable_ipbx_interf_sip}</DIV></DIV></DIV>
+{END details_ipbx_interf_sip}{BEGIN details_ipbx_interf_voxip}<DIV class="rnr-cw-detailsipbx_interf_voxip rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_voxip rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_voxip rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces VOXIP </DIV>
+{$displayDetailTable_ipbx_interf_voxip}</DIV></DIV></DIV>
+{END details_ipbx_interf_voxip}{BEGIN details_ipbx_interf_mslync}<DIV class="rnr-cw-detailsipbx_interf_mslync rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_mslync rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_mslync rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces MS-LYNC </DIV>
+{$displayDetailTable_ipbx_interf_mslync}</DIV></DIV></DIV>
+{END details_ipbx_interf_mslync}{BEGIN details_ipbx_interf_callman}<DIV class="rnr-cw-detailsipbx_interf_callman rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_callman rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_callman rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interfaces CallManager (Cisco) </DIV>
+{$displayDetailTable_ipbx_interf_callman}</DIV></DIV></DIV>
+{END details_ipbx_interf_callman}{BEGIN details_ipbx_interf_fxo}<DIV class="rnr-cw-detailsipbx_interf_fxo rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_fxo rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_fxo rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interface FXO </DIV>
+{$displayDetailTable_ipbx_interf_fxo}</DIV></DIV></DIV>
+{END details_ipbx_interf_fxo}{BEGIN details_ipbx_interf_sip_generica}<DIV class="rnr-cw-detailsipbx_interf_sip_generica rnr-s-empty aslinks {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-detailsipbx_interf_sip_generica rnr-c-details">
+<DIV class="rnr-brickcontents style1 rnr-b-editdetailsipbx_interf_sip_generica rnr-b-editdetails">
+<DIV class=rnr-dcaption>Interface SIP Genérica </DIV>
+{$displayDetailTable_ipbx_interf_sip_generica}</DIV></DIV></DIV>{END details_ipbx_interf_sip_generica}{END detail_tables}</DIV>{END container_details}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

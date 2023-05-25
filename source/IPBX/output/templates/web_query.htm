@@ -1,0 +1,78 @@
+<html>
+<head>
+	<link rel="stylesheet" href="include/css/jquery-ui.css" type="text/css">
+
+	<script type="text/javascript" src="include/js/jquery.min.js"></script>
+	<script type="text/javascript" src="include/js/jquery-ui.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$(function() {
+		$("#tabs").tabs();
+	});
+</script>
+<style type="text/css">
+	body 	{ font: 12px Verdana, Arial, helvetica, sans-serif; }
+	td, th 	{ font: 11px Verdana, Arial, helvetica, sans-serif; padding: 2px;}
+	th 		{ font-weight: bold; padding: 2px 4px; }
+	li 		{ list-style: none; }
+	.sql_area {
+		text-align: left;
+		border: 1px solid #999;
+		padding: 5px;
+		font-family: Tahoma, sans-serif;
+		width: 90%;
+	}
+	.sql_result { border: 1px solid #ccc; }
+		.sql_result th { padding: 5px; background: #4e6d9c; color: #fff; }
+		.sql_result td { padding: 5px; background: #c5d4eb; }
+		
+	.keyword { font-weight: bold; color: #999; }
+	#table-container { width: 740px; height: 450px; overflow: auto; }
+</style>
+
+<div class="demo">
+
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">SQL Query</a></li>
+		<li><a href="#tabs-2">Results</a></li>
+	</ul>
+	<div id="tabs-1">
+<textarea class="sql_area" rows="20" cols="80" readonly="true">
+{$sql_query}
+</textarea>		
+	</div>
+	<div id="tabs-2">
+		<div id="table-container">
+		{BEGIN sql_message_block}
+			<p>No records to display</p>
+		{END sql_message_block}
+		{BEGIN sql_result_block}
+		<p>
+			Apresentando os primeiros: <strong>{$display_count}</strong>
+		</p>
+		<table class="sql_result" cellpadding="1" cellspacing="1" border="0">
+			<tr>
+				<thead>
+					<tr>
+						{$res_head}
+					</tr>
+				</thead>
+				<tbody>
+					{$res_body}
+				</tbody>
+			</tr>
+		</table>
+		{END sql_result_block}
+		{BEGIN sql_error_block}
+			{$sql_error}
+		{END sql_error_block}
+		</div>
+	</div>
+</div>
+
+</div><!-- End demo -->
+
+</body>
+</html>

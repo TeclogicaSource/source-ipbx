@@ -1,0 +1,142 @@
+<html {$html_attrs}>
+<head><title>Desvios Telefones</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{BEGIN style_block}
+<style>
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;width:100%}
+#header_block{$id} {width:100%;white-space:nowrap;height:35px;padding-top:5px;text-align:center;border-bottom:1px white solid;}
+#fields_block{$id} {width:100%}
+#fields_block{$id} td {padding-left:10px}
+#buttons_block{$id} {width:100%;padding-bottom:5px;text-align:center}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px;text-align:center}
+</style>
+{END style_block}
+</head>
+<body>
+{BEGIN body}
+{$header}
+{BEGIN addForm}
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+{BEGIN flybody}
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Desvios Telefones, Novo Registro
+</div>
+
+{BEGIN message_block}
+<div id="message_block{$id}" class="downedit">{$message}</div>
+{END message_block}
+
+<table cellpadding=4 cellspacing=0 border=0 width=100%>
+{BEGIN ramal_fieldblock}
+  <tr>
+    <td class=editshadeleft_b2 width=150 style="padding-left:15px;">
+	{BEGIN ramal_label}Ramal{END ramal_label}
+</td>
+    <td width=250 class=editshaderight_lb2 style="padding-left:10px;">
+    {$ramal_editcontrol}
+  </td></tr>
+{END ramal_fieldblock}
+{BEGIN hr_inicio_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Hora Início</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_inicio_editcontrol}
+  </td></tr>
+{END hr_inicio_fieldblock}
+{BEGIN hr_fim_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Hora Fim</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$hr_fim_editcontrol}
+  </td></tr>
+{END hr_fim_fieldblock}
+{BEGIN destino_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Destino</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$destino_editcontrol}
+  </td></tr>
+{END destino_fieldblock}
+{BEGIN seg_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Segunda-Feira</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$seg_editcontrol}
+  </td></tr>
+{END seg_fieldblock}
+{BEGIN ter_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Terça-Feira</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$ter_editcontrol}
+  </td></tr>
+{END ter_fieldblock}
+{BEGIN qua_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Quarta-Feira</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$qua_editcontrol}
+  </td></tr>
+{END qua_fieldblock}
+{BEGIN qui_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Quinta-Feira</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$qui_editcontrol}
+  </td></tr>
+{END qui_fieldblock}
+{BEGIN sex_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Sexta-Feira</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$sex_editcontrol}
+  </td></tr>
+{END sex_fieldblock}
+{BEGIN sab_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Sábado</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$sab_editcontrol}
+  </td></tr>
+{END sab_fieldblock}
+{BEGIN dom_fieldblock}
+  <tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Domingo</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$dom_editcontrol}
+  </td></tr>
+{END dom_fieldblock}
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+	{BEGIN legend}
+	<div id="required_block{$id}" ><img alt="bullet" src="images/icon_required.gif"> - Required field</div>
+	{END legend}
+	{$legendBreak}
+	{BEGIN save_button}
+	<span class=buttonborder><input class=button type=submit value="Salvar" {$savebutton_attrs}></span>
+	{END save_button} 
+	{BEGIN back_button}
+	<span class=buttonborder><input class=button type=button value="Voltar à Lista" {$backbutton_attrs}></span>
+	{END back_button}
+	{BEGIN cancel_button}
+	<span class=buttonborder><input class=button type=button value="Cancela" {$cancelbutton_attrs}></span>
+	{END cancel_button}
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+{END flybody}
+</td></tr></table>
+{END addForm}
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

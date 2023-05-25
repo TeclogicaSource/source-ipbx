@@ -1,0 +1,236 @@
+<html {$html_attrs}>
+<head>
+<title>Ipbx Ramais</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Ipbx Ramais</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN callerid_fieldheadercolumn}
+	<td>
+{BEGIN callerid_fieldheader}
+	<b>Nome</b>
+{END callerid_fieldheader}
+	</td>
+{END callerid_fieldheadercolumn}
+{BEGIN name_fieldheadercolumn}
+	<td>
+{BEGIN name_fieldheader}
+	<b>Ramal</b>
+{END name_fieldheader}
+	</td>
+{END name_fieldheadercolumn}
+{BEGIN mail_fieldheadercolumn}
+	<td>
+{BEGIN mail_fieldheader}
+	<b>Mail</b>
+{END mail_fieldheader}
+	</td>
+{END mail_fieldheadercolumn}
+{BEGIN secret_fieldheadercolumn}
+	<td>
+{BEGIN secret_fieldheader}
+	<b>Senha</b>
+{END secret_fieldheader}
+	</td>
+{END secret_fieldheadercolumn}
+{BEGIN accountcode_fieldheadercolumn}
+	<td>
+{BEGIN accountcode_fieldheader}
+	<b>Centro de custo</b>
+{END accountcode_fieldheader}
+	</td>
+{END accountcode_fieldheadercolumn}
+{BEGIN context_fieldheadercolumn}
+	<td>
+{BEGIN context_fieldheader}
+	<b>Privilégio</b>
+{END context_fieldheader}
+	</td>
+{END context_fieldheadercolumn}
+{BEGIN allow_fieldheadercolumn}
+	<td>
+{BEGIN allow_fieldheader}
+	<b>Codec</b>
+{END allow_fieldheader}
+	</td>
+{END allow_fieldheadercolumn}
+{BEGIN grava_chamada_fieldheadercolumn}
+	<td>
+{BEGIN grava_chamada_fieldheader}
+	<b>Gravar Chamadas</b>
+{END grava_chamada_fieldheader}
+	</td>
+{END grava_chamada_fieldheadercolumn}
+{BEGIN call_limit_fieldheadercolumn}
+	<td>
+{BEGIN call_limit_fieldheader}
+	<b>Ligações simultâneas</b>
+{END call_limit_fieldheader}
+	</td>
+{END call_limit_fieldheadercolumn}
+{BEGIN tp_ramal_fieldheadercolumn}
+	<td>
+{BEGIN tp_ramal_fieldheader}
+	<b>Ramal</b>
+{END tp_ramal_fieldheader}
+	</td>
+{END tp_ramal_fieldheadercolumn}
+{BEGIN Transbordo_fieldheadercolumn}
+	<td>
+{BEGIN Transbordo_fieldheader}
+	<b>Ramal de Transbordo</b>
+{END Transbordo_fieldheader}
+	</td>
+{END Transbordo_fieldheadercolumn}
+{BEGIN id_horario_fieldheadercolumn}
+	<td>
+{BEGIN id_horario_fieldheader}
+	<b>Horário</b>
+{END id_horario_fieldheader}
+	</td>
+{END id_horario_fieldheadercolumn}
+{BEGIN id_interf_fieldheadercolumn}
+	<td>
+{BEGIN id_interf_fieldheader}
+	<b>Interface</b>
+{END id_interf_fieldheader}
+	</td>
+{END id_interf_fieldheadercolumn}
+{BEGIN ident_interf_fieldheadercolumn}
+	<td>
+{BEGIN ident_interf_fieldheader}
+	<b>Canal de saída</b>
+{END ident_interf_fieldheader}
+	</td>
+{END ident_interf_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN callerid_fieldcolumn}
+<td {$callerid_style}>
+{$callerid_value}
+</td>
+{END callerid_fieldcolumn}
+{BEGIN name_fieldcolumn}
+<td {$name_style}>
+{$name_value}
+</td>
+{END name_fieldcolumn}
+{BEGIN mail_fieldcolumn}
+<td {$mail_style}>
+{$mail_value}
+</td>
+{END mail_fieldcolumn}
+{BEGIN secret_fieldcolumn}
+<td {$secret_style}>
+{$secret_value}
+</td>
+{END secret_fieldcolumn}
+{BEGIN accountcode_fieldcolumn}
+<td {$accountcode_style}>
+{$accountcode_value}
+</td>
+{END accountcode_fieldcolumn}
+{BEGIN context_fieldcolumn}
+<td {$context_style}>
+{$context_value}
+</td>
+{END context_fieldcolumn}
+{BEGIN allow_fieldcolumn}
+<td {$allow_style}>
+{$allow_value}
+</td>
+{END allow_fieldcolumn}
+{BEGIN grava_chamada_fieldcolumn}
+<td {$grava_chamada_style}>
+{$grava_chamada_value}
+</td>
+{END grava_chamada_fieldcolumn}
+{BEGIN call_limit_fieldcolumn}
+<td {$call_limit_style}>
+{$call_limit_value}
+</td>
+{END call_limit_fieldcolumn}
+{BEGIN tp_ramal_fieldcolumn}
+<td {$tp_ramal_style}>
+{$tp_ramal_value}
+</td>
+{END tp_ramal_fieldcolumn}
+{BEGIN Transbordo_fieldcolumn}
+<td {$Transbordo_style}>
+{$Transbordo_value}
+</td>
+{END Transbordo_fieldcolumn}
+{BEGIN id_horario_fieldcolumn}
+<td {$id_horario_style}>
+{$id_horario_value}
+</td>
+{END id_horario_fieldcolumn}
+{BEGIN id_interf_fieldcolumn}
+<td {$id_interf_style}>
+{$id_interf_value}
+</td>
+{END id_interf_fieldcolumn}
+{BEGIN ident_interf_fieldcolumn}
+<td {$ident_interf_style}>
+{$ident_interf_value}
+</td>
+{END ident_interf_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

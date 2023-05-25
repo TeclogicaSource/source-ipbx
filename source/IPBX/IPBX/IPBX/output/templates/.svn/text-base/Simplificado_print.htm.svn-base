@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Simplificado - Centro De Custo</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<DIV>
+<H1>Relatório&nbsp;Simplificado - Centro De Custo</H1>
+<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>
+{BEGIN grid_block}<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN dsc_centro_cust_fieldheader}<B>Centro de 
+      custo</B> {END dsc_centro_cust_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN dsc_interf_fieldheader}<B>Interface de 
+      saída</B> {END dsc_interf_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Mes_fieldheader}<B>Mês</B> {END Mes_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN Ano_fieldheader}<B>Ano</B> {END Ano_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN custo_fieldheader}<B>Custo</B> {END custo_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>{$dsc_centro_cust_value}</TD>
+    <TD class=data>{$dsc_interf_value}</TD>
+    <TD class=data>{$Mes_value}</TD>
+    <TD class=data>{$Ano_value}</TD>
+    <TD class=data>{$custo_value}</TD></TR>{END row_data}{END grid_row}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

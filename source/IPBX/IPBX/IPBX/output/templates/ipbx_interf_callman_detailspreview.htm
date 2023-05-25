@@ -1,0 +1,34 @@
+Interfaces CallManager (Cisco)<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Descrição da Interface</strong></td>
+<td><strong>IP Host</strong></td>
+<td><strong>Central</strong></td>
+<td><strong>Codec</strong></td>
+<td><strong>DTMF</strong></td>
+<td><strong>Tipo Interface</strong></td>
+<td><strong>Tp Chamada</strong></td>
+<td><strong>Piloto</strong></td>
+<td><strong>Logon Remoto</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$dsc_interf_value}</td>
+<td>{$ip_host_value}</td>
+<td>{$id_central_value}</td>
+<td>{$codec_value}</td>
+<td>{$dtmf_value}</td>
+<td>{$id_tp_interf_value}</td>
+<td>{$tp_chamada_value}</td>
+<td>{$piloto_value}</td>
+<td>{$flg_logon_remoto_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

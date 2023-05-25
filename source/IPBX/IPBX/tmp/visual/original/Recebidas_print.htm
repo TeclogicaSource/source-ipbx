@@ -1,0 +1,108 @@
+<html {$html_attrs}>
+<head>
+<title>Recebidas</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+.group_1
+{
+background-color: #E6E6FA;
+}
+
+
+.nbgroup_1
+{
+background-color: #E6E6FA;
+border-style:none;
+}
+
+
+.header_1
+{
+background-color: #C3C3D4;
+}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>Recebidas</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_row}
+<!-------------------------------------  group headers ----------------------------------------->
+{BEGIN dst_newgroup}
+<tr>
+<td class=header_1 colspan=6>
+Destino:&nbsp;
+<font style="font-weight:900">{$dst_grval}</font></td>
+</tr>
+<tr>
+<td class=blackshade><b>Data e Hora</b></td>
+<td class=blackshade><b>Usuário</b></td>
+<td class=blackshade><b>Origem</b></td>
+<td class=blackshade><b>Duração</b></td>
+<td class=blackshade><b>Ultimo Estado</b></td>
+<td class=blackshade><b>Audio</b></td>
+</tr>
+{END dst_newgroup}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$calldate_value}</td>
+	<td class=data>{$clid_value}</td>
+	<td class=data>{$src_value}</td>
+	<td class=data>{$duration_value}</td>
+	<td class=data>{$disposition_value}</td>
+	<td class=data>{$Audio_value}</td>
+</tr>
+{END row_data}
+<!-------------------------------------  group summary ----------------------------------------->
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

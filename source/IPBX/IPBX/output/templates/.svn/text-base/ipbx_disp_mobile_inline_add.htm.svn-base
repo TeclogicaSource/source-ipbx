@@ -1,0 +1,16 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control 
+	field="name">
+	{$name_editcontrol}
+	</control>
+	<control 
+	field="id_dispositivo">
+	{$id_dispositivo_editcontrol}
+	</control>
+	<control 
+	field="dsc_dispositivo">
+	{$dsc_dispositivo_editcontrol}
+	</control>
+	<message status="{$status}">{$message}</message>
+</edit_controls>

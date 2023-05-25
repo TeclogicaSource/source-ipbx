@@ -1,0 +1,788 @@
+<html {$html_attrs}>
+<head>
+<title>Add/Edit users</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+
+<h1>Add/Edit users</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_fieldheadercolumn}
+	<td>
+{BEGIN id_fieldheader}
+	<b>Id</b>
+{END id_fieldheader}
+	</td>
+{END id_fieldheadercolumn}
+{BEGIN name_fieldheadercolumn}
+	<td>
+{BEGIN name_fieldheader}
+	<b>Name</b>
+{END name_fieldheader}
+	</td>
+{END name_fieldheadercolumn}
+{BEGIN host_fieldheadercolumn}
+	<td>
+{BEGIN host_fieldheader}
+	<b>Host</b>
+{END host_fieldheader}
+	</td>
+{END host_fieldheadercolumn}
+{BEGIN nat_fieldheadercolumn}
+	<td>
+{BEGIN nat_fieldheader}
+	<b>Nat</b>
+{END nat_fieldheader}
+	</td>
+{END nat_fieldheadercolumn}
+{BEGIN type_fieldheadercolumn}
+	<td>
+{BEGIN type_fieldheader}
+	<b>Type</b>
+{END type_fieldheader}
+	</td>
+{END type_fieldheadercolumn}
+{BEGIN accountcode_fieldheadercolumn}
+	<td>
+{BEGIN accountcode_fieldheader}
+	<b>Accountcode</b>
+{END accountcode_fieldheader}
+	</td>
+{END accountcode_fieldheadercolumn}
+{BEGIN amaflags_fieldheadercolumn}
+	<td>
+{BEGIN amaflags_fieldheader}
+	<b>Amaflags</b>
+{END amaflags_fieldheader}
+	</td>
+{END amaflags_fieldheadercolumn}
+{BEGIN call_limit_fieldheadercolumn}
+	<td>
+{BEGIN call_limit_fieldheader}
+	<b>Call-limit</b>
+{END call_limit_fieldheader}
+	</td>
+{END call_limit_fieldheadercolumn}
+{BEGIN callgroup_fieldheadercolumn}
+	<td>
+{BEGIN callgroup_fieldheader}
+	<b>Callgroup</b>
+{END callgroup_fieldheader}
+	</td>
+{END callgroup_fieldheadercolumn}
+{BEGIN callerid_fieldheadercolumn}
+	<td>
+{BEGIN callerid_fieldheader}
+	<b>Callerid</b>
+{END callerid_fieldheader}
+	</td>
+{END callerid_fieldheadercolumn}
+{BEGIN cancallforward_fieldheadercolumn}
+	<td>
+{BEGIN cancallforward_fieldheader}
+	<b>Cancallforward</b>
+{END cancallforward_fieldheader}
+	</td>
+{END cancallforward_fieldheadercolumn}
+{BEGIN canreinvite_fieldheadercolumn}
+	<td>
+{BEGIN canreinvite_fieldheader}
+	<b>Canreinvite</b>
+{END canreinvite_fieldheader}
+	</td>
+{END canreinvite_fieldheadercolumn}
+{BEGIN context_fieldheadercolumn}
+	<td>
+{BEGIN context_fieldheader}
+	<b>Context</b>
+{END context_fieldheader}
+	</td>
+{END context_fieldheadercolumn}
+{BEGIN defaultip_fieldheadercolumn}
+	<td>
+{BEGIN defaultip_fieldheader}
+	<b>Defaultip</b>
+{END defaultip_fieldheader}
+	</td>
+{END defaultip_fieldheadercolumn}
+{BEGIN dtmfmode_fieldheadercolumn}
+	<td>
+{BEGIN dtmfmode_fieldheader}
+	<b>Dtmfmode</b>
+{END dtmfmode_fieldheader}
+	</td>
+{END dtmfmode_fieldheadercolumn}
+{BEGIN fromuser_fieldheadercolumn}
+	<td>
+{BEGIN fromuser_fieldheader}
+	<b>Fromuser</b>
+{END fromuser_fieldheader}
+	</td>
+{END fromuser_fieldheadercolumn}
+{BEGIN fromdomain_fieldheadercolumn}
+	<td>
+{BEGIN fromdomain_fieldheader}
+	<b>Fromdomain</b>
+{END fromdomain_fieldheader}
+	</td>
+{END fromdomain_fieldheadercolumn}
+{BEGIN insecure_fieldheadercolumn}
+	<td>
+{BEGIN insecure_fieldheader}
+	<b>Insecure</b>
+{END insecure_fieldheader}
+	</td>
+{END insecure_fieldheadercolumn}
+{BEGIN language_fieldheadercolumn}
+	<td>
+{BEGIN language_fieldheader}
+	<b>Language</b>
+{END language_fieldheader}
+	</td>
+{END language_fieldheadercolumn}
+{BEGIN mailbox_fieldheadercolumn}
+	<td>
+{BEGIN mailbox_fieldheader}
+	<b>Mailbox</b>
+{END mailbox_fieldheader}
+	</td>
+{END mailbox_fieldheadercolumn}
+{BEGIN md5secret_fieldheadercolumn}
+	<td>
+{BEGIN md5secret_fieldheader}
+	<b>Md5secret</b>
+{END md5secret_fieldheader}
+	</td>
+{END md5secret_fieldheadercolumn}
+{BEGIN deny_fieldheadercolumn}
+	<td>
+{BEGIN deny_fieldheader}
+	<b>Deny</b>
+{END deny_fieldheader}
+	</td>
+{END deny_fieldheadercolumn}
+{BEGIN permit_fieldheadercolumn}
+	<td>
+{BEGIN permit_fieldheader}
+	<b>Permit</b>
+{END permit_fieldheader}
+	</td>
+{END permit_fieldheadercolumn}
+{BEGIN mask_fieldheadercolumn}
+	<td>
+{BEGIN mask_fieldheader}
+	<b>Mask</b>
+{END mask_fieldheader}
+	</td>
+{END mask_fieldheadercolumn}
+{BEGIN musiconhold_fieldheadercolumn}
+	<td>
+{BEGIN musiconhold_fieldheader}
+	<b>Musiconhold</b>
+{END musiconhold_fieldheader}
+	</td>
+{END musiconhold_fieldheadercolumn}
+{BEGIN pickupgroup_fieldheadercolumn}
+	<td>
+{BEGIN pickupgroup_fieldheader}
+	<b>Pickupgroup</b>
+{END pickupgroup_fieldheader}
+	</td>
+{END pickupgroup_fieldheadercolumn}
+{BEGIN qualify_fieldheadercolumn}
+	<td>
+{BEGIN qualify_fieldheader}
+	<b>Qualify</b>
+{END qualify_fieldheader}
+	</td>
+{END qualify_fieldheadercolumn}
+{BEGIN rtcachefriends_fieldheadercolumn}
+	<td>
+{BEGIN rtcachefriends_fieldheader}
+	<b>Rtcachefriends</b>
+{END rtcachefriends_fieldheader}
+	</td>
+{END rtcachefriends_fieldheadercolumn}
+{BEGIN regexten_fieldheadercolumn}
+	<td>
+{BEGIN regexten_fieldheader}
+	<b>Regexten</b>
+{END regexten_fieldheader}
+	</td>
+{END regexten_fieldheadercolumn}
+{BEGIN restrictcid_fieldheadercolumn}
+	<td>
+{BEGIN restrictcid_fieldheader}
+	<b>Restrictcid</b>
+{END restrictcid_fieldheader}
+	</td>
+{END restrictcid_fieldheadercolumn}
+{BEGIN rtptimeout_fieldheadercolumn}
+	<td>
+{BEGIN rtptimeout_fieldheader}
+	<b>Rtptimeout</b>
+{END rtptimeout_fieldheader}
+	</td>
+{END rtptimeout_fieldheadercolumn}
+{BEGIN rtpholdtimeout_fieldheadercolumn}
+	<td>
+{BEGIN rtpholdtimeout_fieldheader}
+	<b>Rtpholdtimeout</b>
+{END rtpholdtimeout_fieldheader}
+	</td>
+{END rtpholdtimeout_fieldheadercolumn}
+{BEGIN secret_fieldheadercolumn}
+	<td>
+{BEGIN secret_fieldheader}
+	<b>Secret</b>
+{END secret_fieldheader}
+	</td>
+{END secret_fieldheadercolumn}
+{BEGIN setvar_fieldheadercolumn}
+	<td>
+{BEGIN setvar_fieldheader}
+	<b>Setvar</b>
+{END setvar_fieldheader}
+	</td>
+{END setvar_fieldheadercolumn}
+{BEGIN disallow_fieldheadercolumn}
+	<td>
+{BEGIN disallow_fieldheader}
+	<b>Disallow</b>
+{END disallow_fieldheader}
+	</td>
+{END disallow_fieldheadercolumn}
+{BEGIN allow_fieldheadercolumn}
+	<td>
+{BEGIN allow_fieldheader}
+	<b>Allow</b>
+{END allow_fieldheader}
+	</td>
+{END allow_fieldheadercolumn}
+{BEGIN fullcontact_fieldheadercolumn}
+	<td>
+{BEGIN fullcontact_fieldheader}
+	<b>Fullcontact</b>
+{END fullcontact_fieldheader}
+	</td>
+{END fullcontact_fieldheadercolumn}
+{BEGIN ipaddr_fieldheadercolumn}
+	<td>
+{BEGIN ipaddr_fieldheader}
+	<b>Ipaddr</b>
+{END ipaddr_fieldheader}
+	</td>
+{END ipaddr_fieldheadercolumn}
+{BEGIN port_fieldheadercolumn}
+	<td>
+{BEGIN port_fieldheader}
+	<b>Port</b>
+{END port_fieldheader}
+	</td>
+{END port_fieldheadercolumn}
+{BEGIN regserver_fieldheadercolumn}
+	<td>
+{BEGIN regserver_fieldheader}
+	<b>Regserver</b>
+{END regserver_fieldheader}
+	</td>
+{END regserver_fieldheadercolumn}
+{BEGIN regseconds_fieldheadercolumn}
+	<td>
+{BEGIN regseconds_fieldheader}
+	<b>Regseconds</b>
+{END regseconds_fieldheader}
+	</td>
+{END regseconds_fieldheadercolumn}
+{BEGIN lastms_fieldheadercolumn}
+	<td>
+{BEGIN lastms_fieldheader}
+	<b>Lastms</b>
+{END lastms_fieldheader}
+	</td>
+{END lastms_fieldheadercolumn}
+{BEGIN username_fieldheadercolumn}
+	<td>
+{BEGIN username_fieldheader}
+	<b>Username</b>
+{END username_fieldheader}
+	</td>
+{END username_fieldheadercolumn}
+{BEGIN defaultuser_fieldheadercolumn}
+	<td>
+{BEGIN defaultuser_fieldheader}
+	<b>Defaultuser</b>
+{END defaultuser_fieldheader}
+	</td>
+{END defaultuser_fieldheadercolumn}
+{BEGIN subscribecontext_fieldheadercolumn}
+	<td>
+{BEGIN subscribecontext_fieldheader}
+	<b>Subscribecontext</b>
+{END subscribecontext_fieldheader}
+	</td>
+{END subscribecontext_fieldheadercolumn}
+{BEGIN useragent_fieldheadercolumn}
+	<td>
+{BEGIN useragent_fieldheader}
+	<b>Useragent</b>
+{END useragent_fieldheader}
+	</td>
+{END useragent_fieldheadercolumn}
+{BEGIN gateway_fieldheadercolumn}
+	<td>
+{BEGIN gateway_fieldheader}
+	<b>Gateway</b>
+{END gateway_fieldheader}
+	</td>
+{END gateway_fieldheadercolumn}
+{BEGIN id_horario_fieldheadercolumn}
+	<td>
+{BEGIN id_horario_fieldheader}
+	<b>Id Horario</b>
+{END id_horario_fieldheader}
+	</td>
+{END id_horario_fieldheadercolumn}
+{BEGIN mail_fieldheadercolumn}
+	<td>
+{BEGIN mail_fieldheader}
+	<b>Mail</b>
+{END mail_fieldheader}
+	</td>
+{END mail_fieldheadercolumn}
+{BEGIN grava_chamada_fieldheadercolumn}
+	<td>
+{BEGIN grava_chamada_fieldheader}
+	<b>Grava Chamada</b>
+{END grava_chamada_fieldheader}
+	</td>
+{END grava_chamada_fieldheadercolumn}
+{BEGIN tp_ramal_fieldheadercolumn}
+	<td>
+{BEGIN tp_ramal_fieldheader}
+	<b>Tp Ramal</b>
+{END tp_ramal_fieldheader}
+	</td>
+{END tp_ramal_fieldheadercolumn}
+{BEGIN Transbordo_fieldheadercolumn}
+	<td>
+{BEGIN Transbordo_fieldheader}
+	<b>Transbordo</b>
+{END Transbordo_fieldheader}
+	</td>
+{END Transbordo_fieldheadercolumn}
+{BEGIN id_interf_fieldheadercolumn}
+	<td>
+{BEGIN id_interf_fieldheader}
+	<b>Id Interf</b>
+{END id_interf_fieldheader}
+	</td>
+{END id_interf_fieldheadercolumn}
+{BEGIN ident_interf_fieldheadercolumn}
+	<td>
+{BEGIN ident_interf_fieldheader}
+	<b>Ident Interf</b>
+{END ident_interf_fieldheader}
+	</td>
+{END ident_interf_fieldheadercolumn}
+{BEGIN tp_chamada_fieldheadercolumn}
+	<td>
+{BEGIN tp_chamada_fieldheader}
+	<b>Tp Chamada</b>
+{END tp_chamada_fieldheader}
+	</td>
+{END tp_chamada_fieldheadercolumn}
+{BEGIN flg_cadeado_fieldheadercolumn}
+	<td>
+{BEGIN flg_cadeado_fieldheader}
+	<b>Flg Cadeado</b>
+{END flg_cadeado_fieldheader}
+	</td>
+{END flg_cadeado_fieldheadercolumn}
+{BEGIN desvio_fieldheadercolumn}
+	<td>
+{BEGIN desvio_fieldheader}
+	<b>Desvio</b>
+{END desvio_fieldheader}
+	</td>
+{END desvio_fieldheadercolumn}
+{BEGIN id_pesquisa_fieldheadercolumn}
+	<td>
+{BEGIN id_pesquisa_fieldheader}
+	<b>Id Pesquisa</b>
+{END id_pesquisa_fieldheader}
+	</td>
+{END id_pesquisa_fieldheadercolumn}
+{BEGIN desvio_ddr_fieldheadercolumn}
+	<td>
+{BEGIN desvio_ddr_fieldheader}
+	<b>Desvio Ddr</b>
+{END desvio_ddr_fieldheader}
+	</td>
+{END desvio_ddr_fieldheadercolumn}
+{BEGIN id_saida_fieldheadercolumn}
+	<td>
+{BEGIN id_saida_fieldheader}
+	<b>Id Saida</b>
+{END id_saida_fieldheader}
+	</td>
+{END id_saida_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_fieldcolumn}
+<td {$id_style}>
+{$id_value}
+</td>
+{END id_fieldcolumn}
+{BEGIN name_fieldcolumn}
+<td {$name_style}>
+{$name_value}
+</td>
+{END name_fieldcolumn}
+{BEGIN host_fieldcolumn}
+<td {$host_style}>
+{$host_value}
+</td>
+{END host_fieldcolumn}
+{BEGIN nat_fieldcolumn}
+<td {$nat_style}>
+{$nat_value}
+</td>
+{END nat_fieldcolumn}
+{BEGIN type_fieldcolumn}
+<td {$type_style}>
+{$type_value}
+</td>
+{END type_fieldcolumn}
+{BEGIN accountcode_fieldcolumn}
+<td {$accountcode_style}>
+{$accountcode_value}
+</td>
+{END accountcode_fieldcolumn}
+{BEGIN amaflags_fieldcolumn}
+<td {$amaflags_style}>
+{$amaflags_value}
+</td>
+{END amaflags_fieldcolumn}
+{BEGIN call_limit_fieldcolumn}
+<td {$call_limit_style}>
+{$call_limit_value}
+</td>
+{END call_limit_fieldcolumn}
+{BEGIN callgroup_fieldcolumn}
+<td {$callgroup_style}>
+{$callgroup_value}
+</td>
+{END callgroup_fieldcolumn}
+{BEGIN callerid_fieldcolumn}
+<td {$callerid_style}>
+{$callerid_value}
+</td>
+{END callerid_fieldcolumn}
+{BEGIN cancallforward_fieldcolumn}
+<td {$cancallforward_style}>
+{$cancallforward_value}
+</td>
+{END cancallforward_fieldcolumn}
+{BEGIN canreinvite_fieldcolumn}
+<td {$canreinvite_style}>
+{$canreinvite_value}
+</td>
+{END canreinvite_fieldcolumn}
+{BEGIN context_fieldcolumn}
+<td {$context_style}>
+{$context_value}
+</td>
+{END context_fieldcolumn}
+{BEGIN defaultip_fieldcolumn}
+<td {$defaultip_style}>
+{$defaultip_value}
+</td>
+{END defaultip_fieldcolumn}
+{BEGIN dtmfmode_fieldcolumn}
+<td {$dtmfmode_style}>
+{$dtmfmode_value}
+</td>
+{END dtmfmode_fieldcolumn}
+{BEGIN fromuser_fieldcolumn}
+<td {$fromuser_style}>
+{$fromuser_value}
+</td>
+{END fromuser_fieldcolumn}
+{BEGIN fromdomain_fieldcolumn}
+<td {$fromdomain_style}>
+{$fromdomain_value}
+</td>
+{END fromdomain_fieldcolumn}
+{BEGIN insecure_fieldcolumn}
+<td {$insecure_style}>
+{$insecure_value}
+</td>
+{END insecure_fieldcolumn}
+{BEGIN language_fieldcolumn}
+<td {$language_style}>
+{$language_value}
+</td>
+{END language_fieldcolumn}
+{BEGIN mailbox_fieldcolumn}
+<td {$mailbox_style}>
+{$mailbox_value}
+</td>
+{END mailbox_fieldcolumn}
+{BEGIN md5secret_fieldcolumn}
+<td {$md5secret_style}>
+{$md5secret_value}
+</td>
+{END md5secret_fieldcolumn}
+{BEGIN deny_fieldcolumn}
+<td {$deny_style}>
+{$deny_value}
+</td>
+{END deny_fieldcolumn}
+{BEGIN permit_fieldcolumn}
+<td {$permit_style}>
+{$permit_value}
+</td>
+{END permit_fieldcolumn}
+{BEGIN mask_fieldcolumn}
+<td {$mask_style}>
+{$mask_value}
+</td>
+{END mask_fieldcolumn}
+{BEGIN musiconhold_fieldcolumn}
+<td {$musiconhold_style}>
+{$musiconhold_value}
+</td>
+{END musiconhold_fieldcolumn}
+{BEGIN pickupgroup_fieldcolumn}
+<td {$pickupgroup_style}>
+{$pickupgroup_value}
+</td>
+{END pickupgroup_fieldcolumn}
+{BEGIN qualify_fieldcolumn}
+<td {$qualify_style}>
+{$qualify_value}
+</td>
+{END qualify_fieldcolumn}
+{BEGIN rtcachefriends_fieldcolumn}
+<td {$rtcachefriends_style}>
+{$rtcachefriends_value}
+</td>
+{END rtcachefriends_fieldcolumn}
+{BEGIN regexten_fieldcolumn}
+<td {$regexten_style}>
+{$regexten_value}
+</td>
+{END regexten_fieldcolumn}
+{BEGIN restrictcid_fieldcolumn}
+<td {$restrictcid_style}>
+{$restrictcid_value}
+</td>
+{END restrictcid_fieldcolumn}
+{BEGIN rtptimeout_fieldcolumn}
+<td {$rtptimeout_style}>
+{$rtptimeout_value}
+</td>
+{END rtptimeout_fieldcolumn}
+{BEGIN rtpholdtimeout_fieldcolumn}
+<td {$rtpholdtimeout_style}>
+{$rtpholdtimeout_value}
+</td>
+{END rtpholdtimeout_fieldcolumn}
+{BEGIN secret_fieldcolumn}
+<td {$secret_style}>
+{$secret_value}
+</td>
+{END secret_fieldcolumn}
+{BEGIN setvar_fieldcolumn}
+<td {$setvar_style}>
+{$setvar_value}
+</td>
+{END setvar_fieldcolumn}
+{BEGIN disallow_fieldcolumn}
+<td {$disallow_style}>
+{$disallow_value}
+</td>
+{END disallow_fieldcolumn}
+{BEGIN allow_fieldcolumn}
+<td {$allow_style}>
+{$allow_value}
+</td>
+{END allow_fieldcolumn}
+{BEGIN fullcontact_fieldcolumn}
+<td {$fullcontact_style}>
+{$fullcontact_value}
+</td>
+{END fullcontact_fieldcolumn}
+{BEGIN ipaddr_fieldcolumn}
+<td {$ipaddr_style}>
+{$ipaddr_value}
+</td>
+{END ipaddr_fieldcolumn}
+{BEGIN port_fieldcolumn}
+<td {$port_style}>
+{$port_value}
+</td>
+{END port_fieldcolumn}
+{BEGIN regserver_fieldcolumn}
+<td {$regserver_style}>
+{$regserver_value}
+</td>
+{END regserver_fieldcolumn}
+{BEGIN regseconds_fieldcolumn}
+<td {$regseconds_style}>
+{$regseconds_value}
+</td>
+{END regseconds_fieldcolumn}
+{BEGIN lastms_fieldcolumn}
+<td {$lastms_style}>
+{$lastms_value}
+</td>
+{END lastms_fieldcolumn}
+{BEGIN username_fieldcolumn}
+<td {$username_style}>
+{$username_value}
+</td>
+{END username_fieldcolumn}
+{BEGIN defaultuser_fieldcolumn}
+<td {$defaultuser_style}>
+{$defaultuser_value}
+</td>
+{END defaultuser_fieldcolumn}
+{BEGIN subscribecontext_fieldcolumn}
+<td {$subscribecontext_style}>
+{$subscribecontext_value}
+</td>
+{END subscribecontext_fieldcolumn}
+{BEGIN useragent_fieldcolumn}
+<td {$useragent_style}>
+{$useragent_value}
+</td>
+{END useragent_fieldcolumn}
+{BEGIN gateway_fieldcolumn}
+<td {$gateway_style}>
+{$gateway_value}
+</td>
+{END gateway_fieldcolumn}
+{BEGIN id_horario_fieldcolumn}
+<td {$id_horario_style}>
+{$id_horario_value}
+</td>
+{END id_horario_fieldcolumn}
+{BEGIN mail_fieldcolumn}
+<td {$mail_style}>
+{$mail_value}
+</td>
+{END mail_fieldcolumn}
+{BEGIN grava_chamada_fieldcolumn}
+<td {$grava_chamada_style}>
+{$grava_chamada_value}
+</td>
+{END grava_chamada_fieldcolumn}
+{BEGIN tp_ramal_fieldcolumn}
+<td {$tp_ramal_style}>
+{$tp_ramal_value}
+</td>
+{END tp_ramal_fieldcolumn}
+{BEGIN Transbordo_fieldcolumn}
+<td {$Transbordo_style}>
+{$Transbordo_value}
+</td>
+{END Transbordo_fieldcolumn}
+{BEGIN id_interf_fieldcolumn}
+<td {$id_interf_style}>
+{$id_interf_value}
+</td>
+{END id_interf_fieldcolumn}
+{BEGIN ident_interf_fieldcolumn}
+<td {$ident_interf_style}>
+{$ident_interf_value}
+</td>
+{END ident_interf_fieldcolumn}
+{BEGIN tp_chamada_fieldcolumn}
+<td {$tp_chamada_style}>
+{$tp_chamada_value}
+</td>
+{END tp_chamada_fieldcolumn}
+{BEGIN flg_cadeado_fieldcolumn}
+<td {$flg_cadeado_style}>
+{$flg_cadeado_value}
+</td>
+{END flg_cadeado_fieldcolumn}
+{BEGIN desvio_fieldcolumn}
+<td {$desvio_style}>
+{$desvio_value}
+</td>
+{END desvio_fieldcolumn}
+{BEGIN id_pesquisa_fieldcolumn}
+<td {$id_pesquisa_style}>
+{$id_pesquisa_value}
+</td>
+{END id_pesquisa_fieldcolumn}
+{BEGIN desvio_ddr_fieldcolumn}
+<td {$desvio_ddr_style}>
+{$desvio_ddr_value}
+</td>
+{END desvio_ddr_fieldcolumn}
+{BEGIN id_saida_fieldcolumn}
+<td {$id_saida_style}>
+{$id_saida_value}
+</td>
+{END id_saida_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

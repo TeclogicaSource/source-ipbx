@@ -1,0 +1,210 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN addheader}<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel cc_receptivo_filas_atend add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	<TBODY>
+  {BEGIN chave_fieldblock}<tr class="{$fielddispclass_chave}" data-fieldname="chave">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN chave_label}{$label cc_receptivo_filas_atend chave}{END chave_label}
+	</td>
+	<td class="rnr-control style3">
+		{$chave_editcontrol}&nbsp;
+	</td>
+</tr>
+{END chave_fieldblock}
+	{BEGIN dt_entrada_fieldblock}<tr class="{$fielddispclass_dt_entrada}" data-fieldname="dt_entrada">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dt_entrada_label}{$label cc_receptivo_filas_atend dt_entrada}{END dt_entrada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dt_entrada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dt_entrada_fieldblock}
+	{BEGIN hr_entrada_fieldblock}<tr class="{$fielddispclass_hr_entrada}" data-fieldname="hr_entrada">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_entrada_label}{$label cc_receptivo_filas_atend hr_entrada}{END hr_entrada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_entrada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_entrada_fieldblock}
+	{BEGIN Fila_fieldblock}<tr class="{$fielddispclass_Fila}" data-fieldname="Fila">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN Fila_label}{$label cc_receptivo_filas_atend Fila}{END Fila_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Fila_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Fila_fieldblock}
+	{BEGIN Agente_fieldblock}<tr class="{$fielddispclass_Agente}" data-fieldname="Agente">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN Agente_label}{$label cc_receptivo_filas_atend Agente}{END Agente_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Agente_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Agente_fieldblock}
+	{BEGIN hr_atendimento_fieldblock}<tr class="{$fielddispclass_hr_atendimento}" data-fieldname="hr_atendimento">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_atendimento_label}{$label cc_receptivo_filas_atend hr_atendimento}{END hr_atendimento_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_atendimento_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_atendimento_fieldblock}
+	{BEGIN hr_abandono_fieldblock}<tr class="{$fielddispclass_hr_abandono}" data-fieldname="hr_abandono">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN hr_abandono_label}{$label cc_receptivo_filas_atend hr_abandono}{END hr_abandono_label}
+	</td>
+	<td class="rnr-control style3">
+		{$hr_abandono_editcontrol}&nbsp;
+	</td>
+</tr>
+{END hr_abandono_fieldblock}
+	{BEGIN tp_espera_fieldblock}<tr class="{$fielddispclass_tp_espera}" data-fieldname="tp_espera">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tp_espera_label}{$label cc_receptivo_filas_atend tp_espera}{END tp_espera_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_espera_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_espera_fieldblock}
+	{BEGIN tp_atendimento_fieldblock}<tr class="{$fielddispclass_tp_atendimento}" data-fieldname="tp_atendimento">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tp_atendimento_label}{$label cc_receptivo_filas_atend tp_atendimento}{END tp_atendimento_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tp_atendimento_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tp_atendimento_fieldblock}
+	{BEGIN Telefone_fieldblock}<tr class="{$fielddispclass_Telefone}" data-fieldname="Telefone">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN Telefone_label}{$label cc_receptivo_filas_atend Telefone}{END Telefone_label}
+	</td>
+	<td class="rnr-control style3">
+		{$Telefone_editcontrol}&nbsp;
+	</td>
+</tr>
+{END Telefone_fieldblock}
+	{BEGIN ps_entrada_fieldblock}<tr class="{$fielddispclass_ps_entrada}" data-fieldname="ps_entrada">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN ps_entrada_label}{$label cc_receptivo_filas_atend ps_entrada}{END ps_entrada_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ps_entrada_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ps_entrada_fieldblock}
+	{BEGIN ps_abandono_fieldblock}<tr class="{$fielddispclass_ps_abandono}" data-fieldname="ps_abandono">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN ps_abandono_label}{$label cc_receptivo_filas_atend ps_abandono}{END ps_abandono_label}
+	</td>
+	<td class="rnr-control style3">
+		{$ps_abandono_editcontrol}&nbsp;
+	</td>
+</tr>
+{END ps_abandono_fieldblock}
+	{BEGIN tel_trans_fieldblock}<tr class="{$fielddispclass_tel_trans}" data-fieldname="tel_trans">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN tel_trans_label}{$label cc_receptivo_filas_atend tel_trans}{END tel_trans_label}
+	</td>
+	<td class="rnr-control style3">
+		{$tel_trans_editcontrol}&nbsp;
+	</td>
+</tr>
+{END tel_trans_fieldblock}
+	{BEGIN dsl_motiv_fieldblock}<tr class="{$fielddispclass_dsl_motiv}" data-fieldname="dsl_motiv">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dsl_motiv_label}{$label cc_receptivo_filas_atend dsl_motiv}{END dsl_motiv_label}
+	</td>
+	<td class="rnr-control style3">
+		{$dsl_motiv_editcontrol}&nbsp;
+	</td>
+</tr>
+{END dsl_motiv_fieldblock}
+	{BEGIN flg_timeout_fila_fieldblock}<tr class="{$fielddispclass_flg_timeout_fila}" data-fieldname="flg_timeout_fila">
+	<TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_timeout_fila_label}{$label cc_receptivo_filas_atend flg_timeout_fila}{END flg_timeout_fila_label}
+	</td>
+	<td class="rnr-control style3">
+		{$flg_timeout_fila_editcontrol}&nbsp;
+	</td>
+</tr>
+{END flg_timeout_fila_fieldblock}
+</TBODY></table></div>
+
+
+{BEGIN addbuttons}<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Salvar</a>
+	{END save_button}
+	{BEGIN reset_button}<a href="#" class="rnr-button" id="resetButton{$id}">Limpar</a>
+	{END reset_button}
+	{BEGIN cancel_button}<a href="#" class="rnr-button" id="cancelButton{$id}">Cancela</a>
+	{END cancel_button}
+	{BEGIN back_button}<a href="#" class="rnr-button" id="backButton{$id}">Voltar à Lista</a>
+	{END back_button}
+	{BEGIN backToMenu_button}<a href="#" class="rnr-button" id="backToMenuButton{$id}">Voltar ao Menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

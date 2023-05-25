@@ -1,0 +1,69 @@
+.rnr-left, .rnr-center{
+    background-color:#ffffff;
+}
+
+body{    
+    background-size: cover;
+}
+.page-list_centered_vert > .rnr-page {
+    width: 98%!important;
+}
+.page-chart_centered_vert > .rnr-page {
+    width: 98%!important;
+}
+
+#inlineAdd1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/add-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;
+   vertical-align: -20%;
+}
+#delete_selected1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/delete-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;
+   vertical-align: -20%;
+}
+#edit_selected1:before
+{
+   content:' ';
+   background-image: url(../../files/shared/img/edit-icon.png);
+   display: inline-block;
+   width: 16px;
+   height:16px;
+   margin-right: 7px;-
+}
+
+.saveEditing {
+			color:green;
+}
+
+.revertEditing {
+color: red;
+}
+
+select{
+				  width: auto!important;
+  min-width: auto!important;
+}
+input[type=text]{
+  width: 100px!important;
+}
+ 
+/* Tamanho da caixa de seleção */
+.chosen-choices {
+    width: 400px!important;    
+}
+
+.Avenue1Avenue2.rnr-s-1 > .rnr-c { 
+    width: 80%;
+}
+

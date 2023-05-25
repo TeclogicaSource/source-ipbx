@@ -1,0 +1,117 @@
+<html {$html_attrs}>
+<head><title>Interf Vono</title>
+{BEGIN stylefiles_block}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylefiles_block}
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;} 
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;text-align:center;}
+#main_block{$id} {padding:10px 0;text-align:center;}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding:7px 5px 2px;white-space:nowrap;}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px}
+#message_block{$id} {padding:7px 15px;}
+a.pdf{float:left;}
+</style>
+{END style_block}
+</head>
+<body>
+{BEGIN body}
+{$header}
+<div id="height100{$id}" align="center">
+
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Interf Vono, Exibir Registro [
+Id Interf Vono: {$show_key1}
+]
+</div>
+<div class="xboxcontentb" id="message_block{$id}">
+<br>
+<table cellpadding=4 cellspacing=0 border=0 width=470>
+
+{BEGIN id_interf_vono_fieldblock}
+<tr>
+    <td class=editshadeleft_b2 width=150 style="padding-left:15px;">Id Interf Vono</td>
+    <td width=250 class=editshaderight_lb2 style="padding-left:10px;">
+    {$id_interf_vono_value}&nbsp;
+  </td></tr>
+{END id_interf_vono_fieldblock}
+{BEGIN id_contrato_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Id Contrato</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_contrato_value}&nbsp;
+  </td></tr>
+{END id_contrato_fieldblock}
+{BEGIN codec_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Codec</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$codec_value}&nbsp;
+  </td></tr>
+{END codec_fieldblock}
+{BEGIN usuario_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Usuario</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$usuario_value}&nbsp;
+  </td></tr>
+{END usuario_fieldblock}
+{BEGIN senha_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Senha</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$senha_value}&nbsp;
+  </td></tr>
+{END senha_fieldblock}
+{BEGIN ip_host_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Ip Host</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$ip_host_value}&nbsp;
+  </td></tr>
+{END ip_host_fieldblock}
+{BEGIN id_central_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Id Central</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$id_central_value}&nbsp;
+  </td></tr>
+{END id_central_fieldblock}
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN prev_button}
+ <span class=buttonborder><input class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=reset value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input class=button type=reset value=" >>> " {$nextbutton_attrs} ></span>
+{END next_button}
+&nbsp;
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+</div>
+
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

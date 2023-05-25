@@ -1,0 +1,320 @@
+<html {$html_attrs}>
+<head><title>Fila de atendimento</title>
+{BEGIN stylefiles_block}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylefiles_block}
+{BEGIN style_block}
+<style>
+#height100{$id} {padding:10px;} 
+#center_block{$id} {width:500px;margin:0 auto;}
+#contents_block{$id} {text-align:center;}
+#header_block{$id} {white-space:nowrap;height:31px;padding-top:5px;text-align:center;}
+#main_block{$id} {padding:10px 0;text-align:center;}
+#inmain_block{$id} {margin:0 10px}
+#fields_block{$id} {width:100%}
+#buttons_block{$id} {padding:7px 5px 2px;white-space:nowrap;}
+#required_block{$id} {text-align:left;padding:5px}
+#buttons_block{$id} > * {margin:0 2px}
+#message_block{$id} {padding:7px 15px;}
+a.pdf{float:left;}
+</style>
+{END style_block}
+</head>
+<body>
+{BEGIN body}
+{$header}
+<div id="height100{$id}" align="center">
+
+<table align=center id="center_block{$id}"><tr><td id="contents_block{$id}">
+<b class="xtop"><b class="xb1b"></b><b class="xb2b"></b><b class="xb3b"></b><b class="xb4b"></b></b>
+<div id="header_block{$id}" class="upeditmenu">
+Fila de atendimento, Exibir Registro [
+Nome: {$show_key1}
+]
+</div>
+<div class="xboxcontentb" id="message_block{$id}">
+<br>
+<table cellpadding=4 cellspacing=0 border=0 width=470>
+
+{BEGIN name_fieldblock}
+<tr>
+    <td class=editshadeleft_b2 width=150 style="padding-left:15px;">Nome</td>
+    <td width=250 class=editshaderight_lb2 style="padding-left:10px;">
+    {$name_value}&nbsp;
+  </td></tr>
+{END name_fieldblock}
+{BEGIN musiconhold_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Conjunto de musicas</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$musiconhold_value}&nbsp;
+  </td></tr>
+{END musiconhold_fieldblock}
+{BEGIN announce_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Announce</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$announce_value}&nbsp;
+  </td></tr>
+{END announce_fieldblock}
+{BEGIN context_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Contexto</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$context_value}&nbsp;
+  </td></tr>
+{END context_fieldblock}
+{BEGIN timeout_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Timeout</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$timeout_value}&nbsp;
+  </td></tr>
+{END timeout_fieldblock}
+{BEGIN monitor_join_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Monitor Join</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$monitor_join_value}&nbsp;
+  </td></tr>
+{END monitor_join_fieldblock}
+{BEGIN monitor_format_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Monitor Format</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$monitor_format_value}&nbsp;
+  </td></tr>
+{END monitor_format_fieldblock}
+{BEGIN queue_youarenext_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Youarenext</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_youarenext_value}&nbsp;
+  </td></tr>
+{END queue_youarenext_fieldblock}
+{BEGIN queue_thereare_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Thereare</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_thereare_value}&nbsp;
+  </td></tr>
+{END queue_thereare_fieldblock}
+{BEGIN queue_callswaiting_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Callswaiting</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_callswaiting_value}&nbsp;
+  </td></tr>
+{END queue_callswaiting_fieldblock}
+{BEGIN queue_holdtime_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Holdtime</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_holdtime_value}&nbsp;
+  </td></tr>
+{END queue_holdtime_fieldblock}
+{BEGIN queue_minutes_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Minutes</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_minutes_value}&nbsp;
+  </td></tr>
+{END queue_minutes_fieldblock}
+{BEGIN queue_seconds_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Seconds</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_seconds_value}&nbsp;
+  </td></tr>
+{END queue_seconds_fieldblock}
+{BEGIN queue_lessthan_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Lessthan</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_lessthan_value}&nbsp;
+  </td></tr>
+{END queue_lessthan_fieldblock}
+{BEGIN queue_thankyou_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Thankyou</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_thankyou_value}&nbsp;
+  </td></tr>
+{END queue_thankyou_fieldblock}
+{BEGIN queue_reporthold_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Queue Reporthold</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$queue_reporthold_value}&nbsp;
+  </td></tr>
+{END queue_reporthold_fieldblock}
+{BEGIN announce_frequency_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Announce Frequency</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$announce_frequency_value}&nbsp;
+  </td></tr>
+{END announce_frequency_fieldblock}
+{BEGIN announce_round_seconds_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Announce Round Seconds</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$announce_round_seconds_value}&nbsp;
+  </td></tr>
+{END announce_round_seconds_fieldblock}
+{BEGIN announce_holdtime_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Announce Holdtime</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$announce_holdtime_value}&nbsp;
+  </td></tr>
+{END announce_holdtime_fieldblock}
+{BEGIN retry_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Retry</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$retry_value}&nbsp;
+  </td></tr>
+{END retry_fieldblock}
+{BEGIN wrapuptime_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Wrapuptime</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$wrapuptime_value}&nbsp;
+  </td></tr>
+{END wrapuptime_fieldblock}
+{BEGIN maxlen_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Maxlen</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$maxlen_value}&nbsp;
+  </td></tr>
+{END maxlen_fieldblock}
+{BEGIN servicelevel_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Servicelevel</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$servicelevel_value}&nbsp;
+  </td></tr>
+{END servicelevel_fieldblock}
+{BEGIN strategy_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Estratégia</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$strategy_value}&nbsp;
+  </td></tr>
+{END strategy_fieldblock}
+{BEGIN joinempty_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Joinempty</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$joinempty_value}&nbsp;
+  </td></tr>
+{END joinempty_fieldblock}
+{BEGIN leavewhenempty_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Leavewhenempty</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$leavewhenempty_value}&nbsp;
+  </td></tr>
+{END leavewhenempty_fieldblock}
+{BEGIN eventmemberstatus_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Eventmemberstatus</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$eventmemberstatus_value}&nbsp;
+  </td></tr>
+{END eventmemberstatus_fieldblock}
+{BEGIN eventwhencalled_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Eventwhencalled</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$eventwhencalled_value}&nbsp;
+  </td></tr>
+{END eventwhencalled_fieldblock}
+{BEGIN reportholdtime_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Reportholdtime</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$reportholdtime_value}&nbsp;
+  </td></tr>
+{END reportholdtime_fieldblock}
+{BEGIN memberdelay_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Memberdelay</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$memberdelay_value}&nbsp;
+  </td></tr>
+{END memberdelay_fieldblock}
+{BEGIN weight_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Weight</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$weight_value}&nbsp;
+  </td></tr>
+{END weight_fieldblock}
+{BEGIN timeoutrestart_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Timeoutrestart</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$timeoutrestart_value}&nbsp;
+  </td></tr>
+{END timeoutrestart_fieldblock}
+{BEGIN periodic_announce_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Periodic Announce</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$periodic_announce_value}&nbsp;
+  </td></tr>
+{END periodic_announce_fieldblock}
+{BEGIN periodic_announce_frequency_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Periodic Announce Frequency</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$periodic_announce_frequency_value}&nbsp;
+  </td></tr>
+{END periodic_announce_frequency_fieldblock}
+{BEGIN ringinuse_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Ringinuse</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$ringinuse_value}&nbsp;
+  </td></tr>
+{END ringinuse_fieldblock}
+{BEGIN setinterfacevar_fieldblock}
+<tr>
+    <td class=editshade_b width=150 style="padding-left:15px;">Setinterfacevar</td>
+    <td width=250 class=editshade_lb style="padding-left:10px;">
+    {$setinterfacevar_value}&nbsp;
+  </td></tr>
+{END setinterfacevar_fieldblock}
+</table>
+
+<div class="downedit2" id="buttons_block{$id}">
+{BEGIN prev_button}
+ <span class=buttonborder><input class=button type=reset value=" <<< " {$prevbutton_attrs}></span>
+{END prev_button}
+{BEGIN back_button}
+ <span class=buttonborder><input class=button type=reset value="Voltar à Lista" {$backbutton_attrs}></span>
+{END back_button}
+{BEGIN next_button}
+ <span class=buttonborder><input class=button type=reset value=" >>> " {$nextbutton_attrs} ></span>
+{END next_button}
+&nbsp;
+</div>
+<b class="xbottom"><b class="xb4a"></b><b class="xb3a"></b><b class="xb2a"></b><b class="xb1a"></b></b>
+</div>
+<b class="xbottom"><b class="xb4b4"></b><b class="xb3b4"></b><b class="xb2b4"></b><b class="xb1b4"></b></b>
+</td></tr></table>
+</div>
+
+{BEGIN detail_tables}
+{END detail_tables}
+<br><br>
+{$footer}
+{END body}
+</body>
+</html>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions
+END
+PostgreFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/PostgreFunctions.php
+END
+SQLite3Functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/SQLite3Functions.php
+END
+DBFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/DBFunctions.php
+END
+MySQLFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/MySQLFunctions.php
+END
+OracleFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/OracleFunctions.php
+END
+DB2Functions.php
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/DB2Functions.php
+END
+ODBCFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/ODBCFunctions.php
+END
+InformixFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbfunctions/InformixFunctions.php
+END
+GenericFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/162/trunk/fontes/IPBX/output/connections/dbfunctions/GenericFunctions.php
+END
+MSSQLFunctions.php
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svnroot/teclogica/produtos/teclogica/voip/!svn/ver/170/trunk/fontes/IPBX/output/connections/dbfunctions/MSSQLFunctions.php
+END

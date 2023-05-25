@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Rel. Produt. Agentes</TITLE>
+{BEGIN stylesheetlink}<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{END stylesheetlink}
+<STYLE>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY style="BACKGROUND: white" topMargin=5>{BEGIN body}{$header} 
+{BEGIN page}<H1>Rel. Produt. Agentes</H1>{END page}
+{BEGIN page}<DIV id=selpage>Página {$pageno} de {$maxpages} </DIV>{END page}
+{BEGIN page}<DIV>{BEGIN grid_block}
+<TABLE class=grid_block cellPadding=5 align=center>
+  <TBODY>
+  {BEGIN grid_header}<TR>
+    <TD class=blackshade>{BEGIN dt_entrada_fieldheader}<B>Data</B> {END dt_entrada_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN fila_fieldheader}<B>Fila</B> {END fila_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN agente_fieldheader}<B>Agente</B> {END agente_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_recebida_fieldheader}<B>Recebidas</B> 
+    {END tot_recebida_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_atend_fieldheader}<B>Atendidas</B> {END tot_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_nao_atend_fieldheader}<B>Rejeitadas/N 
+      Atendidas</B> {END qtd_nao_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN med_atend_fieldheader}<B>Média 
+      Atendimento</B> {END med_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_logado_fieldheader}<B>Total 
+      Disponível</B> {END tot_logado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN qtd_atend_fieldheader}<B>Total 
+      Atendendo</B> {END qtd_atend_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_parado_fieldheader}<B>Total Parado</B> 
+    {END tot_parado_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN tot_pausa_fieldheader}<B>Total em 
+      Pausa</B> {END tot_pausa_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN cntrb_indiv_fieldheader}<B>Contribuição 
+      Individual</B> {END cntrb_indiv_fieldheader}</TD>
+    <TD class=blackshade>{BEGIN cntrb_tot_fieldheader}<B>Contribuição 
+      Total</B> {END cntrb_tot_fieldheader}</TD></TR>{END grid_header}{BEGIN grid_row}<!-------------------------------------  data ----------------------------------------->
+  {BEGIN row_data}<TR>
+    <TD class=data>{$dt_entrada_value}</TD>
+    <TD class=data>{$fila_value}</TD>
+    <TD class=data>{$agente_value}</TD>
+    <TD class=data>{$tot_recebida_value}</TD>
+    <TD class=data>{$tot_atend_value}</TD>
+    <TD class=data>{$qtd_nao_atend_value}</TD>
+    <TD class=data>{$med_atend_value}</TD>
+    <TD class=data>{$tot_logado_value}</TD>
+    <TD class=data>{$qtd_atend_value}</TD>
+    <TD class=data>{$tot_parado_value}</TD>
+    <TD class=data>{$tot_pausa_value}</TD>
+    <TD class=data>{$cntrb_indiv_value}</TD>
+    <TD class=data>{$cntrb_tot_value}</TD></TR>{END row_data}{END grid_row}{BEGIN global_summary}<!--------------------------------------global summary-------------------------------------------->
+  <TR>
+    <TD style="BORDER-TOP: black 2px solid" class=globalsummary 
+      colSpan=13>Resumo Global {$global_total_cnt} - 
+      Total de registros</TD></TR><!--  Sum -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Soma&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totaltot_recebida_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totaltot_atend_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalqtd_nao_atend_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totaltot_logado_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalqtd_atend_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totaltot_parado_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totaltot_pausa_sum} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD></TR><!--  Avg -->
+  <TR>
+    <TD class=globalsummary>
+      <P align=left>Média&nbsp; &nbsp; </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center>{$global_totalmed_atend_avg} </P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P align=center></P></TD>
+    <TD class=globalsummary>
+      <P 
+align=center></P></TD></TR>{END global_summary}</TBODY></TABLE>{END grid_block}</DIV>{END page}{$footer} {END body}</BODY></HTML>

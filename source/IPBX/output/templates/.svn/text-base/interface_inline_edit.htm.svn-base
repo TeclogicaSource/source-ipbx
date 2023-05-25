@@ -1,0 +1,13 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="dsc_interf">
+	{$dsc_interf_editcontrol}
+	</control>
+	<control field="placa">
+	{$placa_editcontrol}
+	</control>
+	<control field="link">
+	{$link_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

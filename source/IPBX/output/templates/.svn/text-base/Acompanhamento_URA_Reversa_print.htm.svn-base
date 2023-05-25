@@ -1,0 +1,126 @@
+<html {$html_attrs}>
+<head>
+<title>URA Reversa</title>
+{BEGIN stylesheetlink}
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+{END stylesheetlink}
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border: solid black 1px;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid #cccccc 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+
+.pagesummary
+{
+background-color:#ffffbb;
+}
+.globalsummary
+{
+background-color:#ffe0b0;
+}
+
+{$cssdata}
+
+</style> 
+</head>
+<body topmargin=5 style="background:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+<div>
+
+<h1>URA Reversa</h1>
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+
+{BEGIN grid_block}
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+<td class=blackshade>
+{BEGIN id_ura_rev_fieldheader}
+<b>Id Ura Rev</b>
+{END id_ura_rev_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_telefone_fieldheader}
+<b>Número Telefone</b>
+{END nm_telefone_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN id_msg_fieldheader}
+<b>Mensagem</b>
+{END id_msg_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_criado_fieldheader}
+<b>Data Criado</b>
+{END dt_criado_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN nm_tentativas_fieldheader}
+<b>Número de Tentat.</b>
+{END nm_tentativas_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN ult_status_fieldheader}
+<b>Status</b>
+{END ult_status_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN resp_usuario_fieldheader}
+<b>Resposta Usuário</b>
+{END resp_usuario_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN dt_resp_fieldheader}
+<b>Data Resposta</b>
+{END dt_resp_fieldheader}
+</td>
+<td class=blackshade>
+{BEGIN id_cliente_fieldheader}
+<b>Cliente</b>
+{END id_cliente_fieldheader}
+</td>
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<!-------------------------------------  data ----------------------------------------->
+{BEGIN row_data}
+<tr>
+	<td class=data>{$id_ura_rev_value}</td>
+	<td class=data>{$nm_telefone_value}</td>
+	<td class=data>{$id_msg_value}</td>
+	<td class=data>{$dt_criado_value}</td>
+	<td class=data>{$nm_tentativas_value}</td>
+	<td class=data>{$ult_status_value}</td>
+	<td class=data>{$resp_usuario_value}</td>
+	<td class=data>{$dt_resp_value}</td>
+	<td class=data>{$id_cliente_value}</td>
+</tr>
+{END row_data}
+{END grid_row}
+</table>
+{END grid_block}
+</div>
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

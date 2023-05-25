@@ -1,0 +1,26 @@
+Sip Users Horario<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Hr Inicio</strong></td>
+<td><strong>Hr Fim</strong></td>
+<td><strong>Seg</strong></td>
+<td><strong>Dsc Plano</strong></td>
+<td><strong>Id</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$hr_inicio_value}</td>
+<td>{$hr_fim_value}</td>
+<td>{$seg_value}</td>
+<td>{$dsc_plano_value}</td>
+<td>{$id_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

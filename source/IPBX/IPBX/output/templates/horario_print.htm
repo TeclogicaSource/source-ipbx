@@ -1,0 +1,205 @@
+<html {$html_attrs}>
+<head>
+<title>Horario</title>
+<link REL="stylesheet" href="include/style.css" type="text/css">
+<!--[if IE]>
+<link REL="stylesheet" href="include/styleIE.css" type="text/css">
+<![endif]-->
+<style>
+.grid_block {  
+margin-top:5px;
+border-collapse: collapse;
+align:center;
+width:95%;
+border:none;
+} 
+.grid_block td { 
+ padding: 5px; 
+ margin: 0px; 
+ border: solid black 1px;
+}
+.grid_block .gridspacing {width:20px;border-top-color:white; border-bottom-color:white;background-color:white}
+@media print 
+{
+	a.pdf {display:none}
+}
+.printpage {page-break-after:always}
+#selpage{margin-left:30px;}
+</style> 
+</head>
+<body style="background-color:white">
+{BEGIN body}
+{$header}
+{BEGIN page}
+{BEGIN mastertable_block}
+<div id="mastertable_block">
+{$showmasterfile}
+</div>
+{END mastertable_block}
+
+<h1>Horario</h1>
+{BEGIN page_number}
+<div id='selpage'>Página {$pageno} de {$maxpages} </div>
+{END page_number}
+
+{BEGIN grid_block}
+
+<table align="center" cellpadding=5 class="grid_block">
+{BEGIN grid_header}
+<tr>
+{BEGIN record_header}
+{BEGIN id_horario_fieldheadercolumn}
+	<td>
+{BEGIN id_horario_fieldheader}
+	<b>Id Horario</b>
+{END id_horario_fieldheader}
+	</td>
+{END id_horario_fieldheadercolumn}
+{BEGIN dsc_horario_fieldheadercolumn}
+	<td>
+{BEGIN dsc_horario_fieldheader}
+	<b>Descrição</b>
+{END dsc_horario_fieldheader}
+	</td>
+{END dsc_horario_fieldheadercolumn}
+{BEGIN hr_inicio_fieldheadercolumn}
+	<td>
+{BEGIN hr_inicio_fieldheader}
+	<b>Horario Inicio</b>
+{END hr_inicio_fieldheader}
+	</td>
+{END hr_inicio_fieldheadercolumn}
+{BEGIN hr_fim_fieldheadercolumn}
+	<td>
+{BEGIN hr_fim_fieldheader}
+	<b>Horario Fim</b>
+{END hr_fim_fieldheader}
+	</td>
+{END hr_fim_fieldheadercolumn}
+{BEGIN seg_fieldheadercolumn}
+	<td>
+{BEGIN seg_fieldheader}
+	<b>Segunda Feira</b>
+{END seg_fieldheader}
+	</td>
+{END seg_fieldheadercolumn}
+{BEGIN ter_fieldheadercolumn}
+	<td>
+{BEGIN ter_fieldheader}
+	<b>Terça Feira</b>
+{END ter_fieldheader}
+	</td>
+{END ter_fieldheadercolumn}
+{BEGIN qua_fieldheadercolumn}
+	<td>
+{BEGIN qua_fieldheader}
+	<b>Quarta Feira</b>
+{END qua_fieldheader}
+	</td>
+{END qua_fieldheadercolumn}
+{BEGIN qui_fieldheadercolumn}
+	<td>
+{BEGIN qui_fieldheader}
+	<b>Quinta Feira</b>
+{END qui_fieldheader}
+	</td>
+{END qui_fieldheadercolumn}
+{BEGIN sex_fieldheadercolumn}
+	<td>
+{BEGIN sex_fieldheader}
+	<b>Sexta Feira</b>
+{END sex_fieldheader}
+	</td>
+{END sex_fieldheadercolumn}
+{BEGIN sab_fieldheadercolumn}
+	<td>
+{BEGIN sab_fieldheader}
+	<b>Sabado</b>
+{END sab_fieldheader}
+	</td>
+{END sab_fieldheadercolumn}
+{BEGIN dom_fieldheadercolumn}
+	<td>
+{BEGIN dom_fieldheader}
+	<b>Domingo</b>
+{END dom_fieldheader}
+	</td>
+{END dom_fieldheadercolumn}
+{BEGIN endrecordheader_block}
+	<td class="gridspacing">&nbsp;</td>
+{END endrecordheader_block}
+{END record_header}
+</tr>
+{END grid_header}
+{BEGIN grid_row}
+<tr valign=top {$rowstyle} {$rowattrs}>
+{BEGIN grid_record}
+{BEGIN id_horario_fieldcolumn}
+<td {$id_horario_style}>
+{$id_horario_value}
+</td>
+{END id_horario_fieldcolumn}
+{BEGIN dsc_horario_fieldcolumn}
+<td {$dsc_horario_style}>
+{$dsc_horario_value}
+</td>
+{END dsc_horario_fieldcolumn}
+{BEGIN hr_inicio_fieldcolumn}
+<td {$hr_inicio_style}>
+{$hr_inicio_value}
+</td>
+{END hr_inicio_fieldcolumn}
+{BEGIN hr_fim_fieldcolumn}
+<td {$hr_fim_style}>
+{$hr_fim_value}
+</td>
+{END hr_fim_fieldcolumn}
+{BEGIN seg_fieldcolumn}
+<td {$seg_style}>
+{$seg_value}
+</td>
+{END seg_fieldcolumn}
+{BEGIN ter_fieldcolumn}
+<td {$ter_style}>
+{$ter_value}
+</td>
+{END ter_fieldcolumn}
+{BEGIN qua_fieldcolumn}
+<td {$qua_style}>
+{$qua_value}
+</td>
+{END qua_fieldcolumn}
+{BEGIN qui_fieldcolumn}
+<td {$qui_style}>
+{$qui_value}
+</td>
+{END qui_fieldcolumn}
+{BEGIN sex_fieldcolumn}
+<td {$sex_style}>
+{$sex_value}
+</td>
+{END sex_fieldcolumn}
+{BEGIN sab_fieldcolumn}
+<td {$sab_style}>
+{$sab_value}
+</td>
+{END sab_fieldcolumn}
+{BEGIN dom_fieldcolumn}
+<td {$dom_style}>
+{$dom_value}
+</td>
+{END dom_fieldcolumn}
+{BEGIN endrecord_block}
+<td class="gridspacing">&nbsp;</td>
+{END endrecord_block}
+{END grid_record}
+</tr>
+{END grid_row}
+<!-- totals row -->
+</table>
+{END grid_block}
+{END page}
+{$footer}
+{END body}
+</body>
+</html>

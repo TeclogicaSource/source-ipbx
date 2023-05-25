@@ -1,0 +1,302 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-rprint" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_pdf}
+<div class="rnr-c rnr-ch rnr-c-pdf">
+
+{BEGIN printbuttons}
+<div  class="style1 rnr-bl rnr-b-printbuttons {$brickclass_printbuttons}">{BEGIN divideintopages_block}
+<a href="#" class="divideintopages rnr-button button" {$divideintopages_attrs}>Prepare for printing</a>
+{END divideintopages_block}
+</div>
+{END printbuttons}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_pdf}
+
+
+
+
+
+{BEGIN container_pageheader}
+<div class="rnr-c rnr-cv rnr-c-pageheader">
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #E6E6FA;}
+		td.nbgroup_1{background-color: #E6E6FA;}
+		td.header_1 {
+			background-color: #C3C3D4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+
+</style>
+
+
+
+{BEGIN printheader}
+<div  class="rnr-brickcontents style1 rnr-b-printheader {$brickclass_printheader}"><span>	<h1>{$pagetitlelabel Rel__Disponibilidade_Agente rprint}</h1>
+</span></div>{END printheader}
+
+
+{BEGIN page_number}
+<div  class="rnr-brickcontents style1 rnr-b-page_of_print {$brickclass_page_of_print}"><h1>Página <span class="rp-pageno">{$pageno}</span> de <span class="rp-pagecount">{$pagecount}</span></h1></div>{END page_number}
+
+
+</div>
+{END container_pageheader}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_grid}
+
+
+
+<style>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #E6E6FA;}
+		td.nbgroup_1{background-color: #E6E6FA;}
+		td.header_1 {
+			background-color: #C3C3D4; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+
+</style>
+
+<div id="grid_block{$id}" class="rnr-report-gridblock">
+		<div class="rnr-cw-grid rnr-s-empty asbuttons {$pageStyleName}">		
+						<div class="rnr-c rnr-cv rnr-c-grid">
+		<div class="rnr-brickcontents style1 rnr-b-report">		
+			<table class="rnr-report" cellspacing=0 cellpadding=0 border=0>
+<tbody>
+				
+				
+				{BEGIN grid_row}
+				<!-------------------------------------  group headers ----------------------------------------->
+				{BEGIN agente_newgroup}
+				<tr class="group-spliter-1" {$rowattrs}>
+								<td class=header_1 colspan=10>
+				{$label Rel__Disponibilidade_Agente agente}:&nbsp;
+				<font style="font-weight:900">
+				{$agente_grval}
+													</font></td>
+				</tr>
+								<tr class="fieldnamesrow group-headers">
+										<td class="blackshade">{$label Rel__Disponibilidade_Agente Data}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente Fila}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente Logon}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente Logout}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoDisponivel}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoPausaNProdutiva}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoPausaProdutiva}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoPausa}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoAtendimento}</td>
+					<td class="blackshade">{$label Rel__Disponibilidade_Agente TempoLivre}</td>
+				</tr>
+				{END agente_newgroup}
+								<!-------------------------------------  data ----------------------------------------->
+				{BEGIN row_data}
+				<tr >
+										<td class=data>{$Data_value}</td>
+					<td class=data>{$Fila_value}</td>
+					<td class=data>{$Logon_value}</td>
+					<td class=data>{$Logout_value}</td>
+					<td class=data>{$TempoDisponivel_value}</td>
+					<td class=data>{$TempoPausaNProdutiva_value}</td>
+					<td class=data>{$TempoPausaProdutiva_value}</td>
+					<td class=data>{$TempoPausa_value}</td>
+					<td class=data>{$TempoAtendimento_value}</td>
+					<td class=data>{$TempoLivre_value}</td>
+				</tr>
+				{END row_data}
+				<!-------------------------------------  group summary ----------------------------------------->
+								{BEGIN agente_endgroup}
+				<tr >
+										<td class=group_1 colspan=10 >
+					Resumo para {$label Rel__Disponibilidade_Agente agente} {$agente_grval}
+					 - <span class="summary-1" data-type="summary" data-value="{$groupagente_total_cnt}">{$groupagente_total_cnt}</span> Total de registros</td>
+				</tr>
+								<!--  Sum -->
+				<tr >
+					<td class=group_1>
+												Soma
+						&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoDisponivel_sum}" data-field="TempoDisponivel">{$groupagente_totalTempoDisponivel_sum}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoPausaNProdutiva_sum}" data-field="TempoPausaNProdutiva">{$groupagente_totalTempoPausaNProdutiva_sum}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoPausaProdutiva_sum}" data-field="TempoPausaProdutiva">{$groupagente_totalTempoPausaProdutiva_sum}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoPausa_sum}" data-field="TempoPausa">{$groupagente_totalTempoPausa_sum}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoAtendimento_sum}" data-field="TempoAtendimento">{$groupagente_totalTempoAtendimento_sum}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="sum" data-value="{$groupagente_totalTempoLivre_sum}" data-field="TempoLivre">{$groupagente_totalTempoLivre_sum}</span>
+					</td>
+				</tr>	
+								<!--  Avg -->
+				<tr >
+					<td class=group_1>
+												Média
+						&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+											</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoDisponivel_avg}" data-field="TempoDisponivel">{$groupagente_totalTempoDisponivel_avg}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoPausaNProdutiva_avg}" data-field="TempoPausaNProdutiva">{$groupagente_totalTempoPausaNProdutiva_avg}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoPausaProdutiva_avg}" data-field="TempoPausaProdutiva">{$groupagente_totalTempoPausaProdutiva_avg}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoPausa_avg}" data-field="TempoPausa">{$groupagente_totalTempoPausa_avg}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoAtendimento_avg}" data-field="TempoAtendimento">{$groupagente_totalTempoAtendimento_avg}</span>
+					</td>
+					<td class=group_1>
+												&nbsp;
+												<span class="summary-1" data-type="avg" data-value="{$groupagente_totalTempoLivre_avg}" data-field="TempoLivre">{$groupagente_totalTempoLivre_avg}</span>
+					</td>
+				</tr>	
+												{END agente_endgroup}
+				{END grid_row}
+															</tbody>
+	</table>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+{END container_grid}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

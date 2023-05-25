@@ -1,0 +1,121 @@
+<?php
+
+
+
+
+
+
+
+
+
+
+
+// After record added
+function AfterAdd(&$values,&$keys,$inline)
+{
+
+// Inclusão das interfaces de geração
+include './include/teclogica/funcoes_gerais.php';
+
+// Backup
+backupNow($values["id_bkp"]);
+
+//Pagina padrão do servidor
+header("Location: Restore_list.php");
+exit();
+
+;
+} // function AfterAdd
+$arrEventTables["AfterAdd"]="ipbx_backup";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Before record added
+function BeforeAdd(&$values,&$message,$inline)
+{
+
+
+$message = "Aguarde enquando o backup é realizado.";
+return true;
+;
+} // function BeforeAdd
+$arrEventTables["BeforeAdd"]="ipbx_backup";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>

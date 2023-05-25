@@ -1,0 +1,10 @@
+<edit_controls>
+	<jscode>{$linkdata}</jscode>
+	<control field="dsc_centro_cust">
+	{$dsc_centro_cust_editcontrol}
+	</control>
+	<control field="flg_ativado">
+	{$flg_ativado_editcontrol}
+	</control>
+	<message>{$message}</message>
+</edit_controls>

@@ -1,0 +1,24 @@
+Plano Discagem Regiao<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Destino</strong></td>
+<td><strong>Região</strong></td>
+<td><strong>Tronco de saída padrão</strong></td>
+<td><strong>Plano</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$tp_destino_value}</td>
+<td>{$regiao_value}</td>
+<td>{$id_tronco_value}</td>
+<td>{$id_plano_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

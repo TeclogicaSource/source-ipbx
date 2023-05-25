@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-report" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_toplinks}
+<DIV class="rnr-c rnr-ch rnr-c-toplinks">
+<DIV class=rnr-hfiller></DIV>
+{BEGIN security_block}<DIV class="style1 rnr-br rnr-b-loggedas {$brickclass_loggedas}">
+<DIV id=login_block{$id}>{BEGIN loggedas_message}<SPAN>Logado 
+Como&nbsp;<B>
+{$username}</B>&nbsp;</SPAN> {END loggedas_message}{BEGIN guestloginbutton}<SPAN><A class=rnr-button href="#" {$guestloginlink_attrs}>Login</A> </SPAN>{END guestloginbutton}{BEGIN logoutbutton}<A class=rnr-button href="#" {$logoutlink_attrs}>Log Out</A> {END logoutbutton}{BEGIN adminarea_link}<A class=rnr-button href="admin_rights_list.php" {$adminarealink_attrs}>Área Admin</A> {END adminarea_link}</DIV></DIV>{END security_block}</DIV>{END container_toplinks}
+{BEGIN container_hmenu}
+<DIV class="rnr-c rnr-ch rnr-c-hmenu">
+{BEGIN searchform_block}<DIV class="style1 rnr-bl rnr-b-search {$brickclass_search}"><SPAN>{BEGIN searchform_text}<INPUT size=25 type=text {$searchfor_attrs}>{END searchform_text} {BEGIN searchform_search}<A class="rnr-button img" href="#" data-icon="search" {$searchbutton_attrs}></A>{END searchform_search}{BEGIN searchform_showall}<A class=rnr-button href="#" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar Todos</A> {END searchform_showall}</SPAN></DIV>
+{END searchform_block}{BEGIN searchformbuttons_block}<DIV class="style1 rnr-bl rnr-b-search_buttons {$brickclass_search_buttons}">{BEGIN searchPanelTopButtons}<SPAN><A id=showSrchWin{$id} class="rnr-button img" href="#" data-icon="panelfloat" {$showHideSearchWin_attrs}></A><A id=showOptPanel{$id} class="rnr-button img" href="#" data-icon="paneldown" {$showHideSearchPanel_attrs}></A></SPAN>{END searchPanelTopButtons}</DIV>
+{END searchformbuttons_block}{BEGIN searchsaving_block}<DIV class="style1 rnr-bl rnr-b-search_saving_buttons {$brickclass_search_saving_buttons}"></DIV>
+{END searchsaving_block}<DIV class=rnr-hfiller></DIV>
+{BEGIN details_block}<DIV class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}"><SPAN {$details_attrs}>Grupos 
+encontrados: <B><SPAN class=rnr-details_found_count>
+{$records_found}</SPAN></B></SPAN></DIV>
+{END details_block}{BEGIN pages_block}<DIV class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}"><SPAN {$pages_attrs}>Página <B>
+{$page}</B>de <B>
+{$maxpages}</B></SPAN></DIV>
+{END pages_block}{BEGIN recordspp_block}<DIV class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}"><SPAN id=recordspp_block{$id} name="recordspp_block{$id}">Grupos por página:&nbsp;
+{$grpsPerPage}</SPAN></DIV>
+{END recordspp_block}<DIV class="style1 rnr-br rnr-b-printpanel {$brickclass_printpanel}">
+{BEGIN print_friendly}<DIV id=printpanelblock{$id} class=rnr-printpanelblock>
+<DIV class=rnr-printtab><A id=print_friendly_togger{$id} class=rnr-printicon title="Página Print-friendly" data-icon="printdown"></A></DIV>
+<DIV class=rnr-printpanel>
+<TABLE id=print_friendly_scope{$id} class=rnr-printscope><TBODY>
+  <TR>
+    <TD class=rnr-printScopeCell>Scope:</TD>
+    {BEGIN print_friendly_all}<TD class=rnr-printScopeCell><INPUT id=printAll{$id} type=radio name=printScope data-href="Rel__Detalhamento_Agente_print.php?all=1&amp;{$crosstable_attrs}">&nbsp;<LABEL 
+      for=printAll{$id}>Print whole report</LABEL></TD>{END print_friendly_all}</TR>
+  <TR>
+    <TD></TD>
+    <TD class=rnr-printScopeCell><INPUT id=printPage{$id} CHECKED type=radio name=printScope data-href="Rel__Detalhamento_Agente_print.php?{$crosstable_attrs}">&nbsp;<LABEL 
+      for=printPage{$id}>Print this page</LABEL></TD></TR></TBODY></TABLE>
+<DIV class=rnr-printdetails><LABEL for=printPerPage{$id}>Grupos por página: 
+</LABEL>&nbsp;<INPUT id=printPerPage{$id} class=rnr-printrecspp value={$print_recspp} type=number>&nbsp; </DIV>
+<DIV class=rnr-printbutton><A id=print_friendly_button{$id} class="rnr-button button" href="#">Print</A> </DIV></DIV></DIV>{END print_friendly}</DIV></DIV>{END container_hmenu}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}">
+{BEGIN container_left}
+<DIV class="rnr-c rnr-cv rnr-c-left">
+{BEGIN menu_block}{$menu main}{END menu_block}{BEGIN searchPanel}<DIV class="rnr-brickcontents style1 rnr-b-searchpanel {$brickclass_searchpanel}">
+<DIV class=searchPanelContainer>
+<DIV class="searchOptions bottomPanelBorder" {$srchOpt_attrs}><!-- Search panel content -->
+<DIV style="DISPLAY: none" class=srchCritTop>Critério:&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType{$id} {$all_checkbox}>&nbsp;{BEGIN all_checkbox_label}<SPAN>Todos</SPAN>{END all_checkbox_label} 
+&nbsp;&nbsp;&nbsp; <INPUT class=rnr-radio-button type=radio name=srchType{$id} {$any_checkbox}>&nbsp;{BEGIN any_checkbox_label}<SPAN>Qualquer</SPAN> {END any_checkbox_label}</DIV>
+<DIV class=addOption><SPAN class=rnr-buttons-group><A id=showHideControlChooseMenu{$id} class=rnr-button href="#" {$showHideCtrls_attrs}>Adicionar campo</A> </SPAN><A id=showHideSearchType{$id} class=rnr-button href="#" {$showHideCtrlsOpt_attrs}>
+{$showHideOpt_mess}</A></DIV>
+<TABLE class="controlsBlock {$controls_block_class}">{BEGIN searchCtrlBlock}
+  <TBODY>
+  <TR class=srchPanelRow {$filterRow_attrs}>
+    <TD class=srchPanelCell>{$delCtrlButt}</TD>
+    <TD class=srchPanelCell>
+      {$fLabel}:&nbsp;</TD>
+    <TD class="srchPanelCell srchPanelCell2">
+      <DIV class=rnr-searchtype>
+      {$searchtype}</DIV>
+      <DIV class=rnr-searchcontrol>
+      {$searchcontrol}</DIV>
+      <DIV class=rnr-searchcontrol>
+      {$searchcontrol1}</DIV></TD></TR></TBODY>{END searchCtrlBlock}</TABLE>
+<DIV class=bottomSearchButt align=left {$bottomSearchButt_attrs}><A id=searchButton{$id} class=rnr-button href="#" {$searchbutton_attrs}>Buscar</A> 
+</DIV></DIV></DIV></DIV>{END searchPanel}</DIV>{END container_left}</DIV>
+<DIV class="rnr-center {$blockclass_center}">
+{BEGIN container_recordcontrols}
+<DIV class="rnr-c rnr-ch rnr-c-recordcontrols">
+{BEGIN asearch_link}<DIV class="style1 rnr-bl rnr-b-toplinks_advsearch {$brickclass_toplinks_advsearch}"><A class=rnr-button href="Rel__Detalhamento_Agente_search.php" {$advsearchlink_attrs}>Busca Avancada</A> </DIV>
+{END asearch_link}{BEGIN export_link}<DIV class="style1 rnr-bl rnr-b-toplinks_export_links {$brickclass_toplinks_export_links}"><SPAN id=export_links{$id} class=rnr-exporticons><A href="Rel__Detalhamento_Agente_export.php?all=1&amp;format=excel" {$excellink_attrs}><IMG border=0 alt="Exportar para Excel" src="images/excel.gif"></A> <A href="Rel__Detalhamento_Agente_export.php?all=1&amp;format=word" {$wordlink_attrs}><IMG border=0 alt="Exportar para Word" src="images/word.gif"></A> 
+</SPAN></DIV>
+{END export_link}<DIV class=rnr-hfiller></DIV></DIV>{END container_recordcontrols}
+{BEGIN container_message}
+<DIV class="rnr-c rnr-ch rnr-c-message">
+{BEGIN message_block}<DIV class="style1 rnr-bc rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>{END message_block}</DIV>{END container_message}
+{BEGIN container_grid}
+<STYLE>
+	td.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary.pagesummary {background-color:#ffffbb;}
+	td.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary.globalsummary {background-color:#ffe0b0;}
+	.rnr-report {width: 100%;}
+	td {padding: 2px; 4px;}
+
+		td.group_1{background-color: #C0C0C0;}
+		td.nbgroup_1{background-color: #C0C0C0;}
+		td.header_1 {
+			background-color: #A3A3A3; 
+			font-size:120%;
+			padding: 2px 8px;
+			font-weight: bold;
+		}
+	td.blackshade {
+		font-size:140%;
+		padding: 4px 8px;
+	}
+	.summaryrow > * {
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+	.fieldnamesrow > * 
+	{
+		border:solid #808080 1px; 
+		border-left: none; 
+		border-right: none;
+	}
+
+</STYLE>
+
+<DIV class="rnr-cw-grid rnr-s-2 asbuttons {$pageStyleName}">
+<DIV class="rnr-c rnr-cv rnr-c-grid">
+<DIV class="rnr-brickcontents style1 rnr-b-report">
+<TABLE class=rnr-report border=0 cellSpacing=0 cellPadding=0>
+  <TBODY><!-------------------------------------  group headers ----------------------------------------->
+  {BEGIN grid_row}{BEGIN Agente_newgroup}<TR class=group-spliter-1 {$rowattrs}>
+    <TD class=header_1 colSpan=12>
+      {$label Rel__Detalhamento_Agente Agente}:&nbsp; <FONT 
+      style="FONT-WEIGHT: 900">
+      {$Agente_grval}</FONT></TD></TR>
+  <TR class="fieldnamesrow group-headers">
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Fila}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Telefone}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Entrada_Saida}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente dt_entrada}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente hr_entrada}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Gravacao}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Terminado}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tp_espera}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tp_atendimento}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tptotal}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente TempoParado}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Obs_}</TD></TR><!-------------------------------------  data ----------------------------------------->
+  {END Agente_newgroup}{BEGIN row_data}<TR>
+    <TD class=data>
+      <DIV align=center>
+      {$Fila_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$Telefone_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$Entrada_Saida_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$dt_entrada_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$hr_entrada_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$Gravacao_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$Terminado_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$tp_espera_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$tp_atendimento_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$tptotal_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=center>
+      {$TempoParado_value}</DIV></TD>
+    <TD class=data>
+      <DIV align=left>
+      {$Obs__value}</DIV></TD></TR><!-------------------------------------  group summary ----------------------------------------->
+  {END row_data}{BEGIN Agente_endgroup}<TR style="DISPLAY: none; HEIGHT: 0px">
+    <TD class=group_1 colSpan=12>Resumo para 
+      {$label Rel__Detalhamento_Agente Agente}
+      {$Agente_grval}- <SPAN class=summary-1 data-value="{$groupAgente_total_cnt}" data-type="summary">
+      {$groupAgente_total_cnt}</SPAN>Total de registros</TD></TR><!--  Sum -->
+  <TR style="DISPLAY: none; HEIGHT: 0px">
+    <TD class=group_1>Soma &nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; </TD>
+    <TD class=group_1>&nbsp; <SPAN class=summary-1 data-value="{$groupAgente_totaltp_espera_sum}" data-type="sum" data-field="tp_espera">
+      {$groupAgente_totaltp_espera_sum}</SPAN></TD>
+    <TD class=group_1>&nbsp; <SPAN class=summary-1 data-value="{$groupAgente_totaltp_atendimento_sum}" data-type="sum" data-field="tp_atendimento">
+      {$groupAgente_totaltp_atendimento_sum}</SPAN></TD>
+    <TD class=group_1>&nbsp; <SPAN class=summary-1 data-value="{$groupAgente_totaltptotal_sum}" data-type="sum" data-field="tptotal">
+      {$groupAgente_totaltptotal_sum}</SPAN></TD>
+    <TD class=group_1>&nbsp; <SPAN class=summary-1 data-value="{$groupAgente_totalTempoParado_sum}" data-type="sum" data-field="TempoParado">
+      {$groupAgente_totalTempoParado_sum}</SPAN></TD>
+    <TD class=group_1>&nbsp; </TD></TR>
+  {END Agente_endgroup}{END grid_row}<TR class=summary-header>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Fila}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Telefone}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Entrada_Saida}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente dt_entrada}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente hr_entrada}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Gravacao}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Terminado}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tp_espera}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tp_atendimento}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente tptotal}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente TempoParado}</TD>
+    <TD class=blackshade>
+      {$label Rel__Detalhamento_Agente Obs_}</TD></TR><!--------------------------------------page summary-------------------------------------------->
+  <TR class="summaryrow summary-page">
+    <TD class=pagesummary colSpan=12>Página de resumo <SPAN class=page-summary data-type="summary">
+      {$page_total_cnt}</SPAN>- Total 
+      de registros</TD></TR><!--  Sum -->
+  <TR class=summary-page>
+    <TD class=pagesummary>Soma &nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; </TD>
+    <TD class=pagesummary>&nbsp; <SPAN class=page-summary data-type="sum" data-field="tp_espera">
+      {$page_totaltp_espera_sum}</SPAN></TD>
+    <TD class=pagesummary>&nbsp; <SPAN class=page-summary data-type="sum" data-field="tp_atendimento">
+      {$page_totaltp_atendimento_sum}</SPAN></TD>
+    <TD class=pagesummary>&nbsp; <SPAN class=page-summary data-type="sum" data-field="tptotal">
+      {$page_totaltptotal_sum}</SPAN></TD>
+    <TD class=pagesummary>&nbsp; <SPAN class=page-summary data-type="sum" data-field="TempoParado">
+      {$page_totalTempoParado_sum}</SPAN></TD>
+    <TD class=pagesummary>&nbsp; </TD></TR></TBODY></TABLE></DIV></DIV></DIV>{END container_grid}
+{BEGIN container_pagination_bottom}
+<DIV class="rnr-c rnr-ch rnr-c-pagination_bottom">
+{BEGIN pagination_block}<DIV class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">
+{$pagination}</DIV>{END pagination_block}</DIV>{END container_pagination_bottom}</DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

@@ -1,0 +1,26 @@
+Interf Vono<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Id Contrato</strong></td>
+<td><strong>Codec</strong></td>
+<td><strong>Usuario</strong></td>
+<td><strong>Senha</strong></td>
+<td><strong>Ip Host</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_contrato_value}</td>
+<td>{$codec_value}</td>
+<td>{$usuario_value}</td>
+<td>{$senha_value}</td>
+<td>{$ip_host_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

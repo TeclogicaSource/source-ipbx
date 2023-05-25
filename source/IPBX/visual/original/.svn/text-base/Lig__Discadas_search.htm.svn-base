@@ -1,0 +1,243 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1252">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+{BEGIN searchheader}
+<div  class="rnr-brickcontents style2 rnr-b-srchheader {$brickclass_srchheader}"><span>	<h1>{$pagetitlelabel Rel__Lig__Discadas search}</h1>
+</span></div>{END searchheader}
+
+
+{BEGIN conditions_block}
+<div  class="rnr-brickcontents style1 rnr-b-srchconditions {$brickclass_srchconditions}">	<center>
+	<span class=fieldname>Critério:&nbsp;</span>	
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$all_checkbox}><label for="all_checkbox"> Todas condições</label>
+	&nbsp;&nbsp;&nbsp;
+	<input type="radio" class="rnr-radio-button" name="srchType{$id}" {$any_checkbox}><label for="any_checkbox"> Qualquer condição</label>
+	</center></div>{END conditions_block}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-srchfields {$brickclass_srchfields}"><table class="fieldGrid">
+	<tr>
+		<td>&nbsp;</td>
+		<td>Não</td>
+		<td colspan=3>&nbsp; </td>
+	</tr>
+	<tr class="{$fielddispclass_Periodo}">
+	{BEGIN Periodo_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas Periodo}
+	</td>
+	<td>
+		<input type="checkbox" {$Periodo_notbox}>
+	</td>
+	<td>
+		{$searchtype_Periodo}
+	</td>
+	<td>
+		{$Periodo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Periodo_editcontrol1}&nbsp;
+	</td>
+{END Periodo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Hora}">
+	{BEGIN Hora_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas Hora}
+	</td>
+	<td>
+		<input type="checkbox" {$Hora_notbox}>
+	</td>
+	<td>
+		{$searchtype_Hora}
+	</td>
+	<td>
+		{$Hora_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Hora_editcontrol1}&nbsp;
+	</td>
+{END Hora_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_src}">
+	{BEGIN src_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas src}
+	</td>
+	<td>
+		<input type="checkbox" {$src_notbox}>
+	</td>
+	<td>
+		{$searchtype_src}
+	</td>
+	<td>
+		{$src_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$src_editcontrol1}&nbsp;
+	</td>
+{END src_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_dst}">
+	{BEGIN dst_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas dst}
+	</td>
+	<td>
+		<input type="checkbox" {$dst_notbox}>
+	</td>
+	<td>
+		{$searchtype_dst}
+	</td>
+	<td>
+		{$dst_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$dst_editcontrol1}&nbsp;
+	</td>
+{END dst_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Tempo}">
+	{BEGIN Tempo_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas Tempo}
+	</td>
+	<td>
+		<input type="checkbox" {$Tempo_notbox}>
+	</td>
+	<td>
+		{$searchtype_Tempo}
+	</td>
+	<td>
+		{$Tempo_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Tempo_editcontrol1}&nbsp;
+	</td>
+{END Tempo_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_disposition}">
+	{BEGIN disposition_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas disposition}
+	</td>
+	<td>
+		<input type="checkbox" {$disposition_notbox}>
+	</td>
+	<td>
+		{$searchtype_disposition}
+	</td>
+	<td>
+		{$disposition_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$disposition_editcontrol1}&nbsp;
+	</td>
+{END disposition_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_calldate}">
+	{BEGIN calldate_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas calldate}
+	</td>
+	<td>
+		<input type="checkbox" {$calldate_notbox}>
+	</td>
+	<td>
+		{$searchtype_calldate}
+	</td>
+	<td>
+		{$calldate_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$calldate_editcontrol1}&nbsp;
+	</td>
+{END calldate_fieldblock}
+	</tr>
+	<tr class="{$fielddispclass_Audio}">
+	{BEGIN Audio_fieldblock}		
+	<td>
+		{$label Rel__Lig__Discadas Audio}
+	</td>
+	<td>
+		<input type="checkbox" {$Audio_notbox}>
+	</td>
+	<td>
+		{$searchtype_Audio}
+	</td>
+	<td>
+		{$Audio_editcontrol}&nbsp;
+	</td>
+	<td>
+		{$Audio_editcontrol1}&nbsp;
+	</td>
+{END Audio_fieldblock}
+	</tr>
+
+</table></div>
+
+
+{BEGIN searchbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-srchbuttons {$brickclass_srchbuttons}">{BEGIN search_button}
+<a href="#" class="rnr-button main" {$searchbutton_attrs}>Buscar</a>
+{END search_button} 
+{BEGIN reset_button}
+<a href="#" class="rnr-button" {$resetbutton_attrs}>Limpar</a>
+{END reset_button}
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Voltar à Lista</a>
+{END back_button}</div>{END searchbuttons}
+
+
+</div>
+{END container_fields}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

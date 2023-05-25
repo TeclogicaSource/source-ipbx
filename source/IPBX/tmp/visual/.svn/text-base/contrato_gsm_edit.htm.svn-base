@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=Edge http-equiv=X-UA-Compatible>
+<META content="text/html; charset=Windows-1252" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY class="{$stylename} function-edit" {$bodyattrs}>{BEGIN body}
+
+{$header}
+<DIV class=rnr-page>
+<DIV class="rnr-top {$blockclass_top}">
+{BEGIN container_all}
+<DIV class="rnr-c rnr-cv rnr-c-all">
+<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_edit} rnr-wrapper rnr-cbw-edit">
+{BEGIN container_edit}
+<DIV class="rnr-c rnr-cv rnr-c-edit">
+{BEGIN editheader}<DIV class="rnr-brickcontents style2 rnr-b-editheader {$brickclass_editheader}"><SPAN>
+<H1>
+{$pagetitlelabel contrato_gsm edit}</H1></SPAN></DIV>
+{END editheader}{BEGIN message_block}<DIV class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}">
+<DIV class=rnr-message>
+{$message}</DIV></DIV>
+{END message_block}<DIV class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+{BEGIN container_fields}
+<DIV class="rnr-c rnr-cv rnr-c-fields">
+<DIV class="rnr-brickcontents style1 rnr-b-editfields {$brickclass_editfields}">
+<TABLE class=fieldGrid>
+  <TBODY>
+  {BEGIN num_contrato_fieldblock}<TR class={$fielddispclass_num_contrato} data-fieldname="num_contrato">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN num_contrato_label}
+      {$label contrato_gsm num_contrato}{END num_contrato_label}</TD>
+    <TD class="rnr-control style3">
+      {$num_contrato_editcontrol}&nbsp; 
+    </TD></TR>
+  {END num_contrato_fieldblock}{BEGIN nm_operadora_fieldblock}<TR class={$fielddispclass_nm_operadora} data-fieldname="nm_operadora">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN nm_operadora_label}{$label contrato_gsm nm_operadora}{END nm_operadora_label}</TD>
+    <TD class="rnr-control style3">
+      {$nm_operadora_editcontrol}&nbsp; 
+    </TD></TR>
+  {END nm_operadora_fieldblock}{BEGIN Vingencia_fieldblock}<TR class={$fielddispclass_Vingencia} data-fieldname="Vingencia">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN Vingencia_label}{$label contrato_gsm Vingencia}{END Vingencia_label}</TD>
+    <TD class="rnr-control style3">
+      {$Vingencia_editcontrol}&nbsp; </TD></TR>
+  {END Vingencia_fieldblock}{BEGIN flg_ativo_fieldblock}<TR class={$fielddispclass_flg_ativo} data-fieldname="flg_ativo">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN flg_ativo_label}{$label contrato_gsm flg_ativo}{END flg_ativo_label}</TD>
+    <TD class="rnr-control style3">
+      {$flg_ativo_editcontrol}&nbsp; </TD></TR>
+  {END flg_ativo_fieldblock}{BEGIN dia_ini_fieldblock}<TR class={$fielddispclass_dia_ini} data-fieldname="dia_ini">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dia_ini_label}{$label contrato_gsm dia_ini}{END dia_ini_label}</TD>
+    <TD class="rnr-control style3">
+      {$dia_ini_editcontrol}&nbsp; </TD></TR>
+  {END dia_ini_fieldblock}{BEGIN dia_fim_fieldblock}<TR class={$fielddispclass_dia_fim} data-fieldname="dia_fim">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN dia_fim_label}{$label contrato_gsm dia_fim}{END dia_fim_label}</TD>
+    <TD class="rnr-control style3">
+      {$dia_fim_editcontrol}&nbsp; </TD></TR>
+  {END dia_fim_fieldblock}{BEGIN posicao_mes_fieldblock}<TR class={$fielddispclass_posicao_mes} data-fieldname="posicao_mes">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN posicao_mes_label}{$label contrato_gsm posicao_mes}{END posicao_mes_label}</TD>
+    <TD class="rnr-control style3">
+      {$posicao_mes_editcontrol}&nbsp; 
+  </TD></TR>
+  {END posicao_mes_fieldblock}{BEGIN VC1_CAD_fieldblock}<TR class={$fielddispclass_VC1_CAD} data-fieldname="VC1_CAD">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN VC1_CAD_label}{$label contrato_gsm VC1_CAD}{END VC1_CAD_label}</TD>
+    <TD class="rnr-control style3">
+      {$VC1_CAD_editcontrol}&nbsp; </TD></TR>
+  {END VC1_CAD_fieldblock}{BEGIN VC1_VLR_fieldblock}<TR class={$fielddispclass_VC1_VLR} data-fieldname="VC1_VLR">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN VC1_VLR_label}
+      {$label contrato_gsm VC1_VLR}{END VC1_VLR_label}</TD>
+    <TD class="rnr-control style3">
+      {$VC1_VLR_editcontrol}&nbsp; </TD></TR>
+  {END VC1_VLR_fieldblock}{BEGIN VC2VC3_CAD_fieldblock}<TR class={$fielddispclass_VC2VC3_CAD} data-fieldname="VC2VC3_CAD">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN VC2VC3_CAD_label}{$label contrato_gsm VC2VC3_CAD}{END VC2VC3_CAD_label}</TD>
+    <TD class="rnr-control style3">
+      {$VC2VC3_CAD_editcontrol}&nbsp; 
+</TD></TR>
+  {END VC2VC3_CAD_fieldblock}{BEGIN VC2VC3_VLR_fieldblock}<TR class={$fielddispclass_VC2VC3_VLR} data-fieldname="VC2VC3_VLR">
+    <TD style="WIDTH: 30%; WHITE-SPACE: normal" class=rnr-label>{BEGIN VC2VC3_VLR_label}{$label contrato_gsm VC2VC3_VLR}{END VC2VC3_VLR_label}</TD>
+    <TD class="rnr-control style3">
+      {$VC2VC3_VLR_editcontrol}&nbsp; 
+  </TD></TR>{END VC2VC3_VLR_fieldblock}</TBODY></TABLE></DIV>
+{BEGIN editbuttons}<DIV class="rnr-brickcontents style2 rnr-b-editbuttons {$brickclass_editbuttons}">
+<DIV class=rnr-buttons-right>{BEGIN prev_button}<A class="rnr-button {$prevbutton_class}" href="#" {$prevbutton_attrs}>&lt;&lt;&lt;</A> {END prev_button}{BEGIN next_button}<A class="rnr-button {$nextbutton_class}" href="#" {$nextbutton_attrs}>&gt;&gt;&gt;</A> {END next_button}</DIV>
+<DIV class=rnr-buttons-left>{BEGIN save_button}<A class="rnr-button main" href="#" {$savebutton_attrs}>Salvar</A> {END save_button}{BEGIN reset_button}<A class=rnr-button href="#" {$resetbutton_attrs}>Limpar</A> {END reset_button}{BEGIN back_button}<A class=rnr-button href="#" {$backbutton_attrs}>Voltar à Lista</A> {END back_button}{BEGIN close_button}<A class=rnr-button href="#" {$closebutton_attrs}>Fechar Janela</A> 
+{END close_button}</DIV></DIV>{END editbuttons}</DIV>{END container_fields}</DIV></DIV>{END container_edit}</DIV></DIV>{END container_all}</DIV>
+<DIV class=rnr-middle>
+<DIV class="rnr-left {$blockclass_left}"></DIV>
+<DIV class="rnr-center {$blockclass_center}"></DIV>
+<DIV class="rnr-right {$blockclass_right}"></DIV></DIV>
+<DIV class="rnr-bottom {$blockclass_bottom}"><!--%%bottom%%--></DIV></DIV>
+{$footer}{END body}</BODY></HTML>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML {$html_attrs}><HEAD><TITLE>Graf. perfil atendimento</TITLE>
+<link REL="stylesheet" href="include/style.css" type="text/css"><!--[if IE]><link REL="stylesheet" href="include/styleIE.css" type="text/css"><![endif]-->{BEGIN style_block}
+<STYLE>
+#height100{$id} {height:auto;width:100%;padding:10px;}
+#left_block{$id} {position:absolute;width:200px; overflow:visible; margin-top:10px}
+{BEGIN RTL_block}
+#left_block{$id}{right:20px;}
+{END RTL_block}
+{BEGIN LTR_block}
+#left_block{$id}{left:20px;right:0px;}
+{END LTR_block}
+#right_block{$id} {padding:10px 10px 0px 0px;}
+#menu_block{$id} {padding:5px 0px; width:auto;}
+#search_block{$id}, #search_block_option{$id}, #search_block_text{$id} {padding:3px 5px;}
+#toplinks_block{$id} {padding:3px 10px 7px 10px;border-bottom:1px solid white;}
+#toplinks_block{$id} > * {margin:4px 6px;vertical-align:middle;}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#marginStyle{margin-left:220px;}
+{BEGIN RTL_block}
+#global_block{$id} {padding:0px 10px 10px 0px;}
+#global_block_table{$id}, #right_block{$id}{margin-left:0px;}
+#marginStyle{margin-right:220px;}
+{END RTL_block}
+#global_block_table{$id} {width:auto;}
+#searchform_block{$id} {margin-top:1px;padding:3px}
+#searchform_block{$id} div {padding:3px 5px;}
+#details_block{$id},#pages_block{$id} {white-space:nowrap;text-align:center;padding:3px}
+#details_block{$id}, #recordspp_block{$id} {margin-top:1px}
+#recordcontrols_block{$id} {padding:3px 6px;text-align:left;width:auto;}
+#record_controls{$id} > *,#newrecord_controls{$id} > * {margin:2px 2px;vertical-align:middle}
+.menuitem {padding:6px 18px 10px 13px}
+.menuitem_active {padding:6px 18px 11px 13px}
+.message_block {text-align:center;padding:5px;margin-left:250px;}
+#message_block{$id} {text-align:center;}
+#caption_block{$id} {text-align:center;word-wrap:break-word;}
+.center {text-align:center;padding:4px;}
+#center_block_line{$id} {text-align:center;padding:4px;}
+#grid_block{$id} {margin-top:10px;}
+.grid_recordheader {padding:0 5px 5px;}
+.grid_recordheader a {margin:0px 5px;}
+.headerlist_right2 *,.headerlist * {vertical-align:middle}
+.totals{padding:0 5px;}
+form {display:inline}
+a.pag_n{padding-bottom:3px;}
+body{margin:0px;padding:0px;}
+#searchPanelContainer{$id}{	width: 200px}
+#searchOptions{$id}{overflow: hidden;}
+.listIcons img.listIcon{margin:0 3px;opacity:0.3;filter:alpha(opacity=30);}
+/*report styles*/
+#export_links{$id} * {padding:0}
+</STYLE>
+{END style_block}{BEGIN iestyle_block}<!--[if IE]>
+<STYLE>
+#toplinks_block{$id} * {margin:1px 3px;vertical-align:middle;}
+#record_controls{$id} *,#newrecord_controls{$id} * {margin:1x 1px;vertical-align:middle}
+#global_block{$id} {height:95%}
+#recordcontrols_block{$id} {width:100%;}
+</STYLE>
+<![endif]-->{END iestyle_block}
+<META name=GENERATOR content="MSHTML 8.00.6001.19222"></HEAD>
+<BODY {$bodyattrs} marginwidth="0" marginheight="0">{BEGIN body}
+<DIV id="height100{$id}" layout="Rome">{$header} <B class=xtop><B 
+class=xb1b></B><B class=xb2b></B><B class=xb3b></B><B class=xb4b></B></B>
+{BEGIN toplinks_block}<DIV id="toplinks_block{$id}" class=uplistmenu>Logado Como&nbsp;<B>{$username}</B>&nbsp; <SPAN 
+class=buttonborder><INPUT class=button value="Log Out" type=button {$logoutlink_attrs}></SPAN> 
+{BEGIN adminarea_link}<SPAN class=buttonborder><INPUT class=button value="Área  Admin" type=button {$adminarealink_attrs}></SPAN>{END adminarea_link} 
+{BEGIN asearch_link}<SPAN class=buttonborder><INPUT class=button value="Busca Avancada" type=button {$asearchlink_attrs}></SPAN>{END asearch_link} 
+</DIV>{END toplinks_block}
+<DIV id="global_block{$id}" class=main_table>
+{BEGIN left_block}<DIV id="left_block{$id}"><B class=xtop><B 
+class=xb1></B><B class=xb2></B><B class=xb3></B><B class=xb4></B></B><!-- MenuBegin -->
+{BEGIN menu_block}<DIV id="menu_block{$id}" class=xboxcontent><!-- MainMenuBegin -->{$mainmenu}<!-- MainMenuEnd --></DIV>{END menu_block}<!-- MenuEnd -->
+{BEGIN search_records_block}<DIV>
+<STYLE>
+<!--
+
+#center_block{$id}{
+	padding: 5px;
+}
+#searchPanelHeader{$id}{
+	padding: 5px 0px 5px 5px;
+}
+
+-->
+</STYLE>
+<!-- search panel and window header -->
+<DIV id="center_block{$id}" class=blackshade2>Buscar: 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showWindowPin.gif); WIDTH: 18px" id="showSrchWin{$id}" class=button type=button {$showHideSearchWin_attrs}></SPAN> 
+&nbsp; <SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/showOptions.gif); WIDTH: 18px" id="showOptPanel{$id}" class=button type=button {$showHideSearchPanel_attrs}></SPAN> 
+</DIV>
+<DIV id="searchform{$id}">
+<DIV id="searchPanelHeader{$id}" class=blackshade>{$simpleSearchFieldCombo} {$simpleSearchTypeCombo} {BEGIN searchform_text}<INPUT size=25 {$searchfor_attrs}>{END searchform_text} &nbsp; {BEGIN searchform_search}<SPAN class=buttonborder><INPUT style="BACKGROUND-IMAGE: url(images/search/search.gif); WIDTH: 18px" class=button type=button {$searchbutton_attrs}></SPAN>{END searchform_search} 
+&nbsp; {BEGIN searchform_showall}<SPAN id="showall{$id}" class=buttonborder><INPUT class=button value="Mostrar Todos" type=button {$showallbutton_attrs}></SPAN>{END searchform_showall} 
+</DIV></DIV><!-- search panel and window -->
+<DIV id="searchPanelContainer{$id}" class=searchPanelContainer>{$adv_search_panel} </DIV>
+{BEGIN details_block}<DIV id="details_block{$id}" class="toplist xboxcontent center"><SPAN id="detFound{$id}">Ítens Encontrados: {$records_found}&nbsp;</SPAN> </DIV>{END details_block}
+{BEGIN pages_block}<DIV id="pages_block{$id}" class="toplist xboxcontent center"><SPAN id="pageOf{$id}">Página {$page} de {$maxpages}</SPAN> </DIV>{END pages_block}
+{BEGIN recordspp_block}<DIV id="recordspp_block{$id}" class="toplist xboxcontent center">Registros por Página:<BR><BR><SELECT 
+{$recordspp_attrs}> <option value="10" {$rpp10_selected}>10</OPTION> <option value="20" {$rpp20_selected}>20</OPTION> <option value="30" {$rpp30_selected}>30</OPTION> <option value="50" {$rpp50_selected}>50</OPTION> <option value="100" {$rpp100_selected}>100</OPTION> <option value="500" {$rpp500_selected}>500</OPTION></SELECT> </DIV>{END recordspp_block}</DIV>{END search_records_block}<B class=xbottom><B 
+class=xb4></B><B class=xb3></B><B class=xb2></B><B class=xb1></B></B></DIV>{END left_block}<!-- main block -->
+<DIV id=marginStyle>
+<DIV id="right_block{$id}" class=right_block>{BEGIN recordcontrols_block}
+<DIV><B class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+class=xb4></B></B>
+<DIV id="recordcontrols_block{$id}" class=xboxcontent>{$lookupSearchControls} {BEGIN record_controls}<SPAN id="record_controls{$id}"></SPAN>{END record_controls}</DIV><B 
+class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+class=xb1></B></B></DIV>{END recordcontrols_block}</DIV>
+<DIV id="usermessage{$id}" class=message>{$user_message}</DIV>
+<DIV id="global_block_table{$id}" class=main_table>
+<DIV id="right_block{$id}">{BEGIN chart_block}
+<TABLE id="chart_block{$id}">
+  <TBODY>
+  <TR>
+    <TD><B class=xtop><B class=xb1></B><B class=xb2></B><B class=xb3></B><B 
+      class=xb4></B></B>
+      <DIV id="chart_area{$id}" class=xboxcontent>
+      {$Graf__perfil_atendimento_chart 1138 530}</DIV><B 
+      class=xbottom><B class=xb4></B><B class=xb3></B><B class=xb2></B><B 
+      class=xb1></B></B></TD></TR></TBODY></TABLE>{END chart_block}</DIV></DIV><B class=xbottom><B 
+class=xb4b3></B><B class=xb3b3></B><B class=xb2b3></B><B 
+class=xb1b3></B></B></DIV>{$footer} 
+</DIV></DIV>{END body}</BODY></HTML>

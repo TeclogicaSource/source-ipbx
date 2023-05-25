@@ -1,0 +1,46 @@
+Mensagem<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Pesquisa</strong></td>
+<td><strong>Ordem da pergunta</strong></td>
+<td><strong>Descrição pergunta</strong></td>
+<td><strong>Audio</strong></td>
+<td><strong>Resposta</strong></td>
+<td><strong>Resposta 0</strong></td>
+<td><strong>Resposta 1</strong></td>
+<td><strong>Resposta 2</strong></td>
+<td><strong>Resposta 3</strong></td>
+<td><strong>Resposta 4</strong></td>
+<td><strong>Resposta 5</strong></td>
+<td><strong>Resposta 6</strong></td>
+<td><strong>Resposta 7</strong></td>
+<td><strong>Resposta 8</strong></td>
+<td><strong>Resposta 9</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$id_pesquisa_value}</td>
+<td>{$nr_ordem_value}</td>
+<td>{$dsc_mensagem_value}</td>
+<td>{$arq_audio_value}</td>
+<td>{$opc_resp_value}</td>
+<td>{$ref0_value}</td>
+<td>{$ref1_value}</td>
+<td>{$ref2_value}</td>
+<td>{$ref3_value}</td>
+<td>{$ref4_value}</td>
+<td>{$ref5_value}</td>
+<td>{$ref6_value}</td>
+<td>{$ref7_value}</td>
+<td>{$ref8_value}</td>
+<td>{$ref9_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}

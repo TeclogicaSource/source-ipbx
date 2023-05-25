@@ -1,0 +1,30 @@
+Ramais<br>
+Ítens Encontrados: <strong>{$row_count}.</strong>
+{BEGIN display_first}
+<span>Apresentando os primeiros: <strong>{$display_count}</strong>.</span>
+{END display_first}
+
+{BEGIN details_data}
+<table cellpadding=1 cellspacing=1 border=0  class="detailtable">
+<tr>
+<td><strong>Nome Usuario</strong></td>
+<td><strong>Numero</strong></td>
+<td><strong>Centro de custo</strong></td>
+<td><strong>Privilégio</strong></td>
+<td><strong>E-Mail</strong></td>
+<td><strong>Tipo de usuário</strong></td>
+<td><strong>Id Horario</strong></td>
+</tr>
+{BEGIN details_row}
+<tr>
+<td>{$callerid_value}</td>
+<td>{$name_value}</td>
+<td>{$accountcode_value}</td>
+<td>{$context_value}</td>
+<td>{$mailbox_value}</td>
+<td>{$allow_value}</td>
+<td>{$id_horario_value}</td>
+</tr>
+{END details_row}
+</table>
+{END details_data}
