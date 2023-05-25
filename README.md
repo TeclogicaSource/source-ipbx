@@ -50,7 +50,7 @@ Note: If the server is accessible over the internet, it is highly recommended to
 The Telephone System can be configured by modifying the appropriate configuration files. Refer to the documentation for detailed instructions on how to configure various aspects of the system.
 
 You can download documentation using the following access:
-[![English and Portuguese Documentation](https://github.com/TeclogicaSource/source-ipbx/tree/main/docs)
+[English and Portuguese Documentation](https://github.com/TeclogicaSource/source-ipbx/tree/main/docs)
 
 ## Contributing
 
