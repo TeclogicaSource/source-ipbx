@@ -8,7 +8,7 @@ This repository contains the documentation for the Telephone System software, pr
 
 To get started with the Telephone System, follow these steps:
 
-1. Download the VoIP system ISO, the ISO is downloadable at (https://docs.google.com/document/d/1zcBmoC_TVYsCtQ26ZyKfYU_w9ng_BMgh4a1u6nbrwaQ/edit?usp=sharing)
+1. Download the VoIP system ISO, the ISO is downloadable at (https://drive.google.com/drive/folders/15tRd7peko4tGf5eJSaSbpfiihag_vesq?usp=sharing)
 2. Create a DVD or start a virtual machine with the ISO.
 2. Configure the system by following the instructions provided in the documentation.
 
